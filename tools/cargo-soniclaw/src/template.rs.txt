@@ -1,0 +1,44 @@
+use soniclaw::{prelude::*, device::{OutputHost, Telemetry}, ui::egui};
+use std::sync::Arc;
+
+struct Tone { oscillator: Oscillator, frequency: Arc<Parameter>, sample_rate: f32 }
+impl AudioProcessor for Tone {
+    fn prepare(&mut self, spec: ProcessSpec) -> Result<(), Error> {
+        spec.validate()?; self.sample_rate = spec.sample_rate as f32; self.reset(); Ok(())
+    }
+    fn process(&mut self, audio: &mut AudioBuffer<'_>, _: &ProcessContext<'_>) {
+        let channels = audio.channels(); let hz = self.frequency.get();
+        for frame in audio.samples_mut().chunks_exact_mut(channels) {
+            frame.fill(self.oscillator.next_sample(hz, self.sample_rate, Waveform::Sine));
+        }
+    }
+    fn reset(&mut self) { self.oscillator.reset(); }
+}
+struct App { _host: OutputHost, frequency: Arc<Parameter>, gain: Arc<Parameter>, telemetry: Arc<Telemetry> }
+impl eframe::App for App {
+    fn ui(&mut self, root: &mut egui::Ui, _: &mut eframe::Frame) {
+        let ctx = root.ctx().clone();
+        ctx.request_repaint_after(std::time::Duration::from_millis(30));
+        egui::CentralPanel::default().show(root, |ui| {
+            ui.heading("My first Soniclaw instrument");
+            ui.label("Raise Gain to hear the oscillator.");
+            soniclaw::ui::parameter_slider(ui, &self.frequency, true);
+            soniclaw::ui::parameter_slider(ui, &self.gain, false);
+            soniclaw::ui::level_meter(ui, self.telemetry.take_peak());
+        });
+    }
+}
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let frequency = Arc::new(Parameter::new(ParameterInfo { id: "frequency", name: "Frequency", min: 20.0, max: 10000.0, default: 440.0, unit: " Hz" })?);
+    let gain = Arc::new(Parameter::new(ParameterInfo { id: "gain", name: "Gain", min: 0.0, max: 0.3, default: 0.0, unit: "" })?);
+    let mut engine = Engine::default();
+    engine.push(Tone { oscillator: Oscillator::default(), frequency: frequency.clone(), sample_rate: 48000.0 });
+    engine.push(Gain::new(gain.clone()));
+    let telemetry = Arc::new(Telemetry::default());
+    let host = OutputHost::start(engine, None, 256, vec![], telemetry.clone())?;
+    let app = App { _host: host, frequency, gain, telemetry };
+    eframe::run_native("Soniclaw app", eframe::NativeOptions::default(), Box::new(|cc| {
+        soniclaw::ui::apply_theme(&cc.egui_ctx); Ok(Box::new(app))
+    }))?;
+    Ok(())
+}

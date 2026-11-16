@@ -1,0 +1,10 @@
+use soniclaw::{prelude::*,plugin::{PluginDescriptor,PluginInstance}};
+use soniclaw_clap::{Definition,descriptor};
+use std::sync::Arc;
+fn create()->PluginInstance{
+    let gain=Arc::new(Parameter::new(ParameterInfo{id:"gain",name:"Gain",min:0.0,max:1.0,default:0.5,unit:""}).unwrap());
+    let mut engine=Engine::default();engine.push(Gain::new(gain.clone()));
+    PluginInstance::new(PluginDescriptor{id:"org.soniclaw.__PROJECT_NAME__",name:"__PROJECT_NAME__",vendor:"Soniclaw",version:"0.1.0",is_instrument:false,accepts_midi:false},engine,vec![gain]).unwrap()
+}
+static DESCRIPTOR:soniclaw_clap::ClapDescriptor=descriptor(c"org.soniclaw.__PROJECT_NAME__",c"__PROJECT_NAME__",c"Soniclaw",c"0.1.0",false);
+soniclaw_clap::export_clap!([Definition{descriptor:&DESCRIPTOR,create,instrument:false,tail_seconds:0.0}]);

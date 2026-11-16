@@ -1,0 +1,82 @@
+Created sonora-check-app (app)
+    Updating crates.io index
+     Locking 352 packages to highest compatible versions
+      Adding eframe v0.36.1 (available: v0.36.2)
+      Adding egui v0.36.1 (available: v0.36.2)
+      Adding egui-wgpu v0.36.1 (available: v0.36.2)
+      Adding egui-winit v0.36.1 (available: v0.36.2)
+      Adding egui_glow v0.36.1 (available: v0.36.2)
+      Adding rtrb v0.3.2 (available: v0.3.6)
+ Downloading crates ...
+  Downloaded calloop v0.14.5
+  Downloaded unicode-width v0.2.3
+   Compiling sonora-core v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora-core)
+   Compiling calloop v0.14.5
+   Compiling sonora-record v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora-record)
+   Compiling sonora-io v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora-io)
+   Compiling sonora-engine v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora-engine)
+   Compiling sonora-dsp v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora-dsp)
+   Compiling sonora-state v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora-state)
+   Compiling sonora-stream v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora-stream)
+   Compiling sonora-midi v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora-midi)
+   Compiling sonora-graph v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora-graph)
+   Compiling sonora-bus v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora-bus)
+   Compiling sonora-device v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora-device)
+   Compiling sonora-plugin v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora-plugin)
+   Compiling calloop-wayland-source v0.4.1
+   Compiling smithay-client-toolkit v0.20.0
+   Compiling sonora-session v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora-session)
+   Compiling sonora-ui v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora-ui)
+   Compiling sonora-sampler v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora-sampler)
+   Compiling sonora v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora)
+   Compiling smithay-clipboard v0.7.3
+   Compiling egui-winit v0.36.1
+   Compiling eframe v0.36.1
+   Compiling sonora-check-app v0.1.0 (/tmp/sonora generated checks/sonora-check-app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 33.59s
+Created sonora-check-clap (clap)
+    Updating crates.io index
+     Locking 252 packages to highest compatible versions
+      Adding baseview v0.3.4 (available: v0.3.7)
+      Adding egui v0.36.1 (available: v0.36.2)
+      Adding egui_glow v0.36.1 (available: v0.36.2)
+      Adding rtrb v0.3.2 (available: v0.3.6)
+   Compiling smallvec v1.16.5
+   Compiling rustix v1.1.6
+   Compiling ahash v0.8.12
+   Compiling x11rb-protocol v0.13.2
+   Compiling raw-window-handle v0.6.2
+   Compiling sonora-session v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora-session)
+   Compiling kurbo v0.13.1
+   Compiling parking_lot_core v0.9.12
+   Compiling harfrust v0.12.0
+   Compiling sonora v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora)
+   Compiling parking_lot v0.12.5
+   Compiling peniko v0.6.1
+   Compiling vello_common v0.1.0
+   Compiling vello_cpu v0.1.0
+   Compiling epaint v0.36.2
+   Compiling gethostname v1.1.0
+   Compiling polling v3.11.0
+   Compiling calloop v0.14.5
+   Compiling x11rb v0.13.2
+   Compiling egui v0.36.1
+   Compiling x11-clipboard v0.9.3
+   Compiling baseview v0.3.4
+   Compiling copypasta v0.10.2
+   Compiling egui_glow v0.36.1
+   Compiling sonora-ui v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora-ui)
+   Compiling egui-baseview v0.7.2
+   Compiling sonora-editor v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora-editor)
+   Compiling sonora-clap v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora-clap)
+   Compiling sonora-check-clap v0.1.0 (/tmp/sonora generated checks/sonora-check-clap)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 33.25s
+Created sonora-check-sampler (sampler)
+    Updating crates.io index
+     Locking 252 packages to highest compatible versions
+      Adding baseview v0.3.4 (available: v0.3.7)
+      Adding egui v0.36.1 (available: v0.36.2)
+      Adding egui_glow v0.36.1 (available: v0.36.2)
+      Adding rtrb v0.3.2 (available: v0.3.6)
+   Compiling sonora-check-sampler v0.1.0 (/tmp/sonora generated checks/sonora-check-sampler)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 16.99s

@@ -1,0 +1,1374 @@
+{
+  "results": [
+    {
+      "test": {
+        "plugin-library": {
+          "test": "query-nonexistent-factory",
+          "path": "target/debug/libsonora_clap_demo.so"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 202938
+      }
+    },
+    {
+      "test": {
+        "plugin-library": {
+          "test": "create-id-with-trailing-garbage",
+          "path": "target/debug/libsonora_clap_demo.so"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 173603
+      }
+    },
+    {
+      "test": {
+        "plugin-library": {
+          "test": "scan-rtld-now",
+          "path": "target/debug/libsonora_clap_demo.so"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 478863
+      }
+    },
+    {
+      "test": {
+        "plugin-library": {
+          "test": "scan-time",
+          "path": "target/debug/libsonora_clap_demo.so"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": "The plugin can be scanned in 0 milliseconds."
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 157423
+      }
+    },
+    {
+      "test": {
+        "plugin-library": {
+          "test": "preset-discovery-crawl",
+          "path": "target/debug/libsonora_clap_demo.so"
+        }
+      },
+      "status": {
+        "code": "skipped",
+        "details": "The plugin does not implement the 'clap.preset-discovery-factory/2' factory."
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 268290
+      }
+    },
+    {
+      "test": {
+        "plugin-library": {
+          "test": "preset-discovery-descriptor-consistency",
+          "path": "target/debug/libsonora_clap_demo.so"
+        }
+      },
+      "status": {
+        "code": "skipped",
+        "details": "The plugin does not implement the 'clap.preset-discovery-factory/2' factory."
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 1732510
+      }
+    },
+    {
+      "test": {
+        "plugin-library": {
+          "test": "preset-discovery-load",
+          "path": "target/debug/libsonora_clap_demo.so"
+        }
+      },
+      "status": {
+        "code": "skipped",
+        "details": "The plugin does not implement the 'clap.preset-discovery-factory/2' factory."
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 344473
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "descriptor-consistency",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 753575
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "descriptor-consistency",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 834991
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "features-categories",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 228255
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "features-categories",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 188150
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "features-duplicates",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 297705
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "features-duplicates",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 157654
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-audio-basic-out-of-place",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 1903980
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-audio-basic-out-of-place",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 3420477
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-audio-basic-in-place",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 3520533
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-audio-basic-in-place",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 1491510
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-audio-double-out-of-place",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "skipped",
+        "details": "The plugin does not support 64-bit floating point audio."
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 276816
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-audio-double-out-of-place",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "skipped",
+        "details": "The plugin does not support 64-bit floating point audio."
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 221122
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-audio-double-in-place",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "skipped",
+        "details": "The plugin does not support 64-bit floating point audio."
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 177731
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-audio-double-in-place",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "skipped",
+        "details": "The plugin does not support 64-bit floating point audio."
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 230740
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-audio-denormals",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": "The plugin took 1.50x longer to process denormals"
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 15595773
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-audio-denormals",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "skipped",
+        "details": "The plugin implements the 'audio-ports' extension but it does not have any input audio ports."
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 240588
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-sleep-constant-mask",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": "The plugin never set the constant flag on any output"
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 5397503
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-sleep-constant-mask",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": "The plugin never set the constant flag on any output"
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 10804618
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-sleep-process-status",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": "The plugin never went to sleep during the test."
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 8150921
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-sleep-process-status",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": "The plugin never went to sleep during the test."
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 41491759
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-note-out-of-place-basic",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "skipped",
+        "details": "The plugin implements the 'note-ports' extension but it does not have any input note ports."
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 587014
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-note-out-of-place-basic",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 6994890
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-note-inconsistent",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "skipped",
+        "details": "The plugin implements the 'note-ports' extension but it does not have any input note ports."
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 239416
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-note-inconsistent",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 12975648
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-note-wildcard",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "skipped",
+        "details": "The plugin implements the 'note-ports' extension but it does not have any input note ports."
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 222655
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-note-wildcard",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "skipped",
+        "details": "The plugin does not have any input note ports that support CLAP events"
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 459467
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-varying-sample-rates",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 30978886
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-varying-sample-rates",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 53357663
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-varying-block-sizes",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 25525079
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-varying-block-sizes",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 98282777
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-random-block-sizes",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 5336765
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-random-block-sizes",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 29120499
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-reset-reactivate",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 2223756
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "process-reset-reactivate",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 1973797
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "layout-audio-ports-activation",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "skipped",
+        "details": "The plugin does not implement the 'audio-ports-activation' extension."
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 310610
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "layout-audio-ports-activation",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "skipped",
+        "details": "The plugin does not implement the 'audio-ports-activation' extension."
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 200153
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "layout-audio-ports-config",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "skipped",
+        "details": "The plugin does not implement the 'audio-ports-config' extension."
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 351465
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "layout-audio-ports-config",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "skipped",
+        "details": "The plugin does not implement the 'audio-ports-config' extension."
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 223867
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "layout-configurable-audio-ports",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "skipped",
+        "details": "The plugin does not implement the 'configurable-audio-ports' extension."
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 245788
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "layout-configurable-audio-ports",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "skipped",
+        "details": "The plugin does not implement the 'configurable-audio-ports' extension."
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 197378
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "param-set-events",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 1751765
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "param-set-events",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 817514
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "param-set-no-cookies",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 4709620
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "param-set-no-cookies",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 1306566
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "param-set-wrong-namespace",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 2088901
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "param-set-wrong-namespace",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 722126
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "param-fuzz-basic",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 86446834
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "param-fuzz-basic",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 121344011
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "param-fuzz-bounds",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 85427259
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "param-fuzz-bounds",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 105286782
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "param-fuzz-sample-accurate",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 3596116
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "param-fuzz-sample-accurate",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 4776907
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "param-fuzz-modulation",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 990727
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "param-fuzz-modulation",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 1721699
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "param-conversions",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 1224753
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "param-conversions",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 589118
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "param-default-values",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 763233
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "param-default-values",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 201796
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "state-invalid-empty",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 212606
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "state-invalid-empty",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 494682
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "state-invalid-random",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 3937882
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "state-invalid-random",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 3858904
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "state-reproducibility-basic",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 629584
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "state-reproducibility-basic",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 352818
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "state-reproducibility-binary",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 288308
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "state-reproducibility-binary",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 293006
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "state-reproducibility-buffered",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 572107
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "state-reproducibility-buffered",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 340615
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "transport-null",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 2964217
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "transport-null",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 1348704
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "transport-fuzz",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 3269270
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "transport-fuzz",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 15947985
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "transport-fuzz-sample-accurate",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.gain"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 5955392
+      }
+    },
+    {
+      "test": {
+        "plugin-instance": {
+          "test": "transport-fuzz-sample-accurate",
+          "path": "target/debug/libsonora_clap_demo.so",
+          "plugin_id": "org.sonora.synth"
+        }
+      },
+      "status": {
+        "code": "success",
+        "details": null
+      },
+      "duration": {
+        "secs": 0,
+        "nanos": 7795200
+      }
+    }
+  ]
+}

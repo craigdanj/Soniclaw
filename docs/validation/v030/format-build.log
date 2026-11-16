@@ -1,0 +1,30 @@
+   Compiling sonora-clap v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora-clap)
+   Compiling sonora-reference v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/examples/reference)
+    Finished `release` profile [optimized] target(s) in 3.06s
+-- [clap-wrapper]: CMAKE_OSX_ARCHITECTURES is not set. Using native build for clap wrapper
+-- clap-wrapper: CLAP_WRAPPER_VERSION is 0.17.0
+-- clap-wrapper: Building with C++ standard 17
+-- clap-wrapper: using gcc/llvm-clang compile options
+-- clap-wrapper: Warnings are Errors
+-- clap-wrapper: source dir is /workspace/scratch/cd89c8ef929d/dependencies/clap-wrapper, platform is LIN
+-- clap-wrapper: Configuring clap sdk
+-- CLAP version: 1.2.10
+-- clap-wrapper: using included fmt library since no fmt-header-only available
+-- clap-wrapper: VST3 version: 3.8.0; VST3 Root /workspace/scratch/cd89c8ef929d/dependencies/vst3sdk
+-- clap-wrapper: Adding VST3 Wrapper to target sonora_vst3 generating 'SonoraReference.vst3'
+-- clap-wrapper: Building the VST3 Bundle Folder using the CMAKE_SYSTEM_PROCESSOR variable: (x86_64)
+CMake Warning at /workspace/scratch/cd89c8ef929d/dependencies/clap-wrapper/cmake/wrap_vst3.cmake:202 (message):
+  RESOURCE_DIRECTORY defined, but not (yet) supported for Unix VST3s
+Call Stack (most recent call first):
+  CMakeLists.txt:28 (target_add_vst3_wrapper)
+
+
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/scratch/cd89c8ef929d/sonora-next/sonora/build/formats
+[ 10%] Built target clap-wrapper-shared-detail
+[ 78%] Built target base-sdk-vst3
+[ 94%] Built target sonora_vst3-clap-wrapper-vst3-lib
+[ 96%] Linking CXX shared module Release/SonoraReference.vst3/Contents/x86_64-linux/SonoraReference.so
+[100%] Built target sonora_vst3
+Built format artifacts under /workspace/scratch/cd89c8ef929d/sonora-next/sonora/build/formats; install only after validation.

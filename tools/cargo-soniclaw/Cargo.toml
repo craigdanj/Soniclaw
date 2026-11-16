@@ -1,0 +1,10 @@
+[package]
+name = "cargo-soniclaw"
+description = "Scaffold a standalone Soniclaw audio application"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+publish = false
+[lints]
+workspace = true

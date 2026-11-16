@@ -1,0 +1,14 @@
+use soniclaw::{prelude::*,plugin::{PluginDescriptor,PluginInstance},sampler::{SampleBank,Zone,MultiSampler}};
+use soniclaw_clap::{descriptor,Definition};
+use std::sync::Arc;
+fn create()->PluginInstance{
+    let pcm:Vec<f32>=(0..24000).map(|i|{let t=i as f32/48000.0;(std::f32::consts::TAU*261.6256*t).sin()*(-t*10.0).exp()*0.5}).collect();
+    let sample=Sample::new(pcm,1,48000.0,60).unwrap();
+    let mut zone=Zone::single(0,60);zone.low_key=36;zone.high_key=96;zone.one_shot=false;
+    let bank=Arc::new(SampleBank::new(vec![sample],vec![zone],192000).unwrap());
+    let gain=Arc::new(Parameter::new(ParameterInfo{id:"master.gain",name:"Gain",min:0.0,max:1.0,default:0.5,unit:""}).unwrap());
+    let mut engine=Engine::default();engine.push(MultiSampler::<32>::new(bank));engine.push(Gain::new(gain.clone()));
+    PluginInstance::new(PluginDescriptor{id:"org.soniclaw.__PROJECT_NAME__",name:"__PROJECT_NAME__",vendor:"Soniclaw developer",version:"0.1.0",is_instrument:true,accepts_midi:true},engine,vec![gain]).unwrap()
+}
+static DESCRIPTOR:soniclaw_clap::ClapDescriptor=descriptor(c"org.soniclaw.__PROJECT_NAME__",c"__PROJECT_NAME__",c"Soniclaw developer",c"0.1.0",true);
+soniclaw_clap::export_clap!([Definition{descriptor:&DESCRIPTOR,create,instrument:true,tail_seconds:1.0}]);

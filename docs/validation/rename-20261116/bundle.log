@@ -1,0 +1,5 @@
+/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/dist/rename-check/SoniclawDemo.clap
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.07s
+     Running `target/debug/soniclaw-clap-smoke dist/rename-check/SoniclawDemo.clap`
+PASS Soniclaw Gain: ports, MIDI timing/audio, automation, text conversion, partial-stream state restore, lifecycle, tail, latency, invalid block handling
+PASS Soniclaw Synth: ports, MIDI timing/audio, automation, text conversion, partial-stream state restore, lifecycle, tail, latency, invalid block handling

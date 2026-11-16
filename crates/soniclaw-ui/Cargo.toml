@@ -1,0 +1,13 @@
+[package]
+name = "soniclaw-ui"
+description = "Reusable egui audio controls with parameter binding"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+[dependencies]
+soniclaw-core.workspace = true
+soniclaw-dsp.workspace = true
+egui = "=0.36.1"
+[lints]
+workspace = true

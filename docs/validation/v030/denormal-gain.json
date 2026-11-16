@@ -1,0 +1,1 @@
+{"plugin":"org.sonora.gain","frames":256,"rounds":9,"callbacks_per_batch":32768,"normal_cpu_ns":826.985,"denormal_cpu_ns":754.091,"ratio":0.911855,"host_control_bits_restored":true,"subnormal_gain_output_is_zero":true}

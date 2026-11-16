@@ -1,0 +1,18 @@
+[package]
+name = "soniclaw-reference"
+description = "Gain/filter, sidechain and multisample reference CLAP plugins"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+publish = false
+[lib]
+crate-type = ["rlib", "cdylib", "staticlib"]
+[features]
+default = ["editor"]
+editor = ["soniclaw-clap/editor"]
+[dependencies]
+soniclaw.workspace = true
+soniclaw-clap = { path = "../../crates/soniclaw-clap", version = "0.3.0" }
+[lints.rust]
+unsafe_op_in_unsafe_fn = "deny"

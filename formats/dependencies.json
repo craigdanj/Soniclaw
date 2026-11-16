@@ -1,0 +1,25 @@
+{
+  "clap-wrapper": {
+    "url": "https://github.com/free-audio/clap-wrapper.git",
+    "revision": "806bba0a5f792e3966b99c1561ab9952d3316d7c"
+  },
+  "clap": {
+    "url": "https://github.com/free-audio/clap.git",
+    "revision": "195b42a004144fab0b3cf95e9c067187d15365b7"
+  },
+  "vst3sdk": {
+    "url": "https://github.com/steinbergmedia/vst3sdk.git",
+    "revision": "9fad9770f2ae8542ab1a548a68c1ad1ac690abe0",
+    "submodules": [
+      "base",
+      "cmake",
+      "pluginterfaces",
+      "public.sdk"
+    ]
+  },
+  "AudioUnitSDK": {
+    "url": "https://github.com/apple/AudioUnitSDK.git",
+    "revision": "53a9a2008aae7fb1b0a9f093dd523b9b12f6c0d9",
+    "macos_only": true
+  }
+}

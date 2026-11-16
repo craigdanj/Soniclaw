@@ -1,0 +1,17 @@
+[package]
+name = "soniclaw-editor"
+description = "Host-parented egui editor and bounded parameter gesture bridge"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+[dependencies]
+baseview = "=0.3.4"
+soniclaw-core.workspace = true
+soniclaw-ui.workspace = true
+egui = { version = "=0.36.1", features = ["default_fonts"] }
+egui-baseview = { version = "=0.7.2", default-features = false, features = ["opengl", "log"] }
+raw-window-handle = "=0.6.2"
+rtrb = "=0.3.2"
+[lints.rust]
+unsafe_op_in_unsafe_fn = "deny"

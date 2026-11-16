@@ -1,0 +1,41 @@
+Created rename-check-app (app)
+     Locking 352 packages to highest compatible versions
+    Checking soniclaw-core v0.3.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-core)
+    Checking x11rb v0.13.2
+    Checking soniclaw-record v0.3.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-record)
+    Checking soniclaw-io v0.3.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-io)
+    Checking egui_glow v0.36.1
+    Checking soniclaw-engine v0.3.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-engine)
+    Checking soniclaw-dsp v0.3.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-dsp)
+    Checking soniclaw-state v0.3.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-state)
+    Checking soniclaw-graph v0.3.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-graph)
+    Checking soniclaw-stream v0.3.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-stream)
+    Checking soniclaw-midi v0.3.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-midi)
+    Checking soniclaw-device v0.3.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-device)
+    Checking soniclaw-bus v0.3.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-bus)
+    Checking soniclaw-plugin v0.3.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-plugin)
+    Checking soniclaw-ui v0.3.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-ui)
+    Checking soniclaw-sampler v0.3.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-sampler)
+    Checking soniclaw-session v0.3.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-session)
+    Checking soniclaw v0.3.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw)
+    Checking winit v0.30.13
+    Checking arboard v3.7.0
+    Checking egui-winit v0.36.1
+    Checking glutin-winit v0.5.0
+    Checking eframe v0.36.1
+    Checking rename-check-app v0.1.0 (/tmp/soniclaw template checks/rename-check-app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 11.69s
+Created rename-check-clap (clap)
+     Locking 252 packages to highest compatible versions
+    Checking serde v1.0.229
+    Checking soniclaw-state v0.3.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-state)
+    Checking soniclaw-session v0.3.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-session)
+    Checking soniclaw-plugin v0.3.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-plugin)
+    Checking soniclaw v0.3.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw)
+    Checking soniclaw-clap v0.3.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-clap)
+    Checking rename-check-clap v0.1.0 (/tmp/soniclaw template checks/rename-check-clap)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.34s
+Created rename-check-sampler (sampler)
+     Locking 252 packages to highest compatible versions
+    Checking rename-check-sampler v0.1.0 (/tmp/soniclaw template checks/rename-check-sampler)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.59s

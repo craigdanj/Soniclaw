@@ -1,0 +1,12 @@
+[package]
+name = "soniclaw-record"
+description = "Bounded real-time recording with background WAV writing"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+[dependencies]
+rtrb = "=0.3.2"
+hound = "=3.5.1"
+[lints]
+workspace = true

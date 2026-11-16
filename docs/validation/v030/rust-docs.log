@@ -1,0 +1,8 @@
+    Checking sonora-clap v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora-clap)
+ Documenting sonora-clap v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora-clap)
+    Checking sonora-reference v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/examples/reference)
+ Documenting sonora-clap-demo v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/examples/clap-demo)
+ Documenting sonora-reference v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/examples/reference)
+ Documenting sonora-reference-studio v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/examples/reference-studio)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.52s
+   Generated /workspace/scratch/cd89c8ef929d/sonora-next/sonora/target/doc/cargo_sonora/index.html and 26 other files

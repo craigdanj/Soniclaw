@@ -1,0 +1,348 @@
+   Compiling sonora-clap v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora-clap)
+   Compiling sonora-reference v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/examples/reference)
+   Compiling sonora-clap-demo v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/examples/clap-demo)
+   Compiling sonora-reference-studio v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/examples/reference-studio)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 6.24s
+     Running unittests src/main.rs (target/debug/build/cargo-sonora/cf8934b6e9bc16e8/out/cargo_sonora-cf8934b6e9bc16e8)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/sonora/27d7941cdecc2658/out/sonora-27d7941cdecc2658)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/realtime.rs (target/debug/build/sonora/64c781e9b9a639db/out/realtime-64c781e9b9a639db)
+
+running 5 tests
+test offline_automation_is_partition_independent ... ok
+test automation_and_record_enqueue_do_not_allocate ... ok
+test prepared_sampler_and_parallel_graph_do_not_allocate ... ok
+test offline_audio_is_independent_of_block_partition ... ok
+test prepared_chain_does_not_allocate_while_processing ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/v030.rs (target/debug/build/sonora/f763e9e2e5e252bc/out/v030-f763e9e2e5e252bc)
+
+running 2 tests
+test optimized_gain_ramp_is_block_partition_independent ... ok
+test new_effects_and_multisampler_do_not_allocate_in_callbacks ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.29s
+
+     Running unittests src/lib.rs (target/debug/build/sonora-bus/06a1a11001de0f2f/out/sonora_bus-06a1a11001de0f2f)
+
+running 2 tests
+test tests::mono_to_stereo_and_suspend ... ok
+test tests::sidechain_reduces_main_without_leaking_into_output ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/sonora-clap/cef9125e88424a6a/out/sonora_clap-cef9125e88424a6a)
+
+running 1 test
+test fp::tests::audio_scope_enables_flush_and_restores_host_control ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/sonora-clap-demo/a24a2e5c71f672fe/out/sonora_clap_demo-a24a2e5c71f672fe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/sonora-clap-smoke/4c68fe61865a2164/out/sonora_clap_smoke-4c68fe61865a2164)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/sonora-core/2fe719a95b5daae9/out/sonora_core-2fe719a95b5daae9)
+
+running 4 tests
+test tests::events_must_fit_and_be_ordered ... ok
+test tests::parameters_reject_nan_and_clamp ... ok
+test tests::ramp_reaches_exact_target_without_restarting ... ok
+test tests::rejects_partial_frame_and_bad_spec ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/sonora-desktop/a4d37b4dc6dbecc8/out/sonora_desktop-a4d37b4dc6dbecc8)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/sonora-device/0a7a658439efcfc8/out/sonora_device-0a7a658439efcfc8)
+
+running 3 tests
+test tests::queue_overflow_requests_panic_without_overwriting ... ok
+test duplex::tests::bridge_prefill_and_underrun_recover_without_panicking ... ok
+test duplex::drift_tests::adaptive_bridge_tracks_a_slightly_faster_input_clock ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running unittests src/lib.rs (target/debug/build/sonora-dsp/f25d169e9376a0fa/out/sonora_dsp-f25d169e9376a0fa)
+
+running 12 tests
+test sampler::tests::rejects_nonfinite_and_partial_frames ... ok
+test tests::a4_pitch_and_sine_period ... ok
+test effects::tests::chorus_wet_path_and_parameter_rejection ... ok
+test tests::synth_obeys_sample_offsets_and_panic ... ok
+test sampler::tests::sample_rate_conversion_and_end_of_sample ... ok
+test tests::delay_impulse_is_at_expected_frame ... ok
+test oversampling::tests::reported_latency_matches_impulse_peak_and_dry ... ok
+test tests::envelope_release_from_current_level_terminates ... ok
+test convolution::tests::fft_matches_direct_convolution_across_ir_partitions_and_variable_blocks ... ok
+test effects::tests::dynamics_ceiling_and_ratio ... ok
+test effects::tests::eq_peak_boost_at_center ... ok
+test effects::tests::gate_rejects_quiet_and_reset_clears_tails ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running unittests src/lib.rs (target/debug/build/sonora-editor/309c2a30cb3b754b/out/sonora_editor-309c2a30cb3b754b)
+
+running 1 test
+test tests::bounded_queue_and_acknowledgement_preserve_order ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/sonora-engine/a9cc0bd0ef00aa78/out/sonora_engine-a9cc0bd0ef00aa78)
+
+running 4 tests
+test automation_tests::midi_offsets_survive_parameter_splits ... ok
+test automation_tests::automation_is_exact_and_invalid_batches_are_atomic ... ok
+test tests::invalid_blocks_are_silent_and_do_not_advance ... ok
+test tests::offline_cross_block_events_and_tail ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/sonora-graph/7458dfa44eb57af6/out/sonora_graph-7458dfa44eb57af6)
+
+running 3 tests
+test latency_tests::fanin_and_output_buses_are_latency_aligned ... ok
+test tests::parallel_branches_sum_and_handle_variable_lengths ... ok
+test tests::cycles_and_duplicate_edges_are_rejected ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/sonora-io/1adcebb6c3c435b8/out/sonora_io-1adcebb6c3c435b8)
+
+running 1 test
+test tests::stereo_round_trip_and_saturation ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/sonora-live-fx/157ad00f27822031/out/sonora_live_fx-157ad00f27822031)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/sonora-midi/91d57c662ec1149f/out/sonora_midi-91d57c662ec1149f)
+
+running 3 tests
+test tests::running_status_and_clock ... ok
+test tests::sysex_and_common_cancel_running_status ... ok
+test tests::pitch_bend_and_one_byte_messages ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/sonora-plugin/9a150bbf3d0520d8/out/sonora_plugin-9a150bbf3d0520d8)
+
+running 1 test
+test tests::lifecycle_and_state_guard ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/sonora-record/90cff57b5f814127/out/sonora_record-90cff57b5f814127)
+
+running 3 tests
+test tests::dry_and_wet_recordings_and_restarts ... ok
+test concurrent_tests::stop_finalizes_all_inflight_packets_and_the_next_take_is_clean ... ok
+test tests::overflow_preserves_duration_and_reports_loss ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.24s
+
+     Running unittests src/lib.rs (target/debug/build/sonora-reference/8fd0aaa0d4daae6c/out/sonora_reference-8fd0aaa0d4daae6c)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/sonora-reference-studio/8d203989e0c6790c/out/sonora_reference_studio-8d203989e0c6790c)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/sonora-render/b8226117d53939ca/out/sonora_render-b8226117d53939ca)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/sonora-sampler/580e2ea0225eac96/out/sonora_sampler-580e2ea0225eac96)
+
+running 3 tests
+test tests::memory_budget_and_bad_loops ... ok
+test tests::velocity_layers_and_round_robin ... ok
+test tests::sustain_and_stealing_crossfade ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/sonora-session/b94ffad70f6bb050/out/sonora_session-b94ffad70f6bb050)
+
+running 1 test
+test tests::settings_roundtrip_and_version_validation ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/sonora-state/323c6d48e8e85502/out/sonora_state-323c6d48e8e85502)
+
+running 1 test
+test tests::invalid_restore_does_not_partially_apply ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/sonora-stream/c9ce69707b889ef7/out/sonora_stream-c9ce69707b889ef7)
+
+running 1 test
+test tests::worker_stream_matches_pcm_and_has_silent_eof ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/sonora-ui/3735e9f7e7e2190d/out/sonora_ui-3735e9f7e7e2190d)
+
+running 3 tests
+test controls::tests::meter_hold_and_release_are_time_based ... ok
+test controls::tests::response_matches_butterworth_cutoff ... ok
+test controls::tests::controls_render_without_a_native_window ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running unittests src/main.rs (target/debug/build/sonora-ui-gallery/942cc0a01859ae31/out/sonora_ui_gallery-942cc0a01859ae31)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests sonora
+
+running 1 test
+test crates/sonora/src/lib.rs - (line 3) ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.45s
+
+   Doc-tests sonora_bus
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests sonora_clap
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests sonora_core
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests sonora_device
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests sonora_dsp
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests sonora_editor
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests sonora_engine
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests sonora_graph
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests sonora_io
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests sonora_midi
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests sonora_plugin
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests sonora_record
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests sonora_reference
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests sonora_sampler
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests sonora_session
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests sonora_state
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests sonora_stream
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests sonora_ui
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

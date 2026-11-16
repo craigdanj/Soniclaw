@@ -1,0 +1,9 @@
+[package]
+name = "soniclaw-core"
+description = "Processing, buffers, parameters and event contracts for Soniclaw"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+[lints]
+workspace = true

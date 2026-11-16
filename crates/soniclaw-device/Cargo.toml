@@ -1,0 +1,15 @@
+[package]
+name = "soniclaw-device"
+description = "CPAL output host with bounded real-time event bridges"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+[dependencies]
+soniclaw-core.workspace = true
+soniclaw-engine.workspace = true
+soniclaw-record = { path = "../soniclaw-record", version = "0.3.0" }
+cpal = "=0.15.3"
+rtrb = "=0.3.2"
+[lints]
+workspace = true

@@ -1,0 +1,32 @@
+[package]
+name = "soniclaw"
+description = "A modular native audio application and plug-in framework"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+[features]
+default = []
+native = ["dep:soniclaw-device", "soniclaw-session/native"]
+ui = ["dep:soniclaw-ui"]
+midi-input = ["soniclaw-midi/native"]
+[dependencies]
+soniclaw-stream = { path = "../soniclaw-stream", version = "0.3.0" }
+soniclaw-sampler = { path = "../soniclaw-sampler", version = "0.3.0" }
+soniclaw-core.workspace = true
+soniclaw-dsp.workspace = true
+soniclaw-midi.workspace = true
+soniclaw-engine.workspace = true
+soniclaw-graph = { path = "../soniclaw-graph", version = "0.3.0" }
+soniclaw-device = { workspace = true, optional = true }
+soniclaw-ui = { workspace = true, optional = true }
+soniclaw-io = { path = "../soniclaw-io", version = "0.3.0" }
+soniclaw-state = { path = "../soniclaw-state", version = "0.3.0" }
+soniclaw-plugin = { path = "../soniclaw-plugin", version = "0.3.0" }
+soniclaw-bus = { path = "../soniclaw-bus", version = "0.3.0" }
+soniclaw-record = { path = "../soniclaw-record", version = "0.3.0" }
+soniclaw-session = { path = "../soniclaw-session", version = "0.3.0" }
+[dev-dependencies]
+allocation-counter = "=0.8.1"
+[lints]
+workspace = true

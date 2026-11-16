@@ -1,0 +1,14 @@
+[package]
+name = "soniclaw-clap-demo"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+publish = false
+[lib]
+crate-type = ["cdylib"]
+[dependencies]
+soniclaw.workspace = true
+soniclaw-clap = { path = "../../crates/soniclaw-clap" }
+[lints.rust]
+unsafe_op_in_unsafe_fn = "deny"

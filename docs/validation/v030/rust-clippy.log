@@ -1,0 +1,5 @@
+    Checking sonora-clap v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/crates/sonora-clap)
+    Checking sonora-reference v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/examples/reference)
+    Checking sonora-clap-demo v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/examples/clap-demo)
+    Checking sonora-reference-studio v0.3.0 (/workspace/scratch/cd89c8ef929d/sonora-next/sonora/examples/reference-studio)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.64s

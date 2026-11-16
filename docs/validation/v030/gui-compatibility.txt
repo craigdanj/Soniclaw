@@ -1,0 +1,8 @@
+Linux shared VM; 48 kHz stereo; release libraries; no hardware latency measurement
+GUI-only run; no timing/stress/heap callback measurements
+CPU affinity request: 0 return 0
+PASS org.sonora.reference: lifecycle, ports, state, audio checks, embedded GUI, balanced knob gestures, state restore during pending edits
+PASS org.sonora.ducker: lifecycle, ports, state, audio checks, embedded GUI, balanced knob gestures, state restore during pending edits
+PASS org.sonora.drums: lifecycle, ports, state, audio checks, embedded GUI, balanced knob gestures, state restore during pending edits
+PASS org.sonora.fx-rack: lifecycle, ports, state, audio checks, embedded GUI, balanced knob gestures, state restore during pending edits
+All checks passed. Allocation interposer self-test passed. GUI interaction uses one output event per callback to force gesture backpressure.

@@ -1,0 +1,10 @@
+ new Debian package, version 2.0.
+ size 5133680 bytes: control archive=332 bytes.
+     177 bytes,     7 lines      control
+ Package: sonora-sonorareference
+ Version: 0.3.0
+ Architecture: amd64
+ Maintainer: Sonora contributors
+ Section: sound
+ Priority: optional
+ Description: Sonora reference audio plug-in
