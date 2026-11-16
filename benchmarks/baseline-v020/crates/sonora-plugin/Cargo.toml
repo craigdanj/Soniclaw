@@ -1,0 +1,13 @@
+[package]
+name = "sonora-plugin"
+description = "Format-independent plugin lifecycle, descriptor and state harness"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+[dependencies]
+sonora-core.workspace = true
+sonora-engine.workspace = true
+sonora-state = { path = "../sonora-state", version = "0.2.0" }
+[lints]
+workspace = true

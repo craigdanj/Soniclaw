@@ -1,0 +1,14 @@
+[package]
+name = "sonora-midi"
+description = "Streaming MIDI 1 parser and optional native MIDI input"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+[features]
+native = ["dep:midir"]
+[dependencies]
+sonora-core.workspace = true
+midir = { version = "=0.10.1", optional = true }
+[lints]
+workspace = true

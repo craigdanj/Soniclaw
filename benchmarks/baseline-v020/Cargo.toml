@@ -1,0 +1,18 @@
+[workspace]
+resolver = "2"
+members = ["crates/*", "reference"]
+[workspace.package]
+version = "0.2.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+rust-version = "1.100"
+[workspace.dependencies]
+sonora-core = { path = "crates/sonora-core", version = "0.2.0" }
+sonora-dsp = { path = "crates/sonora-dsp", version = "0.2.0" }
+sonora-midi = { path = "crates/sonora-midi", version = "0.2.0" }
+sonora-engine = { path = "crates/sonora-engine", version = "0.2.0" }
+[profile.release]
+lto = "thin"
+codegen-units = 1
+[workspace.lints.rust]
+unsafe_code = "forbid"

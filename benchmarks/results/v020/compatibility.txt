@@ -1,0 +1,5 @@
+Linux shared VM; 48 kHz stereo; release libraries; no hardware latency measurement
+Thread CPU batch timing enabled
+CPU affinity request: 0 return 0
+PASS org.sonora.reference: lifecycle, ports, state, audio checks, variable-block stress and heap probes
+All checks passed. Allocation interposer self-test passed. Timing includes common host/event setup.

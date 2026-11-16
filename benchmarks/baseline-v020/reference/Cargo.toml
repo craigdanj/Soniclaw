@@ -1,0 +1,14 @@
+[package]
+name = "sonora-reference-baseline"
+version.workspace = true
+edition.workspace = true
+[lib]
+crate-type = ["cdylib"]
+[dependencies]
+sonora-core.workspace = true
+sonora-dsp.workspace = true
+sonora-engine.workspace = true
+sonora-plugin = { path = "../crates/sonora-plugin" }
+sonora-clap = { path = "../crates/sonora-clap" }
+[lints.rust]
+unsafe_op_in_unsafe_fn = "deny"

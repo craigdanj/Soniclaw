@@ -1,0 +1,17 @@
+{
+  "crates/sonora-clap/Cargo.toml": "e396ba0b6842de2f6da41acbf4b8449f85f9a463ad9df713b044c2131dfb048f",
+  "crates/sonora-clap/src/lib.rs": "5cc6305474cf625bfd73d84f1279688ad397ae66f1fb5eca351560a0242bb628",
+  "crates/sonora-core/Cargo.toml": "6964c7e1b099619afa99334d3e4c3e248386c7227b1061a7466baee12b80a143",
+  "crates/sonora-core/src/lib.rs": "11105603d68f2ea144bcd57b97df1943ec9d359b1964b6d70626746f16f51fb8",
+  "crates/sonora-dsp/Cargo.toml": "5700160dd3dafe68bf1bb57c00caf057aa9c9966bcde811241425e4901919f69",
+  "crates/sonora-dsp/src/lib.rs": "9479ac3ee0496d50d69a99ac99e8d8a18dd1ab77b774a0c5eb2ea68827f39924",
+  "crates/sonora-dsp/src/sampler.rs": "d7f310674a5a7bdb8de074a35d7c1de6211339840438b592361ec085c7a8de5d",
+  "crates/sonora-engine/Cargo.toml": "77f2ee56e2d7da518f57341947891790951914842fc6c447d9367d0455d19936",
+  "crates/sonora-engine/src/lib.rs": "2a0769b7896a1864a78561e6de57dbf25723f86236856d59d89c855db3569868",
+  "crates/sonora-midi/Cargo.toml": "d0931938c49bad0e2738e454da3c1eb4e2e7c4ba9564479c9fa501c439bb548e",
+  "crates/sonora-midi/src/lib.rs": "7a03777ad2ab898bc9d290b5d5b4bfabe98c6f7a10a4626952115a48aad332b8",
+  "crates/sonora-plugin/Cargo.toml": "c9fb637547b5ddf12937662df7f32aaa5b9b76898e21748f0aaaccdb0928a982",
+  "crates/sonora-plugin/src/lib.rs": "af97437f284edb08b467518900c3fb2bb33a8b2d1bf082806f66c32b9793dc41",
+  "crates/sonora-state/Cargo.toml": "d0054d42edeb0670c4435c9f2418734643c927f4a48ba60b87eca41c1bae59ae",
+  "crates/sonora-state/src/lib.rs": "a11c28df404ba76e37ab28409f15d099520712db3ac5fbead1cfd00061ef7194"
+}

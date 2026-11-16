@@ -1,0 +1,9 @@
+[package]
+name = "sonora-core"
+description = "Processing, buffers, parameters and event contracts for Sonora"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+[lints]
+workspace = true

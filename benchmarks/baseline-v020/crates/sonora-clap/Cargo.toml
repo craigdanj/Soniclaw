@@ -1,0 +1,15 @@
+[package]
+name = "sonora-clap"
+description = "CLAP ABI adapter for Sonora instruments and effects"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+[dependencies]
+sonora-core.workspace = true
+sonora-midi.workspace = true
+sonora-plugin = { path = "../sonora-plugin", version = "0.2.0" }
+sonora-state = { path = "../sonora-state", version = "0.2.0" }
+clap-sys = "=0.5.0"
+[lints.rust]
+unsafe_op_in_unsafe_fn = "deny"
