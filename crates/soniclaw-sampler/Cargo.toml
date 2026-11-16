@@ -1,0 +1,12 @@
+[package]
+name = "soniclaw-sampler"
+description = "Bounded multisample instruments with velocity layers and round robin"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+[dependencies]
+soniclaw-core.workspace = true
+soniclaw-dsp.workspace = true
+[lints]
+workspace = true

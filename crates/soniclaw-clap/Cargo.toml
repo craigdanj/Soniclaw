@@ -1,0 +1,20 @@
+[package]
+name = "soniclaw-clap"
+description = "CLAP ABI adapter for Soniclaw instruments and effects"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+[features]
+default = []
+editor = ["dep:soniclaw-editor"]
+
+[dependencies]
+soniclaw-editor = { path = "../soniclaw-editor", version = "0.3.0", optional = true }
+soniclaw-core.workspace = true
+soniclaw-midi.workspace = true
+soniclaw-plugin = { path = "../soniclaw-plugin", version = "0.3.0" }
+soniclaw-state = { path = "../soniclaw-state", version = "0.3.0" }
+clap-sys = "=0.5.0"
+[lints.rust]
+unsafe_op_in_unsafe_fn = "deny"

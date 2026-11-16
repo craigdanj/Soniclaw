@@ -1,0 +1,12 @@
+[package]
+name = "soniclaw-dsp"
+description = "Oscillators, envelopes, filters, effects and polyphonic synthesis"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+[dependencies]
+rustfft = "=6.4.1"
+soniclaw-core.workspace = true
+[lints]
+workspace = true
