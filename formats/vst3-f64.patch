@@ -1,0 +1,93 @@
+--- a/src/wrapasvst3.cpp
++++ b/src/wrapasvst3.cpp
+@@ -269,5 +269,6 @@
+ static void silenceOutputBuffers(Steinberg::Vst::ProcessData &data)
+ {
+-  if (data.symbolicSampleSize != Steinberg::Vst::kSample32) return;
++  const bool wide = data.symbolicSampleSize == Steinberg::Vst::kSample64;
++  if (!wide && data.symbolicSampleSize != Steinberg::Vst::kSample32) return;
+   if (data.numSamples <= 0 || !data.outputs) return;
+ 
+@@ -275,9 +276,12 @@
+   {
+     auto &out = data.outputs[bus];
+-    if (!out.channelBuffers32) continue;
++    if (wide ? !out.channelBuffers64 : !out.channelBuffers32) continue;
++    if (out.numChannels < 0) continue;
+ 
+     for (Steinberg::int32 ch = 0; ch < out.numChannels; ++ch)
+     {
+-      if (out.channelBuffers32[ch])
++      if (wide && out.channelBuffers64[ch])
++        memset(out.channelBuffers64[ch], 0, sizeof(double) * (size_t)data.numSamples);
++      if (!wide && out.channelBuffers32[ch])
+         memset(out.channelBuffers32[ch], 0, sizeof(float) * (size_t)data.numSamples);
+     }
+@@ -307,7 +311,19 @@
+ tresult PLUGIN_API ClapAsVst3::canProcessSampleSize(int32 symbolicSampleSize)
+ {
+-  if (symbolicSampleSize != Steinberg::Vst::kSample32)
+-  {
++  if (symbolicSampleSize == Vst::kSample32)
++    return kResultOk;
++  if (symbolicSampleSize != Vst::kSample64 || !_plugin || !_plugin->_ext._audioports)
+     return kResultFalse;
++
++  const auto *ports = _plugin->_ext._audioports;
++  for (const bool isInput : {true, false})
++  {
++    for (uint32_t i = 0; i < ports->count(_plugin->_plugin, isInput); ++i)
++    {
++      clap_audio_port_info_t info{};
++      if (!ports->get(_plugin->_plugin, i, isInput, &info) ||
++          !(info.flags & CLAP_AUDIO_PORT_SUPPORTS_64BITS))
++        return kResultFalse;
++    }
+   }
+   return kResultOk;
+@@ -445,5 +461,5 @@
+   // plug-in's idle. \see _mainThreadLock
+   std::lock_guard<std::recursive_mutex> mainThreadGuard(_mainThreadLock);
+-  if (newSetup.symbolicSampleSize != Vst::kSample32)
++  if (canProcessSampleSize(newSetup.symbolicSampleSize) != kResultOk)
+   {
+     return kResultFalse;
+--- a/src/detail/vst3/process.cpp
++++ b/src/detail/vst3/process.cpp
+@@ -402,10 +402,18 @@
+   {
+     // setting the buffers
+-    auto inbusses = _audioinputs->size();
+-    for (auto i = 0U; i < inbusses; ++i)
++    const bool wide = data.symbolicSampleSize == Vst::kSample64;
++    const auto inbusses = _audioinputs->size();
++    const auto outbusses = _audiooutputs->size();
++    doProcess = data.numInputs >= 0 && data.numOutputs >= 0 &&
++                static_cast<size_t>(data.numInputs) == inbusses &&
++                static_cast<size_t>(data.numOutputs) == outbusses &&
++                (inbusses == 0 || data.inputs) && (outbusses == 0 || data.outputs);
++    for (auto i = 0U; doProcess && i < inbusses; ++i)
+     {
+       if (_vstdata->inputs[i].numChannels == (Steinberg::int32)_input_ports[i].channel_count)
+       {
+-        _input_ports[i].data32 = _vstdata->inputs[i].channelBuffers32;
++        _input_ports[i].data32 = wide ? nullptr : data.inputs[i].channelBuffers32;
++        _input_ports[i].data64 = wide ? data.inputs[i].channelBuffers64 : nullptr;
++        _input_ports[i].constant_mask = 0;
+       }
+       else
+@@ -415,10 +423,11 @@
+     }
+ 
+-    auto outbusses = _audiooutputs->size();
+-    for (auto i = 0U; i < outbusses; ++i)
++    for (auto i = 0U; doProcess && i < outbusses; ++i)
+     {
+       if (_vstdata->outputs[i].numChannels == (Steinberg::int32)_output_ports[i].channel_count)
+       {
+-        _output_ports[i].data32 = _vstdata->outputs[i].channelBuffers32;
++        _output_ports[i].data32 = wide ? nullptr : data.outputs[i].channelBuffers32;
++        _output_ports[i].data64 = wide ? data.outputs[i].channelBuffers64 : nullptr;
++        _output_ports[i].constant_mask = 0;
+       }
+       else
