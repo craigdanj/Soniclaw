@@ -6,11 +6,11 @@
 [Setup]
 AppId=org.sonora.reference
 AppName=Soniclaw Reference
-AppVersion=0.3.0
+AppVersion=0.146.0
 DefaultDirName={commoncf64}\VST3
 DisableDirPage=yes
 UninstallFilesDir={commonappdata}\Soniclaw\Reference
-OutputBaseFilename=SoniclawReference-0.3.0-Windows
+OutputBaseFilename=SoniclawReference-0.146.0-Windows
 ArchitecturesAllowed=x64compatible
 ArchitecturesInstallIn64BitMode=x64compatible
 PrivilegesRequired=admin
