@@ -3,6 +3,11 @@
 Maintain release notes for every major and minor release, including pre-1.0
 minor releases. Follow `docs/RELEASE.md` and `docs/releases/README.md`.
 
+Every new feature must have a detailed guide covering user workflow, public API,
+runnable examples, lifecycle/thread ownership, persistence and migration, bounds,
+error/recovery behavior, validation evidence and limitations. Link it from the
+README and release notes. Deliver feature batches in separate minor releases.
+
 Keep user-visible changes in `CHANGELOG.md` under Unreleased as work lands.
 Before a versioned release, create `docs/releases/vX.Y.Z.md` using
 `docs/releases/TEMPLATE.md`, update the release index, and move the relevant

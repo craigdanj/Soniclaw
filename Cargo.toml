@@ -1,23 +1,23 @@
 [workspace]
 resolver = "2"
 members = ["crates/*", "examples/*", "tools/cargo-soniclaw", "tools/clap-smoke"]
-exclude = ["benchmarks/baseline-v020"]
+exclude = ["third-party/vst3-host", "benchmarks/baseline-v020"]
 default-members = ["crates/soniclaw", "examples/render", "tools/cargo-soniclaw"]
 
 [workspace.package]
-version = "0.3.0"
+version = "0.146.0"
 edition = "2021"
 license = "MIT OR Apache-2.0"
 rust-version = "1.100"
 
 [workspace.dependencies]
-soniclaw-core = { path = "crates/soniclaw-core", version = "0.3.0" }
-soniclaw-dsp = { path = "crates/soniclaw-dsp", version = "0.3.0" }
-soniclaw-midi = { path = "crates/soniclaw-midi", version = "0.3.0" }
-soniclaw-engine = { path = "crates/soniclaw-engine", version = "0.3.0" }
-soniclaw-device = { path = "crates/soniclaw-device", version = "0.3.0" }
-soniclaw-ui = { path = "crates/soniclaw-ui", version = "0.3.0" }
-soniclaw = { path = "crates/soniclaw", version = "0.3.0" }
+soniclaw-core = { path = "crates/soniclaw-core", version = "0.146.0" }
+soniclaw-dsp = { path = "crates/soniclaw-dsp", version = "0.146.0" }
+soniclaw-midi = { path = "crates/soniclaw-midi", version = "0.146.0" }
+soniclaw-engine = { path = "crates/soniclaw-engine", version = "0.146.0" }
+soniclaw-device = { path = "crates/soniclaw-device", version = "0.146.0" }
+soniclaw-ui = { path = "crates/soniclaw-ui", version = "0.146.0" }
+soniclaw = { path = "crates/soniclaw", version = "0.146.0" }
 
 [profile.release]
 lto = "thin"
@@ -25,3 +25,6 @@ codegen-units = 1
 
 [workspace.lints.rust]
 unsafe_code = "forbid"
+
+[patch.crates-io]
+vst3-host={path="third-party/vst3-host"}
