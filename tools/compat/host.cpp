@@ -31,7 +31,7 @@ struct OutputEvents{unsigned begin=0,values=0,end=0,budget=0xffffffffu;clap_outp
 static clap_event_param_value value(clap_id id,double v,uint32_t time=0){return{{sizeof(clap_event_param_value),time,CLAP_CORE_EVENT_SPACE_ID,CLAP_EVENT_PARAM_VALUE,0},id,nullptr,-1,-1,-1,-1,v};}
 struct State {std::vector<uint8_t> bytes;size_t position=0;clap_ostream writer{this,[](const clap_ostream*s,const void*p,uint64_t n)->int64_t{auto&v=*static_cast<State*>(s->ctx);size_t count=std::min<uint64_t>(n,7);auto*b=static_cast<const uint8_t*>(p);v.bytes.insert(v.bytes.end(),b,b+count);return count;}};clap_istream reader{this,[](const clap_istream*s,void*p,uint64_t n)->int64_t{auto&v=*static_cast<State*>(s->ctx);size_t count=std::min({static_cast<size_t>(n),size_t(5),v.bytes.size()-v.position});memcpy(p,v.bytes.data()+v.position,count);v.position+=count;return count;}};};
 struct Loaded {
- void*lib=nullptr;const clap_plugin_entry*entry=nullptr;const clap_plugin_factory*factory=nullptr;HostData data;clap_host host{CLAP_VERSION,&data,"Soniclaw compatibility host","Soniclaw","","0.3.0",extension,wake,wake,wake};
+ void*lib=nullptr;const clap_plugin_entry*entry=nullptr;const clap_plugin_factory*factory=nullptr;HostData data;clap_host host{CLAP_VERSION,&data,"Soniclaw compatibility host","Soniclaw","","0.7.0",extension,wake,wake,wake};
  explicit Loaded(const char*path){lib=dlopen(path,RTLD_NOW|RTLD_LOCAL);if(!lib)throw std::runtime_error(dlerror());entry=static_cast<const clap_plugin_entry*>(dlsym(lib,"clap_entry"));check(entry&&entry->init(path),"entry init");factory=static_cast<const clap_plugin_factory*>(entry->get_factory(CLAP_PLUGIN_FACTORY_ID));check(factory,"factory");}
  ~Loaded(){if(entry)entry->deinit();if(lib)dlclose(lib);}
 };

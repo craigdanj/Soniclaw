@@ -6,7 +6,7 @@ import argparse,json,os,pathlib,platform,shutil,subprocess,sys
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 def run(args,**kwargs):subprocess.run(list(map(str,args)),check=True,**kwargs)
 def main():
- p=argparse.ArgumentParser(description=__doc__);p.add_argument('--fetch',action='store_true',help='Fetch the explicitly pinned upstream sources');p.add_argument('--deps',type=pathlib.Path,default=ROOT/'vendor/formats');p.add_argument('--build-dir',type=pathlib.Path,default=ROOT/'build/formats');p.add_argument('--au',action='store_true');p.add_argument('--no-editor',action='store_true');p.add_argument('--jobs',type=int,default=2);args=p.parse_args()
+ p=argparse.ArgumentParser(description=__doc__);p.add_argument('--protocol-fixture',action='store_true',help='Build independent Linux musical host fixture');p.add_argument('--fetch',action='store_true',help='Fetch the explicitly pinned upstream sources');p.add_argument('--deps',type=pathlib.Path,default=ROOT/'vendor/formats');p.add_argument('--build-dir',type=pathlib.Path,default=ROOT/'build/formats');p.add_argument('--au',action='store_true');p.add_argument('--no-editor',action='store_true');p.add_argument('--jobs',type=int,default=2);args=p.parse_args()
  if args.au and sys.platform!='darwin':p.error('AUv2 requires macOS and Xcode command-line tools')
  if args.jobs<1:p.error('--jobs must be positive')
  deps=args.deps.resolve();build=args.build_dir.resolve();lock=json.loads((ROOT/'formats/dependencies.json').read_text());identities={}
@@ -26,7 +26,7 @@ def main():
  run(cmd,cwd=ROOT)
  target=pathlib.Path(os.environ.get('CARGO_TARGET_DIR',ROOT/'target'));target=target if target.is_absolute() else ROOT/target
  lib=target/'release'/('soniclaw_reference.lib' if sys.platform=='win32' else 'libsoniclaw_reference.a')
- run([cmake,'-S',ROOT/'formats','-B',build,'-DCMAKE_BUILD_TYPE=Release',f'-DSONICLAW_DEPS={deps}',f'-DSONICLAW_STATIC_LIBRARY={lib}',f'-DSONICLAW_BUILD_AU={"ON" if args.au else "OFF"}'])
+ run([cmake,'-S',ROOT/'formats','-B',build,'-DCMAKE_BUILD_TYPE=Release',f'-DSONICLAW_DEPS={deps}',f'-DSONICLAW_STATIC_LIBRARY={lib}',f'-DSONICLAW_BUILD_PROTOCOL_FIXTURE={"ON" if args.protocol_fixture else "OFF"}',f'-DSONICLAW_BUILD_AU={"ON" if args.au else "OFF"}'])
  run([cmake,'--build',build,'--config','Release','--parallel',args.jobs])
  (build/'soniclaw-format-build.json').write_text(json.dumps({'system':platform.platform(),'upstreams':identities,'editor':not args.no_editor,'au_requested':args.au},indent=2)+'\n')
  print(f'Built format artifacts under {build}; install only after validation.')

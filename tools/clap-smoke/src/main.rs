@@ -87,6 +87,252 @@ fn value(id: u32, amount: f64, time: u32) -> clap_event_param_value {
         value: amount,
     }
 }
+// SAFETY: caller holds the loaded library, host and valid CLAP factory. This host
+// serializes callbacks and owns every buffer/stream for its complete callback.
+unsafe fn project_smoke(factory: &clap_plugin_factory, host: &clap_host) {
+    unsafe {
+        assert_eq!(factory.get_plugin_count.unwrap()(factory), 1);
+        let descriptor = factory.get_plugin_descriptor.unwrap()(factory, 0);
+        assert!(!descriptor.is_null());
+        assert_eq!(
+            CStr::from_ptr((*descriptor).id),
+            c"org.soniclaw.project-rack"
+        );
+        let plugin = factory.create_plugin.unwrap()(factory, host, (*descriptor).id);
+        assert!(!plugin.is_null());
+        let p = &*plugin;
+        assert!(p.init.unwrap()(plugin));
+        let state =
+            &*p.get_extension.unwrap()(plugin, CLAP_EXT_STATE.as_ptr()).cast::<clap_plugin_state>();
+        let save = || {
+            let mut s = Stream {
+                bytes: vec![],
+                position: 0,
+            };
+            let writer = clap_ostream {
+                ctx: (&mut s as *mut Stream).cast(),
+                write: Some(write),
+            };
+            assert!(state.save.unwrap()(plugin, &writer));
+            s.bytes
+        };
+        let load = |bytes: Vec<u8>| {
+            let mut s = Stream { bytes, position: 0 };
+            let reader = clap_istream {
+                ctx: (&mut s as *mut Stream).cast(),
+                read: Some(read),
+            };
+            state.load.unwrap()(plugin, &reader)
+        };
+        let render = || {
+            let (mut left, mut right) = ([0.0_f32; 128], [0.0_f32; 128]);
+            let mut source = [1.0_f32; 128];
+            let mut inputs = [source.as_mut_ptr(), source.as_mut_ptr()];
+            let mut outputs = [left.as_mut_ptr(), right.as_mut_ptr()];
+            let input = clap_audio_buffer {
+                data32: inputs.as_mut_ptr(),
+                data64: ptr::null_mut(),
+                channel_count: 2,
+                latency: 0,
+                constant_mask: 0,
+            };
+            let mut output = clap_audio_buffer {
+                data32: outputs.as_mut_ptr(),
+                data64: ptr::null_mut(),
+                channel_count: 2,
+                latency: 0,
+                constant_mask: 0,
+            };
+            let context = clap_process {
+                steady_time: 0,
+                frames_count: 128,
+                transport: ptr::null(),
+                audio_inputs: &input,
+                audio_outputs: &mut output,
+                audio_inputs_count: 1,
+                audio_outputs_count: 1,
+                in_events: ptr::null(),
+                out_events: ptr::null(),
+            };
+            assert_eq!(p.process.unwrap()(plugin, &context), CLAP_PROCESS_CONTINUE);
+            left
+        };
+        assert!(p.activate.unwrap()(plugin, 48000.0, 1, 128));
+        assert!(p.start_processing.unwrap()(plugin));
+        let original = render();
+        assert!(original.iter().any(|x| x.abs() > 0.001));
+        let bytes = save();
+        let mut document: serde_json::Value = serde_json::from_slice(&bytes).unwrap();
+        assert_eq!(document["schema_version"], 2);
+        assert_eq!(document["nodes"].as_array().unwrap().len(), 6);
+        document["outputs"]["limiter"] = serde_json::json!(0.25);
+        let changed = serde_json::to_vec(&document).unwrap();
+        assert!(!load(changed.clone()));
+        assert_eq!(save(), bytes);
+        p.stop_processing.unwrap()(plugin);
+        p.deactivate.unwrap()(plugin);
+        assert!(load(changed));
+        assert!(p.activate.unwrap()(plugin, 48000.0, 1, 128));
+        assert!(p.start_processing.unwrap()(plugin));
+        let quarter = render();
+        for (a, b) in original.iter().zip(quarter) {
+            assert!((*a * 0.25 - b).abs() < 1e-6);
+        }
+        let before = save();
+        document["parameters"]["gain.gain"] = serde_json::json!(999.0);
+        assert!(!load(serde_json::to_vec(&document).unwrap()));
+        assert_eq!(save(), before);
+        document["parameters"]["gain.gain"] = serde_json::json!(0.5);
+        assert!(load(serde_json::to_vec(&document).unwrap()));
+        render();
+        let actual: serde_json::Value = serde_json::from_slice(&save()).unwrap();
+        assert_eq!(actual["parameters"]["gain.gain"], 0.5);
+        p.stop_processing.unwrap()(plugin);
+        p.deactivate.unwrap()(plugin);
+        p.destroy.unwrap()(plugin);
+        println!("PASS Soniclaw Project Rack: dynamic CLAP export, full graph state, partial-stream restore, active structural guard, deactivated rebuild, scalar staging, malformed-state rejection and rendered routing gain");
+    }
+}
+
+// SAFETY: the caller retains the library and serializes callbacks; every pointer
+// below targets owned live storage for the complete host/plug-in call.
+unsafe fn dsp_smoke(factory: &clap_plugin_factory, host: &clap_host, workbench: bool) {
+    unsafe {
+        let count = if workbench { 4 } else { 2 };
+        assert_eq!(factory.get_plugin_count.unwrap()(factory), count);
+        for index in 0..count {
+            let d = factory.get_plugin_descriptor.unwrap()(factory, index);
+            assert!(!d.is_null());
+            let id = CStr::from_ptr((*d).id);
+            assert_eq!(
+                id,
+                if workbench && index == 0 {
+                    c"org.soniclaw.workbench.fx"
+                } else if workbench && index == 1 {
+                    c"org.soniclaw.workbench.granular"
+                } else if workbench && index == 2 {
+                    c"org.soniclaw.workbench.polymod"
+                } else if workbench {
+                    c"org.soniclaw.workbench.sampler"
+                } else if index == 0 {
+                    c"org.soniclaw.dsp-lab.effect"
+                } else {
+                    c"org.soniclaw.dsp-lab.wavetable"
+                }
+            );
+            let plugin = factory.create_plugin.unwrap()(factory, host, (*d).id);
+            assert!(!plugin.is_null());
+            let p = &*plugin;
+            assert!(p.init.unwrap()(plugin));
+            let params = &*p.get_extension.unwrap()(plugin, CLAP_EXT_PARAMS.as_ptr())
+                .cast::<clap_plugin_params>();
+            assert!(params.count.unwrap()(plugin) >= 6);
+            let state = &*p.get_extension.unwrap()(plugin, CLAP_EXT_STATE.as_ptr())
+                .cast::<clap_plugin_state>();
+            let latency = &*p.get_extension.unwrap()(plugin, CLAP_EXT_LATENCY.as_ptr())
+                .cast::<clap_plugin_latency>();
+            assert!(p.activate.unwrap()(plugin, 48000.0, 1, 256));
+            assert!(p.start_processing.unwrap()(plugin));
+            assert_eq!(
+                latency.get.unwrap()(plugin),
+                if workbench {
+                    252
+                } else if index == 0 {
+                    1276
+                } else {
+                    0
+                }
+            );
+            let mut input = [0.25_f32; 256];
+            let mut inputs = [input.as_mut_ptr(), input.as_mut_ptr()];
+            let mut left = [0.0; 256];
+            let mut right = [0.0; 256];
+            let mut outputs = [left.as_mut_ptr(), right.as_mut_ptr()];
+            let source = clap_audio_buffer {
+                data32: inputs.as_mut_ptr(),
+                data64: ptr::null_mut(),
+                channel_count: 2,
+                latency: 0,
+                constant_mask: 0,
+            };
+            let mut destination = clap_audio_buffer {
+                data32: outputs.as_mut_ptr(),
+                data64: ptr::null_mut(),
+                channel_count: 2,
+                latency: 0,
+                constant_mask: 0,
+            };
+            let note = clap_event_note {
+                header: header::<clap_event_note>(CLAP_EVENT_NOTE_ON, 32),
+                note_id: 77,
+                port_index: 0,
+                channel: 1,
+                key: 60,
+                velocity: 0.8,
+            };
+            let mut events = Events { pointers: vec![] };
+            let list = clap_input_events {
+                ctx: (&mut events as *mut Events).cast(),
+                size: Some(event_size),
+                get: Some(event_get),
+            };
+            let context = clap_process {
+                steady_time: 0,
+                frames_count: 256,
+                transport: ptr::null(),
+                audio_inputs: if index == 0 { &source } else { ptr::null() },
+                audio_outputs: &mut destination,
+                audio_inputs_count: if index == 0 { 1 } else { 0 },
+                audio_outputs_count: 1,
+                in_events: &list,
+                out_events: ptr::null(),
+            };
+            let mut audible = false;
+            for block in 0..32 {
+                events.pointers.clear();
+                if index > 0 && block == 0 {
+                    events
+                        .pointers
+                        .push((&note as *const clap_event_note).cast());
+                }
+                assert_eq!(p.process.unwrap()(plugin, &context), CLAP_PROCESS_CONTINUE);
+                assert!(left.iter().chain(&right).all(|x| x.is_finite()));
+                audible |= left.iter().any(|x| x.abs() > 1e-5);
+            }
+            assert!(audible);
+            let mut stream = Stream {
+                bytes: vec![],
+                position: 0,
+            };
+            let writer = clap_ostream {
+                ctx: (&mut stream as *mut Stream).cast(),
+                write: Some(write),
+            };
+            assert!(state.save.unwrap()(plugin, &writer));
+            let doc: serde_json::Value = serde_json::from_slice(&stream.bytes).unwrap();
+            assert_eq!(doc["schema_version"], 2);
+            assert!(!doc["nodes"].as_array().unwrap().is_empty());
+            let reader = clap_istream {
+                ctx: (&mut stream as *mut Stream).cast(),
+                read: Some(read),
+            };
+            assert!(state.load.unwrap()(plugin, &reader));
+            p.stop_processing.unwrap()(plugin);
+            p.deactivate.unwrap()(plugin);
+            stream.position = 0;
+            assert!(state.load.unwrap()(plugin, &reader));
+            assert!(p.activate.unwrap()(plugin, 48000.0, 1, 256));
+            assert!(p.start_processing.unwrap()(plugin));
+            events.pointers.clear();
+            assert_eq!(p.process.unwrap()(plugin, &context), CLAP_PROCESS_CONTINUE);
+            p.stop_processing.unwrap()(plugin);
+            p.deactivate.unwrap()(plugin);
+            p.destroy.unwrap()(plugin);
+            println!("PASS {}: independent dynamic CLAP load, parameters, note/audio, declared latency, complete-state save, partial-stream scalar restore and stopped rebuild",CStr::from_ptr((*d).name).to_string_lossy());
+        }
+    }
+}
+
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let default = if cfg!(target_os = "windows") {
         "target/debug/soniclaw_clap_demo.dll"
@@ -109,19 +355,34 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         let factory = &*entry.get_factory.unwrap()(CLAP_PLUGIN_FACTORY_ID.as_ptr())
             .cast::<clap_plugin_factory>();
         let count = factory.get_plugin_count.unwrap()(factory);
-        assert_eq!(count, 2);
+        let project_mode = std::env::args().nth(2).as_deref() == Some("--project");
+        let dsp_mode = std::env::args().nth(2).as_deref() == Some("--dsp");
+        let workbench_mode = std::env::args().nth(2).as_deref() == Some("--workbench");
+        if !project_mode && !dsp_mode && !workbench_mode {
+            assert_eq!(count, 2);
+        }
         let host = clap_host {
             clap_version: CLAP_VERSION,
             host_data: ptr::null_mut(),
             name: c"Soniclaw independent smoke host".as_ptr(),
             vendor: c"Soniclaw tests".as_ptr(),
             url: c"".as_ptr(),
-            version: c"0.3.0".as_ptr(),
+            version: c"0.146.0".as_ptr(),
             get_extension: Some(host_extension),
             request_restart: Some(request),
             request_process: Some(request),
             request_callback: Some(request),
         };
+        if dsp_mode || workbench_mode {
+            dsp_smoke(factory, &host, workbench_mode);
+            entry.deinit.unwrap()();
+            return Ok(());
+        }
+        if project_mode {
+            project_smoke(factory, &host);
+            entry.deinit.unwrap()();
+            return Ok(());
+        }
         for index in 0..count {
             let descriptor = factory.get_plugin_descriptor.unwrap()(factory, index);
             assert!(!descriptor.is_null());

@@ -28,7 +28,7 @@ if args.platform == 'macos':
     binary.chmod(binary.stat().st_mode | 0o111)
     with (destination / 'Contents' / 'Info.plist').open('wb') as file:
         plistlib.dump({'CFBundleName': args.name, 'CFBundleExecutable': args.name, 'CFBundleIdentifier': args.identifier,
-                      'CFBundlePackageType': 'BNDL', 'CFBundleVersion': '0.3.0', 'CFBundleShortVersionString': '0.3.0'}, file)
+                      'CFBundlePackageType': 'BNDL', 'CFBundleVersion': '0.146.0', 'CFBundleShortVersionString': '0.146.0'}, file)
 else:
     shutil.copy2(args.library, destination)
 print(destination.resolve())
