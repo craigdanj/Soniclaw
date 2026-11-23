@@ -18,7 +18,7 @@ fn create(instrument: bool) -> PluginInstance {
     );
     let mut engine = Engine::default();
     if instrument {
-        engine.push(PolySynth::<16>::default());
+        engine.push(soniclaw::dsp::ExpressiveSynth::<16>::default());
     }
     engine.push(Gain::new(gain.clone()));
     PluginInstance::new(
@@ -47,14 +47,14 @@ static GAIN: soniclaw_clap::ClapDescriptor = descriptor(
     c"org.sonora.gain",
     c"Soniclaw Gain",
     c"Soniclaw",
-    c"0.3.0",
+    c"0.146.0",
     false,
 );
 static SYNTH: soniclaw_clap::ClapDescriptor = descriptor(
     c"org.sonora.synth",
     c"Soniclaw Synth",
     c"Soniclaw",
-    c"0.3.0",
+    c"0.146.0",
     true,
 );
 soniclaw_clap::export_clap!([

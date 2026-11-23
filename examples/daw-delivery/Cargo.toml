@@ -1,0 +1,15 @@
+[package]
+name="soniclaw-daw-delivery"
+version.workspace=true
+edition.workspace=true
+license.workspace=true
+rust-version.workspace=true
+publish=false
+[dependencies]
+soniclaw={workspace=true,features=["studio-hosting"]}
+soniclaw-host={path="../../crates/soniclaw-host",version="0.146.0",features=["studio","vst3"]}
+soniclaw-vst3={path="../../crates/soniclaw-vst3",version="0.146.0"}
+serde_json="1"
+hound="=3.5.1"
+[lints.rust]
+unsafe_op_in_unsafe_fn="deny"

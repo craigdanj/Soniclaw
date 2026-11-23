@@ -1,0 +1,15 @@
+[package]
+name="soniclaw-clip-studio"
+version.workspace=true
+edition.workspace=true
+license.workspace=true
+rust-version.workspace=true
+publish=false
+[dependencies]
+soniclaw={workspace=true,features=["ui"]}
+serde_json="1"
+hound="3.5"
+image={version="=0.25.10",default-features=false,features=["png"]}
+eframe={version="=0.36.1",default-features=false,features=["accesskit","glow","x11","wayland","default_fonts"]}
+[lints]
+workspace=true

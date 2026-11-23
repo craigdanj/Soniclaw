@@ -1,0 +1,11 @@
+[package]
+name="soniclaw-clap-isolation-helper"
+version.workspace=true
+edition.workspace=true
+license.workspace=true
+rust-version.workspace=true
+publish=false
+[dependencies]
+soniclaw-host={path="../../crates/soniclaw-host",version="0.146.0"}
+[lints.rust]
+unsafe_op_in_unsafe_fn="deny"
