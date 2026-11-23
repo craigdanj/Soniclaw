@@ -326,3 +326,7 @@ mod tests {
         assert_eq!(output, [0.0; 2048]);
     }
 }
+
+pub mod flex;
+
+pub mod multigraph;

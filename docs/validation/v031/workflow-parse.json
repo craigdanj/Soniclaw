@@ -1,0 +1,9 @@
+{
+  "yaml_parse": "passed",
+  "platform_jobs": [
+    "ubuntu-latest",
+    "windows-latest",
+    "macos-latest"
+  ],
+  "remote_execution": "not_run"
+}

@@ -1,0 +1,17 @@
+[package]
+name = "soniclaw-project-plugin"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+publish = false
+[lib]
+crate-type = ["cdylib", "rlib"]
+[features]
+default = ["editor"]
+editor = ["soniclaw-clap/editor"]
+[dependencies]
+soniclaw.workspace = true
+soniclaw-clap = { path = "../../crates/soniclaw-clap", version = "0.146.0" }
+[lints]
+workspace = true

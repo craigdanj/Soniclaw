@@ -1,0 +1,21 @@
+   Compiling soniclaw-core v0.48.0 (/workspace/scratch/cd89c8ef929d/desktop-series/soniclaw/crates/soniclaw-core)
+   Compiling soniclaw-graph v0.48.0 (/workspace/scratch/cd89c8ef929d/desktop-series/soniclaw/crates/soniclaw-graph)
+    Finished `test` profile [unoptimized] target(s) in 0.77s
+     Running unittests src/lib.rs (target/debug/build/soniclaw-graph/383396ce659136e2/out/soniclaw_graph-383396ce659136e2)
+
+running 6 tests
+test live::tests::exact_fade_and_control_retirement ... ok
+test tests::cycles_and_duplicate_edges_are_rejected ... ok
+test latency_tests::fanin_and_output_buses_are_latency_aligned ... ok
+test tests::parallel_branches_sum_and_handle_variable_lengths ... ok
+test parallel::tests::missed_deadline_silences_and_reset_rejects_old_packets ... ok
+test parallel::tests::concurrent_branches_dependency_sum_and_bounded_callback ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_graph
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

@@ -1,0 +1,23 @@
+{
+  "cases": [
+    {
+      "audio": "drive-2x.wav",
+      "callback_allocations": 0,
+      "factor": 2,
+      "latency_frames": 64
+    },
+    {
+      "audio": "drive-4x.wav",
+      "callback_allocations": 0,
+      "factor": 4,
+      "latency_frames": 96
+    },
+    {
+      "audio": "drive-8x.wav",
+      "callback_allocations": 0,
+      "factor": 8,
+      "latency_frames": 112
+    }
+  ],
+  "version": "0.89.0"
+}

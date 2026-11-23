@@ -1,0 +1,20 @@
+{
+  "feature": "articulations",
+  "results": {
+    "callback_allocations": 0,
+    "default_switch": 24,
+    "preload_budget_bytes": 230272,
+    "release_active_voices_after_512_frames": [
+      [
+        24,
+        0
+      ],
+      [
+        25,
+        1
+      ]
+    ],
+    "worker_pages_read": 2
+  },
+  "version": "0.112.0"
+}

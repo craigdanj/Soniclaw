@@ -1,0 +1,94 @@
+{
+  "schema_version": 2,
+  "product_id": "org.soniclaw.project-rack",
+  "name": "Soniclaw Project Rack",
+  "parameters": {
+    "chorus.depth_ms": 3.0,
+    "chorus.mix": 0.15,
+    "chorus.rate_hz": 0.7,
+    "compressor.attack_ms": 10.0,
+    "compressor.knee_db": 6.0,
+    "compressor.makeup_db": 0.0,
+    "compressor.ratio": 4.0,
+    "compressor.release_ms": 100.0,
+    "compressor.threshold_db": -18.0,
+    "eq.frequency": 1000.0,
+    "eq.gain_db": 9.0,
+    "eq.q": 1.0,
+    "gain.gain": 1.0,
+    "limiter.ceiling_db": -1.0,
+    "limiter.release_ms": 80.0,
+    "reverb.mix": 0.12,
+    "reverb.rt60": 0.8
+  },
+  "assets": [],
+  "zones": [],
+  "nodes": [
+    {
+      "id": "eq",
+      "kind": "eq",
+      "settings": {},
+      "input_gain": 1.0
+    },
+    {
+      "id": "compressor",
+      "kind": "compressor",
+      "settings": {},
+      "input_gain": 0.0
+    },
+    {
+      "id": "chorus",
+      "kind": "chorus",
+      "settings": {},
+      "input_gain": 0.0
+    },
+    {
+      "id": "reverb",
+      "kind": "reverb",
+      "settings": {},
+      "input_gain": 0.0
+    },
+    {
+      "id": "gain",
+      "kind": "gain",
+      "settings": {},
+      "input_gain": 0.0
+    },
+    {
+      "id": "limiter",
+      "kind": "limiter",
+      "settings": {},
+      "input_gain": 0.0
+    }
+  ],
+  "connections": [
+    {
+      "from": "eq",
+      "to": "compressor",
+      "gain": 1.0
+    },
+    {
+      "from": "compressor",
+      "to": "chorus",
+      "gain": 1.0
+    },
+    {
+      "from": "chorus",
+      "to": "reverb",
+      "gain": 1.0
+    },
+    {
+      "from": "reverb",
+      "to": "gain",
+      "gain": 1.0
+    },
+    {
+      "from": "gain",
+      "to": "limiter",
+      "gain": 1.0
+    }
+  ],
+  "outputs": {
+    "limiter": 1.0
+  }
+}

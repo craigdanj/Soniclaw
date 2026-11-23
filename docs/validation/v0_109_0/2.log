@@ -1,0 +1,18 @@
+    Checking soniclaw-core v0.109.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-core)
+    Checking soniclaw-kernels v0.109.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-kernels)
+    Checking libc v0.2.191
+    Checking bitflags v2.13.2
+    Checking soniclaw-tuning v0.109.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-tuning)
+    Checking dasp_sample v0.11.0
+    Checking soniclaw-dsp v0.109.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-dsp)
+    Checking soniclaw-engine v0.109.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-engine)
+    Checking soniclaw-record v0.109.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-record)
+    Checking allocation-counter v0.8.1
+    Checking alsa-sys v0.3.1
+    Checking alsa v0.9.1
+    Checking cpal v0.15.3
+    Checking soniclaw-device v0.109.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-device)
+    Checking soniclaw-quality v0.109.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-quality)
+    Checking soniclaw-hybrid-instrument v0.109.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/hybrid-instrument)
+    Checking soniclaw-dsp-suite v0.109.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/dsp-suite)
+    Finished `dev` profile [unoptimized] target(s) in 4.00s

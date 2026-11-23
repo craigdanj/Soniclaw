@@ -1,0 +1,36 @@
+{
+  "dropped_frames": 0,
+  "frames": 25600,
+  "physical_device_opened": false,
+  "plan": {
+    "buffer_frames": 256,
+    "channels": 2,
+    "duplex": {
+      "input": {
+        "name": "Synthetic interface",
+        "occurrence": 0
+      },
+      "input_channels": [
+        0,
+        0
+      ],
+      "output_channels": [
+        0,
+        1
+      ],
+      "use_default_input": false
+    },
+    "format": "F32",
+    "hardware_channels": 2,
+    "host": "Synthetic",
+    "max_internal_frames": 256,
+    "output": {
+      "name": "Synthetic interface",
+      "occurrence": 0
+    },
+    "sample_rate": 48000,
+    "used_fallback": false
+  },
+  "synthetic_only": true,
+  "written_frames": 25600
+}

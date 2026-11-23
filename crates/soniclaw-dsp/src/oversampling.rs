@@ -116,6 +116,13 @@ impl AudioProcessor for OversampledDrive {
         31
     }
 }
+impl OversampledDrive {
+    pub(crate) fn update_live(&mut self, drive: f32, wet: f32) {
+        self.drive = drive;
+        self.wet = wet;
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -149,3 +156,9 @@ mod tests {
         }
     }
 }
+
+mod multirate;
+pub use multirate::{Config, Factor, Oversampled, Oversampler, Quality};
+
+mod unified;
+pub use unified::*;

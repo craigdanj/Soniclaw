@@ -1,0 +1,103 @@
+[
+  {
+    "check": "fmt",
+    "command": [
+      "cargo",
+      "fmt",
+      "--all",
+      "--check"
+    ],
+    "exit_code": 0,
+    "seconds": 1.259
+  },
+  {
+    "check": "clippy",
+    "command": [
+      "cargo",
+      "clippy",
+      "--workspace",
+      "--all-targets",
+      "--all-features",
+      "--locked",
+      "--offline",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "exit_code": 0,
+    "seconds": 12.37
+  },
+  {
+    "check": "tests",
+    "command": [
+      "cargo",
+      "test",
+      "--workspace",
+      "--all-features",
+      "--locked",
+      "--offline"
+    ],
+    "exit_code": 0,
+    "seconds": 33.887
+  },
+  {
+    "check": "docs",
+    "command": [
+      "cargo",
+      "doc",
+      "--workspace",
+      "--all-features",
+      "--no-deps",
+      "--locked",
+      "--offline"
+    ],
+    "exit_code": 0,
+    "seconds": 25.779
+  },
+  {
+    "check": "build",
+    "command": [
+      "cargo",
+      "build",
+      "-p",
+      "soniclaw-workbench",
+      "-p",
+      "soniclaw-sdk-tools",
+      "-p",
+      "soniclaw-host-fixture",
+      "-p",
+      "soniclaw-reference",
+      "-p",
+      "soniclaw-clap-smoke",
+      "--locked",
+      "--offline"
+    ],
+    "exit_code": 0,
+    "seconds": 9.616
+  },
+  {
+    "check": "transport-demo",
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-sdk-tools",
+      "--locked",
+      "--offline",
+      "--",
+      "--transport-demo",
+      "target/debug/libsoniclaw_host_fixture.so",
+      "/workspace/scratch/cd89c8ef929d/verification-series/v021/transport-demo"
+    ],
+    "exit_code": 0,
+    "seconds": 0.977
+  },
+  {
+    "check": "native-gui",
+    "command": [
+      "python3",
+      "capture-v021.py"
+    ],
+    "exit_code": 0
+  }
+]

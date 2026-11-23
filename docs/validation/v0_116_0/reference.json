@@ -1,0 +1,30 @@
+{
+  "scipy_version": "1.17.0",
+  "iir": [
+    {
+      "family": "butter",
+      "scipy_order": 13,
+      "soniclaw_order": 13,
+      "max_response_error_db": 7.105427357601002e-14
+    },
+    {
+      "family": "cheby1",
+      "scipy_order": 8,
+      "soniclaw_order": 8,
+      "max_response_error_db": 5.828670879282072e-14
+    },
+    {
+      "family": "cheby2",
+      "scipy_order": 8,
+      "soniclaw_order": 8,
+      "comparison": "Order only. Soniclaw anchors Type II at the specified stop edge."
+    },
+    {
+      "family": "ellip",
+      "scipy_order": 5,
+      "soniclaw_order": 5,
+      "max_response_error_db": 5.945821612840518e-11
+    }
+  ],
+  "fir_max_tap_error": 2.275957200481571e-13
+}

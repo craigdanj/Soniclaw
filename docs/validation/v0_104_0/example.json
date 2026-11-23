@@ -1,0 +1,10 @@
+{
+  "feature": "stream-resample",
+  "results": {
+    "callback_allocations": 0,
+    "input_frames": 22050,
+    "lookahead": 40,
+    "rendered_frames": 19060
+  },
+  "version": "0.104.0"
+}

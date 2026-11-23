@@ -1,0 +1,4 @@
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running `target/debug/soniclaw-clap-smoke target/debug/libsoniclaw_dsp_lab.so --dsp`
+PASS Soniclaw DSP Lab FX: independent dynamic CLAP load, parameters, note/audio, declared latency, complete-state save, partial-stream scalar restore and stopped rebuild
+PASS Soniclaw Wavetable Lab: independent dynamic CLAP load, parameters, note/audio, declared latency, complete-state save, partial-stream scalar restore and stopped rebuild

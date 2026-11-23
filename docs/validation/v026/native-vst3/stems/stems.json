@@ -1,0 +1,27 @@
+{
+  "plan": {
+    "block_frames": 256,
+    "channels": 2,
+    "compensate_latency": true,
+    "frames": 256,
+    "sample_rate": 48000.0,
+    "schema": 1,
+    "tail_frames": 32,
+    "tempo": 120.0
+  },
+  "schema": 1,
+  "stems": [
+    {
+      "file": "A.wav",
+      "frames": 288,
+      "name": "A",
+      "trimmed_latency": 0
+    },
+    {
+      "file": "B.wav",
+      "frames": 288,
+      "name": "B",
+      "trimmed_latency": 0
+    }
+  ]
+}

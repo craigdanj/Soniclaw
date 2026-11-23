@@ -1,0 +1,193 @@
+{
+  "arch": "x86_64",
+  "os": "linux",
+  "profile": "release",
+  "results": [
+    {
+      "backend": "Scalar",
+      "measurements": {
+        "dot": {
+          "median_ns": 2805029,
+          "repeats": 1000,
+          "samples_per_call": 4096,
+          "timings_ns": [
+            2529910,
+            2582375,
+            2672240,
+            2805029,
+            2857749,
+            2904917,
+            3632819
+          ]
+        },
+        "gain": {
+          "median_ns": 499980,
+          "repeats": 1000,
+          "samples_per_call": 4096,
+          "timings_ns": [
+            295197,
+            404744,
+            453088,
+            499980,
+            817948,
+            836186,
+            846522
+          ]
+        },
+        "interleave": {
+          "median_ns": 933923,
+          "repeats": 1000,
+          "samples_per_call": 4096,
+          "timings_ns": [
+            789768,
+            835654,
+            932383,
+            933923,
+            1008840,
+            1010421,
+            1095477
+          ]
+        },
+        "mix_add": {
+          "median_ns": 412723,
+          "repeats": 1000,
+          "samples_per_call": 4096,
+          "timings_ns": [
+            319128,
+            376058,
+            405363,
+            412723,
+            455637,
+            515026,
+            639597
+          ]
+        }
+      }
+    },
+    {
+      "backend": "Sse2",
+      "measurements": {
+        "dot": {
+          "median_ns": 2789625,
+          "repeats": 1000,
+          "samples_per_call": 4096,
+          "timings_ns": [
+            2557464,
+            2571217,
+            2581131,
+            2789625,
+            2842333,
+            2925747,
+            2953081
+          ]
+        },
+        "gain": {
+          "median_ns": 189319,
+          "repeats": 1000,
+          "samples_per_call": 4096,
+          "timings_ns": [
+            188884,
+            188949,
+            189057,
+            189319,
+            221059,
+            258329,
+            285268
+          ]
+        },
+        "interleave": {
+          "median_ns": 1124006,
+          "repeats": 1000,
+          "samples_per_call": 4096,
+          "timings_ns": [
+            743479,
+            903827,
+            1081977,
+            1124006,
+            1231408,
+            1257206,
+            1452840
+          ]
+        },
+        "mix_add": {
+          "median_ns": 324509,
+          "repeats": 1000,
+          "samples_per_call": 4096,
+          "timings_ns": [
+            312873,
+            312910,
+            312943,
+            324509,
+            360501,
+            384852,
+            450907
+          ]
+        }
+      }
+    },
+    {
+      "backend": "Avx2",
+      "measurements": {
+        "dot": {
+          "median_ns": 3160232,
+          "repeats": 1000,
+          "samples_per_call": 4096,
+          "timings_ns": [
+            2894571,
+            2962200,
+            3119590,
+            3160232,
+            3174818,
+            3185573,
+            4707180
+          ]
+        },
+        "gain": {
+          "median_ns": 317403,
+          "repeats": 1000,
+          "samples_per_call": 4096,
+          "timings_ns": [
+            239247,
+            239274,
+            241644,
+            317403,
+            340801,
+            427506,
+            437848
+          ]
+        },
+        "interleave": {
+          "median_ns": 1056292,
+          "repeats": 1000,
+          "samples_per_call": 4096,
+          "timings_ns": [
+            883286,
+            912850,
+            965215,
+            1056292,
+            1110673,
+            1243639,
+            1504275
+          ]
+        },
+        "mix_add": {
+          "median_ns": 355026,
+          "repeats": 1000,
+          "samples_per_call": 4096,
+          "timings_ns": [
+            271017,
+            271072,
+            271076,
+            355026,
+            371927,
+            379306,
+            381857
+          ]
+        }
+      }
+    }
+  ],
+  "schema": 1,
+  "scope": "Microbenchmarks on this machine; no application or universal speedup claim.",
+  "selected": "Avx2"
+}

@@ -1,0 +1,227 @@
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.27
+   Compiling quote v1.0.47
+   Compiling autocfg v1.5.1
+   Compiling serde_core v1.0.229
+   Compiling cfg-if v1.0.5
+   Compiling num-traits v0.2.19
+   Compiling once_cell v1.21.4
+   Compiling syn v3.0.10
+   Compiling serde v1.0.229
+   Compiling bitflags v2.13.2
+   Compiling version_check v0.9.5
+   Compiling soniclaw-core v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-core)
+   Compiling libc v0.2.191
+   Compiling num-integer v0.1.47
+   Compiling rtrb v0.3.5
+   Compiling bytemuck_derive v1.12.1
+   Compiling serde_derive v1.0.229
+   Compiling smallvec v1.16.5
+   Compiling strength_reduce v0.2.4
+   Compiling transpose v0.2.3
+   Compiling primal-check v0.3.4
+   Compiling num-complex v0.4.6
+   Compiling bytemuck v1.25.2
+   Compiling log v0.4.35
+   Compiling rustfft v6.4.1
+   Compiling rustix v1.1.6
+   Compiling arrayvec v0.7.8
+   Compiling zmij v1.0.23
+   Compiling polycool v0.4.0
+   Compiling thiserror v2.0.21
+   Compiling serde_json v1.0.154
+   Compiling linux-raw-sys v0.12.1
+   Compiling kurbo v0.13.1
+   Compiling soniclaw-dsp v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-dsp)
+   Compiling color v0.3.3
+   Compiling font-types v0.12.7
+   Compiling thiserror-impl v2.0.21
+   Compiling euclid v0.22.14
+   Compiling parking_lot_core v0.9.12
+   Compiling linebender_resource_handle v0.1.1
+   Compiling zerocopy v0.8.63
+   Compiling memchr v2.8.3
+   Compiling itoa v1.0.19
+   Compiling peniko v0.6.1
+   Compiling guillotiere v0.7.0
+   Compiling read-fonts v0.41.0
+   Compiling soniclaw-transport v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-transport)
+   Compiling ahash v0.8.12
+   Compiling libloading v0.8.9
+   Compiling scopeguard v1.2.0
+   Compiling unicode-general-category v1.1.0
+   Compiling foldhash v0.2.0
+   Compiling fearless_simd v0.4.1
+   Compiling vello_common v0.1.0
+   Compiling hashbrown v0.17.1
+   Compiling lock_api v0.4.14
+   Compiling soniclaw-automation v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-automation)
+   Compiling soniclaw-midi v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-midi)
+   Compiling emath v0.36.2
+   Compiling ecolor v0.36.2
+   Compiling soniclaw-state v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-state)
+   Compiling parking_lot v0.12.5
+   Compiling vello_cpu v0.1.0
+   Compiling skrifa v0.44.0
+   Compiling harfrust v0.12.0
+   Compiling gethostname v1.1.0
+   Compiling generic-array v0.14.7
+   Compiling uuid v1.29.2
+   Compiling pkg-config v0.3.34
+   Compiling xcursor v0.3.11
+   Compiling either v1.19.0
+   Compiling self_cell v1.3.0
+   Compiling profiling v1.0.18
+   Compiling unicode-segmentation v1.13.3
+   Compiling nohash-hasher v0.2.0
+   Compiling epaint_default_fonts v0.36.2
+   Compiling x11rb-protocol v0.13.2
+   Compiling as-raw-xcb-connection v1.0.1
+   Compiling epaint v0.36.2
+   Compiling x11rb v0.13.2
+   Compiling itertools v0.15.0
+   Compiling x11-dl v2.21.0
+   Compiling accesskit v0.24.1
+   Compiling pin-project-lite v0.2.17
+   Compiling typenum v1.20.1
+   Compiling tracing-core v0.1.36
+   Compiling tracing v0.1.44
+   Compiling egui v0.36.1
+   Compiling dlib v0.5.3
+   Compiling polling v3.11.0
+   Compiling soniclaw-engine v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-engine)
+   Compiling is-docker v0.2.0
+   Compiling slab v0.4.12
+   Compiling xkeysym v0.2.1
+   Compiling calloop v0.14.4
+   Compiling xkbcommon-dl v0.4.2
+   Compiling soniclaw-bus v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-bus)
+   Compiling is-wsl v0.4.0
+   Compiling x11-clipboard v0.9.3
+   Compiling keyboard-types v0.8.3
+   Compiling dpi v0.1.2
+   Compiling percent-encoding v2.3.2
+   Compiling glow v0.17.0
+   Compiling raw-window-handle v0.6.2
+   Compiling hound v3.5.1
+   Compiling baseview v0.3.4
+   Compiling egui_glow v0.36.1
+   Compiling copypasta v0.10.2
+   Compiling open v5.4.5
+   Compiling soniclaw-plugin v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-plugin)
+   Compiling crypto-common v0.1.7
+   Compiling block-buffer v0.10.4
+   Compiling digest v0.10.7
+   Compiling egui-baseview v0.7.2
+   Compiling soniclaw-ui v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-ui)
+   Compiling cpufeatures v0.2.17
+   Compiling sha2 v0.10.9
+   Compiling soniclaw-editor v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-editor)
+   Compiling soniclaw-diagnostics v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-diagnostics)
+   Compiling soniclaw-stream v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-stream)
+   Compiling soniclaw-io v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-io)
+   Compiling soniclaw-record v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-record)
+   Compiling soniclaw-registry v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-registry)
+   Compiling soniclaw-session v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-session)
+   Compiling soniclaw-sampler v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-sampler)
+   Compiling soniclaw-graph v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-graph)
+   Compiling clap-sys v0.5.0
+   Compiling soniclaw v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw)
+   Compiling soniclaw-clap v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-clap)
+   Compiling soniclaw-reference v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/reference)
+    Finished `release` profile [optimized] target(s) in 2m 48s
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- [clap-wrapper]: OSX_DEPLOYMENT_TARGET is undefined. Setting to 10.13
+-- [clap-wrapper]: CMAKE_OSX_ARCHITECTURES is not set. Using native build for clap wrapper
+-- clap-wrapper: CLAP_WRAPPER_VERSION is 0.17.0
+-- clap-wrapper: Building with C++ standard 17
+-- clap-wrapper: using gcc/llvm-clang compile options
+-- clap-wrapper: Warnings are Errors
+-- clap-wrapper: source dir is /workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/clap-wrapper, platform is LIN
+-- clap-wrapper: Configuring clap sdk
+-- CLAP version: 1.2.10
+-- clap-wrapper: using included fmt library since no fmt-header-only available
+-- clap-wrapper: VST3 version: 3.8.0; VST3 Root /workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk
+-- clap-wrapper: Adding VST3 Wrapper to target soniclaw_vst3 generating 'SoniclawReference.vst3'
+-- clap-wrapper: Building the VST3 Bundle Folder using the CMAKE_SYSTEM_PROCESSOR variable: (x86_64)
+CMake Warning at /workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/clap-wrapper/cmake/wrap_vst3.cmake:202 (message):
+  RESOURCE_DIRECTORY defined, but not (yet) supported for Unix VST3s
+Call Stack (most recent call first):
+  CMakeLists.txt:28 (target_add_vst3_wrapper)
+
+
+-- Configuring done (1.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: /workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/build/formats
+[  1%] Building CXX object wrapper/CMakeFiles/clap-wrapper-shared-detail.dir/src/clap_proxy.cpp.o
+[  3%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/base/source/baseiids.cpp.o
+[  5%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/base/source/fbuffer.cpp.o
+[  7%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/base/source/fdebug.cpp.o
+[  8%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/base/source/fdynlib.cpp.o
+[ 10%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/base/source/fobject.cpp.o
+[ 12%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/base/source/fstreamer.cpp.o
+[ 14%] Building CXX object wrapper/CMakeFiles/clap-wrapper-shared-detail.dir/src/detail/shared/sha1.cpp.o
+[ 16%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/base/source/fstring.cpp.o
+[ 17%] Building CXX object wrapper/CMakeFiles/clap-wrapper-shared-detail.dir/src/detail/shared/util.cpp.o
+[ 19%] Building CXX object wrapper/CMakeFiles/clap-wrapper-shared-detail.dir/src/detail/clap/fsutil.cpp.o
+[ 21%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/base/source/timer.cpp.o
+[ 23%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/base/source/updatehandler.cpp.o
+[ 25%] Building CXX object wrapper/CMakeFiles/clap-wrapper-shared-detail.dir/src/detail/clap/preset_discovery.cpp.o
+[ 26%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/base/thread/source/fcondition.cpp.o
+[ 28%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/base/thread/source/flock.cpp.o
+[ 30%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/pluginterfaces/base/conststringtable.cpp.o
+[ 32%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/pluginterfaces/base/coreiids.cpp.o
+[ 33%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/pluginterfaces/base/funknown.cpp.o
+[ 35%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/pluginterfaces/base/ustring.cpp.o
+[ 37%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/public.sdk/source/common/commoniids.cpp.o
+[ 39%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/public.sdk/source/common/commonstringconvert.cpp.o
+[ 41%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/public.sdk/source/common/memorystream.cpp.o
+[ 42%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/public.sdk/source/common/openurl.cpp.o
+[ 44%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/public.sdk/source/common/pluginview.cpp.o
+[ 46%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/public.sdk/source/common/readfile.cpp.o
+[ 48%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/public.sdk/source/common/systemclipboard_linux.cpp.o
+[ 50%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/public.sdk/source/common/systemclipboard_win32.cpp.o
+[ 51%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/public.sdk/source/common/threadchecker_linux.cpp.o
+[ 53%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/public.sdk/source/common/threadchecker_win32.cpp.o
+[ 55%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/public.sdk/source/main/linuxmain.cpp.o
+[ 57%] Linking CXX static library libclap-wrapper-shared-detail.a
+[ 58%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/public.sdk/source/main/pluginfactory.cpp.o
+[ 58%] Built target clap-wrapper-shared-detail
+[ 60%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/public.sdk/source/main/moduleinit.cpp.o
+[ 62%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/public.sdk/source/vst/vstinitiids.cpp.o
+[ 64%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/public.sdk/source/vst/vstnoteexpressiontypes.cpp.o
+[ 66%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/public.sdk/source/vst/vstsinglecomponenteffect.cpp.o
+[ 67%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/public.sdk/source/vst/vstaudioeffect.cpp.o
+[ 69%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/public.sdk/source/vst/vstcomponent.cpp.o
+[ 71%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/public.sdk/source/vst/vstcomponentbase.cpp.o
+[ 73%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/public.sdk/source/vst/vstbus.cpp.o
+[ 75%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/public.sdk/source/vst/vstparameters.cpp.o
+[ 76%] Building CXX object CMakeFiles/base-sdk-vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/public.sdk/source/vst/utility/stringconvert.cpp.o
+[ 78%] Linking CXX static library libbase-sdk-vst3.a
+[ 78%] Built target base-sdk-vst3
+[ 82%] Building CXX object CMakeFiles/soniclaw_vst3-clap-wrapper-vst3-lib.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/clap-wrapper/src/detail/os/linux.cpp.o
+[ 82%] Building CXX object CMakeFiles/soniclaw_vst3-clap-wrapper-vst3-lib.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/clap-wrapper/src/wrapasvst3.cpp.o
+[ 83%] Building CXX object CMakeFiles/soniclaw_vst3-clap-wrapper-vst3-lib.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/clap-wrapper/src/wrapasvst3_entry.cpp.o
+[ 85%] Building CXX object CMakeFiles/soniclaw_vst3-clap-wrapper-vst3-lib.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/clap-wrapper/src/detail/vst3/parameter.cpp.o
+[ 87%] Building CXX object CMakeFiles/soniclaw_vst3-clap-wrapper-vst3-lib.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/clap-wrapper/src/detail/vst3/plugview.cpp.o
+[ 89%] Building CXX object CMakeFiles/soniclaw_vst3-clap-wrapper-vst3-lib.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/clap-wrapper/src/detail/vst3/process.cpp.o
+[ 91%] Building CXX object CMakeFiles/soniclaw_vst3-clap-wrapper-vst3-lib.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/clap-wrapper/src/detail/vst3/categories.cpp.o
+[ 92%] Building CXX object CMakeFiles/soniclaw_vst3-clap-wrapper-vst3-lib.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/clap-wrapper/src/detail/vst3/channelmap.cpp.o
+[ 94%] Linking CXX static library libsoniclaw_vst3-clap-wrapper-vst3-lib.a
+[ 94%] Built target soniclaw_vst3-clap-wrapper-vst3-lib
+[ 96%] Building CXX object CMakeFiles/soniclaw_vst3.dir/entry.cpp.o
+[ 98%] Building CXX object CMakeFiles/soniclaw_vst3.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/clap-wrapper/src/wrapasvst3_export_entry.cpp.o
+[100%] Linking CXX shared module Release/SoniclawReference.vst3/Contents/x86_64-linux/SoniclawReference.so
+[100%] Built target soniclaw_vst3
+Built format artifacts under /workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/build/formats; install only after validation.

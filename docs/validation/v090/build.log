@@ -1,0 +1,11 @@
+   Compiling soniclaw-diagnostics v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/crates/soniclaw-diagnostics)
+   Compiling soniclaw-clap-smoke v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/tools/clap-smoke)
+   Compiling soniclaw-host-fixture v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/examples/host-fixture)
+   Compiling cargo-soniclaw v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/tools/cargo-soniclaw)
+   Compiling soniclaw v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/crates/soniclaw)
+   Compiling soniclaw-workbench v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/examples/workbench)
+   Compiling soniclaw-dsp-lab v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/examples/dsp-lab)
+   Compiling soniclaw-clap-demo v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/examples/clap-demo)
+   Compiling soniclaw-project-plugin v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/examples/project-plugin)
+   Compiling soniclaw-sdk-tools v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/examples/sdk-tools)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 5.56s

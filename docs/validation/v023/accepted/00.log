@@ -1,0 +1,6 @@
+   Compiling soniclaw-vst3 v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-vst3)
+   Compiling soniclaw-host v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-host)
+   Compiling soniclaw v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw)
+   Compiling soniclaw-workbench v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/workbench)
+   Compiling soniclaw-sdk-tools v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/sdk-tools)
+    Finished `dev` profile [unoptimized] target(s) in 8.33s

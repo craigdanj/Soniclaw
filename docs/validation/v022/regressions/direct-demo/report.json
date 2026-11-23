@@ -1,0 +1,18 @@
+{
+  "allocation_free": true,
+  "first_sample": 0.4000000059604645,
+  "hardware_latency_measured": false,
+  "owner_unload_silence": true,
+  "stats": {
+    "blocks": 6,
+    "bridge_latency_frames": 0,
+    "deadline_misses": 1,
+    "event_drops": 0,
+    "input_drops": 0,
+    "max_callback_ns": 623693,
+    "output_drops": 0,
+    "process_errors": 0,
+    "underruns": 0
+  },
+  "synthetic_impulse_lag": 2
+}

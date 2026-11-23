@@ -1,0 +1,51 @@
+{
+  "backend": "libsndfile-1.2.2",
+  "backend_kind": "dynamically loaded libsndfile",
+  "formats": [
+    {
+      "bounds_checked": true,
+      "file": "roundtrip.wav",
+      "info": {
+        "channels": 2,
+        "format": "Wav",
+        "frames": 512,
+        "metadata": {
+          "title": "Soniclaw codec round trip"
+        },
+        "sample_rate": 48000,
+        "seekable": true
+      },
+      "seek_error": 8.940696716308594e-8
+    },
+    {
+      "bounds_checked": true,
+      "file": "roundtrip.aiff",
+      "info": {
+        "channels": 2,
+        "format": "Aiff",
+        "frames": 512,
+        "metadata": {
+          "title": "Soniclaw codec round trip"
+        },
+        "sample_rate": 48000,
+        "seekable": true
+      },
+      "seek_error": 8.940696716308594e-8
+    },
+    {
+      "bounds_checked": true,
+      "file": "roundtrip.flac",
+      "info": {
+        "channels": 2,
+        "format": "Flac",
+        "frames": 512,
+        "metadata": {
+          "title": "Soniclaw codec round trip"
+        },
+        "sample_rate": 48000,
+        "seekable": true
+      },
+      "seek_error": 8.940696716308594e-8
+    }
+  ]
+}

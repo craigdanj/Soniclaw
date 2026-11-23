@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "environment": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "automated_status": "passed",
+  "acceptance_status": "pending",
+  "audit": {
+    "version": "0.31.0",
+    "files": 630,
+    "manifest_sha256": "a955d5c2e0db985522fa8c250cbd4f982f5b766b586853bb196cabe38a354e69",
+    "images": [
+      {
+        "path": "SoniclawReference.vst3/Contents/x86_64-linux/SoniclawReference.so",
+        "sha256": "6697ea1c4468952b75f3e24332a0aef6556133287bf3da1b7d0dc8bf64650445",
+        "platform": "linux",
+        "architectures": [
+          "x86_64"
+        ],
+        "format": "ELF64"
+      }
+    ],
+    "signed_claim": false,
+    "signature_verified": false
+  }
+}

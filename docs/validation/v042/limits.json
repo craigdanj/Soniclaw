@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "limits": [
+    {
+      "name": "pure_thdn_db",
+      "minimum": -300.0,
+      "maximum": -100.0
+    },
+    {
+      "name": "known_thd_db",
+      "minimum": -40.01,
+      "maximum": -39.99
+    },
+    {
+      "name": "known_snr_db",
+      "minimum": 54.0,
+      "maximum": 58.0
+    },
+    {
+      "name": "noise_dbfs",
+      "minimum": -66.0,
+      "maximum": -63.0
+    },
+    {
+      "name": "cubic_imd_db",
+      "minimum": -39.0,
+      "maximum": -36.0
+    },
+    {
+      "name": "lowpass_100_db",
+      "minimum": -0.05,
+      "maximum": 0.05
+    },
+    {
+      "name": "lowpass_cutoff_db",
+      "minimum": -3.05,
+      "maximum": -2.97
+    },
+    {
+      "name": "lowpass_stop_db",
+      "minimum": -80.0,
+      "maximum": -20.0
+    },
+    {
+      "name": "drive_alias_reduction_db",
+      "minimum": 8.0,
+      "maximum": 140.0
+    },
+    {
+      "name": "impulse_peak",
+      "minimum": 0.01,
+      "maximum": 1.1
+    },
+    {
+      "name": "impulse_tail_rms",
+      "minimum": 0.0,
+      "maximum": 1e-10
+    },
+    {
+      "name": "filtered_sweep_rms",
+      "minimum": 0.05,
+      "maximum": 0.5
+    }
+  ]
+}

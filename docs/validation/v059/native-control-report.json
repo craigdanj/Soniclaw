@@ -1,0 +1,11 @@
+{
+  "callback_allocations": 0,
+  "checkpoint_saved": true,
+  "fds_during_playback": 1,
+  "looped_source_clock_preserved": true,
+  "native_gui_opened": false,
+  "output_events": 4,
+  "sample_accurate_gain_split": true,
+  "stale_processor_silent": true,
+  "timers_during_playback": 458
+}

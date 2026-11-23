@@ -1,0 +1,20 @@
+test_gate_rejects_missing_workloads (test_compatibility.BenchmarkInputTests.test_gate_rejects_missing_workloads) ... ok
+test_nonfinite_timing_is_rejected (test_compatibility.BenchmarkInputTests.test_nonfinite_timing_is_rejected) ... ok
+test_acceptance_cannot_claim_unrun_cases_passed (test_compatibility.CompatibilityTests.test_acceptance_cannot_claim_unrun_cases_passed) ... ok
+test_acceptance_duplicate_case_is_rejected (test_compatibility.CompatibilityTests.test_acceptance_duplicate_case_is_rejected) ... ok
+test_archive_detects_corruption_and_extra_files (test_compatibility.CompatibilityTests.test_archive_detects_corruption_and_extra_files) ... ok
+test_archive_rejects_traversal (test_compatibility.CompatibilityTests.test_archive_rejects_traversal) ... ok
+test_child_timeout_and_nonzero_are_failures (test_compatibility.CompatibilityTests.test_child_timeout_and_nonzero_are_failures) ... ok
+test_source_version_mismatch_is_rejected (test_compatibility.CompatibilityTests.test_source_version_mismatch_is_rejected) ... ok
+test_acceptance_must_attest_exact_manifest (test_release_gate.GateTests.test_acceptance_must_attest_exact_manifest) ... ok
+test_bad_native_headers (test_release_gate.GateTests.test_bad_native_headers) ... ok
+test_complete_inventory_and_architecture (test_release_gate.GateTests.test_complete_inventory_and_architecture) ... ok
+test_tamper_extra_and_escape_are_rejected (test_release_gate.GateTests.test_tamper_extra_and_escape_are_rejected) ... ok
+test_failure_preserves_exit_and_error (test_vst3_probe.ProbeTests.test_failure_preserves_exit_and_error) ... ok
+test_hang_becomes_timeout (test_vst3_probe.ProbeTests.test_hang_becomes_timeout) ... ok
+test_success_keeps_metadata (test_vst3_probe.ProbeTests.test_success_keeps_metadata) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.594s
+
+OK

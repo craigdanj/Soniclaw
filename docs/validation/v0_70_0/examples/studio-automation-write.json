@@ -1,0 +1,8 @@
+{
+  "latch_continued_after_release": true,
+  "live_gesture_control_applied": true,
+  "physical_gui_gesture_tested": false,
+  "snapped_beat": 0.5,
+  "touch_release_stopped_writing": true,
+  "write_undo_redo_reopened": true
+}

@@ -1,0 +1,28 @@
+{
+  "feature": "spatial",
+  "results": {
+    "cases": [
+      {
+        "audio": "true-stereo.wav",
+        "callback_allocations": 0,
+        "latency_frames": 64,
+        "name": "true-stereo",
+        "peak": 0.5600000023841858
+      },
+      {
+        "audio": "hybrid-room.wav",
+        "callback_allocations": 0,
+        "latency_frames": 64,
+        "name": "hybrid-room",
+        "peak": 0.2240000069141388
+      }
+    ],
+    "path_order": [
+      "LL",
+      "LR",
+      "RL",
+      "RR"
+    ]
+  },
+  "version": "0.97.0"
+}

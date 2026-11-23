@@ -1,0 +1,10 @@
+{
+  "callback_allocations": 0,
+  "headless_audio_tools": true,
+  "join_sample_exact": true,
+  "memory_disk_max_error": 0.0,
+  "physical_device_tested": false,
+  "portable_edit_metadata": true,
+  "source_unchanged": true,
+  "split_sample_exact": true
+}

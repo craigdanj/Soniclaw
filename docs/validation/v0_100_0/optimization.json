@@ -1,0 +1,91 @@
+{
+  "feature": "optimization",
+  "results": {
+    "architecture": "x86_64",
+    "backend": "Avx2",
+    "cases": [
+      {
+        "callback_allocations": 0,
+        "exact_runs_us": [
+          37953,
+          31131,
+          29862
+        ],
+        "exact_sinc_us": 31131,
+        "frames": 24000,
+        "increment": 1.0,
+        "maximum_absolute_error": 5.960464477539063e-8,
+        "observed_ratio": 9.12664907651715,
+        "prepared_runs_us": [
+          3411,
+          3447,
+          3310
+        ],
+        "prepared_us": 3411
+      },
+      {
+        "callback_allocations": 0,
+        "exact_runs_us": [
+          60059,
+          64985,
+          84181
+        ],
+        "exact_sinc_us": 64985,
+        "frames": 24000,
+        "increment": 2.0,
+        "maximum_absolute_error": 2.9802322387695312e-8,
+        "observed_ratio": 9.924404398289553,
+        "prepared_runs_us": [
+          6577,
+          6548,
+          5638
+        ],
+        "prepared_us": 6548
+      },
+      {
+        "callback_allocations": 0,
+        "exact_runs_us": [
+          124337,
+          117175,
+          172568
+        ],
+        "exact_sinc_us": 124337,
+        "frames": 24000,
+        "increment": 4.0,
+        "maximum_absolute_error": 2.9802322387695312e-8,
+        "observed_ratio": 8.711343095354867,
+        "prepared_runs_us": [
+          14273,
+          10560,
+          20206
+        ],
+        "prepared_us": 14273
+      },
+      {
+        "callback_allocations": 0,
+        "exact_runs_us": [
+          272216,
+          231613,
+          263840
+        ],
+        "exact_sinc_us": 263840,
+        "frames": 24000,
+        "increment": 8.0,
+        "maximum_absolute_error": 2.9802322387695312e-8,
+        "observed_ratio": 12.577584974019164,
+        "prepared_runs_us": [
+          20977,
+          20943,
+          21335
+        ],
+        "prepared_us": 20977
+      }
+    ],
+    "prepare_us": 11773,
+    "release_build": true,
+    "scope": "local synthetic exact band rates; not a universal speedup",
+    "statistic": "median of three; alternating order; 512-frame warmup",
+    "table_bytes": 984960
+  },
+  "version": "0.100.0"
+}

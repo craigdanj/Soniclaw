@@ -1,0 +1,10 @@
+{
+  "bridge_latency": 1024,
+  "callback_allocations": 0,
+  "parameter": "gain.native.9",
+  "partition_residual": 0.0,
+  "pending_host_value_saved": true,
+  "step_output_frame": 1088,
+  "step_source_frame": 64,
+  "version": "0.84.0"
+}

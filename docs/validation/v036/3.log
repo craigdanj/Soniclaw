@@ -1,0 +1,45 @@
+   Compiling soniclaw-core v0.36.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-core)
+   Compiling soniclaw-waveform v0.36.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-waveform)
+   Compiling soniclaw-transport v0.36.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-transport)
+   Compiling soniclaw-midi v0.36.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-midi)
+   Compiling soniclaw-automation v0.36.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-automation)
+   Compiling soniclaw-commands v0.36.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-commands)
+   Compiling soniclaw-dsp v0.36.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-dsp)
+   Compiling soniclaw-clips v0.36.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-clips)
+   Compiling soniclaw-state v0.36.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-state)
+   Compiling soniclaw-ui v0.36.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-ui)
+    Finished `test` profile [unoptimized] target(s) in 5.00s
+     Running unittests src/lib.rs (target/debug/build/soniclaw-commands/f09785c34051f7d4/out/soniclaw_commands-f09785c34051f7d4)
+
+running 3 tests
+test tests::grouped_undo_redo_branch_and_capacity ... ok
+test tests::failed_edits_roll_back ... ok
+test tests::keymap_conflicts_unknown_commands_and_disabled_dispatch ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-ui/475c5a237bb3aad2/out/soniclaw_ui-475c5a237bb3aad2)
+
+running 7 tests
+test controls::tests::meter_hold_and_release_are_time_based ... ok
+test controls::tests::response_matches_butterworth_cutoff ... ok
+test toolkit::tests::filmstrip_endpoint_uvs_are_exact ... ok
+test toolkit::tests::theme_roundtrip_and_invalid_metrics ... ok
+test toolkit::tests::svg_raster_is_real_and_bounded ... ok
+test toolkit::tests::keyboard_and_accumulated_discrete_drags_work ... ok
+test controls::tests::controls_render_without_a_native_window ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+   Doc-tests soniclaw_commands
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_ui
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

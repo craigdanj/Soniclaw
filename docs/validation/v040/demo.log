@@ -1,0 +1,10 @@
+   Compiling soniclaw-state v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-state)
+   Compiling soniclaw-plugin v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-plugin)
+   Compiling soniclaw v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw)
+   Compiling soniclaw-clap v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-clap)
+   Compiling soniclaw-project-plugin v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/examples/project-plugin)
+   Compiling soniclaw-ecosystem v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/examples/ecosystem)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.06s
+     Running `target/debug/soniclaw-ecosystem /tmp/soniclaw-v040-verified-demo`
+Project state/undo/redo, live rack automation, sinc conversion, expressive synth and seekable disk playback completed in /tmp/soniclaw-v040-verified-demo
+Disk cache: 74016 bytes; underruns: 0; I/O errors: 0

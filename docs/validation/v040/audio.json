@@ -1,0 +1,26 @@
+[
+  {
+    "file": "automated-rack.wav",
+    "frames": 96000,
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  {
+    "file": "expressive-synth.wav",
+    "frames": 96000,
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  {
+    "file": "rack-44100.wav",
+    "frames": 88200,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "file": "seek-preview.wav",
+    "frames": 256,
+    "sample_rate": 48000,
+    "channels": 2
+  }
+]

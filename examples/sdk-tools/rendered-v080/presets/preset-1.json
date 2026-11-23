@@ -1,0 +1,58 @@
+{
+  "schema_version": 2,
+  "product_id": "org.soniclaw.workbench",
+  "name": "Multiband Glue",
+  "parameters": {},
+  "assets": [
+    {
+      "id": "grain-source",
+      "path": "assets/grain-source.wav",
+      "root_note": 57
+    },
+    {
+      "id": "stereo-ir",
+      "path": "assets/stereo-ir.wav",
+      "root_note": 60
+    }
+  ],
+  "zones": [],
+  "nodes": [
+    {
+      "id": "band",
+      "kind": "multiband",
+      "settings": {
+        "high_ratio": 2.0,
+        "low_ratio": 2.0,
+        "mid_ratio": 2.0
+      },
+      "input_gain": 1.0
+    },
+    {
+      "id": "dynamic",
+      "kind": "dynamic_eq",
+      "settings": {},
+      "input_gain": 0.0
+    },
+    {
+      "id": "limit",
+      "kind": "lookahead_limiter",
+      "settings": {},
+      "input_gain": 0.0
+    }
+  ],
+  "connections": [
+    {
+      "from": "band",
+      "to": "dynamic",
+      "gain": 1.0
+    },
+    {
+      "from": "dynamic",
+      "to": "limit",
+      "gain": 1.0
+    }
+  ],
+  "outputs": {
+    "limit": 1.0
+  }
+}

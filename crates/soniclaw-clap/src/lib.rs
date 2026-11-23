@@ -21,7 +21,7 @@ use clap_sys::{
 };
 use soniclaw_core::*;
 use soniclaw_plugin::{parameter_id, PluginInstance};
-use soniclaw_state::Preset;
+use soniclaw_state::{Preset, ProjectState};
 use std::{
     cell::UnsafeCell,
     ffi::{c_char, c_void, CStr},
@@ -37,7 +37,7 @@ mod fp;
 mod gui;
 const LIMIT: usize = 1024;
 const MAX_PARAMETERS: usize = 256;
-const MAX_STATE: usize = 1024 * 1024;
+const MAX_STATE: usize = 4 * 1024 * 1024;
 struct Features([*const c_char; 3]);
 // SAFETY: Every pointer is a static immutable NUL-terminated string or null.
 unsafe impl Sync for Features {}
@@ -109,6 +109,7 @@ struct Runtime {
     processor: PluginInstance,
     audio: Vec<f32>,
     sidechain: Vec<f32>,
+    audio64: Vec<f64>,
     midi: Vec<Event>,
     automation: Vec<AutomationEvent>,
     max_frames: usize,
@@ -123,8 +124,11 @@ struct Instance {
     definition: &'static Definition,
     host: *const clap_host,
     sidechain: bool,
+    supports_f64: bool,
     parameters: Box<[Arc<Parameter>]>,
     runtime: UnsafeCell<Runtime>,
+    // Main-thread-only project metadata; audio reads only the prepared Runtime.
+    project: UnsafeCell<Option<ProjectState>>,
     active: AtomicBool,
     processing: AtomicBool,
     latency: AtomicU32,
@@ -223,9 +227,11 @@ unsafe extern "C" fn create(
                     on_main_thread: Some(main_thread),
                 },
                 sidechain: processor.has_sidechain(),
+                supports_f64: processor.supports_f64(),
                 definition,
                 host,
                 parameters,
+                project: UnsafeCell::new(processor.project_state().cloned()),
                 runtime: UnsafeCell::new(Runtime {
                     #[cfg(feature = "editor")]
                     editor_events,
@@ -236,6 +242,7 @@ unsafe extern "C" fn create(
                     processor,
                     audio: Vec::new(),
                     sidechain: Vec::new(),
+                    audio64: Vec::new(),
                     midi: Vec::with_capacity(LIMIT),
                     automation: Vec::with_capacity(LIMIT),
                     max_frames: 0,
@@ -296,6 +303,9 @@ unsafe extern "C" fn activate(plugin: *const clap_plugin, rate: f64, min: u32, m
                 return false;
             }
             r.audio = vec![0.0; max as usize * 2];
+            if i.supports_f64 {
+                r.audio64.resize(max as usize * 2, 0.);
+            }
             r.sidechain = if i.sidechain {
                 vec![0.0; max as usize * 2]
             } else {
@@ -414,19 +424,62 @@ unsafe fn clear_output(context: *const clap_process, max_frames: usize) {
         if c.frames_count > 65536 || c.audio_outputs.is_null() || c.audio_outputs_count == 0 {
             return;
         }
-        let out = &*c.audio_outputs;
-        if out.data32.is_null() || out.channel_count > 64 {
+        let out = &mut *c.audio_outputs;
+        if out.channel_count > 64 {
             return;
         }
-        for channel in 0..out.channel_count as usize {
-            let p = *out.data32.add(channel);
-            if !p.is_null() {
-                std::slice::from_raw_parts_mut(p, (c.frames_count as usize).min(max_frames))
-                    .fill(0.0);
+        let frames = (c.frames_count as usize).min(max_frames);
+        clear_channels(out.data32, out.channel_count as usize, frames, 0.0);
+        clear_channels(out.data64, out.channel_count as usize, frames, 0.0);
+        out.constant_mask = 0;
+    }
+}
+
+// SAFETY: CLAP supplies a writable channel-pointer array and complete frames.
+unsafe fn clear_channels<T: Copy>(planes: *mut *mut T, channels: usize, frames: usize, zero: T) {
+    if !planes.is_null() {
+        for i in 0..channels {
+            let plane = unsafe { *planes.add(i) };
+            if !plane.is_null() {
+                unsafe { std::slice::from_raw_parts_mut(plane, frames).fill(zero) };
             }
         }
     }
 }
+
+// SAFETY: the host supplies this declared stereo plane array for the entire block.
+unsafe fn stereo_planes<T>(planes: *mut *mut T) -> Option<[*mut T; 2]> {
+    if planes.is_null() {
+        return None;
+    }
+    let pair = unsafe { [*planes, *planes.add(1)] };
+    pair.iter().all(|p| !p.is_null()).then_some(pair)
+}
+
+// SAFETY: each source plane contains at least one sample per nonconstant frame.
+unsafe fn read_stereo<T: Copy>(destination: &mut [T], planes: [*mut T; 2], constant_mask: u64) {
+    for (frame, pair) in destination.as_chunks_mut::<2>().0.iter_mut().enumerate() {
+        for (channel, (sample, plane)) in pair.iter_mut().zip(planes).enumerate() {
+            let index = if constant_mask & (1 << channel) != 0 {
+                0
+            } else {
+                frame
+            };
+            *sample = unsafe { *plane.add(index) };
+        }
+    }
+}
+
+// SAFETY: each plane is writable for all source frames and reads have completed.
+unsafe fn write_stereo<T: Copy>(planes: [*mut T; 2], source: &[T]) {
+    for (frame, pair) in source.as_chunks::<2>().0.iter().enumerate() {
+        unsafe {
+            *planes[0].add(frame) = pair[0];
+            *planes[1].add(frame) = pair[1];
+        }
+    }
+}
+
 unsafe fn process_inner(
     plugin: *const clap_plugin,
     context: *const clap_process,
@@ -450,17 +503,23 @@ unsafe fn process_inner(
             return CLAP_PROCESS_ERROR;
         }
         let output = &mut *context.audio_outputs;
-        if output.channel_count != 2 || output.data32.is_null() {
+        if output.channel_count != 2 {
             return CLAP_PROCESS_ERROR;
         }
-        let left = *output.data32;
-        let right = *output.data32.add(1);
-        if left.is_null() || right.is_null() {
+        let (out32, out64) = match (output.data32.is_null(), output.data64.is_null()) {
+            (false, true) => (stereo_planes(output.data32), None),
+            (true, false) if i.supports_f64 => (None, stereo_planes(output.data64)),
+            _ => return CLAP_PROCESS_ERROR,
+        };
+        if out32.is_none() && out64.is_none() {
             return CLAP_PROCESS_ERROR;
         }
-        // Proactively clear output on rejection without changing input first.
         if i.definition.instrument {
-            r.audio[..frames * 2].fill(0.0);
+            if out64.is_some() {
+                r.audio64[..frames * 2].fill(0.);
+            } else {
+                r.audio[..frames * 2].fill(0.);
+            }
         } else {
             if !(1..=if i.sidechain { 2 } else { 1 }).contains(&context.audio_inputs_count)
                 || context.audio_inputs.is_null()
@@ -468,42 +527,25 @@ unsafe fn process_inner(
                 return CLAP_PROCESS_ERROR;
             }
             let input = &*context.audio_inputs;
-            if input.channel_count != 2 || input.data32.is_null() {
+            if input.channel_count != 2 {
                 return CLAP_PROCESS_ERROR;
             }
-            let sources = [*input.data32, *input.data32.add(1)];
-            if sources.iter().any(|p| p.is_null()) {
-                return CLAP_PROCESS_ERROR;
-            }
-            // One frame-major pass; source pointers are validated once, outside the loop.
-            if input.constant_mask & 3 == 0 {
-                for (frame, pair) in r.audio[..frames * 2]
-                    .as_chunks_mut::<2>()
-                    .0
-                    .iter_mut()
-                    .enumerate()
-                {
-                    pair[0] = *sources[0].add(frame);
-                    pair[1] = *sources[1].add(frame);
+            if out64.is_some() {
+                if !input.data32.is_null() {
+                    return CLAP_PROCESS_ERROR;
                 }
+                let Some(planes) = stereo_planes(input.data64) else {
+                    return CLAP_PROCESS_ERROR;
+                };
+                read_stereo(&mut r.audio64[..frames * 2], planes, input.constant_mask);
             } else {
-                for (frame, pair) in r.audio[..frames * 2]
-                    .as_chunks_mut::<2>()
-                    .0
-                    .iter_mut()
-                    .enumerate()
-                {
-                    pair[0] = *sources[0].add(if input.constant_mask & 1 != 0 {
-                        0
-                    } else {
-                        frame
-                    });
-                    pair[1] = *sources[1].add(if input.constant_mask & 2 != 0 {
-                        0
-                    } else {
-                        frame
-                    });
+                if !input.data64.is_null() {
+                    return CLAP_PROCESS_ERROR;
                 }
+                let Some(planes) = stereo_planes(input.data32) else {
+                    return CLAP_PROCESS_ERROR;
+                };
+                read_stereo(&mut r.audio[..frames * 2], planes, input.constant_mask);
             }
         }
         // Clear only on errors, preserving valid in-place host input until copied.
@@ -597,30 +639,78 @@ unsafe fn process_inner(
                             && h.size as usize >= std::mem::size_of::<clap_event_note>() =>
                     {
                         let e = &*header.cast::<clap_event_note>();
-                        if e.port_index > 0 {
+                        if !(-1..=0).contains(&e.port_index)
+                            || !(-1..=15).contains(&e.channel)
+                            || !(-1..=127).contains(&e.key)
+                            || e.note_id < -1
+                        {
                             continue;
                         }
-                        let message =
-                            if h.type_ == CLAP_EVENT_NOTE_CHOKE || e.key < 0 || e.channel < 0 {
-                                MidiMessage::AllNotesOff
-                            } else if e.channel > 15 || e.key > 127 || !e.velocity.is_finite() {
+                        let target = soniclaw_core::NoteTarget {
+                            note_id: e.note_id,
+                            channel: e.channel,
+                            key: e.key,
+                        };
+                        let message = if h.type_ == CLAP_EVENT_NOTE_ON {
+                            if e.channel < 0
+                                || e.key < 0
+                                || !e.velocity.is_finite()
+                                || !(0.0..=1.0).contains(&e.velocity)
+                            {
                                 continue;
-                            } else if h.type_ == CLAP_EVENT_NOTE_ON {
-                                MidiMessage::NoteOn {
-                                    channel: e.channel as u8,
-                                    note: e.key as u8,
-                                    velocity: (e.velocity.clamp(0.0, 1.0) * 127.0).round() as u8,
-                                }
-                            } else {
-                                MidiMessage::NoteOff {
-                                    channel: e.channel as u8,
-                                    note: e.key as u8,
-                                    velocity: 0,
-                                }
-                            };
+                            }
+                            MidiMessage::NoteOnId {
+                                channel: e.channel as u8,
+                                note: e.key as u8,
+                                velocity: e.velocity as f32,
+                                note_id: e.note_id,
+                            }
+                        } else if h.type_ == CLAP_EVENT_NOTE_CHOKE {
+                            MidiMessage::NoteChoke { target }
+                        } else {
+                            MidiMessage::NoteOffId { target }
+                        };
                         r.midi.push(Event {
-                            frame: e.header.time as usize,
+                            frame: h.time as usize,
                             message,
+                        });
+                    }
+                    CLAP_EVENT_NOTE_EXPRESSION
+                        if i.definition.instrument
+                            && h.size as usize
+                                >= std::mem::size_of::<clap_event_note_expression>() =>
+                    {
+                        let e = &*header.cast::<clap_event_note_expression>();
+                        let target = soniclaw_core::NoteTarget {
+                            note_id: e.note_id,
+                            channel: e.channel,
+                            key: e.key,
+                        };
+                        if !(-1..=0).contains(&e.port_index) || !target.valid() {
+                            continue;
+                        }
+                        let expression = match e.expression_id {
+                            CLAP_NOTE_EXPRESSION_TUNING => soniclaw_core::NoteExpression::Tuning,
+                            CLAP_NOTE_EXPRESSION_PRESSURE => {
+                                soniclaw_core::NoteExpression::Pressure
+                            }
+                            CLAP_NOTE_EXPRESSION_BRIGHTNESS => {
+                                soniclaw_core::NoteExpression::Timbre
+                            }
+                            CLAP_NOTE_EXPRESSION_PAN => soniclaw_core::NoteExpression::Pan,
+                            CLAP_NOTE_EXPRESSION_VOLUME => soniclaw_core::NoteExpression::Volume,
+                            _ => continue,
+                        };
+                        if !soniclaw_core::VoiceExpression::default().set(expression, e.value) {
+                            continue;
+                        }
+                        r.midi.push(Event {
+                            frame: h.time as usize,
+                            message: MidiMessage::NoteExpression {
+                                target,
+                                expression,
+                                value: e.value,
+                            },
                         });
                     }
                     _ => {}
@@ -650,28 +740,33 @@ unsafe fn process_inner(
                 playing: t.flags & CLAP_TRANSPORT_IS_PLAYING != 0,
             });
         }
-        if r.processor
-            .process_with_sidechain(
-                &mut r.audio[..frames * 2],
-                if i.sidechain {
-                    &r.sidechain[..frames * 2]
-                } else {
-                    &[]
-                },
-                &r.midi,
-                &r.automation,
-            )
-            .is_err()
-        {
-            for frame in 0..frames {
-                *left.add(frame) = 0.0;
-                *right.add(frame) = 0.0;
+        if let Some(planes) = out64 {
+            let audio = &mut r.audio64[..frames * 2];
+            if r.processor
+                .process_automated64(audio, &r.midi, &r.automation)
+                .is_err()
+            {
+                return CLAP_PROCESS_ERROR;
             }
-            return CLAP_PROCESS_ERROR;
-        }
-        for frame in 0..frames {
-            *left.add(frame) = r.audio[frame * 2];
-            *right.add(frame) = r.audio[frame * 2 + 1];
+            write_stereo(planes, audio);
+        } else if let Some(planes) = out32 {
+            let audio = &mut r.audio[..frames * 2];
+            if r.processor
+                .process_with_sidechain(
+                    audio,
+                    if i.sidechain {
+                        &r.sidechain[..frames * 2]
+                    } else {
+                        &[]
+                    },
+                    &r.midi,
+                    &r.automation,
+                )
+                .is_err()
+            {
+                return CLAP_PROCESS_ERROR;
+            }
+            write_stereo(planes, audio);
         }
         output.constant_mask = 0;
         CLAP_PROCESS_CONTINUE
@@ -736,7 +831,13 @@ unsafe extern "C" fn param_info(
         let info = p.info();
         *out = clap_param_info {
             id: parameter_id(info.id),
-            flags: CLAP_PARAM_IS_AUTOMATABLE,
+            flags: CLAP_PARAM_IS_AUTOMATABLE
+                | if p.step_count() > 0 {
+                    CLAP_PARAM_IS_STEPPED
+                } else {
+                    0
+                }
+                | if p.is_enum() { CLAP_PARAM_IS_ENUM } else { 0 },
             cookie: ptr::null_mut(),
             name: [0; 256],
             module: [0; 1024],
@@ -745,6 +846,7 @@ unsafe extern "C" fn param_info(
             default_value: info.default as f64,
         };
         text(&mut out.name, info.name);
+        text(&mut out.module, p.group());
         true
     }
 }
@@ -788,7 +890,7 @@ unsafe extern "C" fn value_text(
         if i.parameter(id).is_none() || buffer.is_null() || capacity == 0 || !value.is_finite() {
             return false;
         }
-        let string = format!("{value:.4}");
+        let string = i.parameter(id).expect("checked").format_value(value as f32);
         let bytes = string.as_bytes();
         let count = bytes.len().min(capacity as usize - 1);
         ptr::copy_nonoverlapping(bytes.as_ptr(), buffer.cast(), count);
@@ -812,15 +914,9 @@ unsafe extern "C" fn text_value(
         if value.is_null() {
             return false;
         }
-        if let Ok(v) = CStr::from_ptr(value)
-            .to_string_lossy()
-            .trim()
-            .parse::<f64>()
-        {
-            if v.is_finite() && (p.info().min as f64..=p.info().max as f64).contains(&v) {
-                *out = v;
-                return true;
-            }
+        if let Some(v) = p.parse_value(&CStr::from_ptr(value).to_string_lossy()) {
+            *out = v as f64;
+            return true;
         }
         false
     }
@@ -910,8 +1006,12 @@ unsafe extern "C" fn audio_info(
                 1
             },
             name: [0; 256],
-            flags: if index == 0 {
+            flags: (if index == 0 {
                 CLAP_AUDIO_PORT_IS_MAIN
+            } else {
+                0
+            }) | if i.supports_f64 {
+                CLAP_AUDIO_PORT_SUPPORTS_64BITS | CLAP_AUDIO_PORT_REQUIRES_COMMON_SAMPLE_SIZE
             } else {
                 0
             },
@@ -999,9 +1099,21 @@ unsafe extern "C" fn save(plugin: *const clap_plugin, stream: *const clap_ostrea
                 }
             }
         }
-        let Ok(json) = preset.to_json() else {
+        // SAFETY: save/load run on the main thread. Project metadata is never
+        // accessed by the render thread; only its scalar snapshot crosses over.
+        let json = if let Some(project) = &*i.project.get() {
+            let mut project = project.clone();
+            project.parameters = preset.parameters;
+            project.to_json()
+        } else {
+            preset.to_json()
+        };
+        let Ok(json) = json else {
             return false;
         };
+        if json.len() > MAX_STATE {
+            return false;
+        }
         let mut remaining = json.as_bytes();
         while !remaining.is_empty() {
             let n = write(stream, remaining.as_ptr().cast(), remaining.len() as u64);
@@ -1039,8 +1151,54 @@ unsafe extern "C" fn load(plugin: *const clap_plugin, stream: *const clap_istrea
         let Ok(json) = std::str::from_utf8(&bytes) else {
             return false;
         };
-        let Ok(preset) = Preset::from_json(json) else {
-            return false;
+        let preset = if let Ok(preset) = Preset::from_json(json) {
+            preset
+        } else {
+            let Ok(project) = ProjectState::from_json(json) else {
+                return false;
+            };
+            let product = CStr::from_ptr(i.definition.descriptor.raw.id).to_string_lossy();
+            if project.product_id != product || project.parameters.len() != i.parameters.len() {
+                return false;
+            }
+            for p in &i.parameters {
+                let info = p.info();
+                let Some(value) = project.parameters.get(info.id) else {
+                    return false;
+                };
+                if !value.is_finite() || !(info.min..=info.max).contains(value) {
+                    return false;
+                }
+            }
+            let Some(previous) = &*i.project.get() else {
+                return false;
+            };
+            let mut a = previous.clone();
+            let mut b = project.clone();
+            a.parameters.clear();
+            b.parameters.clear();
+            a.name.clear();
+            b.name.clear();
+            if a != b {
+                // Structural rebuild performs I/O/allocation only while deactivated.
+                if i.active.load(Ordering::Acquire) {
+                    return false;
+                }
+                let runtime = &mut *i.runtime.get();
+                if !matches!(
+                    catch_unwind(AssertUnwindSafe(|| runtime.processor.load_state(json))),
+                    Ok(Ok(()))
+                ) {
+                    return false;
+                }
+            }
+            *i.project.get() = Some(project.clone());
+            Preset {
+                schema_version: 1,
+                product_id: project.product_id,
+                name: project.name,
+                parameters: project.parameters,
+            }
         };
         let product = CStr::from_ptr(i.definition.descriptor.raw.id).to_string_lossy();
         if preset.schema_version != 1
@@ -1198,3 +1356,6 @@ unsafe fn emit_editor(i: &Instance, runtime: &mut Runtime, out: *const clap_outp
         }
     }
 }
+
+#[cfg(test)]
+mod tests;

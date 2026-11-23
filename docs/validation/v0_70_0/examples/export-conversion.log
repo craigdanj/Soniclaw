@@ -1,0 +1,3 @@
+   Compiling soniclaw-export-conversion v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/examples/export-conversion)
+    Finished `dev` profile [unoptimized] target(s) in 0.52s
+     Running `target/debug/soniclaw-export-conversion /workspace/scratch/cd89c8ef929d/workflow-work/final-examples70/export-conversion`

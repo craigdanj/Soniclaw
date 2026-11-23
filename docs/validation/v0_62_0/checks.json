@@ -1,0 +1,62 @@
+[
+  {
+    "command": [
+      "cargo",
+      "fmt",
+      "--all",
+      "--check"
+    ],
+    "exit_code": 0,
+    "seconds": 0.99,
+    "log": "1.log"
+  },
+  {
+    "command": [
+      "cargo",
+      "clippy",
+      "--workspace",
+      "--all-targets",
+      "--all-features",
+      "--locked",
+      "--offline",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "exit_code": 0,
+    "seconds": 12.28,
+    "log": "2.log"
+  },
+  {
+    "command": [
+      "cargo",
+      "test",
+      "-p",
+      "soniclaw-studio",
+      "-p",
+      "soniclaw-desktop-studio",
+      "-p",
+      "soniclaw-studio-recording",
+      "--all-features",
+      "--locked",
+      "--offline"
+    ],
+    "exit_code": 0,
+    "seconds": 14.58,
+    "log": "3.log"
+  },
+  {
+    "command": [
+      "cargo",
+      "doc",
+      "--workspace",
+      "--all-features",
+      "--no-deps",
+      "--locked",
+      "--offline"
+    ],
+    "exit_code": 0,
+    "seconds": 22.55,
+    "log": "4.log"
+  }
+]

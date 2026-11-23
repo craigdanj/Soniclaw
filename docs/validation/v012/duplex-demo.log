@@ -1,0 +1,21 @@
+   Compiling serde v1.0.229
+   Compiling soniclaw-dsp v0.12.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-dsp)
+   Compiling soniclaw-midi v0.12.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-midi)
+   Compiling soniclaw-device v0.12.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-device)
+   Compiling soniclaw-host v0.12.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-host)
+   Compiling soniclaw-session v0.12.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-session)
+   Compiling soniclaw-state v0.12.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-state)
+   Compiling soniclaw-sampler v0.12.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-sampler)
+   Compiling soniclaw-stream v0.12.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-stream)
+   Compiling soniclaw-io v0.12.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-io)
+   Compiling soniclaw-plugin v0.12.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-plugin)
+   Compiling soniclaw-registry v0.12.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-registry)
+   Compiling soniclaw-diagnostics v0.12.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-diagnostics)
+   Compiling soniclaw-clap v0.12.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-clap)
+   Compiling soniclaw-example-processors v0.12.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/processor-pack)
+   Compiling soniclaw v0.12.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw)
+   Compiling soniclaw-workbench v0.12.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/workbench)
+   Compiling soniclaw-sdk-tools v0.12.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/sdk-tools)
+    Finished `dev` profile [unoptimized] target(s) in 10.29s
+     Running `target/debug/soniclaw-sdk-tools --duplex-demo /workspace/scratch/cd89c8ef929d/verification-series/v012/duplex-demo`
+PASS shared-rate duplex plan, processed recording, finalized WAV and settings

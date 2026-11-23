@@ -1,6 +1,9 @@
 //! Forward-only WAV transport. A worker reads PCM/float data into a bounded
 //! ring; the audio callback emits silence on misses and preserves elapsed time.
-//! Same sample rate only; no seek, pitch shifting or per-voice streaming yet.
+//! This legacy player is same-rate and forward-only. See the separately exported
+//! paged DiskSampler and SeekablePlayer APIs for new transport/instrument support.
+mod paged;
+pub use paged::*;
 use soniclaw_core::*;
 use std::{
     path::Path,
@@ -268,3 +271,8 @@ mod tests {
         std::fs::remove_file(path).unwrap();
     }
 }
+
+pub mod articulations;
+pub mod clips;
+
+pub use articulations::{DiskInstrument, ZoneRule};

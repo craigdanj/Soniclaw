@@ -1,0 +1,3 @@
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running `target/debug/soniclaw-clap-smoke target/debug/libsoniclaw_project_plugin.so --project`
+PASS Soniclaw Project Rack: dynamic CLAP export, full graph state, partial-stream restore, active structural guard, deactivated rebuild, scalar staging, malformed-state rejection and rendered routing gain

@@ -1,0 +1,5 @@
+	AUDIO in: 1, out: 1
+	AUDIO in: 1, out: 1
+	AUDIO in: 1, out: 1
+	AUDIO in: 0, out: 1
+PASS native VST3 factory, timed gain, opaque state, buffered callback, owner revocation, native editor reopen

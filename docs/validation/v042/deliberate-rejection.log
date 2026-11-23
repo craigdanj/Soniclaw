@@ -1,0 +1,4 @@
+12 checks: FAIL
+Error: "audio-quality regression threshold failed; see report.json"
+
+exit_code=1

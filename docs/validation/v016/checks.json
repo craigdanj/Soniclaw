@@ -1,0 +1,110 @@
+[
+  {
+    "check": "fmt",
+    "command": [
+      "cargo",
+      "fmt",
+      "--all",
+      "--check"
+    ],
+    "exit_code": 0,
+    "seconds": 1.234
+  },
+  {
+    "check": "clippy",
+    "command": [
+      "cargo",
+      "clippy",
+      "--workspace",
+      "--all-targets",
+      "--all-features",
+      "--locked",
+      "--offline",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "exit_code": 0,
+    "seconds": 0.502
+  },
+  {
+    "check": "tests",
+    "command": [
+      "cargo",
+      "test",
+      "--workspace",
+      "--all-features",
+      "--locked",
+      "--offline"
+    ],
+    "exit_code": 0,
+    "seconds": 30.498
+  },
+  {
+    "check": "docs",
+    "command": [
+      "cargo",
+      "doc",
+      "--workspace",
+      "--all-features",
+      "--no-deps",
+      "--locked",
+      "--offline"
+    ],
+    "exit_code": 0,
+    "seconds": 13.237
+  },
+  {
+    "check": "build",
+    "command": [
+      "cargo",
+      "build",
+      "-p",
+      "soniclaw-workbench",
+      "-p",
+      "soniclaw-sdk-tools",
+      "-p",
+      "soniclaw-host-fixture",
+      "-p",
+      "soniclaw-clap-smoke",
+      "--locked",
+      "--offline"
+    ],
+    "exit_code": 0,
+    "seconds": 10.108
+  },
+  {
+    "check": "direct-demo",
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-sdk-tools",
+      "--locked",
+      "--offline",
+      "--",
+      "--direct-demo",
+      "target/debug/libsoniclaw_host_fixture.so",
+      "/workspace/scratch/cd89c8ef929d/verification-series/v016/direct-demo"
+    ],
+    "exit_code": 0,
+    "seconds": 0.461
+  },
+  {
+    "check": "live-rack-demo",
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-sdk-tools",
+      "--locked",
+      "--offline",
+      "--",
+      "--live-rack-demo",
+      "target/debug/libsoniclaw_host_fixture.so",
+      "/workspace/scratch/cd89c8ef929d/verification-series/v016/live-rack-demo"
+    ],
+    "exit_code": 0,
+    "seconds": 0.241
+  }
+]

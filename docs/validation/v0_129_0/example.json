@@ -1,0 +1,25 @@
+{
+  "feature": "mastering",
+  "results": {
+    "channels": 2,
+    "frames": 144000,
+    "measurements": {
+      "final_peak_trim_db": 0.0,
+      "input": {
+        "integrated_lufs": -25.491407939913966,
+        "true_peak_dbtp": -3.098039388656616
+      },
+      "level_gain_db": 11.491407939913966,
+      "limiter_latency_frames": 252,
+      "met_target": true,
+      "output": {
+        "integrated_lufs": -14.183133639262563,
+        "true_peak_dbtp": -1.3000000715255737
+      },
+      "requested_ceiling_dbtp": -1.0,
+      "requested_lufs": -14.0
+    },
+    "sample_rate": 48000
+  },
+  "version": "0.129.0"
+}

@@ -1,0 +1,17 @@
+{
+  "feature": "nam-lstm",
+  "results": {
+    "fixture": {
+      "audio": "lstm.wav",
+      "callback_allocations": 0,
+      "latency_frames": 0,
+      "name": "lstm",
+      "peak": 0.43467938899993896
+    },
+    "hidden_size": 4,
+    "layers": 2,
+    "model_rate_hz": 48000.0,
+    "sample_and_block_agree": true
+  },
+  "version": "0.113.0"
+}

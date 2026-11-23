@@ -1,0 +1,12 @@
+   Compiling serde v1.0.229
+   Compiling soniclaw-state v0.5.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-state)
+   Compiling soniclaw-session v0.5.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-session)
+   Compiling soniclaw-plugin v0.5.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-plugin)
+   Compiling soniclaw v0.5.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw)
+   Compiling soniclaw-clap v0.5.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-clap)
+   Compiling soniclaw-project-plugin v0.5.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/examples/project-plugin)
+   Compiling soniclaw-ecosystem v0.5.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/examples/ecosystem)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.44s
+     Running `target/debug/soniclaw-ecosystem /tmp/soniclaw-v050-verified-ecosystem`
+Project state/undo/redo, live rack automation, sinc conversion, expressive synth and seekable disk playback completed in /tmp/soniclaw-v050-verified-ecosystem
+Disk cache: 74016 bytes; underruns: 0; I/O errors: 0

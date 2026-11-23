@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "checks": [
+    {
+      "name": "pure_thdn_db",
+      "value": -140.84461054542868,
+      "minimum": -300.0,
+      "maximum": -100.0,
+      "passed": true
+    },
+    {
+      "name": "known_thd_db",
+      "value": -39.99999958376407,
+      "minimum": -40.01,
+      "maximum": -39.99,
+      "passed": true
+    },
+    {
+      "name": "known_snr_db",
+      "value": 55.729827700728805,
+      "minimum": 54.0,
+      "maximum": 58.0,
+      "passed": true
+    },
+    {
+      "name": "noise_dbfs",
+      "value": -64.76085699899913,
+      "minimum": -66.0,
+      "maximum": -63.0,
+      "passed": true
+    },
+    {
+      "name": "cubic_imd_db",
+      "value": -38.13625901806626,
+      "minimum": -39.0,
+      "maximum": -36.0,
+      "passed": true
+    },
+    {
+      "name": "lowpass_100_db",
+      "value": -3.7348568534787592e-6,
+      "minimum": -0.05,
+      "maximum": 0.05,
+      "passed": true
+    },
+    {
+      "name": "lowpass_cutoff_db",
+      "value": -3.010299064995714,
+      "minimum": -3.05,
+      "maximum": -2.97,
+      "passed": true
+    },
+    {
+      "name": "lowpass_stop_db",
+      "value": -22.90023008292375,
+      "minimum": -80.0,
+      "maximum": -20.0,
+      "passed": true
+    },
+    {
+      "name": "drive_alias_reduction_db",
+      "value": 81.31307902448222,
+      "minimum": 8.0,
+      "maximum": 140.0,
+      "passed": true
+    },
+    {
+      "name": "impulse_peak",
+      "value": 0.23354962468147278,
+      "minimum": 0.01,
+      "maximum": 1.1,
+      "passed": true
+    },
+    {
+      "name": "impulse_tail_rms",
+      "value": 0.0,
+      "minimum": 0.0,
+      "maximum": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "filtered_sweep_rms",
+      "value": 0.3093197589828832,
+      "minimum": 0.05,
+      "maximum": 0.5,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "feature": "half-band-design",
+  "results": {
+    "cases": [
+      {
+        "audio": "custom-2x-fir.wav",
+        "callback_allocations": 0,
+        "dc_delay_samples": 30.0,
+        "measured_stopbands_db": [
+          75.30497317302051,
+          87.19441182932071
+        ],
+        "name": "custom-2x-fir",
+        "oversampling_callback_allocations": 0,
+        "peak": 0.8968741297721863
+      },
+      {
+        "audio": "custom-2x-iir.wav",
+        "callback_allocations": 0,
+        "dc_delay_samples": 2.9131233540278623,
+        "measured_stopbands_db": [
+          86.94708147242225,
+          87.74232223995145
+        ],
+        "name": "custom-2x-iir",
+        "oversampling_callback_allocations": 0,
+        "peak": 0.9867971539497375
+      }
+    ]
+  },
+  "version": "0.138.0"
+}

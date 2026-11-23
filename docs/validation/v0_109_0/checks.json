@@ -1,0 +1,72 @@
+[
+  {
+    "command": [
+      "cargo",
+      "fmt",
+      "--all",
+      "--check"
+    ],
+    "exit_code": 0,
+    "seconds": 2.06,
+    "log": "1.log"
+  },
+  {
+    "command": [
+      "cargo",
+      "clippy",
+      "-p",
+      "soniclaw-dsp",
+      "-p",
+      "soniclaw-dsp-suite",
+      "-p",
+      "soniclaw-hybrid-instrument",
+      "--all-targets",
+      "--all-features",
+      "--locked",
+      "--offline",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "exit_code": 0,
+    "seconds": 4.04,
+    "log": "2.log"
+  },
+  {
+    "command": [
+      "cargo",
+      "test",
+      "-p",
+      "soniclaw-dsp",
+      "-p",
+      "soniclaw-dsp-suite",
+      "-p",
+      "soniclaw-hybrid-instrument",
+      "--all-features",
+      "--locked",
+      "--offline"
+    ],
+    "exit_code": 0,
+    "seconds": 7.11,
+    "log": "3.log"
+  },
+  {
+    "command": [
+      "cargo",
+      "doc",
+      "-p",
+      "soniclaw-dsp",
+      "-p",
+      "soniclaw-dsp-suite",
+      "-p",
+      "soniclaw-hybrid-instrument",
+      "--all-features",
+      "--no-deps",
+      "--locked",
+      "--offline"
+    ],
+    "exit_code": 0,
+    "seconds": 1.28,
+    "log": "4.log"
+  }
+]

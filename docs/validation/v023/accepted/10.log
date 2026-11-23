@@ -1,0 +1,7 @@
+PASSED  source-contract
+PASSED  rust-toolchain
+PASSED  python-tool-tests
+SKIPPED build-export-workflows
+SKIPPED acceptance-linux
+SKIPPED acceptance-macos
+SKIPPED acceptance-windows

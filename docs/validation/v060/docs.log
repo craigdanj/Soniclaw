@@ -1,0 +1,60 @@
+   Compiling alsa-sys v0.3.1
+   Compiling x11-dl v2.21.0
+    Checking soniclaw-state v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-state)
+    Checking soniclaw-ui v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-ui)
+    Checking soniclaw-io v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-io)
+    Checking soniclaw-stream v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-stream)
+    Checking soniclaw-sampler v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-sampler)
+ Documenting soniclaw-clap-smoke v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/tools/clap-smoke)
+ Documenting soniclaw-state v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-state)
+ Documenting soniclaw-stream v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-stream)
+ Documenting soniclaw-record v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-record)
+ Documenting soniclaw-io v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-io)
+ Documenting soniclaw-ui v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-ui)
+    Checking soniclaw-plugin v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-plugin)
+ Documenting soniclaw-plugin v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-plugin)
+    Checking alsa v0.9.1
+ Documenting soniclaw-bus v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-bus)
+ Documenting soniclaw-sampler v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-sampler)
+ Documenting soniclaw-dsp v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-dsp)
+ Documenting soniclaw-engine v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-engine)
+ Documenting soniclaw-graph v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-graph)
+ Documenting soniclaw-core v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-core)
+ Documenting cargo-soniclaw v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/tools/cargo-soniclaw)
+    Checking midir v0.10.1
+    Checking cpal v0.15.3
+    Checking soniclaw-midi v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-midi)
+ Documenting soniclaw-midi v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-midi)
+    Checking soniclaw-device v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-device)
+ Documenting soniclaw-device v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-device)
+    Checking soniclaw-session v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-session)
+ Documenting soniclaw-session v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-session)
+    Checking soniclaw v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw)
+ Documenting soniclaw v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw)
+ Documenting soniclaw-render v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/examples/render)
+    Checking baseview v0.3.4
+    Checking glutin_glx_sys v0.6.1
+    Checking winit v0.30.13
+    Checking glutin v0.32.3
+    Checking egui-baseview v0.7.2
+    Checking soniclaw-editor v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-editor)
+ Documenting soniclaw-editor v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-editor)
+    Checking soniclaw-clap v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-clap)
+ Documenting soniclaw-clap v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-clap)
+    Checking soniclaw-reference v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/examples/reference)
+    Checking soniclaw-project-plugin v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/examples/project-plugin)
+ Documenting soniclaw-reference v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/examples/reference)
+ Documenting soniclaw-dsp-lab v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/examples/dsp-lab)
+ Documenting soniclaw-clap-demo v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/examples/clap-demo)
+ Documenting soniclaw-project-plugin v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/examples/project-plugin)
+ Documenting soniclaw-ecosystem v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/examples/ecosystem)
+    Checking egui-winit v0.36.1
+    Checking glutin-winit v0.5.0
+    Checking eframe v0.36.1
+ Documenting soniclaw-desktop v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/examples/desktop)
+ Documenting soniclaw-workbench v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/examples/workbench)
+ Documenting soniclaw-reference-studio v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/examples/reference-studio)
+ Documenting soniclaw-ui-gallery v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/examples/ui-gallery)
+ Documenting soniclaw-live-fx v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/examples/live-fx)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 4.56s
+   Generated /workspace/scratch/cd89c8ef929d/v050-work/soniclaw/target/doc/cargo_soniclaw/index.html and 30 other files

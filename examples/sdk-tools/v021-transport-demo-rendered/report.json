@@ -1,0 +1,29 @@
+{
+  "actual_normalized_gain": 0.45212364196777344,
+  "expected_normalized_gain": 0.45212364196777344,
+  "frames": 288000,
+  "last_frame": {
+    "loop_range": [
+      1.0,
+      7.5
+    ],
+    "loop_seconds": [
+      0.8925742052568391,
+      4.522588722239782
+    ],
+    "looped": false,
+    "playing": true,
+    "position": {
+      "bar": 0,
+      "beat": 3.23397843733475,
+      "beat_in_bar": 3.23397843733475,
+      "bpm": 108.50967656002126,
+      "denominator": 4,
+      "numerator": 4
+    },
+    "punching": false,
+    "sample": 113759
+  },
+  "native_musical_process": true,
+  "ramp_seconds_at_beat4": 2.772588722239781
+}

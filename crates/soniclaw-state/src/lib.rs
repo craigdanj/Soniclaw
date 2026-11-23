@@ -1,5 +1,7 @@
-//! Parameter state, not a full project format or DSP history. Restore off-thread
-//! while stopped: scalar atomics do not give a coherent multi-parameter update.
+//! Versioned parameter and project state. Parse/edit/rebuild on the control
+//! thread while stopped; DSP history is intentionally not persisted.
+mod project;
+pub use project::*;
 use serde::{Deserialize, Serialize};
 use soniclaw_core::Parameter;
 use std::{
@@ -7,7 +9,7 @@ use std::{
     sync::Arc,
 };
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 #[serde(deny_unknown_fields)]
 pub struct Preset {
     pub schema_version: u32,

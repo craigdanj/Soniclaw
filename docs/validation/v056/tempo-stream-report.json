@@ -1,0 +1,11 @@
+{
+  "callback_processing": "prepared WAV playback; conversion is control/worker-only",
+  "frames": 64000,
+  "hardware_tested": false,
+  "input_rate": 44100,
+  "measured_tone_hz": 440.3669724770642,
+  "output_rate": 48000,
+  "portable_reload": true,
+  "stereo_linked": true,
+  "target_bpm": 90
+}

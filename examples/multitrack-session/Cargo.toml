@@ -1,0 +1,15 @@
+[package]
+name="soniclaw-multitrack-session"
+version.workspace=true
+edition.workspace=true
+license.workspace=true
+rust-version.workspace=true
+publish=false
+[dependencies]
+soniclaw.workspace=true
+soniclaw-studio-demo={path="../studio-demo",version="0.146.0"}
+hound="=3.5.1"
+serde_json="1"
+allocation-counter="=0.8.1"
+[lints]
+workspace=true

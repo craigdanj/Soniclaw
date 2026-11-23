@@ -1,0 +1,4 @@
+PASS Soniclaw Multiband Workbench: independent dynamic CLAP load, parameters, note/audio, declared latency, complete-state save, partial-stream scalar restore and stopped rebuild
+PASS Soniclaw Granular Workbench: independent dynamic CLAP load, parameters, note/audio, declared latency, complete-state save, partial-stream scalar restore and stopped rebuild
+PASS Soniclaw Poly Motion: independent dynamic CLAP load, parameters, note/audio, declared latency, complete-state save, partial-stream scalar restore and stopped rebuild
+PASS Soniclaw Sampler Studio: independent dynamic CLAP load, parameters, note/audio, declared latency, complete-state save, partial-stream scalar restore and stopped rebuild

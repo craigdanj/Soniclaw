@@ -1,0 +1,90 @@
+{
+  "callback_allocations": 0,
+  "editor_open_close_reopen": false,
+  "midi_callback_allocations": 0,
+  "midi_energy": 717.5440169741129,
+  "midi_stats": {
+    "blocks": 32,
+    "bridge_latency_frames": 1024,
+    "input_drops": 0,
+    "output_drops": 0,
+    "process_errors": 0,
+    "restart_requests": 0,
+    "underruns": 0
+  },
+  "midi_tail_energy": 390.970200975049,
+  "onset_frames": 1024,
+  "owner_revocation": true,
+  "parameters": [
+    {
+      "default": 1.0,
+      "id": 824670037,
+      "name": "Mode",
+      "read_only": false,
+      "value": 1.0
+    },
+    {
+      "default": 0.5,
+      "id": 1164563712,
+      "name": "Gain",
+      "read_only": false,
+      "value": 0.5
+    },
+    {
+      "default": 0.14914914914914915,
+      "id": 1062793774,
+      "name": "Cutoff",
+      "read_only": false,
+      "value": 0.14914914914914915
+    }
+  ],
+  "products": [
+    {
+      "format": "Vst3",
+      "id": "E4194457A25F52568C08A76C9D0A6415",
+      "name": "Soniclaw Gain + Filter",
+      "path": "build/formats/Release/SoniclawReference.vst3",
+      "vendor": "Soniclaw",
+      "version": "0.27.0"
+    },
+    {
+      "format": "Vst3",
+      "id": "155D45AD35A25FFA9E5F74B42FFE7AE9",
+      "name": "Soniclaw Sidechain Ducker",
+      "path": "build/formats/Release/SoniclawReference.vst3",
+      "vendor": "Soniclaw",
+      "version": "0.27.0"
+    },
+    {
+      "format": "Vst3",
+      "id": "9A812D09504F5723B0C771437AAF92F3",
+      "name": "Soniclaw Multisample Drums",
+      "path": "build/formats/Release/SoniclawReference.vst3",
+      "vendor": "Soniclaw",
+      "version": "0.27.0"
+    },
+    {
+      "format": "Vst3",
+      "id": "9F462C2AE33D517EB4808E9F54818FDD",
+      "name": "Soniclaw Effects Rack",
+      "path": "build/formats/Release/SoniclawReference.vst3",
+      "vendor": "Soniclaw",
+      "version": "0.27.0"
+    }
+  ],
+  "restored_gain": 0.4000000059604645,
+  "stats": {
+    "blocks": 32,
+    "bridge_latency_frames": 1024,
+    "input_drops": 0,
+    "output_drops": 0,
+    "process_errors": 0,
+    "restart_requests": 0,
+    "underruns": 0
+  },
+  "timed_gain": {
+    "at128": 0.4008333384990692,
+    "before": 0.4000000059604645,
+    "last": 0.5066666007041931
+  }
+}

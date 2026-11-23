@@ -1,0 +1,31 @@
+{
+  "cases": [
+    {
+      "audio": "audio-filter.wav",
+      "callback_allocations": 0,
+      "mode": "audio",
+      "stats": {
+        "frames": 32768,
+        "route_evaluations": 32768,
+        "source_evaluations": 32768
+      },
+      "timing_is_not_a_real_time_guarantee": true,
+      "worst_observed_callback_ns": 613292
+    },
+    {
+      "audio": "control64-filter.wav",
+      "callback_allocations": 0,
+      "mode": "control64",
+      "stats": {
+        "frames": 32768,
+        "route_evaluations": 512,
+        "source_evaluations": 512
+      },
+      "timing_is_not_a_real_time_guarantee": true,
+      "worst_observed_callback_ns": 1640934
+    }
+  ],
+  "config_roundtrip": true,
+  "external_envelope_binding": true,
+  "version": "0.92.0"
+}

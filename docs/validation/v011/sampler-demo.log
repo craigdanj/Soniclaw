@@ -1,0 +1,19 @@
+   Compiling soniclaw-midi v0.11.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-midi)
+   Compiling soniclaw-host v0.11.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-host)
+   Compiling soniclaw-session v0.11.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-session)
+   Compiling soniclaw-dsp v0.11.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-dsp)
+   Compiling soniclaw-state v0.11.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-state)
+   Compiling soniclaw-io v0.11.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-io)
+   Compiling soniclaw-stream v0.11.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-stream)
+   Compiling soniclaw-sampler v0.11.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-sampler)
+   Compiling soniclaw-plugin v0.11.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-plugin)
+   Compiling soniclaw-registry v0.11.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-registry)
+   Compiling soniclaw-diagnostics v0.11.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-diagnostics)
+   Compiling soniclaw-clap v0.11.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-clap)
+   Compiling soniclaw-example-processors v0.11.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/processor-pack)
+   Compiling soniclaw v0.11.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw)
+   Compiling soniclaw-workbench v0.11.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/workbench)
+   Compiling soniclaw-sdk-tools v0.11.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/sdk-tools)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 6.62s
+     Running `target/debug/soniclaw-sdk-tools --sampler-demo /workspace/scratch/cd89c8ef929d/verification-series/v011/sampler-demo`
+PASS SFZ import, velocity/release playback, transient detection and project persistence

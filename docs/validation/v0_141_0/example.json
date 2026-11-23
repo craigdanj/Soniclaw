@@ -1,0 +1,17 @@
+{
+  "feature": "block-view",
+  "results": {
+    "audio": "borrowed-region.wav",
+    "callback_allocations": 0,
+    "channels": 2,
+    "destination_frames": [
+      8,
+      104
+    ],
+    "source_frames": [
+      16,
+      112
+    ]
+  },
+  "version": "0.141.0"
+}

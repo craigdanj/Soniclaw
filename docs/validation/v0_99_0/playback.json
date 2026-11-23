@@ -1,0 +1,37 @@
+{
+  "feature": "playback",
+  "results": {
+    "cases": [
+      {
+        "audio": "forward.wav",
+        "callback_allocations": 0,
+        "latency_frames": 0,
+        "name": "forward",
+        "peak": 0.27032944560050964
+      },
+      {
+        "audio": "reverse.wav",
+        "callback_allocations": 0,
+        "latency_frames": 0,
+        "name": "reverse",
+        "peak": 0.2704911530017853
+      },
+      {
+        "audio": "crossfaded-loop.wav",
+        "callback_allocations": 0,
+        "latency_frames": 0,
+        "name": "crossfaded-loop",
+        "peak": 0.27032944560050964
+      },
+      {
+        "audio": "pingpong-loop.wav",
+        "callback_allocations": 0,
+        "latency_frames": 0,
+        "name": "pingpong-loop",
+        "peak": 0.27032944560050964
+      }
+    ],
+    "offline_matched_end": 15942
+  },
+  "version": "0.99.0"
+}

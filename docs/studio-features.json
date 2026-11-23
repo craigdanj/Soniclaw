@@ -1,0 +1,50 @@
+[
+  {
+    "version": "0.52.0",
+    "title": "Unified reference studio",
+    "guide": "REFERENCE_STUDIO",
+    "status": "Complete"
+  },
+  {
+    "version": "0.53.0",
+    "title": "Scalable arrangement and piano-roll editors",
+    "guide": "SCALABLE_EDITORS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.54.0",
+    "title": "Loop recording and take comping",
+    "guide": "TAKE_COMPING",
+    "status": "Complete"
+  },
+  {
+    "version": "0.55.0",
+    "title": "Advanced nondestructive audio editing",
+    "guide": "AUDIO_EDITING",
+    "status": "Complete"
+  },
+  {
+    "version": "0.56.0",
+    "title": "Tempo-aware streamed audio",
+    "guide": "TEMPO_STREAMING",
+    "status": "Complete"
+  },
+  {
+    "version": "0.57.0",
+    "title": "Streaming-capable freeze workflow",
+    "guide": "STREAMING_FREEZE",
+    "status": "Complete"
+  },
+  {
+    "version": "0.58.0",
+    "title": "Richer isolated plug-in control",
+    "guide": "ISOLATED_CONTROL",
+    "status": "Complete"
+  },
+  {
+    "version": "0.59.0",
+    "title": "Dynamic latency and bus reconfiguration",
+    "guide": "DYNAMIC_RECONFIGURATION",
+    "status": "Complete"
+  }
+]

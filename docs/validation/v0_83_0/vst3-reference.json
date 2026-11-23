@@ -1,0 +1,16 @@
+{
+  "blob_bytes": 131072,
+  "corruption_rejected": true,
+  "metadata_under_64k": true,
+  "missing_bypass_latency": 17,
+  "native": {
+    "callback_allocations": 0,
+    "format": "vst3",
+    "latency": 1024,
+    "peak": 0.13069427013397217,
+    "product": "E4194457A25F52568C08A76C9D0A6415",
+    "save_reload": true
+  },
+  "undo_redo": true,
+  "version": "0.83.0"
+}

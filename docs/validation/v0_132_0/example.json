@@ -1,0 +1,26 @@
+{
+  "feature": "pitch-correction",
+  "results": {
+    "cases": [
+      {
+        "audio": "original-aligned.wav",
+        "callback_allocations": 0,
+        "latency_frames": 1024,
+        "name": "original-aligned",
+        "peak": 0.25
+      },
+      {
+        "audio": "scale-corrected.wav",
+        "callback_allocations": 0,
+        "latency_frames": 1024,
+        "name": "scale-corrected",
+        "peak": 0.24999722838401794
+      }
+    ],
+    "measured_hz": [
+      426.01118665380903,
+      439.9929779585991
+    ]
+  },
+  "version": "0.132.0"
+}

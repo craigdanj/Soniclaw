@@ -553,6 +553,65 @@ impl AudioProcessor for Reverb {
     }
 }
 
+// Audio-owner-only updates used by AutomatedEffect. Storage and topology stay fixed.
+impl ParametricEq {
+    pub(crate) fn update_band(&mut self, index: usize, band: EqBand, sr: f32) {
+        if let Ok(c) = band.coefficients(sr) {
+            self.bands[index] = band;
+            self.coefficients[index] = c;
+        }
+    }
+}
+impl Compressor {
+    pub(crate) fn update_live(&mut self, s: CompressorSettings, sr: f32) {
+        self.settings = s;
+        self.attack = pole(s.attack_ms, sr);
+        self.release = pole(s.release_ms, sr);
+        self.makeup = crate::db_to_gain(s.makeup_db);
+    }
+}
+impl PeakLimiter {
+    pub(crate) fn update_live(&mut self, ceiling: f32, release: f32, sr: f32) {
+        self.ceiling = crate::db_to_gain(ceiling);
+        self.release = pole(release, sr);
+    }
+}
+impl NoiseGate {
+    pub(crate) fn update_live(
+        &mut self,
+        threshold: f32,
+        attack: f32,
+        hold: f32,
+        release: f32,
+        sr: f32,
+    ) {
+        self.threshold = crate::db_to_gain(threshold);
+        self.attack = pole(attack, sr);
+        self.release = pole(release, sr);
+        self.hold_frames = (hold * 0.001 * sr) as usize;
+    }
+}
+impl Chorus {
+    pub(crate) fn update_live(&mut self, rate: f32, depth: f32, mix: f32) {
+        self.rate = rate;
+        self.depth_ms = depth;
+        self.mix = mix;
+    }
+}
+impl Reverb {
+    pub(crate) fn update_live(&mut self, rt60: f32, mix: f32, sr: f32) {
+        self.mix = mix;
+        if self.rt60 != rt60 {
+            self.rt60 = rt60;
+            for channel in &mut self.combs {
+                for comb in channel {
+                    comb.feedback = 10.0_f32.powf(-3.0 * comb.data.len() as f32 / (sr * rt60));
+                }
+            }
+        }
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;

@@ -1,0 +1,18 @@
+{
+  "feature": "cabinet-blend",
+  "results": {
+    "alignment": {
+      "advance_frames": 16.999999982191113,
+      "correlation": 0.9999999999999992,
+      "invert_candidate": true
+    },
+    "amp_and_cabinet": {
+      "audio": "wavenet-cabinet-chain.wav",
+      "callback_allocations": 0,
+      "latency_frames": 128,
+      "name": "wavenet-cabinet-chain",
+      "peak": 0.04780788719654083
+    }
+  },
+  "version": "0.133.0"
+}

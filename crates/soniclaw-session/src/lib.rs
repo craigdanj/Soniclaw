@@ -111,6 +111,14 @@ pub mod native {
                 .as_ref()
                 .ok_or("start a session before opening audio")?;
             let options = DuplexOptions {
+                output_bus: None,
+                cue_outputs: Vec::new(),
+
+                input_bus: None,
+                host: None,
+                input_occurrence: None,
+                output_occurrence: None,
+                output_hardware_channels: None,
                 input_device: settings.input_device.clone(),
                 output_device: settings.output_device.clone(),
                 input_channels: settings.input_channels,

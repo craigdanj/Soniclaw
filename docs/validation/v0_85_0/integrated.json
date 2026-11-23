@@ -1,0 +1,18 @@
+{
+  "audio_frames": 2048,
+  "editable_midi": true,
+  "export_files": 6,
+  "frames_per_file": 6144,
+  "generation_saves": 2,
+  "missing_native_bypass_retains_automation": true,
+  "native_bridge_latency_offline": 0,
+  "native_midi_identity_across_blocks": true,
+  "owner_revocation": true,
+  "pending_midi_recovered": true,
+  "physical_hardware_opened": false,
+  "same_pass_residual": 0.0,
+  "source_takes_removed_before_export": true,
+  "submix_sidechain_cue": true,
+  "version": "0.85.0",
+  "virtual_audio_tracks": 2
+}

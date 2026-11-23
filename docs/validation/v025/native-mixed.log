@@ -1,0 +1,8 @@
+	AUDIO in: 1, out: 1
+	AUDIO in: 1, out: 1
+	AUDIO in: 1, out: 1
+	AUDIO in: 1, out: 1
+Mixed diagnostics [Object {"bypass": Bool(false), "id": String("native"), "latency": Number(0), "native": Object {"parameters": Array [Array [String("gain.gain"), Number(0.5)]]}}, Object {"bypass": Bool(false), "id": String("clap"), "latency": Number(0), "native": Object {"blocks": Number(24), "bridge_latency_frames": Number(0), "deadline_misses": Number(0), "event_drops": Number(0), "input_drops": Number(0), "max_callback_ns": Number(3091251), "output_drops": Number(0), "process_errors": Number(0), "underruns": Number(0)}}, Object {"bypass": Bool(false), "id": String("vst3"), "latency": Number(1024), "native": Object {"blocks": Number(24), "bridge_latency_frames": Number(1024), "input_drops": Number(0), "output_drops": Number(0), "process_errors": Number(0), "restart_requests": Number(0), "underruns": Number(0)}}]
+	AUDIO in: 1, out: 1
+	AUDIO in: 1, out: 1
+PASS mixed native/CLAP/VST3 graph, state, aligned bypass, missing node and callback allocations

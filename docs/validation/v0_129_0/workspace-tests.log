@@ -1,0 +1,1609 @@
+   Compiling soniclaw-reference v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/reference)
+   Compiling soniclaw-project-plugin v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/project-plugin)
+   Compiling soniclaw-dsp-lab v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/dsp-lab)
+   Compiling soniclaw-workbench v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/workbench)
+   Compiling soniclaw-typed-effect v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/typed-effect)
+   Compiling soniclaw-parallel-compressor v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/parallel-compressor)
+   Compiling soniclaw-reference-studio v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/reference-studio)
+   Compiling soniclaw-sdk-tools v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/sdk-tools)
+   Compiling soniclaw-ecosystem v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/ecosystem)
+   Compiling soniclaw-desktop-studio v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/desktop-studio)
+   Compiling soniclaw-live-fx v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/live-fx)
+   Compiling soniclaw-ui-gallery v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/ui-gallery)
+   Compiling soniclaw-desktop v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/desktop)
+   Compiling soniclaw-clip-studio v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/clip-studio)
+   Compiling soniclaw-mixer-studio v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/mixer-studio)
+   Compiling soniclaw v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw)
+   Compiling soniclaw-studio-automation-write v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/studio-automation-write)
+   Compiling soniclaw-stream-freeze v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/stream-freeze)
+   Compiling soniclaw-loop-comp v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/loop-comp)
+   Compiling soniclaw-streamed-session v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/streamed-session)
+   Compiling soniclaw-multitrack-session v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/multitrack-session)
+   Compiling soniclaw-freeze-session v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/freeze-session)
+   Compiling soniclaw-export-conversion v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/export-conversion)
+   Compiling soniclaw-audio-editing v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/audio-editing)
+   Compiling soniclaw-studio-routing v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/studio-routing)
+   Compiling soniclaw-studio-media-audit v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/studio-media-audit)
+   Compiling soniclaw-studio-history v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/studio-history)
+   Compiling soniclaw-studio-recovery v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/studio-recovery)
+   Compiling soniclaw-waveform-warp-editor v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/waveform-warp-editor)
+   Compiling soniclaw-tempo-stream v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/tempo-stream)
+   Compiling soniclaw-studio-export v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/studio-export)
+   Compiling soniclaw-studio-recording v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/studio-recording)
+   Compiling soniclaw-studio-midi-recording v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/studio-midi-recording)
+   Compiling soniclaw-studio-demo v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/studio-demo)
+   Compiling soniclaw-clap-demo v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/clap-demo)
+   Compiling soniclaw-clap v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-clap)
+   Compiling soniclaw-editor v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-editor)
+   Compiling soniclaw-studio-native-buses v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/studio-native-buses)
+   Compiling soniclaw-native-editor v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/native-editor)
+   Compiling soniclaw-daw-arrangement v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/daw-arrangement)
+   Compiling soniclaw-daw-takes v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/daw-takes)
+   Compiling soniclaw-sample-author v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/sample-author)
+   Compiling soniclaw-microtuning v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/microtuning)
+   Compiling soniclaw-daw-sessions v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/daw-sessions)
+   Compiling soniclaw-pitch-time v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/pitch-time)
+   Compiling soniclaw-daw-automation v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/daw-automation)
+   Compiling soniclaw-daw-midi v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/daw-midi)
+   Compiling soniclaw-daw-cues v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/daw-cues)
+   Compiling soniclaw-controller-demo v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/controller-demo)
+   Compiling soniclaw-daw-multichannel v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/daw-multichannel)
+   Compiling soniclaw-render v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/render)
+   Compiling soniclaw-daw-mixing v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/daw-mixing)
+   Compiling soniclaw-quality-suite v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/quality-suite)
+   Compiling soniclaw-daw-plugins v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/daw-plugins)
+   Compiling soniclaw-daw-workspace v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/daw-workspace)
+   Compiling soniclaw-daw-elastic v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/daw-elastic)
+   Compiling soniclaw-daw-delivery v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/daw-delivery)
+   Compiling soniclaw-studio-jobs v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/studio-jobs)
+   Compiling soniclaw-dsp-suite v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/dsp-suite)
+   Compiling soniclaw-daw-tools v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/daw-tools)
+   Compiling soniclaw-daw-timing v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/daw-timing)
+   Compiling soniclaw-studio-isolation v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/studio-isolation)
+   Compiling soniclaw-pipewire-probe v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/pipewire-probe)
+   Compiling soniclaw-example-processors v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/processor-pack)
+   Compiling soniclaw-session v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-session)
+   Compiling soniclaw-hybrid-instrument v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/hybrid-instrument)
+   Compiling soniclaw-device v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-device)
+   Compiling soniclaw-dsp-nonlinear v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/dsp-nonlinear)
+   Compiling soniclaw-pipewire v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-pipewire)
+   Compiling soniclaw-accessibility-audit v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/accessibility-audit)
+   Compiling soniclaw-diagnostics v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-diagnostics)
+   Compiling soniclaw-scalable-editors v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/scalable-editors)
+   Compiling soniclaw-isolated-control v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/isolated-control)
+   Compiling soniclaw-ui v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-ui)
+   Compiling soniclaw-clap-isolation-helper v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/clap-isolation-helper)
+   Compiling soniclaw-studio-plugin-windows v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/studio-plugin-windows)
+   Compiling soniclaw-reconfigure-host v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/reconfigure-host)
+   Compiling soniclaw-isolated-clap-host v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/isolated-clap-host)
+   Compiling soniclaw-host v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-host)
+   Compiling soniclaw-host-fixture v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/host-fixture)
+   Compiling soniclaw-clap-smoke v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/tools/clap-smoke)
+   Compiling soniclaw-multibus-host v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/multibus-host)
+   Compiling soniclaw-crash-host v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/crash-host)
+   Compiling soniclaw-waveform-cache-demo v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/waveform-cache)
+   Compiling soniclaw-musical-host v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/musical-host)
+   Compiling soniclaw-vst3 v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-vst3)
+   Compiling soniclaw-isolation-helper v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/isolation-helper)
+   Compiling soniclaw-studio v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-studio)
+   Compiling soniclaw-plugin v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-plugin)
+   Compiling soniclaw-waveform v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-waveform)
+   Compiling soniclaw-registry v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-registry)
+   Compiling soniclaw-stream v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-stream)
+   Compiling soniclaw-formats v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-formats)
+   Compiling soniclaw-state v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-state)
+   Compiling soniclaw-midi v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-midi)
+   Compiling soniclaw-automation v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-automation)
+   Compiling soniclaw-bus v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-bus)
+   Compiling soniclaw-kernels v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-kernels)
+   Compiling soniclaw-dsp-modulation v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/dsp-modulation)
+   Compiling soniclaw-io v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-io)
+   Compiling soniclaw-dsp-filters v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/dsp-filters)
+   Compiling soniclaw-record v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-record)
+   Compiling soniclaw-params v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-params)
+   Compiling soniclaw-dsp v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-dsp)
+   Compiling soniclaw-graph v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-graph)
+   Compiling soniclaw-transport v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-transport)
+   Compiling soniclaw-clips v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-clips)
+   Compiling soniclaw-mixer v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-mixer)
+   Compiling soniclaw-dsp-oversampling v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/dsp-oversampling)
+   Compiling soniclaw-sampler v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-sampler)
+   Compiling soniclaw-quality v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-quality)
+   Compiling soniclaw-kernel-bench v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/examples/kernel-bench)
+   Compiling soniclaw-tuning v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-tuning)
+   Compiling soniclaw-commands v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-commands)
+   Compiling soniclaw-engine v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-engine)
+   Compiling soniclaw-core v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/crates/soniclaw-core)
+   Compiling cargo-soniclaw v0.129.0 (/workspace/scratch/cd89c8ef929d/dsp129-work/soniclaw/tools/cargo-soniclaw)
+    Finished `test` profile [unoptimized] target(s) in 35.58s
+     Running unittests src/main.rs (target/debug/build/cargo-soniclaw/91afec403159a3d0/out/cargo_soniclaw-91afec403159a3d0)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw/c4fff440d20bd84e/out/soniclaw-c4fff440d20bd84e)
+
+running 9 tests
+test hosted::tests::cycles_duplicates_and_bad_gains_are_rejected_before_loading ... ok
+test rendering::export_tests::declared_latency_is_trimmed_without_losing_the_end ... ok
+test rendering::tests::continuous_state_tail_and_partition_invariance ... ok
+test rendering::tests::cancellation_and_invalid_input_are_explicit ... ok
+test rendering::export_tests::failed_stem_export_does_not_commit_partial_files ... ok
+test hosted::persistence_tests::numeric_host_parameter_ids_survive_mixed_json ... ok
+test hosted::tests::native_graph_capture_and_owner_revocation ... ok
+test authoring::tests::export_roundtrip_rr_and_no_overwrite ... ok
+test authoring::tests::pitch_crossing_tokens ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+     Running tests/realtime.rs (target/debug/build/soniclaw/a9b8dd517b92b47e/out/realtime-a9b8dd517b92b47e)
+
+running 5 tests
+test offline_automation_is_partition_independent ... ok
+test automation_and_record_enqueue_do_not_allocate ... ok
+test offline_audio_is_independent_of_block_partition ... ok
+test prepared_sampler_and_parallel_graph_do_not_allocate ... ok
+test prepared_chain_does_not_allocate_while_processing ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/v010.rs (target/debug/build/soniclaw/8821120a0a793120/out/v010-8821120a0a793120)
+
+running 5 tests
+test preview_resamples_and_stops_without_callback_allocations ... ok
+test invalid_metadata_and_corrupt_document_do_not_change_catalog ... ok
+test corrupt_latest_index_recovers_previous_and_never_overwrites_corruption ... ok
+test searchable_catalog_persists_tags_banks_favourites_and_projects ... ok
+test relocation_is_scoped_and_transactional ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/v011.rs (target/debug/build/soniclaw/08a9b7a8b7657e76/out/v011-08a9b7a8b7657e76)
+
+running 6 tests
+test release_uses_note_on_velocity_and_waits_for_sustain_up ... ok
+test identified_release_is_not_duplicated_and_choke_does_not_trigger_release ... ok
+test energy_transients_generate_scoped_slice_ranges ... ok
+test sfz_rejects_unsupported_and_escaping_data ... ok
+test velocity_crossfades_layer_and_follow_endpoints ... ok
+test sfz_subset_imports_inheritance_notes_paths_endpoints_and_release ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/v013.rs (target/debug/build/soniclaw/a29cc387bff64d34/out/v013-a29cc387bff64d34)
+
+running 1 test
+test project_automation_survives_state_and_builds ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/v030.rs (target/debug/build/soniclaw/995b206d5a8b7677/out/v030-995b206d5a8b7677)
+
+running 2 tests
+test optimized_gain_ramp_is_block_partition_independent ... ok
+test new_effects_and_multisampler_do_not_allocate_in_callbacks ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.21s
+
+     Running tests/v039.rs (target/debug/build/soniclaw/4b5ed3f83f707410/out/v039-4b5ed3f83f707410)
+
+running 2 tests
+test project_persists_tuning_and_default_projects_omit_it ... ok
+test actual_synth_and_sampler_use_absolute_tuning_without_allocations ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/v040.rs (target/debug/build/soniclaw/48878bc02abfa928/out/v040-48878bc02abfa928)
+
+running 6 tests
+test undo_redo_rebuild_and_failed_edit_are_transactional ... ok
+test complete_state_rebuilds_graph_and_rejects_failure_without_mutation ... ok
+test sample_map_and_loop_roundtrip_render_without_external_pcm_state ... ok
+test mpe_pitch_changes_only_the_addressed_channel_at_event_time ... ok
+test automated_effects_and_expressive_sampler_do_not_allocate ... ok
+test disk_callback_and_seek_do_not_allocate ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.31s
+
+     Running tests/v050.rs (target/debug/build/soniclaw/00d223e33c44e815/out/v050-00d223e33c44e815)
+
+running 6 tests
+test spectral_gate_suppresses_low_noise_and_width_preserves_mono_sum ... ok
+test new_project_nodes_roundtrip_and_preserve_parameter_identities ... ok
+test wavetable_synthesis_and_analysis_do_not_allocate ... ok
+test all_new_effect_paths_are_prepared_allocation_free_and_finite ... ok
+test timed_automation_and_latency_are_partition_independent ... ok
+test advanced_effects_accept_supported_rates_and_reject_invalid_preparation ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.50s
+
+     Running tests/v060.rs (target/debug/build/soniclaw/fa06dbaeca57e18d/out/v060-fa06dbaeca57e18d)
+
+running 5 tests
+test project_saves_base_macro_identity_and_clears_removed_routes_transactionally ... ok
+test synced_lfo_and_midi_sources_are_deterministic_and_bounded ... ok
+test realtime_pitch_shift_transposes_a_tone_and_declares_delay ... ok
+test granular_sustain_then_release_reaches_silence ... ok
+test prepared_effects_granular_modulation_and_ir_swaps_do_not_allocate_or_free ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.56s
+
+     Running tests/v070.rs (target/debug/build/soniclaw/dd71df58fc3350a4/out/v070-dd71df58fc3350a4)
+
+running 4 tests
+test graph_swap_warms_and_defers_retirement_with_queue_backpressure ... ok
+test sampler_regions_bound_reads_and_loop_fades_reduce_the_wrap_jump ... ok
+test short_humanized_notes_release_and_capacity_overflow_panics_safely ... ok
+test voice_mpe_render_is_partition_independent_and_allocation_free ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/v080.rs (target/debug/build/soniclaw/5c0324dfec78695d/out/v080-5c0324dfec78695d)
+
+running 9 tests
+test recovery_digest_mutation_is_rejected_and_user_project_is_unchanged ... ok
+test bundle_rejects_traversal_even_with_valid_manifest_digest_and_oversized_headers ... ok
+test latest_load_wins_and_factory_runs_on_a_separate_thread ... ok
+test bundle_failure_preserves_existing_destinations_and_removes_partial_import ... ok
+test recovery_skips_corruption_and_wrong_products_and_rotates_after_commit ... ok
+test bundle_import_request_loads_resources_from_new_root ... ok
+test failed_load_can_be_followed_by_valid_load_and_background_autosave_recovery ... ok
+test cancellation_and_full_queue_have_explicit_behavior ... ok
+test portable_bundle_roundtrip_assets_and_prepared_audio ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/v090.rs (target/debug/build/soniclaw/4368be62e32256e5/out/v090-4368be62e32256e5)
+
+running 11 tests
+test registration_default_state_and_invalid_ranges_are_checked ... ok
+test compiled_pack_discovery_and_registered_audio_has_no_callback_heap_work ... ok
+test graph_modulation_routes_to_registered_parameters ... ok
+test sample_accurate_automation_is_partition_independent_for_registered_nodes ... ok
+test old_custom_state_migrates_and_host_restore_reuses_exact_parameter_handles ... ok
+test repeated_construction_frees_owned_parameter_metadata ... ok
+test failed_restore_and_missing_registration_leave_state_and_values_intact ... ok
+test standalone_session_keeps_registry_across_edits_undo_redo_and_failure ... ok
+test duplicate_registration_bad_metadata_and_settings_are_rejected ... ok
+test registry_is_used_by_background_load_and_bundle_roundtrip ... ok
+test optional_registered_editor_renders_and_reports_fallback ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-accessibility-audit/f72e31fda8506032/out/soniclaw_accessibility_audit-f72e31fda8506032)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-audio-editing/6ca9b75df706cfc0/out/soniclaw_audio_editing-6ca9b75df706cfc0)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-automation/d2a57e68d9c87361/out/soniclaw_automation-d2a57e68d9c87361)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/playback.rs (target/debug/build/soniclaw-automation/70772449767749d7/out/playback-70772449767749d7)
+
+running 7 tests
+test callback_has_no_allocations ... ok
+test curves_and_endpoint_holds ... ok
+test extreme_transport_position_saturates_inner_sample_offsets ... ok
+test partition_invariance_loop_and_seek ... ok
+test bounds_unknown_targets_and_serialization ... ok
+test recorder_snap_transaction_and_modes ... ok
+test tempo_continuity_and_touch_latch ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-bus/e5d0735e6fa687ce/out/soniclaw_bus-e5d0735e6fa687ce)
+
+running 7 tests
+test flex::tests::invalid_layouts_and_buffers_fail_silent ... ok
+test multigraph::tests::compensation_aligns_impulses_across_partitions_without_allocating ... ok
+test flex::tests::explicit_aux_routing_does_not_mix_sidechain ... ok
+test multigraph::tests::independent_auxiliary_and_sidechain_channels_do_not_leak ... ok
+test tests::mono_to_stereo_and_suspend ... ok
+test multigraph::tests::cycles_and_unknown_channels_are_rejected_before_factory ... ok
+test tests::sidechain_reduces_main_without_leaking_into_output ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-clap/152300d8f8b639f8/out/soniclaw_clap-152300d8f8b639f8)
+
+running 3 tests
+test fp::tests::audio_scope_enables_flush_and_restores_host_control ... ok
+test tests::clap_note_expression_routes_with_sample_offsets_and_note_identity ... ok
+test tests::clap_project_roundtrip_and_structural_restart_guard ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-clap-demo/527c098718b7ea9a/out/soniclaw_clap_demo-527c098718b7ea9a)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-clap-isolation-helper/2c5b9e25d43b8bd3/out/soniclaw_clap_isolation_helper-2c5b9e25d43b8bd3)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-clap-smoke/713703ae4bfa0ac9/out/soniclaw_clap_smoke-713703ae4bfa0ac9)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-clip-studio/a63da7f1a946d859/out/soniclaw_clip_studio-a63da7f1a946d859)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-clips/e7f274a5bd4a2bce/out/soniclaw_clips-e7f274a5bd4a2bce)
+
+running 10 tests
+test tests::audio_is_compensated_to_instrument_latency ... ok
+test control::tests::seek_chases_sustained_key_after_key_up_without_stuck_note ... ok
+test control::tests::controllers_offsets_resets_and_partition_are_exact ... ok
+test control::tests::edits_are_atomic_and_legacy_empty_controls_are_readable ... ok
+test audio_edit::tests::overlap_crossfade_and_linked_operations_are_nondestructive ... ok
+test tests::density_and_expansion_limits_reject_unplayable_documents ... ok
+test tests::fades_loops_mono_mapping_and_callback_partitions_match_without_allocations ... ok
+test tests::edits_are_transactional_and_serialization_roundtrips ... ok
+test audio_edit::tests::split_join_preserves_loop_phase_and_original_curves_exactly ... ok
+test tests::midi_loop_offsets_seek_catchup_and_stop_are_precise ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-commands/b4925d4d52e59f0b/out/soniclaw_commands-b4925d4d52e59f0b)
+
+running 3 tests
+test tests::failed_edits_roll_back ... ok
+test tests::grouped_undo_redo_branch_and_capacity ... ok
+test tests::keymap_conflicts_unknown_commands_and_disabled_dispatch ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-controller-demo/9ec41ae75c88531a/out/soniclaw_controller_demo-9ec41ae75c88531a)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-core/5e6715679b1ba79a/out/soniclaw_core-5e6715679b1ba79a)
+
+running 5 tests
+test channel_bus::publication_tests::subranges_overlays_and_clear_keep_outer_callback_coordinates ... ok
+test tests::events_must_fit_and_be_ordered ... ok
+test tests::parameters_reject_nan_and_clamp ... ok
+test tests::rejects_partial_frame_and_bad_spec ... ok
+test tests::ramp_reaches_exact_target_without_restarting ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-crash-host/2feaeec666f242b9/out/soniclaw_crash_host-2feaeec666f242b9)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-daw-arrangement/8996c4c7c9b39390/out/soniclaw_daw_arrangement-8996c4c7c9b39390)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-daw-automation/1441962b0b5e8400/out/soniclaw_daw_automation-1441962b0b5e8400)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-daw-cues/ddbd473104b4ce7d/out/soniclaw_daw_cues-ddbd473104b4ce7d)
+
+running 1 test
+test tests::independent_cue_workflow ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.22s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-daw-delivery/fd590b13b8b61baa/out/soniclaw_daw_delivery-fd590b13b8b61baa)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-daw-elastic/db3cdc5709c484ad/out/soniclaw_daw_elastic-db3cdc5709c484ad)
+
+running 1 test
+test tests::phase_linked_workflow ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.15s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-daw-midi/0ad180557d0f76ac/out/soniclaw_daw_midi-0ad180557d0f76ac)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-daw-mixing/a89b128599477b89/out/soniclaw_daw_mixing-a89b128599477b89)
+
+running 1 test
+test tests::submix_sidechain_workflow ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-daw-multichannel/07f8acabd2556324/out/soniclaw_daw_multichannel-07f8acabd2556324)
+
+running 1 test
+test tests::callback_route_partition_and_allocations ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-daw-plugins/bcdc981884ca69ad/out/soniclaw_daw_plugins-bcdc981884ca69ad)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-daw-sessions/fb6dbfac461817be/out/soniclaw_daw_sessions-fb6dbfac461817be)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-daw-takes/215f0feaced73062/out/soniclaw_daw_takes-215f0feaced73062)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-daw-timing/8898f2f1ff122706/out/soniclaw_daw_timing-8898f2f1ff122706)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-daw-tools/97a3a669f8293f60/out/soniclaw_daw_tools-97a3a669f8293f60)
+
+running 1 test
+test tests::portable_stock_workflow ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.51s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-daw-workspace/c3cd60333ede44f1/out/soniclaw_daw_workspace-c3cd60333ede44f1)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-desktop/67ad4905e600e947/out/soniclaw_desktop-67ad4905e600e947)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-desktop-studio/58c0dddca4774695/out/soniclaw_desktop_studio-58c0dddca4774695)
+
+running 1 test
+test gui::tests::reference_ui_and_project_actions_work_without_opening_a_device ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.25s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-device/3eefaad3603b80e9/out/soniclaw_device-3eefaad3603b80e9)
+
+running 7 tests
+test output_map::tests::physical_mapping_sanitizes_clamps_mutes_and_rejects_overlaps ... ok
+test duplex::tests::bridge_prefill_and_underrun_recover_without_panicking ... ok
+test tests::shared_output_duplex_event_drain_is_bounded_and_panic_clears_backlog ... ok
+test tests::queue_overflow_requests_panic_without_overwriting ... ok
+test timestamp_tests::exact_offsets_and_future_retention_are_block_partition_invariant ... ok
+test timestamp_tests::late_out_of_order_and_panic_never_restart_future_notes ... ok
+test duplex::drift_tests::adaptive_bridge_tracks_a_slightly_faster_input_clock ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.16s
+
+     Running tests/manager.rs (target/debug/build/soniclaw-device/fc2394777af19764/out/manager-fc2394777af19764)
+
+running 12 tests
+test duplicate_names_use_occurrence_and_unknown_buffer_range_is_a_request ... ok
+test preferences_apply_transactionally_and_default_device_changes_restart ... ok
+test fallback_is_explicit_and_returns_to_preferred_device ... ok
+test disconnect_waits_then_reconnects_only_after_interval ... ok
+test input_loss_closes_take_and_retries_both_streams ... ok
+test disabled_reconnect_requires_manual_retry ... ok
+test selects_rates_channels_buffers_and_formats_without_opening ... ok
+test stream_error_rebuilds_and_manual_stop_cancels_retries ... ok
+test unified_layout_selection_accounts_for_requested_buffer ... ok
+test unified_negotiates_shared_rate_and_hardware_maps ... ok
+test unified_output_recording_can_disable_input_and_old_preferences_load ... ok
+test preferences_roundtrip_and_reject_corrupt_unknown_and_oversized_files ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-diagnostics/3b5288aa9e625138/out/soniclaw_diagnostics-3b5288aa9e625138)
+
+running 1 test
+test tests::detects_nonfinite_across_variable_blocks ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-dsp/9ba8482e092ef22c/out/soniclaw_dsp-9ba8482e092ef22c)
+
+running 121 tests
+test advanced::analysis::tests::true_peak_detects_intersample_crest ... ok
+test advanced::crossover::tests::crossover_branches_are_minus_six_db_at_cutoff ... ok
+test advanced::creative::tests::tempo_delay_impulse_and_tremolo_bounds ... ok
+test advanced::spectral::real_fft::tests::real_transform_matches_complex_reference ... ok
+test advanced::spectral::real_fft::tests::calibrates_tone_dc_and_nyquist_and_checks_buffers ... ok
+test advanced::spectral::tests::fft_inverse_and_analyzer_calibration ... ok
+test advanced::dynamics::tests::rms_ratio_and_transient_bypass ... ok
+test amp_models::tests::implicit_solution_and_asymmetry ... ok
+test advanced::spectral::tests::stft_identity_has_exact_declared_latency ... ok
+test automated::tests::live_gain_is_smoothed_and_partition_independent ... ok
+test ballistics::tests::elapsed_time_and_channel_isolation ... ok
+test binaural::tests::delay_fraction_and_ear_order_are_preserved ... ok
+test block_dsp::tests::layouts_and_scalar_agree ... ok
+test composition::tests::aligned_lookahead_and_separate_processing ... ok
+test composition::tests::dry_path_crossfades_without_changing_delay ... ok
+test composition::tests::duplicated_mono_uses_independent_history ... ok
+test advanced::filters::tests::svf_response_and_ladder_decay ... ok
+test creative_filters::continuity_tests::near_zero_drive_matches_linear_limit ... ok
+test convolution::tests::fft_matches_direct_convolution_across_ir_partitions_and_variable_blocks ... ok
+test creative_filters::response_tests::linear_limit_has_expected_cutoff_gain ... ok
+test creative_filters::tests::comb_impulse_tuning_decay_partition_and_allocations ... ok
+test creative_filters::response_tests::formant_partition_channel_isolation_and_reset ... ok
+test advanced::wavetable::tests::mipmaps_remove_out_of_band_harmonics ... ok
+test dynamics::tests::curve_modes_knee_and_limits ... ok
+test dynamics::tests::keyed_partition_latency_and_invalid_rejection ... ok
+test effects::tests::chorus_wet_path_and_parameter_rejection ... ok
+test dither::tests::deterministic_split_and_silence_statistics ... ok
+test effects::tests::dynamics_ceiling_and_ratio ... ok
+test advanced::analysis::tests::pitch_and_stereo ... ok
+test expressive::tests::mpe_combines_master_and_member_pitch ... ok
+test expressive::tests::note_ids_isolate_unison_and_choke ... ok
+test advanced::crossover::tests::two_and_three_way_recombination_flat ... ok
+test filter_design::advanced_design::tests::fir_symmetry_and_half_band_complement ... ok
+test filter_design::tests::endpoints_cutoff_and_fir_delay ... ok
+test effects::tests::eq_peak_boost_at_center ... ok
+test fractional_delay::interpolation_tests::all_modes_agree_for_whole_sample_delay ... ok
+test fractional_delay::interpolation_tests::lagrange_reproduces_cubic_polynomial_and_integer_rounds ... ok
+test fractional_delay::interpolation_tests::thiran_taps_preserve_magnitude_and_independent_state ... ok
+test fractional_delay::tests::stereo_impulse_and_bounded_slew ... ok
+test fm_operators::tests::modulation_changes_tone_and_note_timing_matches_across_blocks ... ok
+test granular::tests::zero_velocity_id_releases_only_the_matching_note ... ok
+test iir_oversampling::tests::dc_partition_and_rejection ... ok
+test creative_filters::tests::nonlinear_filter_sweeps_and_morph_stay_finite ... ok
+test advanced::analysis::tests::loudness_reference_gate_and_bounded_history ... ok
+test linear_phase::tests::three_bands_recombine_with_reported_delay ... ok
+test effects::tests::gate_rejects_quiet_and_reset_clears_tails ... ok
+test modulation::compiled::config_tests::prepared_memory_budget_rejects_oversized_config ... ok
+test modulation::compiled::config_tests::source_updates_preserve_phase_and_validate_topology ... ok
+test modulation::compiled::smoothing_tests::slow_high_rate_smoothing_does_not_stall_at_f32_resolution ... ok
+test modulation::compiled::tests::invalid_inputs_do_not_advance_or_change_base ... ok
+test modulation::compiled::tests::partition_equality_allocations_and_evaluation_budget ... ok
+test modulation::tests::base_is_preserved_and_modulation_bounded ... ok
+test ir_capture::tests::recovers_signed_echoes_and_preserves_pre_roll ... ok
+test advanced::dynamics::tests::lookahead_latency_and_intersample_peak ... ok
+test modulation::tests::envelope_releases_from_current_level ... ok
+test nonlinear::tests::invalid_controls_are_transactional ... ok
+test nonlinear::tests::repeated_inputs_and_analytic_integral_are_stable ... ok
+test nonlinear::tests::integer_latency_partition_zero_alloc_and_reset ... ok
+test filter_design::advanced_design::tests::reference_iir_orders_and_response ... ok
+test oscillators::tests::generator_padding_and_reset ... ok
+test oversampling::multirate::tests::wrapper_retimes_events_and_clock ... ok
+test oversampling::tests::reported_latency_matches_impulse_peak_and_dry ... ok
+test oversampling::multirate::tests::callback_allocations_reset_and_invalid_input ... ok
+test amp_models::tests::prepared_chain_partition_and_reset ... ok
+test physical::tests::modal_impulse_has_correct_decay ... ok
+test oversampling::unified::tests::stage_rejects_high_rate_content_above_base_nyquist ... ok
+test physical::tests::string_partition_and_stereo_coherence ... ok
+test physical::tests::pluck_tuning_decay_and_reset ... ok
+test pitch_quality::tests::unity_is_unchanged_and_controls_validate ... ok
+test pitch_quality::tests::formant_shift_is_finite_and_partition_invariant ... ok
+test precision::tests::double_lookahead_is_precise_and_f32_entry_point_is_equivalent ... ok
+test precision::tests::keyed_double_dynamics_tracks_legacy_results_across_partitions ... ok
+test precision::tests::native_gain_and_filters_preserve_sub_f32_details ... ok
+test oscillators::tests::modulation_partition_and_allocation ... ok
+test prepared_resample::tests::coefficients_match_reference_at_band_rates_and_allocate_nothing ... ok
+test prepared_resample::tests::above_nyquist_fixture_is_attenuated ... ok
+test rack::tests::dynamic_eq_reduces_loud_center_tone ... ok
+test mastering::tests::limiter_keeps_a_transient_below_the_meter_ceiling_and_rejects_silence ... ok
+test resample::tests::channels_duration_dc_and_bad_inputs ... ok
+test granular::tests::grains_are_deterministic_and_release ... ok
+test resample::tests::integer_linear_samples_do_not_read_a_zero_weight_page ... ok
+test restoration::tests::click_repair_preserves_channels ... ok
+test restoration::tests::notch_at_mains_frequency ... ok
+test rt_controls::prepared_control_commands_do_not_allocate_or_drop_assets ... ok
+test sample_playback::tests::high_rate_small_loop_stays_inside ... ok
+test sample_playback::tests::loop_search_finds_period_and_rejects_outside_windows ... ok
+test sample_playback::tests::overlap_skip_and_callback_partition ... ok
+test sample_playback::tests::prepared_tables_are_shared_and_rate_is_guarded ... ok
+test sample_playback::tests::reverse_and_pingpong_endpoints ... ok
+test sampler::tests::rejects_nonfinite_and_partial_frames ... ok
+test sampler::tests::sample_rate_conversion_and_end_of_sample ... ok
+test reed_waveguide::tests::sustained_pitch_tracks_bore_length_and_expires_without_breath ... ok
+test rack::tests::neutral_rack_recombines_and_solo_is_band_selective ... ok
+test spatial::tests::true_stereo_routing_latency_and_partition ... ok
+test advanced::reverb::tests::reverb_has_predelay_decay_and_reset ... ok
+test polyphonic_analysis::tests::overlapping_pitches_with_harmonics_resolve_as_notes ... ok
+test spectral_fx::tests::freeze_continues_after_input_silence ... ok
+test oversampling::multirate::tests::all_factors_latency_dc_partition_and_channel_isolation ... ok
+test stereo_convolution::tests::swap_crossfades_and_retires_on_control ... ok
+test spectral_morph::tests::identity_aligns_and_envelope_changes_while_remaining_finite ... ok
+test spectral_fx::tests::hilbert_frequency_shift_translates_tone ... ok
+test resample::tests::downsample_rejects_alias_and_preserves_passband ... ok
+test streaming::linked_tests::selected_reference_owns_all_grain_decisions ... ok
+test streaming::tests::wsola_backpressure_finish_errors_and_reset ... ok
+test stream_resample::tests::partition_equivalence_and_exact_length ... ok
+test tests::a4_pitch_and_sine_period ... ok
+test tests::delay_impulse_is_at_expected_frame ... ok
+test tests::envelope_release_from_current_level_terminates ... ok
+test tests::synth_obeys_sample_offsets_and_panic ... ok
+test voice_mod::tests::voices_have_independent_lfos_envelopes_and_release ... ok
+test wave_digital::tests::junction_satisfies_kirchhoff_for_signed_inputs ... ok
+test wave_digital::tests::prepared_circuit_is_zero_latency_and_channel_independent ... ok
+test wavetable_author::tests::detects_circular_phase_offset ... ok
+test streaming::tests::onsets_reset_phase_and_reset_clears_state ... ok
+test mastering::tests::targets_loudness_and_preserves_stereo_length_at_44100 ... ok
+test spatial::tests::hybrid_dry_alignment_reset_and_tail ... ok
+test streaming::tests::phase_locked_pitch_frequency_partition_unity_and_invalid ... ok
+test spectral_fx::tests::offline_stretch_duration_and_pitch ... ok
+test streaming::tests::wsola_duration_pitch_stereo_coherence_partition_and_no_alloc ... ok
+test stereo_convolution::tests::stereo_two_tier_matches_direct_and_uniform_latency ... ok
+test oversampling::unified::tests::delay_moment_impulse_dc_and_partition_in_all_modes ... ok
+
+test result: ok. 121 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 5.43s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-dsp-filters/c6d6a567f28e84dd/out/soniclaw_dsp_filters-c6d6a567f28e84dd)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-dsp-lab/7bca826480704b6f/out/soniclaw_dsp_lab-7bca826480704b6f)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-dsp-lab/2d60b25fc236b4ac/out/soniclaw_dsp_lab-2d60b25fc236b4ac)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-dsp-modulation/4e9cceec73fac4c6/out/soniclaw_dsp_modulation-4e9cceec73fac4c6)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-dsp-nonlinear/bdf145a6c2e94e82/out/soniclaw_dsp_nonlinear-bdf145a6c2e94e82)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-dsp-oversampling/be6bf0eb659c948e/out/soniclaw_dsp_oversampling-be6bf0eb659c948e)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-dsp-suite/d5d1af518531fe78/out/soniclaw_dsp_suite-d5d1af518531fe78)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-ecosystem/4f04b8b326359a96/out/soniclaw_ecosystem-4f04b8b326359a96)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-editor/8654e33626261f3f/out/soniclaw_editor-8654e33626261f3f)
+
+running 1 test
+test tests::bounded_queue_and_acknowledgement_preserve_order ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-engine/c8fff7002c9f3737/out/soniclaw_engine-c8fff7002c9f3737)
+
+running 4 tests
+test automation_tests::midi_offsets_survive_parameter_splits ... ok
+test tests::invalid_blocks_are_silent_and_do_not_advance ... ok
+test automation_tests::automation_is_exact_and_invalid_batches_are_atomic ... ok
+test tests::offline_cross_block_events_and_tail ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-example-processors/84a465dd881208a3/out/soniclaw_example_processors-84a465dd881208a3)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-export-conversion/125209d33884e134/out/soniclaw_export_conversion-125209d33884e134)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-formats/9feca398f3136508/out/soniclaw_formats-9feca398f3136508)
+
+running 1 test
+test tests::subtype_and_shape_contract ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-freeze-session/1f8a59a59692fe69/out/soniclaw_freeze_session-1f8a59a59692fe69)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-graph/e881d6fd232dae1e/out/soniclaw_graph-e881d6fd232dae1e)
+
+running 6 tests
+test tests::cycles_and_duplicate_edges_are_rejected ... ok
+test live::tests::exact_fade_and_control_retirement ... ok
+test tests::parallel_branches_sum_and_handle_variable_lengths ... ok
+test latency_tests::fanin_and_output_buses_are_latency_aligned ... ok
+test parallel::tests::missed_deadline_silences_and_reset_rejects_old_packets ... ok
+test parallel::tests::concurrent_branches_dependency_sum_and_bounded_callback ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-host/380c7aa7c3bbfebd/out/soniclaw_host-380c7aa7c3bbfebd)
+
+running 18 tests
+test direct::tests::impulse_alignment_limits ... ok
+test live::buffered_config_tests::one_packet_lookahead_has_one_packet_delay ... ok
+test isolation::tests::bounded_protocol_and_midi_conversion ... ok
+test isolation::tests::output_gestures_and_parameter_validation_are_bounded ... ok
+test live::tests::callback_backpressure_is_bounded_and_heap_free ... ok
+test live::tests::invalid_layout_and_stopped_owner_silence ... ok
+test editor_workspace::tests::persistence_is_bounded_and_identity_specific ... ok
+test live::tests::future_packet_survives_missing_block ... ok
+test live::tests::variable_callback_sizes_and_exact_bridge_delay ... ok
+test session::tests::merge_preserves_missing_payload_and_is_transactional ... ok
+test session::tests::bypass_delay_tracks_history_when_not_bypassed ... ok
+test session::tests::state_corruption_and_duplicate_slots_rejected ... ok
+test reconfigure::tests::topology_routes_budget_and_serialized_plans_reject_implicit_drops ... ok
+test studio::automation::tests::stable_ids_ranges_and_readonly_selection ... ok
+test studio::isolation_adapter::tests::saved_helper_path_does_not_authorize_execution ... ok
+test studio::isolation_adapter::tests::recovery_budget_is_durable ... ok
+test studio::registry::tests::malformed_cache_rejected ... ok
+test studio::registry::tests::quarantine_requires_successful_rescan ... ok
+
+test result: ok. 18 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-host-fixture/a107ccad981c9552/out/soniclaw_host_fixture-a107ccad981c9552)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-hybrid-instrument/f39b7b40b53c1d20/out/soniclaw_hybrid_instrument-f39b7b40b53c1d20)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-io/e5ce7ee80243765d/out/soniclaw_io-e5ce7ee80243765d)
+
+running 1 test
+test tests::stereo_round_trip_and_saturation ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-isolated-clap-host/57b8fcf24d35c42c/out/soniclaw_isolated_clap_host-57b8fcf24d35c42c)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-isolated-control/b9a96bcd29454ae0/out/soniclaw_isolated_control-b9a96bcd29454ae0)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests ../../third-party/vst3-host/src/bin/vst3-host-helper.rs (target/debug/build/soniclaw-isolation-helper/61765c75a98c1c0d/out/vst3_host_helper-61765c75a98c1c0d)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-kernel-bench/3cb8457c5d0eccd8/out/soniclaw_kernel_bench-3cb8457c5d0eccd8)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-kernels/3aae45e0c93cc765/out/soniclaw_kernels-3aae45e0c93cc765)
+
+running 4 tests
+test block_math_tests::multiply_and_clamp_match_scalar_for_unaligned_tails ... ok
+test tests::errors_leave_destinations_untouched ... ok
+test denormals::tests::restores_thread_mode_when_nested_or_unwinding ... ok
+test tests::available_backends_match_scalar_for_unaligned_tails_and_do_not_allocate ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-live-fx/df3645ab4854dd95/out/soniclaw_live_fx-df3645ab4854dd95)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-loop-comp/c442a8405d1fc98a/out/soniclaw_loop_comp-c442a8405d1fc98a)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-microtuning/8e3b0082bb4e013d/out/soniclaw_microtuning-8e3b0082bb4e013d)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-midi/ca803652febafa90/out/soniclaw_midi-ca803652febafa90)
+
+running 16 tests
+test controllers::tests::pickup_external_change_and_bank_rearm ... ok
+test file::tests::ppqn_tempo_roundtrip_and_truncation_rejection ... ok
+test learning::tests::learn_replaces_target_and_resolves_before_playback ... ok
+test controllers::tests::relative_modes_toggle_and_no_alloc ... ok
+test controllers::tests::feedback_coalesces_retries_and_suppresses_only_sent_echoes ... ok
+test performance::tests::chord_release_keeps_note_identity_after_scale_mapping ... ok
+test schedule::allocation_tests::prepared_scheduler_performs_no_heap_operations ... ok
+test schedule::tests::boundaries_stability_lateness_and_panic ... ok
+test schedule::tests::driver_anchor_is_explicit_and_bounded ... ok
+test tests::running_status_and_clock ... ok
+test tests::pitch_bend_and_one_byte_messages ... ok
+test performance::tests::arp_partition_independence_and_transport_stop ... ok
+test tests::sysex_and_common_cancel_running_status ... ok
+test wire::tests::running_program_sysex_and_interleaved_clock ... ok
+test wire::tests::sysex_overflow_recovers_without_allocating ... ok
+test output::tests::worker_sends_and_rejects_out_of_order_timestamps ... ok
+
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-mixer/313d357ee2001fdc/out/soniclaw_mixer-313d357ee2001fdc)
+
+running 3 tests
+test tests::pan_sends_meters_and_no_alloc ... ok
+test tests::sample_automation_partition_and_invalid_is_transactional ... ok
+test tests::persistence_and_group_mute ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-mixer-studio/71c338ee2b73de4b/out/soniclaw_mixer_studio-71c338ee2b73de4b)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-multibus-host/d5dc6413ea4fd25c/out/soniclaw_multibus_host-d5dc6413ea4fd25c)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-multitrack-session/9e3131e771ec8b43/out/soniclaw_multitrack_session-9e3131e771ec8b43)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-musical-host/ddc8cf502516f26a/out/soniclaw_musical_host-ddc8cf502516f26a)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-native-editor/c57fe5ad786894c2/out/soniclaw_native_editor-c57fe5ad786894c2)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-parallel-compressor/7f3e31829663a2fa/out/soniclaw_parallel_compressor-7f3e31829663a2fa)
+
+running 1 test
+test tests::plug_in_reports_latency_and_zero_mix_is_aligned ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-params/026c7d070488445d/out/soniclaw_params-026c7d070488445d)
+
+running 6 tests
+test tests::bounded_integer_snapshot_preserves_extreme_representable_steps ... ok
+test tests::declarations_reject_collisions_and_invalid_ranges ... ok
+test tests::normalized_snapshot_roundtrip_rejects_wrong_revision_before_mutation ... ok
+test tests::dsp_host_ui_share_mapping_types_and_text ... ok
+test tests::real_rust_enums_keep_typed_value_and_host_labels ... ok
+test tests::callback_reads_writes_and_quantization_allocate_nothing ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-pipewire/a5688da4a4514fd1/out/soniclaw_pipewire-a5688da4a4514fd1)
+
+running 1 test
+test native::tests::planar_callback_splits_without_allocation_and_rejects_wrong_rate ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-pipewire-probe/732db15f53723162/out/soniclaw_pipewire_probe-732db15f53723162)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-pitch-time/540250855f9c4027/out/soniclaw_pitch_time-540250855f9c4027)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-plugin/866ab9077c967379/out/soniclaw_plugin-866ab9077c967379)
+
+running 1 test
+test tests::lifecycle_and_state_guard ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-project-plugin/68a255c2c4b80ee6/out/soniclaw_project_plugin-68a255c2c4b80ee6)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-quality/2c37857e10b39b8c/out/soniclaw_quality-2c37857e10b39b8c)
+
+running 2 tests
+test tests::sweep_statistics_threshold_failure_and_invalid_signals ... ok
+test tests::calibrated_harmonic_noise_parseval_and_bins ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-quality-suite/caba1e21895f98cb/out/soniclaw_quality_suite-caba1e21895f98cb)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-reconfigure-host/6931e3c4c9e1a2b5/out/soniclaw_reconfigure_host-6931e3c4c9e1a2b5)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-record/3a766fe91322080d/out/soniclaw_record-3a766fe91322080d)
+
+running 6 tests
+test tests::dry_and_wet_recordings_and_restarts ... ok
+test multitrack::tests::invalid_buffers_do_not_publish_partial_tracks_and_gaps_are_aligned ... ok
+test comp::tests::marked_passes_comp_crossfade_and_immutable_sources ... ok
+test multitrack::tests::synchronized_float_preroll_punch_arming_and_selection ... ok
+test concurrent_tests::stop_finalizes_all_inflight_packets_and_the_next_take_is_clean ... ok
+test tests::overflow_preserves_duration_and_reports_loss ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.27s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-reference/e75bdb25b3407e9c/out/soniclaw_reference-e75bdb25b3407e9c)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-reference-studio/e26c010878d41400/out/soniclaw_reference_studio-e26c010878d41400)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-registry/20710cd9f840e871/out/soniclaw_registry-20710cd9f840e871)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-render/d792331fc260b814/out/soniclaw_render-d792331fc260b814)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-sample-author/fd23d2a6d980564b/out/soniclaw_sample_author-fd23d2a6d980564b)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-sampler/28783769cbdd0211/out/soniclaw_sampler-28783769cbdd0211)
+
+running 4 tests
+test tests::memory_budget_and_bad_loops ... ok
+test tests::velocity_layers_and_round_robin ... ok
+test tests::sustain_and_stealing_crossfade ... ok
+test tests::sinc_loop_reads_periodic_history_after_first_wrap ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-scalable-editors/f73de6545531b7db/out/soniclaw_scalable_editors-f73de6545531b7db)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-sdk-tools/40f437d01594a7b4/out/soniclaw_sdk_tools-40f437d01594a7b4)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-session/4ca7bd61ef2bea7a/out/soniclaw_session-4ca7bd61ef2bea7a)
+
+running 1 test
+test tests::settings_roundtrip_and_version_validation ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-state/826bf59e45cac1c8/out/soniclaw_state-826bf59e45cac1c8)
+
+running 3 tests
+test project::tests::rejects_cycles ... ok
+test tests::invalid_restore_does_not_partially_apply ... ok
+test project::tests::migration_history_and_transactional_failure ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-stream/cf9a49476bd95b46/out/soniclaw_stream-cf9a49476bd95b46)
+
+running 6 tests
+test tests::worker_stream_matches_pcm_and_has_silent_eof ... ok
+test clips::tests::offsets_fades_loops_overlap_and_no_callback_allocations ... ok
+test paged::tests::disk_voices_layer_and_obey_note_ids ... ok
+test clips::tests::seek_prefetch_generation_and_metadata_rejection ... ok
+test paged::tests::cache_budget_and_underrun_recovery ... ok
+test paged::tests::seek_generations_pause_and_loop ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.62s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-stream-freeze/962f95da9a3fce92/out/soniclaw_stream_freeze-962f95da9a3fce92)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-streamed-session/85b493e5789079b4/out/soniclaw_streamed_session-85b493e5789079b4)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-studio/8f8ae0944ab6e932/out/soniclaw_studio-8f8ae0944ab6e932)
+
+running 44 tests
+test arrangement::tests::partial_automation_splines_keep_values ... ok
+test arrangement::tests::failed_timing_or_labels_leave_project_unchanged ... ok
+test export::tests::settings_reject_live_loop_duplicate_codec_and_future_schema ... ok
+test automation_write::tests::touch_latch_snap_and_stale_publication ... ok
+test history::tests::branch_noop_limits_and_invalid_editor_commit ... ok
+test jobs::tests::priority_fifo_and_replacement ... ok
+test history::tests::grouped_project_edits_undo_redo_and_failed_prepare_are_atomic ... ok
+test media::tests::reachability_keeps_disabled_and_opaque_resources ... ok
+test jobs::tests::consumed_tickets_do_not_retain_unbounded_replacement_keys ... ok
+test jobs::tests::capacity_progress_stale_cancellation_and_shutdown ... ok
+test delivery_tests::cancellation_after_preparation_removes_only_new_output ... ok
+test midi_pass::tests::loop_chase_keeps_multiple_pedal_held_voices_and_controller_state ... ok
+test midi_recording::tests::nonzero_start_and_step_tempo_boundaries_keep_absolute_clock ... ok
+test freeze::tests::cache_reuse_bypass_restore_and_invalidation ... ok
+test midi_recording::tests::filtering_quantization_and_stale_timeline ... ok
+test midi_pass::tests::passes_are_partition_invariant_and_chase_held_notes ... ok
+test loop_capture_tests::actual_clock_wraps_become_sample_exact_take_passes ... ok
+test midi_recording::tests::queue_overflow_unsupported_and_input_loss_never_publish_as_complete ... ok
+test native_buses::tests::frames_handle_partition_and_stale_tags ... ok
+test midi_recording::tests::sample_offsets_partition_invariance_raw_controllers_and_hanging_notes ... ok
+test native_edits::tests::grouped_editor_values_undo_redo ... ok
+test pending::tests::retention_and_torn_write_fallback ... ok
+test delivery_tests::same_pass_stems_trim_each_compiled_latency ... ok
+test recording::tests::controls_reject_invalid_arming_loop_punch_and_roundtrip ... ok
+test project::tests::portable_roundtrip_and_corruption_leave_original_intact ... ok
+test multitrack_integration::captures_complete_tracks_and_blocks_replacement_until_control_retirement ... ok
+test project::tests::legacy_migration_and_exact_missing_resource_repair ... ok
+test recovery::tests::lock_and_background_tick_bound_concurrency ... ok
+test native_state::tests::bounded_metadata_and_digest ... ok
+test routing::tests::removal_remaps_lanes_values_and_failed_prepare_is_atomic ... ok
+test sessions::tests::repeated_save_stale_identity_failed_resource_and_verified_open ... ok
+test tests::document_roundtrip_factory_failure_and_record_tap ... ok
+test tests::midi_while_stopped_and_invalid_input ... ok
+test tests::replacement_is_atomic_and_old_processors_retire_off_callback ... ok
+test timing::tests::impulse_polarity_noise_and_zero_boundary ... ok
+test recovery::tests::retained_snapshots_skip_incomplete_corrupt_latest_and_preserve_working_copy ... ok
+test workspace::tests::structural_commands_reindex_and_preserve_history_and_resources ... ok
+test recording::seek_recording_tests::streamed_recording_is_primed_at_selected_start_before_first_callback ... ok
+test midi_recording::tests::ramps_capture_in_beats_but_do_not_silently_approximate_smf ... ok
+test midi_recording::tests::duration_limit_and_seek_discontinuities_are_visible ... ok
+test tests::live_clips_inserts_mixer_clock_loop_and_partition ... ok
+test recording::tests::count_in_preroll_punch_and_click_exclusion_are_partition_invariant ... ok
+test freeze::tests::streamed_offline_job_waveform_cancel_and_stale_result ... ok
+test tempo_cache::tests::mixed_rate_warp_exact_clock_pitch_portability_stale_and_cancel ... ok
+
+test result: ok. 44 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.48s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-studio-automation-write/8a5d84bd8349ceff/out/soniclaw_studio_automation_write-8a5d84bd8349ceff)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-studio-demo/4cfd1b3fdd5b5084/out/soniclaw_studio_demo-4cfd1b3fdd5b5084)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-studio-demo/c07e765493818b07/out/soniclaw_studio_demo-c07e765493818b07)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-studio-export/b3fcf6eda7852f78/out/soniclaw_studio_export-b3fcf6eda7852f78)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-studio-history/ba9e5082eeb889b2/out/soniclaw_studio_history-ba9e5082eeb889b2)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-studio-isolation/4e7127ec50cd2ed6/out/soniclaw_studio_isolation-4e7127ec50cd2ed6)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-studio-jobs/82f28185eaa38517/out/soniclaw_studio_jobs-82f28185eaa38517)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-studio-media-audit/304d19b5d2902fdd/out/soniclaw_studio_media_audit-304d19b5d2902fdd)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-studio-midi-recording/a7cfc4e070dbd011/out/soniclaw_studio_midi_recording-a7cfc4e070dbd011)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-studio-native-buses/2217536892f7701e/out/soniclaw_studio_native_buses-2217536892f7701e)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-studio-plugin-windows/6e2daf888a6ab83e/out/soniclaw_studio_plugin_windows-6e2daf888a6ab83e)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-studio-recording/40e5edaeea0f9014/out/soniclaw_studio_recording-40e5edaeea0f9014)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-studio-recovery/b0c433397950d514/out/soniclaw_studio_recovery-b0c433397950d514)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-studio-routing/a98e69c8ac43526e/out/soniclaw_studio_routing-a98e69c8ac43526e)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-tempo-stream/7b1da5fd7dc1c940/out/soniclaw_tempo_stream-7b1da5fd7dc1c940)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-transport/c0e4bf1b6a028a6d/out/soniclaw_transport-c0e4bf1b6a028a6d)
+
+running 4 tests
+test tests::loop_and_punch_use_sample_boundaries_without_allocating ... ok
+test tests::meter_changes_require_bar_boundaries ... ok
+test processor_tests::musical_loop_is_block_partition_invariant ... ok
+test tests::step_and_ramp_integrals_round_trip ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-tuning/118b4cbff72b9778/out/soniclaw_tuning-118b4cbff72b9778)
+
+running 3 tests
+test tests::kbm_gaps_reference_and_repetition ... ok
+test tests::scala_ratios_nonmonotonic_and_negative_degrees ... ok
+test tests::equal_temperament_json_and_invalid ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-typed-effect/f83a6966be52b4a3/out/soniclaw_typed_effect-f83a6966be52b4a3)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-typed-effect/d883cb0210d256b9/out/soniclaw_typed_effect-d883cb0210d256b9)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-ui/cdd95bb2805b4973/out/soniclaw_ui-cdd95bb2805b4973)
+
+running 12 tests
+test controls::tests::meter_hold_and_release_are_time_based ... ok
+test controls::tests::response_matches_butterworth_cutoff ... ok
+test toolkit::tests::filmstrip_endpoint_uvs_are_exact ... ok
+test timeline::tests::multi_selection_history_full_range_and_atomic_failure ... ok
+test toolkit::tests::theme_roundtrip_and_invalid_metrics ... ok
+test toolkit::tests::svg_raster_is_real_and_bounded ... ok
+test accessibility::tests::semantic_tree_and_real_assistive_actions ... ok
+test clips::accessibility_tests::focused_note_keyboard_edit_changes_valid_document ... ok
+test toolkit::tests::keyboard_and_accumulated_discrete_drags_work ... ok
+test timeline::keyboard_test::focused_region_nudge_is_an_actual_ui_edit ... ok
+test controls::tests::controls_render_without_a_native_window ... ok
+test timeline::tests::viewport_culls_offscreen_and_reaches_high_track_and_midi_endpoints ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-ui-gallery/9dd6a2126765d9e6/out/soniclaw_ui_gallery-9dd6a2126765d9e6)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-vst3/a525fc119ffb847d/out/soniclaw_vst3-a525fc119ffb847d)
+
+running 11 tests
+test direct::tests::revoked_callback_remains_silent_without_allocation ... ok
+test direct::tests::parameter_pool_is_bounded_and_reuses_slots ... ok
+test isolation::tests::invalid_policy_rejected_without_native_execution ... ok
+test isolation::tests::full_musical_context_survives_helper_protocol ... ok
+test musical::tests::expression_laws ... ok
+test musical::tests::musical_context_wraps_in_buffer_and_preserves_meter ... ok
+test bridge_tests::state_file_roundtrip_is_bounded_and_failed_write_preserves_destination ... ok
+test tests::corrupt_state_rejected_before_native ... ok
+test musical::tests::native_ingress_is_bounded_and_allocation_free ... ok
+test bridge_tests::callback_partitions_preserve_fixed_delay_and_allocate_nothing ... ok
+test tests::retained_processor_revoked_without_allocation ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-waveform/627a9c6f5ecd74d2/out/soniclaw_waveform-627a9c6f5ecd74d2)
+
+running 6 tests
+test tests::native_formats_backend_matches_pcm_wave ... ignored, requires installed dynamic libsndfile; run explicitly on a codec-enabled machine
+test tests::hostile_cache_counts_and_empty_audio_do_not_allocate_unboundedly ... ok
+test tests::prune_only_removes_owned_cache_names ... ok
+test tests::full_fingerprint_detects_content_with_same_size_and_timestamp ... ok
+test tests::pyramid_preserves_channels_partial_buckets_and_cache_integrity ... ok
+test tests::cancellation_latest_request_and_shutdown_are_bounded ... ok
+
+test result: ok. 5 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-waveform-cache-demo/a5dc358a80bdb9e3/out/soniclaw_waveform_cache_demo-a5dc358a80bdb9e3)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-waveform-warp-editor/afe07cb3b2f7a33c/out/soniclaw_waveform_warp_editor-afe07cb3b2f7a33c)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-workbench/cfa81697ded7799d/out/soniclaw_workbench-cfa81697ded7799d)
+
+running 2 tests
+test tests::model_edits_undo_bundle_and_reload ... ok
+test tests::all_presets_render_finite_audio ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.99s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-workbench/0e5ee0d659ab4b63/out/soniclaw_workbench-0e5ee0d659ab4b63)
+
+running 2 tests
+test gui::tests::registered_menu_action_can_save_and_reload_without_audio ... ok
+test gui::tests::project_actions_roundtrip_without_opening_an_audio_device ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+   Doc-tests soniclaw
+
+running 1 test
+test crates/soniclaw/src/lib.rs - (line 3) ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.97s
+
+   Doc-tests soniclaw_automation
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_bus
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_clap
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_clips
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_commands
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_core
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_device
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_diagnostics
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_dsp
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_dsp_lab
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_editor
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_engine
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_example_processors
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_formats
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_graph
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_host
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_io
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_kernels
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_midi
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_mixer
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_parallel_compressor
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_params
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_pipewire
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_plugin
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_project_plugin
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_quality
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_record
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_reference
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_registry
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_sampler
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_session
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_state
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_stream
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_studio
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_studio_demo
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_transport
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_tuning
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_typed_effect
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_ui
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_vst3
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_waveform
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_workbench
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

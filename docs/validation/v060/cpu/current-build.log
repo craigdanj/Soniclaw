@@ -1,0 +1,21 @@
+     Locking 18 packages to highest compatible versions
+   Compiling autocfg v1.5.1
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.27
+   Compiling serde_core v1.0.229
+   Compiling strength_reduce v0.2.4
+   Compiling serde v1.0.229
+   Compiling soniclaw-core v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-core)
+   Compiling rtrb v0.3.2
+   Compiling num-traits v0.2.19
+   Compiling syn v3.0.10
+   Compiling num-integer v0.1.47
+   Compiling num-complex v0.4.6
+   Compiling primal-check v0.3.4
+   Compiling transpose v0.2.3
+   Compiling rustfft v6.4.1
+   Compiling serde_derive v1.0.229
+   Compiling soniclaw-dsp v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-dsp)
+   Compiling soniclaw-cpu-fixture v0.0.0 (/tmp/soniclaw-cpu-gr6itvhm/current)
+    Finished `release` profile [optimized] target(s) in 18.08s

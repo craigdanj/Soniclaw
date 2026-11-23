@@ -1,0 +1,16 @@
+[package]
+name="soniclaw-clips"
+description="Editable audio/MIDI clips and prepared arrangement playback"
+version.workspace=true
+edition.workspace=true
+license.workspace=true
+rust-version.workspace=true
+[dependencies]
+soniclaw-core.workspace=true
+soniclaw-transport={path="../soniclaw-transport",version="0.146.0"}
+serde={version="1",features=["derive"]}
+serde_json="1"
+[lints]
+workspace=true
+[dev-dependencies]
+allocation-counter="=0.8.1"

@@ -1,0 +1,11 @@
+{
+  "feature": "wave-digital",
+  "results": {
+    "audio": "wave-digital-overdrive.wav",
+    "callback_allocations": 0,
+    "latency_frames": 0,
+    "name": "wave-digital-overdrive",
+    "peak": 0.5463705062866211
+  },
+  "version": "0.124.0"
+}

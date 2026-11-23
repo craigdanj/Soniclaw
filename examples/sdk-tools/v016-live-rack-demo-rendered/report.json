@@ -1,0 +1,19 @@
+{
+  "actual_editor_window": false,
+  "floating_editor_abi": true,
+  "main_callbacks": 2,
+  "output_events": 2,
+  "serial_gain": 0.25,
+  "stats": {
+    "blocks": 40,
+    "bridge_latency_frames": 1024,
+    "deadline_misses": 0,
+    "event_drops": 0,
+    "input_drops": 0,
+    "max_callback_ns": 0,
+    "output_drops": 0,
+    "process_errors": 0,
+    "underruns": 0
+  },
+  "synthetic_clock": true
+}

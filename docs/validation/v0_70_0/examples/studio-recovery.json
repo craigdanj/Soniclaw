@@ -1,0 +1,15 @@
+{
+  "background_generations": [
+    1,
+    2
+  ],
+  "incomplete_generation_skipped": 3,
+  "missing_media_repaired_with_exact_hash": true,
+  "native_code_loaded": false,
+  "physical_device_tested": false,
+  "recovery_warnings": 2,
+  "restored_generation": 1,
+  "schema_migrated_from": 1,
+  "schema_saved_as": 2,
+  "working_copy_survived_retention": true
+}

@@ -1,0 +1,10 @@
+   Compiling soniclaw-host v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw-host)
+   Compiling soniclaw-diagnostics v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw-diagnostics)
+   Compiling soniclaw-clap v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw-clap)
+   Compiling soniclaw v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw)
+   Compiling soniclaw-workbench v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/examples/workbench)
+   Compiling soniclaw-sdk-tools v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/examples/sdk-tools)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 11.22s
+     Running `target/debug/soniclaw-sdk-tools --demo /workspace/scratch/cd89c8ef929d/verification/v080-final/sdk-demo`
+Rendered six workbench presets, granular/modulated/multiband/spectral/convolution projects and offline pitch/time examples into /workspace/scratch/cd89c8ef929d/verification/v080-final/sdk-demo/presets
+PASS voices, slices, MIDI/SMF, quantization and live graph

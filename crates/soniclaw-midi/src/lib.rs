@@ -1,5 +1,7 @@
 //! MIDI 1 channel messages. Running status and interspersed real-time bytes work;
-//! SysEx/system-common/program-change/aftertouch are consumed but not emitted.
+//! SysEx/system-common/program-change are consumed but not emitted.
+pub mod file;
+pub mod performance;
 use soniclaw_core::MidiMessage;
 
 #[derive(Default)]
@@ -62,6 +64,12 @@ impl Parser {
                 note: a,
                 velocity: b,
             }),
+            0xa => Some(MidiMessage::PolyPressure {
+                channel,
+                note: a,
+                value: b,
+            }),
+            0xd => Some(MidiMessage::ChannelPressure { channel, value: a }),
             0xb => Some(MidiMessage::ControlChange {
                 channel,
                 controller: a,
@@ -95,6 +103,13 @@ pub mod native {
         index: usize,
         mut on_message: impl FnMut(MidiMessage) + Send + 'static,
     ) -> Result<Connection, MidiError> {
+        connect_input_timed(index, move |_, message| on_message(message))
+    }
+    /// Preserves the backend microsecond timestamp; calibrate it to the device clock explicitly.
+    pub fn connect_input_timed(
+        index: usize,
+        mut on_message: impl FnMut(u64, MidiMessage) + Send + 'static,
+    ) -> Result<Connection, MidiError> {
         let mut input = midir::MidiInput::new("Soniclaw MIDI")?;
         input.ignore(midir::Ignore::None);
         let port = input
@@ -105,10 +120,10 @@ pub mod native {
         Ok(input.connect(
             &port,
             "Soniclaw input",
-            move |_, bytes, parser| {
+            move |timestamp, bytes, parser| {
                 for &byte in bytes {
                     if let Some(message) = parser.feed(byte) {
-                        on_message(message);
+                        on_message(timestamp, message);
                     }
                 }
             },
@@ -161,3 +176,67 @@ mod tests {
         );
     }
 }
+
+pub mod learning;
+pub mod output;
+pub mod schedule;
+pub mod wire;
+
+#[cfg(feature = "native")]
+pub mod packets_native {
+    use super::wire;
+    pub type PacketError = Box<dyn std::error::Error + Send + Sync>;
+    pub type Connection = midir::MidiInputConnection<wire::Parser>;
+    pub fn connect(
+        index: usize,
+        mut callback: impl FnMut(u64, wire::Packet) + Send + 'static,
+    ) -> Result<Connection, PacketError> {
+        let mut input =
+            midir::MidiInput::new("Soniclaw packet input").map_err(|e| e.to_string())?;
+        input.ignore(midir::Ignore::None);
+        let port = input
+            .ports()
+            .get(index)
+            .cloned()
+            .ok_or("MIDI input port unavailable")?;
+        input
+            .connect(
+                &port,
+                "Soniclaw packet input",
+                move |timestamp, bytes, parser| {
+                    for byte in bytes {
+                        if let Some(packet) = parser.feed(*byte) {
+                            callback(timestamp, packet);
+                        }
+                    }
+                },
+                wire::Parser::default(),
+            )
+            .map_err(|e| e.to_string().into())
+    }
+    #[cfg(any(target_os = "linux", target_os = "macos"))]
+    pub fn create_virtual(
+        name: &str,
+        mut callback: impl FnMut(u64, wire::Packet) + Send + 'static,
+    ) -> Result<Connection, PacketError> {
+        use midir::os::unix::VirtualInput;
+        let mut input =
+            midir::MidiInput::new("Soniclaw virtual packet input").map_err(|e| e.to_string())?;
+        input.ignore(midir::Ignore::None);
+        input
+            .create_virtual(
+                name,
+                move |timestamp, bytes, parser| {
+                    for byte in bytes {
+                        if let Some(packet) = parser.feed(*byte) {
+                            callback(timestamp, packet);
+                        }
+                    }
+                },
+                wire::Parser::default(),
+            )
+            .map_err(|e| e.to_string().into())
+    }
+}
+
+pub mod controllers;

@@ -1,0 +1,8 @@
+{
+  "asset_count": 2,
+  "background_autosave": true,
+  "background_recovery_load": true,
+  "bundle_roundtrip": true,
+  "frames": 48000,
+  "prepared_render": true
+}

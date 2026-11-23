@@ -1,22 +1,27 @@
 //! Prepared acyclic routing with automatic alignment at fan-in and output buses.
+pub mod live;
+pub mod parallel;
 use soniclaw_core::*;
 pub type NodeId = usize;
 const MAX_COMPENSATION: usize = 262144;
 #[derive(Default)]
-struct DelayLine {
-    data: Vec<f32>,
+struct DelayLine<T = f32> {
+    data: Vec<T>,
     cursor: usize,
 }
-impl DelayLine {
+impl<T> DelayLine<T>
+where
+    T: Copy + Default + std::ops::AddAssign + std::ops::Mul<Output = T>,
+{
     fn prepare(&mut self, frames: usize, channels: usize) -> Result<(), Error> {
         if frames > MAX_COMPENSATION {
             return Err(Error::InvalidRouting);
         }
-        self.data = vec![0.0; frames * channels];
+        self.data = vec![T::default(); frames * channels];
         self.cursor = 0;
         Ok(())
     }
-    fn add(&mut self, source: &[f32], destination: &mut [f32], gain: f32) {
+    fn add(&mut self, source: &[T], destination: &mut [T], gain: T) {
         if self.data.is_empty() {
             for (o, i) in destination.iter_mut().zip(source) {
                 *o += *i * gain;
@@ -31,210 +36,230 @@ impl DelayLine {
         }
     }
     fn reset(&mut self) {
-        self.data.fill(0.0);
+        self.data.fill(T::default());
         self.cursor = 0;
     }
 }
-struct Edge {
-    source: NodeId,
-    gain: f32,
-    delay: DelayLine,
-}
-struct Node {
-    processor: Box<dyn AudioProcessor>,
-    input_gain: f32,
-    input_delay: DelayLine,
-    incoming: Vec<Edge>,
-}
-#[derive(Default)]
-pub struct Graph {
-    nodes: Vec<Node>,
-    outputs: Vec<Edge>,
-    order: Vec<NodeId>,
-    buffers: Vec<Vec<f32>>,
-    scratch: Vec<f32>,
-    spec: Option<ProcessSpec>,
-    latency: usize,
-}
-impl Graph {
-    pub fn add(&mut self, processor: impl AudioProcessor + 'static) -> NodeId {
-        self.spec = None;
-        let id = self.nodes.len();
-        self.nodes.push(Node {
-            processor: Box::new(processor),
-            input_gain: 0.0,
-            input_delay: DelayLine::default(),
-            incoming: Vec::new(),
-        });
-        id
-    }
-    pub fn connect(&mut self, from: NodeId, to: NodeId, gain: f32) -> Result<(), Error> {
-        if from >= self.nodes.len()
-            || to >= self.nodes.len()
-            || from == to
-            || !gain.is_finite()
-            || self.nodes[to].incoming.iter().any(|e| e.source == from)
-        {
-            return Err(Error::InvalidRouting);
+// Routing, fan-in and output compensation use the same algorithm at either precision.
+macro_rules! graph {
+    ($graph:ident, $node:ident, $edge:ident, $sample:ty, $buffer:ident, $processor:ident) => {
+        struct $edge {
+            source: NodeId,
+            gain: $sample,
+            delay: DelayLine<$sample>,
         }
-        self.nodes[to].incoming.push(Edge {
-            source: from,
-            gain,
-            delay: DelayLine::default(),
-        });
-        self.spec = None;
-        Ok(())
-    }
-    pub fn set_input(&mut self, node: NodeId, gain: f32) -> Result<(), Error> {
-        if !gain.is_finite() {
-            return Err(Error::InvalidRouting);
+        struct $node {
+            processor: Box<dyn $processor>,
+            input_gain: $sample,
+            input_delay: DelayLine<$sample>,
+            incoming: Vec<$edge>,
         }
-        self.nodes
-            .get_mut(node)
-            .ok_or(Error::InvalidRouting)?
-            .input_gain = gain;
-        self.spec = None;
-        Ok(())
-    }
-    pub fn set_output(&mut self, node: NodeId, gain: f32) -> Result<(), Error> {
-        if node >= self.nodes.len() || !gain.is_finite() {
-            return Err(Error::InvalidRouting);
+        #[derive(Default)]
+        pub struct $graph {
+            nodes: Vec<$node>,
+            outputs: Vec<$edge>,
+            order: Vec<NodeId>,
+            buffers: Vec<Vec<$sample>>,
+            scratch: Vec<$sample>,
+            spec: Option<ProcessSpec>,
+            latency: usize,
         }
-        self.outputs.retain(|e| e.source != node);
-        self.outputs.push(Edge {
-            source: node,
-            gain,
-            delay: DelayLine::default(),
-        });
-        self.spec = None;
-        Ok(())
-    }
-}
-impl AudioProcessor for Graph {
-    fn prepare(&mut self, spec: ProcessSpec) -> Result<(), Error> {
-        self.spec = None;
-        spec.validate()?;
-        if self.nodes.is_empty() || self.outputs.is_empty() {
-            return Err(Error::InvalidRouting);
+        impl $graph {
+            pub fn add(&mut self, processor: impl $processor + 'static) -> NodeId {
+                self.spec = None;
+                let id = self.nodes.len();
+                self.nodes.push($node {
+                    processor: Box::new(processor),
+                    input_gain: 0.0,
+                    input_delay: DelayLine::default(),
+                    incoming: Vec::new(),
+                });
+                id
+            }
+            pub fn connect(
+                &mut self,
+                from: NodeId,
+                to: NodeId,
+                gain: $sample,
+            ) -> Result<(), Error> {
+                if from >= self.nodes.len()
+                    || to >= self.nodes.len()
+                    || from == to
+                    || !gain.is_finite()
+                    || self.nodes[to].incoming.iter().any(|e| e.source == from)
+                {
+                    return Err(Error::InvalidRouting);
+                }
+                self.nodes[to].incoming.push($edge {
+                    source: from,
+                    gain,
+                    delay: DelayLine::default(),
+                });
+                self.spec = None;
+                Ok(())
+            }
+            pub fn set_input(&mut self, node: NodeId, gain: $sample) -> Result<(), Error> {
+                if !gain.is_finite() {
+                    return Err(Error::InvalidRouting);
+                }
+                self.nodes
+                    .get_mut(node)
+                    .ok_or(Error::InvalidRouting)?
+                    .input_gain = gain;
+                self.spec = None;
+                Ok(())
+            }
+            pub fn set_output(&mut self, node: NodeId, gain: $sample) -> Result<(), Error> {
+                if node >= self.nodes.len() || !gain.is_finite() {
+                    return Err(Error::InvalidRouting);
+                }
+                self.outputs.retain(|e| e.source != node);
+                self.outputs.push($edge {
+                    source: node,
+                    gain,
+                    delay: DelayLine::default(),
+                });
+                self.spec = None;
+                Ok(())
+            }
         }
-        self.order.clear();
-        let mut pending: Vec<_> = self.nodes.iter().map(|n| n.incoming.len()).collect();
-        self.order.extend(
-            pending
-                .iter()
-                .enumerate()
-                .filter_map(|(i, &n)| (n == 0).then_some(i)),
-        );
-        let mut cursor = 0;
-        while cursor < self.order.len() {
-            let id = self.order[cursor];
-            cursor += 1;
-            for (destination, node) in self.nodes.iter().enumerate() {
-                if node.incoming.iter().any(|e| e.source == id) {
-                    pending[destination] -= 1;
-                    if pending[destination] == 0 {
-                        self.order.push(destination);
+        impl $processor for $graph {
+            fn prepare(&mut self, spec: ProcessSpec) -> Result<(), Error> {
+                self.spec = None;
+                spec.validate()?;
+                if self.nodes.is_empty() || self.outputs.is_empty() {
+                    return Err(Error::InvalidRouting);
+                }
+                self.order.clear();
+                let mut pending: Vec<_> = self.nodes.iter().map(|n| n.incoming.len()).collect();
+                self.order.extend(
+                    pending
+                        .iter()
+                        .enumerate()
+                        .filter_map(|(i, &n)| (n == 0).then_some(i)),
+                );
+                let mut cursor = 0;
+                while cursor < self.order.len() {
+                    let id = self.order[cursor];
+                    cursor += 1;
+                    for (destination, node) in self.nodes.iter().enumerate() {
+                        if node.incoming.iter().any(|e| e.source == id) {
+                            pending[destination] -= 1;
+                            if pending[destination] == 0 {
+                                self.order.push(destination);
+                            }
+                        }
                     }
                 }
+                if self.order.len() != self.nodes.len() {
+                    return Err(Error::InvalidRouting);
+                }
+                let samples = spec.channels * spec.max_block_frames;
+                self.scratch = vec![0.0; samples];
+                self.buffers = vec![vec![0.0; samples]; self.nodes.len()];
+                let mut latency = vec![0usize; self.nodes.len()];
+                for &id in &self.order {
+                    let node = &mut self.nodes[id];
+                    node.processor.prepare(spec)?;
+                    let upstream = node
+                        .incoming
+                        .iter()
+                        .map(|e| latency[e.source])
+                        .max()
+                        .unwrap_or(0);
+                    node.input_delay.prepare(
+                        if node.input_gain != 0.0 { upstream } else { 0 },
+                        spec.channels,
+                    )?;
+                    for edge in &mut node.incoming {
+                        edge.delay
+                            .prepare(upstream - latency[edge.source], spec.channels)?;
+                    }
+                    latency[id] = upstream
+                        .checked_add(node.processor.latency_frames())
+                        .ok_or(Error::InvalidRouting)?;
+                }
+                self.latency = self
+                    .outputs
+                    .iter()
+                    .map(|e| latency[e.source])
+                    .max()
+                    .unwrap_or(0);
+                for edge in &mut self.outputs {
+                    edge.delay
+                        .prepare(self.latency - latency[edge.source], spec.channels)?;
+                }
+                self.spec = Some(spec);
+                Ok(())
+            }
+            fn process(&mut self, audio: &mut $buffer<'_>, ctx: &ProcessContext<'_>) {
+                let Some(spec) = self.spec else {
+                    audio.clear();
+                    return;
+                };
+                if audio.channels() != spec.channels || audio.frames() > spec.max_block_frames {
+                    audio.clear();
+                    return;
+                }
+                let length = audio.samples().len();
+                for &id in &self.order {
+                    let scratch = &mut self.scratch[..length];
+                    scratch.fill(0.0);
+                    let node = &mut self.nodes[id];
+                    if node.input_gain != 0.0 {
+                        node.input_delay
+                            .add(audio.samples(), scratch, node.input_gain);
+                    }
+                    for edge in &mut node.incoming {
+                        edge.delay
+                            .add(&self.buffers[edge.source][..length], scratch, edge.gain);
+                    }
+                    if let Ok(mut block) = $buffer::new(scratch, spec.channels) {
+                        node.processor.process(&mut block, ctx);
+                    }
+                    self.buffers[id][..length].copy_from_slice(scratch);
+                }
+                audio.clear();
+                for edge in &mut self.outputs {
+                    edge.delay.add(
+                        &self.buffers[edge.source][..length],
+                        audio.samples_mut(),
+                        edge.gain,
+                    );
+                }
+            }
+            fn reset(&mut self) {
+                for node in &mut self.nodes {
+                    node.processor.reset();
+                    node.input_delay.reset();
+                    for e in &mut node.incoming {
+                        e.delay.reset();
+                    }
+                }
+                for e in &mut self.outputs {
+                    e.delay.reset();
+                }
+                for b in &mut self.buffers {
+                    b.fill(0.0);
+                }
+                self.scratch.fill(0.0);
+            }
+            fn latency_frames(&self) -> usize {
+                self.latency
             }
         }
-        if self.order.len() != self.nodes.len() {
-            return Err(Error::InvalidRouting);
-        }
-        let samples = spec.channels * spec.max_block_frames;
-        self.scratch = vec![0.0; samples];
-        self.buffers = vec![vec![0.0; samples]; self.nodes.len()];
-        let mut latency = vec![0usize; self.nodes.len()];
-        for &id in &self.order {
-            let node = &mut self.nodes[id];
-            node.processor.prepare(spec)?;
-            let upstream = node
-                .incoming
-                .iter()
-                .map(|e| latency[e.source])
-                .max()
-                .unwrap_or(0);
-            node.input_delay.prepare(
-                if node.input_gain != 0.0 { upstream } else { 0 },
-                spec.channels,
-            )?;
-            for edge in &mut node.incoming {
-                edge.delay
-                    .prepare(upstream - latency[edge.source], spec.channels)?;
-            }
-            latency[id] = upstream
-                .checked_add(node.processor.latency_frames())
-                .ok_or(Error::InvalidRouting)?;
-        }
-        self.latency = self
-            .outputs
-            .iter()
-            .map(|e| latency[e.source])
-            .max()
-            .unwrap_or(0);
-        for edge in &mut self.outputs {
-            edge.delay
-                .prepare(self.latency - latency[edge.source], spec.channels)?;
-        }
-        self.spec = Some(spec);
-        Ok(())
-    }
-    fn process(&mut self, audio: &mut AudioBuffer<'_>, ctx: &ProcessContext<'_>) {
-        let Some(spec) = self.spec else {
-            audio.clear();
-            return;
-        };
-        if audio.channels() != spec.channels || audio.frames() > spec.max_block_frames {
-            audio.clear();
-            return;
-        }
-        let length = audio.samples().len();
-        for &id in &self.order {
-            let scratch = &mut self.scratch[..length];
-            scratch.fill(0.0);
-            let node = &mut self.nodes[id];
-            if node.input_gain != 0.0 {
-                node.input_delay
-                    .add(audio.samples(), scratch, node.input_gain);
-            }
-            for edge in &mut node.incoming {
-                edge.delay
-                    .add(&self.buffers[edge.source][..length], scratch, edge.gain);
-            }
-            if let Ok(mut block) = AudioBuffer::new(scratch, spec.channels) {
-                node.processor.process(&mut block, ctx);
-            }
-            self.buffers[id][..length].copy_from_slice(scratch);
-        }
-        audio.clear();
-        for edge in &mut self.outputs {
-            edge.delay.add(
-                &self.buffers[edge.source][..length],
-                audio.samples_mut(),
-                edge.gain,
-            );
-        }
-    }
-    fn reset(&mut self) {
-        for node in &mut self.nodes {
-            node.processor.reset();
-            node.input_delay.reset();
-            for e in &mut node.incoming {
-                e.delay.reset();
-            }
-        }
-        for e in &mut self.outputs {
-            e.delay.reset();
-        }
-        for b in &mut self.buffers {
-            b.fill(0.0);
-        }
-        self.scratch.fill(0.0);
-    }
-    fn latency_frames(&self) -> usize {
-        self.latency
-    }
+    };
 }
+graph!(Graph, Node, Edge, f32, AudioBuffer, AudioProcessor);
+graph!(
+    Graph64,
+    Node64,
+    Edge64,
+    f64,
+    AudioBuffer64,
+    AudioProcessor64
+);
+
 #[cfg(test)]
 mod tests {
     use super::*;

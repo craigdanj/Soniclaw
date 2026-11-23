@@ -1,0 +1,33 @@
+{
+  "cases": [
+    {
+      "audio": "nonlinear-svf.wav",
+      "callback_allocations": 0,
+      "filter": "nonlinear-svf",
+      "latency_frames": 0,
+      "peak": 0.697379469871521
+    },
+    {
+      "audio": "comb.wav",
+      "callback_allocations": 0,
+      "filter": "comb",
+      "latency_frames": 0,
+      "peak": 0.24000892043113708
+    },
+    {
+      "audio": "formants.wav",
+      "callback_allocations": 0,
+      "filter": "formants",
+      "latency_frames": 0,
+      "peak": 0.031456876546144485
+    },
+    {
+      "audio": "oversampled-svf.wav",
+      "callback_allocations": 0,
+      "filter": "oversampled-svf",
+      "latency_frames": 48,
+      "peak": 0.6986824870109558
+    }
+  ],
+  "version": "0.91.0"
+}

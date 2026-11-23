@@ -24,12 +24,12 @@ DSP can exceed unity when voices or buses sum. Native output sanitizes non-finit
 
 ## Current signal limitations
 
-- Voice stealing/retriggering can click; pitch bend, sustain and aftertouch are not implemented by the demo synth.
-- Saw/square use PolyBLEP, but sampler transposition and the duplex bridge use linear interpolation and can alias.
-- Cutoff coefficient changes are not smoothed. Delay controls are constructor settings.
+- Legacy synth voice stealing and hard retriggers can click. New expressive instruments support pitch bend, sustain and pressure; not all expression transitions are smoothed.
+- Saw/square use PolyBLEP. Samplers now offer sinc quality modes; the legacy linear modes and duplex bridge can alias.
+- Legacy effects retain their original configuration contracts. Use `AutomatedEffect` for smoothed live scalar controls.
 - Recording supports stereo PCM16, not multi-track/disk-streamed instruments or automatic disk failure recovery.
 - The native host has no ASIO integration, measured latency report, arbitrary-rate clock conversion or seamless device recovery guarantee.
-- The CLAP adapter has fixed stereo f32 main ports and no embedded GUI, float64, sidechain port or per-note modulation.
+- The CLAP adapter has fixed stereo f32 main ports and optional stereo sidechain/editor support. Float64, arbitrary layouts and per-note parameter modulation are unsupported.
 
 ## Tests
 
@@ -41,8 +41,30 @@ The independent CLAP host and upstream validator load actual exported binaries. 
 
 All new DSP, multisampler and FFT paths allocate their storage before processing. The multisampler owns immutable PCM for the bank lifetime, with fixed current/retiring voice slots. StreamHandle owns its worker join and must stay on the control thread; StreamingPlayer only consumes bounded queue frames. Editor producers may lock on the GUI thread; the audio consumer never takes that lock. CLAP output gesture backpressure is retained across callbacks. New reference processing and the exported CLAP ABI are probed for heap allocation/free operations independently.
 
-Effect configuration constructors are not an automation API: rebuild/reconfigure with exclusive ownership while stopped unless a specific processor exposes an atomic parameter. Host state currently covers parameter values, not arbitrary sample-bank/rack replacement.
+Effect configuration constructors are not an automation API: rebuild/reconfigure with exclusive ownership while stopped unless a specific processor exposes an atomic parameter. Schema-1 host state covers parameters. Opt-in schema-2 project factories also reconstruct assets, sample maps and graphs while deactivated. Graph/asset replacement is never done during processing.
 
 The CLAP audio entry scopes FTZ/DAZ on x86-64 and FZ on AArch64, restoring the host control word before returning (including caught panics). The x86-64 behavior and restoration are tested; AArch64 source is supplied but not executed on this machine. Portable DSP called outside the CLAP adapter does not implicitly change the floating-point environment.
 
 The upstream validator's denormal test includes random subnormal input generation outside the callback. If it reports a timing warning, use `tools/compat/denormal-probe.cpp` to isolate callback CPU: it constructs input before timing, checks that gain flushes subnormal samples, alternates normal/denormal batches and verifies the host control bits afterward. The report preserves upstream warnings rather than excluding that test.
+
+## v0.5 DSP contracts
+
+New effect wrappers update prepared state and smooth scalar controls without
+allocation. FFT plans, STFT overlap buffers, mipmapped wavetable banks, delay
+storage and exact loudness gate history allocate before rendering. Lookahead
+uses a bounded peak deque. Reported algorithmic delay participates in graph
+compensation; musical predelay/echo and frequency-dependent phase do not.
+Pitch analysis and integrated-history scans have nontrivial bounded CPU work;
+choose an analysis cadence/worker rather than calling them indiscriminately
+inside a tight callback. See [DSP expansion](DSP_ADVANCED.md) for API limits.
+
+## v0.6 modulation and IR ownership
+
+One audio owner writes each parameter's modulation offset; base values stay
+separate. The per-sample modulation wrapper uses prepared bounded event storage.
+Granular note/grain starts use fixed arrays and retain PCM ownership. Reloadable
+convolution queues prepared engines and returns retired kernels to control-side
+`collect_retired()`; keep both owners alive and drop them only after audio stops.
+Time stretch and offline pitch helpers allocate and belong off the callback.
+Workbench diagnostics sample a clock and enqueue fixed packets; the GUI performs
+analysis and file work. See [detailed contracts](DSP_MODULATION.md).

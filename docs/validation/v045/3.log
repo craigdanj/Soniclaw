@@ -1,0 +1,37 @@
+   Compiling soniclaw-stream v0.45.0 (/workspace/scratch/cd89c8ef929d/desktop-series/soniclaw/crates/soniclaw-stream)
+   Compiling soniclaw-studio v0.45.0 (/workspace/scratch/cd89c8ef929d/desktop-series/soniclaw/crates/soniclaw-studio)
+    Finished `test` profile [unoptimized] target(s) in 0.71s
+     Running unittests src/lib.rs (target/debug/build/soniclaw-stream/1d36e2c8deb0a6d2/out/soniclaw_stream-1d36e2c8deb0a6d2)
+
+running 6 tests
+test tests::worker_stream_matches_pcm_and_has_silent_eof ... ok
+test paged::tests::disk_voices_layer_and_obey_note_ids ... ok
+test clips::tests::offsets_fades_loops_overlap_and_no_callback_allocations ... ok
+test clips::tests::seek_prefetch_generation_and_metadata_rejection ... ok
+test paged::tests::cache_budget_and_underrun_recovery ... ok
+test paged::tests::seek_generations_pause_and_loop ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.61s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-studio/71901e281b7e5528/out/soniclaw_studio-71901e281b7e5528)
+
+running 4 tests
+test tests::midi_while_stopped_and_invalid_input ... ok
+test tests::replacement_is_atomic_and_old_processors_retire_off_callback ... ok
+test tests::document_roundtrip_factory_failure_and_record_tap ... ok
+test tests::live_clips_inserts_mixer_clock_loop_and_partition ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+   Doc-tests soniclaw_stream
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_studio
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

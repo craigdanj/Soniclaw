@@ -1,0 +1,65 @@
+[
+  {
+    "id": "master.gain",
+    "name": "Gain",
+    "unit": "",
+    "group": "Output",
+    "kind": {
+      "type": "float",
+      "min": 0.0,
+      "max": 2.0,
+      "default": 0.5,
+      "curve": "Linear"
+    }
+  },
+  {
+    "id": "filter.cutoff",
+    "name": "Cutoff",
+    "unit": "Hz",
+    "group": "Filter",
+    "kind": {
+      "type": "float",
+      "min": 20.0,
+      "max": 20000.0,
+      "default": 200.0,
+      "curve": "Logarithmic"
+    }
+  },
+  {
+    "id": "filter.stages",
+    "name": "Stages",
+    "unit": "",
+    "group": "Filter",
+    "kind": {
+      "type": "integer",
+      "min": 1,
+      "max": 4,
+      "default": 2
+    }
+  },
+  {
+    "id": "effect.bypass",
+    "name": "Bypass",
+    "unit": "",
+    "group": "",
+    "kind": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  {
+    "id": "filter.mode",
+    "name": "Mode",
+    "unit": "",
+    "group": "Filter",
+    "kind": {
+      "type": "choice",
+      "labels": [
+        "Gain only",
+        "Low pass",
+        "High pass"
+      ],
+      "default": 0
+    }
+  }
+]

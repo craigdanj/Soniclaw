@@ -146,7 +146,7 @@ unsafe fn make_editor(i: &Instance, raw: RawWindowHandle, size: (u32, u32)) -> O
         });
         let h = GuiHost(address);
         let host = Host::new().with_main_thread(h).with_callbacks(h);
-        Editor::create_parented(
+        Editor::create_parented_scaled(
             CStr::from_ptr(i.definition.descriptor.raw.name)
                 .to_string_lossy()
                 .into_owned(),
@@ -156,6 +156,7 @@ unsafe fn make_editor(i: &Instance, raw: RawWindowHandle, size: (u32, u32)) -> O
             host,
             size,
             raw,
+            (*i.gui.get()).scale,
         )
         .map_err(|e| {
             if std::env::var_os("SONICLAW_EDITOR_TRACE").is_some() {
@@ -187,6 +188,13 @@ unsafe extern "C" fn scale(p: *const clap_plugin, value: f64) -> bool {
         if !(*i.gui.get()).created {
             return false;
         }
+        let previous = (*i.gui.get()).scale;
+        (*i.gui.get()).width = (((*i.gui.get()).width as f64) * value / previous)
+            .round()
+            .clamp(1.0, u32::MAX as f64) as u32;
+        (*i.gui.get()).height = (((*i.gui.get()).height as f64) * value / previous)
+            .round()
+            .clamp(1.0, u32::MAX as f64) as u32;
         (*i.gui.get()).scale = value;
         (&*i.gui.get())
             .editor
@@ -294,7 +302,12 @@ unsafe extern "C" fn parent(p: *const clap_plugin, window: *const clap_window) -
             if let Some(e) = (&*i.gui.get()).editor.as_ref() {
                 return e.set_parent(raw);
             }
-            let size = ((*i.gui.get()).width, (*i.gui.get()).height);
+            // Convert retained physical CLAP dimensions to logical native construction size.
+            let scale = (*i.gui.get()).scale;
+            let size = (
+                ((*i.gui.get()).width as f64 / scale).round().max(1.0) as u32,
+                ((*i.gui.get()).height as f64 / scale).round().max(1.0) as u32,
+            );
             let Some(editor) = make_editor(i, raw, size) else {
                 return false;
             };

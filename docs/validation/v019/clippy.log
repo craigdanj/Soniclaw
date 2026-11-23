@@ -1,0 +1,17 @@
+    Blocking waiting for file lock on build directory
+    Checking soniclaw-formats v0.19.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-formats)
+    Checking soniclaw v0.19.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw)
+    Checking soniclaw-workbench v0.19.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/workbench)
+    Checking soniclaw-dsp-lab v0.19.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/dsp-lab)
+    Checking soniclaw-project-plugin v0.19.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/project-plugin)
+    Checking soniclaw-reference v0.19.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/reference)
+    Checking soniclaw-clap v0.19.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-clap)
+    Checking soniclaw-live-fx v0.19.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/live-fx)
+    Checking soniclaw-ecosystem v0.19.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/ecosystem)
+    Checking soniclaw-reference-studio v0.19.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/reference-studio)
+    Checking soniclaw-sdk-tools v0.19.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/sdk-tools)
+    Checking soniclaw-desktop v0.19.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/desktop)
+    Checking soniclaw-ui-gallery v0.19.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/ui-gallery)
+    Checking soniclaw-render v0.19.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/render)
+    Checking soniclaw-clap-demo v0.19.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/clap-demo)
+    Finished `dev` profile [unoptimized] target(s) in 7.34s

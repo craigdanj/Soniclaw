@@ -1,0 +1,10 @@
+{
+  "bounds_transaction": true,
+  "echo_events": 19,
+  "fixture": "independent MIDI-only CLAP",
+  "host_callback_allocations": 0,
+  "main_callback": true,
+  "separate_main_audio_thread_contract": true,
+  "state_roundtrip": true,
+  "timed_gain": true
+}

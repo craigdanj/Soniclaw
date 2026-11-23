@@ -1,0 +1,46 @@
+   Compiling soniclaw-core v0.37.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-core)
+   Compiling soniclaw-waveform v0.37.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-waveform)
+   Compiling soniclaw-transport v0.37.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-transport)
+   Compiling soniclaw-dsp v0.37.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-dsp)
+   Compiling soniclaw-automation v0.37.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-automation)
+   Compiling soniclaw-mixer v0.37.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-mixer)
+   Compiling soniclaw-midi v0.37.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-midi)
+   Compiling soniclaw-clips v0.37.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-clips)
+   Compiling soniclaw-commands v0.37.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-commands)
+   Compiling soniclaw-state v0.37.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-state)
+   Compiling soniclaw-ui v0.37.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-ui)
+    Finished `test` profile [unoptimized] target(s) in 5.40s
+     Running unittests src/lib.rs (target/debug/build/soniclaw-mixer/9bfba0e511318a9c/out/soniclaw_mixer-9bfba0e511318a9c)
+
+running 3 tests
+test tests::pan_sends_meters_and_no_alloc ... ok
+test tests::sample_automation_partition_and_invalid_is_transactional ... ok
+test tests::persistence_and_group_mute ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-ui/faa7bca87db02a45/out/soniclaw_ui-faa7bca87db02a45)
+
+running 7 tests
+test controls::tests::meter_hold_and_release_are_time_based ... ok
+test controls::tests::response_matches_butterworth_cutoff ... ok
+test toolkit::tests::filmstrip_endpoint_uvs_are_exact ... ok
+test toolkit::tests::theme_roundtrip_and_invalid_metrics ... ok
+test toolkit::tests::svg_raster_is_real_and_bounded ... ok
+test toolkit::tests::keyboard_and_accumulated_discrete_drags_work ... ok
+test controls::tests::controls_render_without_a_native_window ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+   Doc-tests soniclaw_mixer
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_ui
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

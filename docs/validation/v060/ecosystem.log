@@ -1,0 +1,4 @@
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.03s
+     Running `target/debug/soniclaw-ecosystem /tmp/soniclaw-v060-final-ecosystem`
+Project state/undo/redo, live rack automation, sinc conversion, expressive synth and seekable disk playback completed in /tmp/soniclaw-v060-final-ecosystem
+Disk cache: 74016 bytes; underruns: 0; I/O errors: 0

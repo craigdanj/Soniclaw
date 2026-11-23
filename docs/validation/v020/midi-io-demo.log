@@ -1,0 +1,21 @@
+   Compiling soniclaw-midi v0.20.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-midi)
+   Compiling soniclaw-automation v0.20.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-automation)
+   Compiling soniclaw-bus v0.20.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-bus)
+   Compiling soniclaw-session v0.20.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-session)
+   Compiling soniclaw-dsp v0.20.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-dsp)
+   Compiling soniclaw-host v0.20.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-host)
+   Compiling soniclaw-state v0.20.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-state)
+   Compiling soniclaw-stream v0.20.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-stream)
+   Compiling soniclaw-io v0.20.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-io)
+   Compiling soniclaw-sampler v0.20.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-sampler)
+   Compiling soniclaw-plugin v0.20.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-plugin)
+   Compiling soniclaw-registry v0.20.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-registry)
+   Compiling soniclaw-diagnostics v0.20.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-diagnostics)
+   Compiling soniclaw-clap v0.20.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-clap)
+   Compiling soniclaw-example-processors v0.20.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/processor-pack)
+   Compiling soniclaw v0.20.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw)
+   Compiling soniclaw-workbench v0.20.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/workbench)
+   Compiling soniclaw-sdk-tools v0.20.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/sdk-tools)
+    Finished `dev` profile [unoptimized] target(s) in 9.75s
+     Running `target/debug/soniclaw-sdk-tools --midi-io-demo /workspace/scratch/cd89c8ef929d/verification-series/v020/midi-io-demo`
+PASS complete MIDI packets, sample scheduling, controller learning and mock output worker

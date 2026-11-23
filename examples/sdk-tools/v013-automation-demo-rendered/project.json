@@ -1,0 +1,55 @@
+{
+  "automation": {
+    "lanes": [
+      {
+        "parameter": "gain.gain",
+        "enabled": true,
+        "mode": "latch",
+        "points": [
+          {
+            "beat": 0.0,
+            "value": 1.0,
+            "curve": "smooth"
+          },
+          {
+            "beat": 1.0,
+            "value": 0.25,
+            "curve": "linear"
+          },
+          {
+            "beat": 1.5,
+            "value": 0.25,
+            "curve": "linear"
+          },
+          {
+            "beat": 4.0,
+            "value": 0.0,
+            "curve": "linear"
+          }
+        ]
+      }
+    ],
+    "loop_range": [
+      0.0,
+      4.0
+    ]
+  },
+  "schema_version": 2,
+  "product_id": "org.soniclaw.workbench",
+  "name": "Automation fade",
+  "parameters": {},
+  "assets": [],
+  "zones": [],
+  "nodes": [
+    {
+      "id": "gain",
+      "kind": "gain",
+      "settings": {},
+      "input_gain": 1.0
+    }
+  ],
+  "connections": [],
+  "outputs": {
+    "gain": 1.0
+  }
+}

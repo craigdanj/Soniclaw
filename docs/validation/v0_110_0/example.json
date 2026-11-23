@@ -1,0 +1,12 @@
+{
+  "feature": "wavetable-author",
+  "results": {
+    "cycle_samples": 512,
+    "phase_shifts": [
+      0,
+      419
+    ],
+    "table_frames": 2
+  },
+  "version": "0.110.0"
+}

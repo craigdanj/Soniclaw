@@ -1,0 +1,17 @@
+[package]
+name = "soniclaw-hybrid-instrument"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+publish = false
+
+[dependencies]
+soniclaw-core.workspace = true
+soniclaw-device.workspace = true
+soniclaw-dsp.workspace = true
+soniclaw-engine.workspace = true
+
+[lints]
+workspace = true
+

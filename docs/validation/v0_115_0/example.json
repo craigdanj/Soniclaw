@@ -1,0 +1,30 @@
+{
+  "feature": "composition",
+  "results": {
+    "cases": [
+      {
+        "audio": "parallel-dry.wav",
+        "callback_allocations": 0,
+        "latency_frames": 240,
+        "name": "parallel-dry",
+        "peak": 0.8500000238418579
+      },
+      {
+        "audio": "parallel-mix.wav",
+        "callback_allocations": 0,
+        "latency_frames": 240,
+        "name": "parallel-mix",
+        "peak": 0.5348383784294128
+      },
+      {
+        "audio": "parallel-wet.wav",
+        "callback_allocations": 0,
+        "latency_frames": 240,
+        "name": "parallel-wet",
+        "peak": 0.22002775967121124
+      }
+    ],
+    "lookahead_ms": 5
+  },
+  "version": "0.115.0"
+}

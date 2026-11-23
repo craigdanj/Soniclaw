@@ -1,0 +1,22 @@
+{
+  "feature": "simd-vectors",
+  "results": {
+    "available_backends": [
+      "Scalar",
+      "Sse2",
+      "Avx2"
+    ],
+    "backend": "Avx2",
+    "f64_callback_allocations": 0,
+    "f64_residual": 2.220446049250313e-16,
+    "render": {
+      "audio": "packed-clip.wav",
+      "callback_allocations": 0,
+      "latency_frames": 0,
+      "name": "packed-clip",
+      "peak": 0.699999988079071
+    },
+    "tail_samples": 3
+  },
+  "version": "0.146.0"
+}

@@ -1,0 +1,5 @@
+[ 92%] Built target base-sdk-vst3
+[ 95%] Building CXX object CMakeFiles/soniclaw_host_protocol.dir/fixtures/host_protocol.cpp.o
+[ 97%] Building CXX object CMakeFiles/soniclaw_host_protocol.dir/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/public.sdk/source/main/linuxmain.cpp.o
+[100%] Linking CXX shared module fixtures/HostProtocolFixture.vst3/Contents/x86_64-linux/HostProtocolFixture.so
+[100%] Built target soniclaw_host_protocol

@@ -1,0 +1,102 @@
+   Compiling soniclaw-core v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-core)
+   Compiling soniclaw-kernels v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-kernels)
+   Compiling soniclaw-waveform v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-waveform)
+   Compiling soniclaw-tuning v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-tuning)
+   Compiling soniclaw-transport v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-transport)
+   Compiling soniclaw-dsp v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-dsp)
+   Compiling soniclaw-automation v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-automation)
+   Compiling soniclaw-record v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-record)
+   Compiling soniclaw-midi v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-midi)
+   Compiling soniclaw-clips v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-clips)
+   Compiling soniclaw-mixer v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-mixer)
+   Compiling soniclaw-state v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-state)
+   Compiling soniclaw-engine v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-engine)
+   Compiling soniclaw-graph v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-graph)
+   Compiling soniclaw-bus v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-bus)
+   Compiling soniclaw-stream v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-stream)
+   Compiling soniclaw-commands v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-commands)
+   Compiling soniclaw-device v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-device)
+   Compiling soniclaw-studio v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-studio)
+   Compiling soniclaw-ui v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-ui)
+   Compiling soniclaw-plugin v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-plugin)
+   Compiling soniclaw-diagnostics v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-diagnostics)
+   Compiling soniclaw-session v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-session)
+   Compiling soniclaw-registry v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-registry)
+   Compiling soniclaw-sampler v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-sampler)
+   Compiling soniclaw-io v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-io)
+   Compiling soniclaw-quality v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-quality)
+   Compiling soniclaw-params v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-params)
+   Compiling soniclaw-host v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-host)
+   Compiling soniclaw v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw)
+   Compiling soniclaw-studio-demo v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/examples/studio-demo)
+   Compiling soniclaw-desktop-studio v0.54.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/examples/desktop-studio)
+    Finished `test` profile [unoptimized] target(s) in 27.64s
+     Running unittests src/main.rs (target/debug/build/soniclaw-desktop-studio/081c17f051eda513/out/soniclaw_desktop_studio-081c17f051eda513)
+
+running 1 test
+test gui::tests::reference_ui_and_project_actions_work_without_opening_a_device ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.66s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-record/05bdd840f859cb10/out/soniclaw_record-05bdd840f859cb10)
+
+running 6 tests
+test tests::dry_and_wet_recordings_and_restarts ... ok
+test multitrack::tests::invalid_buffers_do_not_publish_partial_tracks_and_gaps_are_aligned ... ok
+test comp::tests::marked_passes_comp_crossfade_and_immutable_sources ... ok
+test concurrent_tests::stop_finalizes_all_inflight_packets_and_the_next_take_is_clean ... ok
+test multitrack::tests::synchronized_float_preroll_punch_arming_and_selection ... ok
+test tests::overflow_preserves_duration_and_reports_loss ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.29s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-studio/3cf095ea59dd48bb/out/soniclaw_studio-3cf095ea59dd48bb)
+
+running 8 tests
+test project::tests::portable_roundtrip_and_corruption_leave_original_intact ... ok
+test tests::midi_while_stopped_and_invalid_input ... ok
+test tests::replacement_is_atomic_and_old_processors_retire_off_callback ... ok
+test freeze::tests::cache_reuse_bypass_restore_and_invalidation ... ok
+test loop_capture_tests::actual_clock_wraps_become_sample_exact_take_passes ... ok
+test tests::document_roundtrip_factory_failure_and_record_tap ... ok
+test multitrack_integration::captures_complete_tracks_and_blocks_replacement_until_control_retirement ... ok
+test tests::live_clips_inserts_mixer_clock_loop_and_partition ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-ui/bfe35ec92f8b996a/out/soniclaw_ui-bfe35ec92f8b996a)
+
+running 12 tests
+test controls::tests::meter_hold_and_release_are_time_based ... ok
+test controls::tests::response_matches_butterworth_cutoff ... ok
+test timeline::tests::multi_selection_history_full_range_and_atomic_failure ... ok
+test toolkit::tests::filmstrip_endpoint_uvs_are_exact ... ok
+test toolkit::tests::svg_raster_is_real_and_bounded ... ok
+test toolkit::tests::theme_roundtrip_and_invalid_metrics ... ok
+test accessibility::tests::semantic_tree_and_real_assistive_actions ... ok
+test toolkit::tests::keyboard_and_accumulated_discrete_drags_work ... ok
+test timeline::keyboard_test::focused_region_nudge_is_an_actual_ui_edit ... ok
+test controls::tests::controls_render_without_a_native_window ... ok
+test clips::accessibility_tests::focused_note_keyboard_edit_changes_valid_document ... ok
+test timeline::tests::viewport_culls_offscreen_and_reaches_high_track_and_midi_endpoints ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+   Doc-tests soniclaw_record
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_studio
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_ui
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

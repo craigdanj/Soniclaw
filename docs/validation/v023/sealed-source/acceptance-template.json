@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "platform": "",
+  "tester": "",
+  "tested_at": "",
+  "environment": {
+    "os": "",
+    "daw": "",
+    "device": "",
+    "driver": "",
+    "buffer_frames": null
+  },
+  "cases": [
+    {
+      "id": "daw-scan",
+      "status": "not_run",
+      "evidence": "",
+      "reason": "Target-machine check pending"
+    },
+    {
+      "id": "daw-state-reopen",
+      "status": "not_run",
+      "evidence": "",
+      "reason": "Target-machine check pending"
+    },
+    {
+      "id": "daw-automation",
+      "status": "not_run",
+      "evidence": "",
+      "reason": "Target-machine check pending"
+    },
+    {
+      "id": "daw-bypass-latency",
+      "status": "not_run",
+      "evidence": "",
+      "reason": "Target-machine check pending"
+    },
+    {
+      "id": "editor-hidpi",
+      "status": "not_run",
+      "evidence": "",
+      "reason": "Target-machine check pending"
+    },
+    {
+      "id": "audio-loopback",
+      "status": "not_run",
+      "evidence": "",
+      "reason": "Target-machine check pending"
+    },
+    {
+      "id": "device-unplug",
+      "status": "not_run",
+      "evidence": "",
+      "reason": "Target-machine check pending"
+    },
+    {
+      "id": "recording-disk-error",
+      "status": "not_run",
+      "evidence": "",
+      "reason": "Target-machine check pending"
+    }
+  ]
+}

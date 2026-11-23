@@ -1,0 +1,12 @@
+Created v060-app (app)
+     Locking 352 packages to highest compatible versions
+    Checking v060-app v0.1.0 (/tmp/soniclaw-v060 final template checks/v060-app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.47s
+Created v060-clap (clap)
+     Locking 252 packages to highest compatible versions
+    Checking v060-clap v0.1.0 (/tmp/soniclaw-v060 final template checks/v060-clap)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.27s
+Created v060-sampler (sampler)
+     Locking 252 packages to highest compatible versions
+    Checking v060-sampler v0.1.0 (/tmp/soniclaw-v060 final template checks/v060-sampler)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.34s

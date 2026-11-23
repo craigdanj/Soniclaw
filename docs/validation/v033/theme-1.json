@@ -1,0 +1,69 @@
+{
+  "controls": [
+    "knobs",
+    "modulation ring",
+    "fader",
+    "toggle",
+    "enum",
+    "SVG button",
+    "filmstrip"
+  ],
+  "dimensions": [
+    920,
+    940
+  ],
+  "native_gpu_screenshot": true,
+  "svg_filmstrip_frames": 13,
+  "svg_icon": true,
+  "theme": {
+    "accent": [
+      0,
+      115,
+      104,
+      255
+    ],
+    "background": [
+      244,
+      242,
+      236,
+      255
+    ],
+    "control": [
+      219,
+      223,
+      225,
+      255
+    ],
+    "corner_radius": 6,
+    "danger": [
+      177,
+      41,
+      57,
+      255
+    ],
+    "dark": false,
+    "fader_height": 170.0,
+    "knob_size": 72.0,
+    "muted": [
+      93,
+      108,
+      123,
+      255
+    ],
+    "name": "Studio paper",
+    "schema": 1,
+    "spacing": 10.0,
+    "surface": [
+      255,
+      254,
+      250,
+      255
+    ],
+    "text": [
+      32,
+      42,
+      53,
+      255
+    ]
+  }
+}

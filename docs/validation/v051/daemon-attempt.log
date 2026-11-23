@@ -1,0 +1,2 @@
+[E][08:18:47.037250] pw.conf      | [          conf.c:  602 load_module()] 0x55cc8473fde0: could not load mandatory module "libpipewire-module-protocol-native": Operation not permitted
+[E][08:18:47.037336] default      | [      pipewire.c:  124 main()] failed to create context: Operation not permitted

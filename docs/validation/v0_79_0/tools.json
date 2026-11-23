@@ -1,0 +1,15 @@
+{
+  "file_tempo_bpm": 100,
+  "hardware_opened": false,
+  "live_gain_smoothing_reaches_silence": true,
+  "lookahead_latency_frames": 252,
+  "media_scan_and_preview": true,
+  "midi_controls_imported": 3,
+  "portable_sampler_after_original_deleted": true,
+  "preset_parameter_namespace_remapped": true,
+  "resampled_frames": 48000,
+  "sampler_peak": 0.22269989550113678,
+  "sampler_retained_by_consolidation": true,
+  "stock_effects_prepared_and_finite": 32,
+  "zero_latency_session_frames": 0
+}

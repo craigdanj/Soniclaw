@@ -1,0 +1,3 @@
+   Compiling soniclaw-studio-automation-write v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/examples/studio-automation-write)
+    Finished `dev` profile [unoptimized] target(s) in 0.47s
+     Running `target/debug/soniclaw-studio-automation-write /workspace/scratch/cd89c8ef929d/workflow-work/final-examples70/studio-automation-write`

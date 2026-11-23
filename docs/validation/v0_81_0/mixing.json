@@ -1,0 +1,22 @@
+{
+  "audio_and_sidechain_cycles_rejected": true,
+  "aux_return_compensated": true,
+  "callback_allocations": 0,
+  "fader_values_materialized_for_edit": true,
+  "first_impulse_amplitude": 1.0606601238250732,
+  "hardware_opened": false,
+  "master_peak_meter_verified": true,
+  "muted_source_drives_current_block_detector": true,
+  "nested_bus_count": 2,
+  "nonzero_sidechain_latency_rejected": true,
+  "parallel_impulse_arrival": 36,
+  "reported_latency": 36,
+  "sidechain_callback_allocations": 0,
+  "sidechain_expected": 0.1257433444261551,
+  "sidechain_first_sample": 0.1257433444261551,
+  "sidechain_target_duplicate_remapped": true,
+  "stale_draft_rejected": true,
+  "submix_and_master_processing": true,
+  "submix_solo_and_mute": true,
+  "undo_redo_and_portable_routing": true
+}

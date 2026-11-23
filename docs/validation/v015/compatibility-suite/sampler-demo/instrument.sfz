@@ -1,0 +1,4 @@
+<global> key=60 pitch_keycenter=60
+<region> sample=soft.wav xfout_lovel=32 xfout_hivel=96
+<region> sample=hard.wav xfin_lovel=32 xfin_hivel=96
+<region> sample=release.wav trigger=release volume=-6

@@ -1,0 +1,30 @@
+{
+  "feature": "block-dsp",
+  "results": {
+    "backend": "Avx2",
+    "frames_and_ns_per_block": [
+      [
+        32,
+        204
+      ],
+      [
+        64,
+        25
+      ],
+      [
+        128,
+        35
+      ],
+      [
+        1024,
+        165
+      ],
+      [
+        4096,
+        1003
+      ]
+    ],
+    "optimized": true
+  },
+  "version": "0.106.0"
+}

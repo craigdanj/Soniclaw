@@ -1,0 +1,20 @@
+   Compiling soniclaw-core v0.42.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-core)
+   Compiling soniclaw-kernels v0.42.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-kernels)
+   Compiling soniclaw-tuning v0.42.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-tuning)
+   Compiling soniclaw-dsp v0.42.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-dsp)
+   Compiling soniclaw-quality v0.42.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-quality)
+    Finished `test` profile [unoptimized] target(s) in 4.29s
+     Running unittests src/lib.rs (target/debug/build/soniclaw-quality/a4f9b0c7321b0ea3/out/soniclaw_quality-a4f9b0c7321b0ea3)
+
+running 2 tests
+test tests::sweep_statistics_threshold_failure_and_invalid_signals ... ok
+test tests::calibrated_harmonic_noise_parseval_and_bins ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+   Doc-tests soniclaw_quality
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

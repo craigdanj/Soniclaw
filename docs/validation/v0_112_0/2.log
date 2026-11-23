@@ -1,0 +1,123 @@
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+    Checking soniclaw-core v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-core)
+    Checking smallvec v1.16.5
+    Checking arrayvec v0.7.8
+    Checking log v0.4.35
+    Checking polycool v0.4.0
+   Compiling thiserror v2.0.21
+    Checking kurbo v0.13.1
+    Checking once_cell v1.21.4
+   Compiling syn v3.0.10
+    Checking soniclaw-kernels v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-kernels)
+    Checking euclid v0.22.14
+   Compiling parking_lot_core v0.9.12
+    Checking linebender_resource_handle v0.1.1
+   Compiling zerocopy v0.8.63
+   Compiling ahash v0.8.12
+   Compiling unicode-general-category v1.1.0
+    Checking guillotiere v0.7.0
+    Checking foldhash v0.2.0
+    Checking fearless_simd v0.4.1
+    Checking scopeguard v1.2.0
+    Checking lock_api v0.4.14
+    Checking hashbrown v0.17.1
+   Compiling serde_derive v1.0.229
+   Compiling bytemuck_derive v1.12.1
+    Checking serde v1.0.229
+    Checking bytemuck v1.25.2
+   Compiling thiserror-impl v2.0.21
+    Checking soniclaw-tuning v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-tuning)
+    Checking font-types v0.12.7
+    Checking color v0.3.3
+    Checking read-fonts v0.41.0
+    Checking peniko v0.6.1
+    Checking soniclaw-dsp v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-dsp)
+    Checking vello_common v0.1.0
+    Checking emath v0.36.2
+    Checking ecolor v0.36.2
+    Checking vello_cpu v0.1.0
+    Checking soniclaw-transport v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-transport)
+    Checking parking_lot v0.12.5
+    Checking profiling v1.0.18
+    Checking unicode-segmentation v1.13.3
+    Checking nohash-hasher v0.2.0
+    Checking either v1.19.0
+    Checking uuid v1.29.2
+    Checking epaint_default_fonts v0.36.2
+    Checking self_cell v1.3.0
+    Checking accesskit v0.24.1
+    Checking itertools v0.15.0
+    Checking bitflags v1.3.2
+    Checking midir v0.10.1
+    Checking soniclaw-engine v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-engine)
+    Checking soniclaw-midi v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-midi)
+    Checking simd-adler32 v0.3.10
+   Compiling crc32fast v1.5.5
+   Compiling memchr v2.8.3
+    Checking adler2 v2.0.1
+   Compiling quick-xml v0.41.0
+    Checking soniclaw-bus v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-bus)
+    Checking float-cmp v0.9.0
+    Checking harfrust v0.12.0
+    Checking skrifa v0.44.0
+   Compiling crossbeam-utils v0.8.23
+   Compiling xcb v1.7.1
+    Checking strict-num v0.1.1
+    Checking miniz_oxide v0.9.1
+    Checking soniclaw-record v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-record)
+    Checking epaint v0.36.2
+    Checking soniclaw-io v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-io)
+    Checking soniclaw-clips v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-clips)
+    Checking arrayref v0.3.9
+    Checking tiny-skia-path v0.12.0
+    Checking egui v0.36.1
+    Checking soniclaw-formats v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-formats)
+    Checking flate2 v1.1.11
+    Checking miniz_oxide v0.8.9
+    Checking fdeflate v0.3.7
+    Checking siphasher v1.0.4
+    Checking com-scrape-types v0.1.1
+   Compiling find-msvc-tools v0.1.15
+   Compiling shlex v2.0.1
+   Compiling cc v1.11.2
+    Checking vst3 v0.3.0
+    Checking svgtypes v0.16.2
+    Checking png v0.18.1
+    Checking crossbeam-queue v0.3.14
+    Checking soniclaw-stream v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-stream)
+    Checking soniclaw-sampler v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-sampler)
+    Checking soniclaw-automation v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-automation)
+    Checking soniclaw-mixer v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-mixer)
+    Checking soniclaw-state v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-state)
+    Checking simplecss v0.2.2
+    Checking soniclaw-graph v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-graph)
+   Compiling x11-dl v2.21.0
+    Checking roxmltree v0.21.2
+    Checking pico-args v0.5.0
+    Checking data-url v0.3.2
+    Checking imagesize v0.15.0
+    Checking soniclaw-studio v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-studio)
+    Checking usvg v0.48.1
+   Compiling soniclaw-pipewire v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-pipewire)
+    Checking vst3-host v0.11.1 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/third-party/vst3-host)
+    Checking tiny-skia v0.12.0
+    Checking rgb v0.8.53
+    Checking resvg v0.48.1
+    Checking soniclaw-device v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-device)
+    Checking soniclaw-plugin v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-plugin)
+    Checking soniclaw-registry v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-registry)
+    Checking soniclaw-waveform v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-waveform)
+    Checking soniclaw-commands v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-commands)
+    Checking clap-sys v0.5.0
+    Checking soniclaw-ui v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-ui)
+    Checking soniclaw-vst3 v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-vst3)
+    Checking soniclaw-diagnostics v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-diagnostics)
+    Checking soniclaw-session v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-session)
+    Checking soniclaw-quality v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-quality)
+    Checking soniclaw-params v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-params)
+    Checking soniclaw-host v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-host)
+    Checking soniclaw-example-processors v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/processor-pack)
+    Checking soniclaw v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw)
+    Checking soniclaw-dsp-suite v0.112.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/dsp-suite)
+    Finished `dev` profile [unoptimized] target(s) in 27.61s

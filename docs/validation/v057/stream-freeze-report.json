@@ -1,0 +1,11 @@
+{
+  "bounded_page_rendering": true,
+  "frames": 96000,
+  "max_source_times_gain_error": 0.0,
+  "physical_audio_tested": false,
+  "portable_unfreeze": true,
+  "progress": [
+    96000,
+    96000
+  ]
+}

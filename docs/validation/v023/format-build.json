@@ -1,0 +1,10 @@
+{
+  "system": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "upstreams": {
+    "clap-wrapper": "806bba0a5f792e3966b99c1561ab9952d3316d7c",
+    "clap": "195b42a004144fab0b3cf95e9c067187d15365b7",
+    "vst3sdk": "9fad9770f2ae8542ab1a548a68c1ad1ac690abe0"
+  },
+  "editor": true,
+  "au_requested": false
+}

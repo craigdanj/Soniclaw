@@ -1,0 +1,36 @@
+{
+  "events": [
+    {
+      "Resized": {
+        "node": 0,
+        "size": [
+          800,
+          600
+        ]
+      }
+    }
+  ],
+  "first_size": [
+    800,
+    600
+  ],
+  "fixture_gui_mock": true,
+  "native_gui_render": false,
+  "product": "org.soniclaw.host-fixture",
+  "reopened_size": [
+    800,
+    600
+  ],
+  "resize": {
+    "Ok": null
+  },
+  "scale": {
+    "Ok": null
+  },
+  "services": {
+    "fd_dispatches": 1,
+    "fds": 1,
+    "timer_dispatches": 341,
+    "timers": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "blob_bytes": 131072,
+  "corruption_rejected": true,
+  "metadata_under_64k": true,
+  "missing_bypass_latency": 17,
+  "native": null,
+  "undo_redo": true,
+  "version": "0.83.0"
+}

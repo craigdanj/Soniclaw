@@ -1,0 +1,54 @@
+{
+  "input_frames": 96000,
+  "listening_acceptance": "pending; files provided for review",
+  "measured_pitch_hz": 659.2416054663581,
+  "partition_error": 0.0,
+  "pitch_frames": 96000,
+  "pitch_latency_frames": 1024,
+  "pitch_settings": {
+    "mix": 1.0,
+    "phase_locking": true,
+    "schema": 1,
+    "transient_threshold": 0.5,
+    "window_frames": 1024
+  },
+  "pitch_statistics": {
+    "ac_rms": 0.06659646961416894,
+    "dc": -0.000044483345978652446,
+    "peak": 0.26583144068717957,
+    "rms": 0.06659648447057323,
+    "samples_at_or_above_unity": 0
+  },
+  "pitch_stats": {
+    "invalid_blocks": 0,
+    "transient_channel_resets": 3
+  },
+  "pitch_target_hz": 659.2551138257398,
+  "stretches": [
+    {
+      "frames": 72000,
+      "ratio": 0.75,
+      "statistics": {
+        "ac_rms": 0.11299237758219746,
+        "dc": -7.505984450967655e-6,
+        "peak": 0.5193681716918945,
+        "rms": 0.11299237783151093,
+        "samples_at_or_above_unity": 0
+      },
+      "transient_locks": 0
+    },
+    {
+      "frames": 144000,
+      "ratio": 1.5,
+      "statistics": {
+        "ac_rms": 0.11271803042025055,
+        "dc": -0.00006287447089206447,
+        "peak": 0.5558559894561768,
+        "rms": 0.11271804795604726,
+        "samples_at_or_above_unity": 0
+      },
+      "transient_locks": 1
+    }
+  ],
+  "version": "0.43.0"
+}

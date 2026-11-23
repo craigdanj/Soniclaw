@@ -1,0 +1,9 @@
+{
+  "feature": "restoration",
+  "results": {
+    "callback_allocations": 0,
+    "latency_frames": 1024,
+    "noise_only_reduction_db": 10.755140717608178
+  },
+  "version": "0.108.0"
+}

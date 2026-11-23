@@ -1,0 +1,8 @@
+{
+  "live_graph": {
+    "callback_allocations": 0,
+    "latency_frames": 64,
+    "retired_on_control": 1
+  },
+  "midi_events": 32
+}

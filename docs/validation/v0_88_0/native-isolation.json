@@ -1,0 +1,65 @@
+{
+  "cases": [
+    {
+      "callback_allocations": 0,
+      "checkpoint_restored": true,
+      "dry_requested": true,
+      "fallback_sample": 0.25,
+      "fault": 0.25,
+      "healthy_peak": 0.125,
+      "instrument": false,
+      "new_pid": 396,
+      "offline_peak": 0.125,
+      "old_pid": 392,
+      "opaque_checkpoint": true,
+      "parent_survived": true
+    },
+    {
+      "callback_allocations": 0,
+      "checkpoint_restored": true,
+      "dry_requested": true,
+      "fallback_sample": 0.25,
+      "fault": 0.75,
+      "healthy_peak": 0.125,
+      "instrument": false,
+      "new_pid": 403,
+      "offline_peak": 0.125,
+      "old_pid": 399,
+      "opaque_checkpoint": true,
+      "parent_survived": true
+    },
+    {
+      "callback_allocations": 0,
+      "checkpoint_restored": true,
+      "dry_requested": false,
+      "fallback_sample": 0.0,
+      "fault": 0.25,
+      "healthy_peak": 0.125,
+      "instrument": false,
+      "new_pid": 410,
+      "offline_peak": 0.125,
+      "old_pid": 406,
+      "opaque_checkpoint": false,
+      "parent_survived": true
+    },
+    {
+      "callback_allocations": 0,
+      "checkpoint_restored": true,
+      "dry_requested": true,
+      "fallback_sample": 0.0,
+      "fault": 0.25,
+      "healthy_peak": 0.125,
+      "instrument": true,
+      "new_pid": 417,
+      "offline_peak": 0.125,
+      "old_pid": 413,
+      "opaque_checkpoint": true,
+      "parent_survived": true
+    }
+  ],
+  "offline_fault_export_removed": true,
+  "save_reopen": true,
+  "studio_graph_audio": true,
+  "unapproved_helper_denied": true,
+  "version": "0.88.0"
+}

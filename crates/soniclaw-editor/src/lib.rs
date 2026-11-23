@@ -136,10 +136,16 @@ impl egui_baseview::App for Panel {
                             state.pending = 0;
                         }
                         let info = p.info();
-                        let local = Parameter::new(info).expect("validated parameter");
+                        let local = p.detached().expect("validated parameter");
                         let _ = local.set(state.value);
                         let logarithmic = info.min > 0.0 && info.max / info.min >= 100.0;
-                        let response = soniclaw_ui::parameter_knob(ui, &local, logarithmic);
+                        let response = if local.step_count() > 0 {
+                            soniclaw_ui::parameter_control(ui, &local)
+                        } else if local.has_codec() {
+                            soniclaw_ui::audio_knob(ui, &local, Default::default())
+                        } else {
+                            soniclaw_ui::parameter_knob(ui, &local, logarithmic)
+                        };
                         if response.changed() {
                             if let Some(sequence) = self.sender.submit(index, local.get()) {
                                 state.value = local.get();
@@ -181,6 +187,30 @@ impl Editor {
         size: (u32, u32),
         raw_parent: RawWindowHandle,
     ) -> Result<Self, String> {
+        // SAFETY: the caller supplies the same valid parent lifetime.
+        unsafe {
+            Self::create_parented_scaled(
+                title, parameters, sender, notify, host, size, raw_parent, 1.0,
+            )
+        }
+    }
+    /// Construct with the retained zoom before the first frame, avoiding a second resize on reopen.
+    /// # Safety
+    /// Same parent/thread requirements as `create_parented`.
+    #[allow(clippy::too_many_arguments)]
+    pub unsafe fn create_parented_scaled(
+        title: String,
+        parameters: Vec<Arc<Parameter>>,
+        sender: EditSender,
+        notify: Arc<dyn Fn() + Send + Sync>,
+        host: host::Host,
+        size: (u32, u32),
+        raw_parent: RawWindowHandle,
+        initial_scale: f64,
+    ) -> Result<Self, String> {
+        if !initial_scale.is_finite() || !(0.5..=4.0).contains(&initial_scale) {
+            return Err("invalid initial editor scale".into());
+        }
         let parent = Parent(raw_parent);
         // Opaque 2D UI needs neither depth/stencil nor an sRGB-capable visual.
         // Relaxing these requirements also supports software X11 displays.
@@ -196,12 +226,13 @@ impl Editor {
         };
         let settings = EguiWindowSettings::new()
             .with_graphics_config(graphics)
+            .with_zoom_factor(initial_scale as f32)
             .with_title(title.clone())
             .with_size(LogicalSize::new(size.0 as f64, size.1 as f64))
             .with_min_size(Some(LogicalSize::new(320.0, 220.0)))
             .with_parent(Some(&parent))
             .with_resizable(true);
-        let scale = Arc::new(AtomicU32::new(1.0_f32.to_bits()));
+        let scale = Arc::new(AtomicU32::new((initial_scale as f32).to_bits()));
         EguiWindow::create_with_host(
             settings,
             Panel {

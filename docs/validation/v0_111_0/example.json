@@ -1,0 +1,24 @@
+{
+  "feature": "spectral-resynthesis",
+  "results": {
+    "complement_error": 8.940696716308594e-8,
+    "first_partial_hz": 375.02117919921875,
+    "stems": [
+      {
+        "audio": "harmonic.wav",
+        "callback_allocations": 0,
+        "latency_frames": 1024,
+        "name": "harmonic",
+        "peak": 0.273124098777771
+      },
+      {
+        "audio": "residual.wav",
+        "callback_allocations": 0,
+        "latency_frames": 1024,
+        "name": "residual",
+        "peak": 0.13857048749923706
+      }
+    ]
+  },
+  "version": "0.111.0"
+}

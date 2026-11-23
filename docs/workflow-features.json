@@ -1,0 +1,524 @@
+[
+  {
+    "version": "0.60.0",
+    "title": "Studio-wide undo and redo",
+    "guide": "STUDIO_HISTORY",
+    "status": "Complete"
+  },
+  {
+    "version": "0.61.0",
+    "title": "Studio project recovery and migration",
+    "guide": "STUDIO_RECOVERY",
+    "status": "Complete"
+  },
+  {
+    "version": "0.62.0",
+    "title": "Complete studio recording controls",
+    "guide": "STUDIO_RECORDING",
+    "status": "Complete"
+  },
+  {
+    "version": "0.63.0",
+    "title": "Waveform and warp-marker editor",
+    "guide": "WAVEFORM_WARP_EDITOR",
+    "status": "Complete"
+  },
+  {
+    "version": "0.64.0",
+    "title": "Shared background-job scheduler",
+    "guide": "STUDIO_JOBS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.65.0",
+    "title": "Studio export centre",
+    "guide": "STUDIO_EXPORT",
+    "status": "Complete"
+  },
+  {
+    "version": "0.66.0",
+    "title": "Studio routing editor",
+    "guide": "STUDIO_ROUTING",
+    "status": "Complete"
+  },
+  {
+    "version": "0.67.0",
+    "title": "Native plug-in windows in the studio",
+    "guide": "STUDIO_PLUGIN_WINDOWS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.68.0",
+    "title": "Export sample-rate conversion",
+    "guide": "EXPORT_CONVERSION",
+    "status": "Complete"
+  },
+  {
+    "version": "0.69.0",
+    "title": "Studio Touch and Latch automation recording",
+    "guide": "STUDIO_AUTOMATION_WRITE",
+    "status": "Complete"
+  },
+  {
+    "version": "0.70.0",
+    "title": "Media audit and project consolidation",
+    "guide": "STUDIO_MEDIA_AUDIT",
+    "status": "Complete"
+  },
+  {
+    "version": "0.71.0",
+    "title": "Studio MIDI performance recording",
+    "guide": "STUDIO_MIDI_RECORDING",
+    "status": "Complete"
+  },
+  {
+    "version": "0.72.0",
+    "title": "DAW project and track workspace",
+    "guide": "DAW_WORKSPACE",
+    "status": "Complete"
+  },
+  {
+    "version": "0.73.0",
+    "title": "Durable in-place sessions and portable performances",
+    "guide": "DAW_SESSIONS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.74.0",
+    "title": "Independent multichannel recording",
+    "guide": "DAW_MULTICHANNEL",
+    "status": "Complete"
+  },
+  {
+    "version": "0.75.0",
+    "title": "Timestamped input and recording calibration",
+    "guide": "DAW_TIMING",
+    "status": "Complete"
+  },
+  {
+    "version": "0.76.0",
+    "title": "Grouped audio and loop MIDI takes",
+    "guide": "DAW_TAKES",
+    "status": "Complete"
+  },
+  {
+    "version": "0.77.0",
+    "title": "Expressive MIDI clips and controller editing",
+    "guide": "DAW_MIDI",
+    "status": "Complete"
+  },
+  {
+    "version": "0.78.0",
+    "title": "Arrangement and musical timeline workflow",
+    "guide": "DAW_ARRANGEMENT",
+    "status": "Complete"
+  },
+  {
+    "version": "0.79.0",
+    "title": "Stock instruments effects and media browser",
+    "guide": "DAW_TOOLS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.80.0",
+    "title": "Transient and grouped elastic editing",
+    "guide": "DAW_ELASTIC",
+    "status": "Complete"
+  },
+  {
+    "version": "0.81.0",
+    "title": "Submix and sidechain routing",
+    "guide": "DAW_MIXING",
+    "status": "Complete"
+  },
+  {
+    "version": "0.82.0",
+    "title": "Cue mixes and hardware outputs",
+    "guide": "DAW_CUES",
+    "status": "Complete"
+  },
+  {
+    "version": "0.83.0",
+    "title": "Studio VST3 and plug-in management",
+    "guide": "DAW_PLUGINS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.84.0",
+    "title": "Native plug-in and mixer automation",
+    "guide": "DAW_AUTOMATION",
+    "status": "Complete"
+  },
+  {
+    "version": "0.85.0",
+    "title": "Native mixdown and integrated DAW workflows",
+    "guide": "DAW_DELIVERY",
+    "status": "Complete"
+  },
+  {
+    "version": "0.86.0",
+    "title": "Native editor automation",
+    "guide": "NATIVE_EDITOR_AUTOMATION",
+    "status": "Complete"
+  },
+  {
+    "version": "0.87.0",
+    "title": "Native sidechains and multiple outputs",
+    "guide": "STUDIO_NATIVE_BUSES",
+    "status": "Complete"
+  },
+  {
+    "version": "0.88.0",
+    "title": "Studio plug-in crash isolation",
+    "guide": "STUDIO_NATIVE_ISOLATION",
+    "status": "Complete"
+  },
+  {
+    "version": "0.89.0",
+    "title": "Reusable multi-rate oversampling",
+    "guide": "DSP_OVERSAMPLING",
+    "status": "Complete"
+  },
+  {
+    "version": "0.90.0",
+    "title": "Anti-aliased nonlinear processing",
+    "guide": "DSP_NONLINEAR",
+    "status": "Complete"
+  },
+  {
+    "version": "0.91.0",
+    "title": "Advanced nonlinear comb and formant filters",
+    "guide": "DSP_FILTERS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.92.0",
+    "title": "Compiled modulation and efficient control updates",
+    "guide": "DSP_MODULATION",
+    "status": "Complete"
+  },
+  {
+    "version": "0.93.0",
+    "title": "Oversampled modulated oscillator engines",
+    "guide": "DSP_OSCILLATORS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.94.0",
+    "title": "Formant-aware pitch and quality stretch controls",
+    "guide": "DSP_PITCH_QUALITY",
+    "status": "Complete"
+  },
+  {
+    "version": "0.95.0",
+    "title": "Waveguide strings and modal resonators",
+    "guide": "DSP_PHYSICAL",
+    "status": "Complete"
+  },
+  {
+    "version": "0.96.0",
+    "title": "Modelled pedal and amplifier signal chains",
+    "guide": "DSP_AMP_MODELS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.97.0",
+    "title": "True-stereo convolution and hybrid reverberation",
+    "guide": "DSP_SPATIAL",
+    "status": "Complete"
+  },
+  {
+    "version": "0.98.0",
+    "title": "Flexible linked and keyed dynamics",
+    "guide": "DSP_DYNAMICS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.99.0",
+    "title": "Advanced sampler region playback",
+    "guide": "DSP_PLAYBACK",
+    "status": "Complete"
+  },
+  {
+    "version": "0.100.0",
+    "title": "Prepared resampling kernels and profiling",
+    "guide": "DSP_OPTIMIZATION",
+    "status": "Complete"
+  },
+  {
+    "version": "0.101.0",
+    "title": "FIR and Butterworth filter design",
+    "guide": "DSP_FILTER_DESIGN",
+    "status": "Complete"
+  },
+  {
+    "version": "0.102.0",
+    "title": "Modulatable fractional delay",
+    "guide": "DSP_FRACTIONAL_DELAY",
+    "status": "Complete"
+  },
+  {
+    "version": "0.103.0",
+    "title": "Polyphase IIR oversampling",
+    "guide": "DSP_IIR_OVERSAMPLING",
+    "status": "Complete"
+  },
+  {
+    "version": "0.104.0",
+    "title": "Continuous-ratio streaming resampling",
+    "guide": "DSP_STREAM_RESAMPLE",
+    "status": "Complete"
+  },
+  {
+    "version": "0.105.0",
+    "title": "Linear-phase EQ and crossover",
+    "guide": "DSP_LINEAR_PHASE",
+    "status": "Complete"
+  },
+  {
+    "version": "0.106.0",
+    "title": "General-purpose block DSP kernels",
+    "guide": "DSP_BLOCK_KERNELS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.107.0",
+    "title": "TPDF dither and noise shaping",
+    "guide": "DSP_DITHER",
+    "status": "Complete"
+  },
+  {
+    "version": "0.108.0",
+    "title": "Audio restoration primitives",
+    "guide": "DSP_RESTORATION",
+    "status": "Complete"
+  },
+  {
+    "version": "0.109.0",
+    "title": "Hybrid polyphonic instrument",
+    "guide": "DSP_HYBRID_VOICE",
+    "status": "Complete"
+  },
+  {
+    "version": "0.110.0",
+    "title": "Wavetable authoring",
+    "guide": "DSP_WAVETABLE_AUTHOR",
+    "status": "Complete"
+  },
+  {
+    "version": "0.111.0",
+    "title": "Harmonic and residual spectral resynthesis",
+    "guide": "DSP_RESYNTHESIS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.112.0",
+    "title": "Streamed sampler articulations",
+    "guide": "DSP_STREAMED_ARTICULATIONS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.113.0",
+    "title": "Neural amp model playback",
+    "guide": "DSP_NEURAL_AMP",
+    "status": "Complete"
+  },
+  {
+    "version": "0.114.0",
+    "title": "Coupled physical instruments",
+    "guide": "DSP_COUPLED_MODELS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.115.0",
+    "title": "Processor composition and latency-aware mixing",
+    "guide": "DSP_COMPOSITION",
+    "status": "Complete"
+  },
+  {
+    "version": "0.116.0",
+    "title": "Advanced FIR and IIR filter design",
+    "guide": "DSP_ADVANCED_DESIGN",
+    "status": "Complete"
+  },
+  {
+    "version": "0.117.0",
+    "title": "Unified oversampling",
+    "guide": "DSP_UNIFIED_OVERSAMPLING",
+    "status": "Complete"
+  },
+  {
+    "version": "0.118.0",
+    "title": "Real-input FFT and analysis windows",
+    "guide": "DSP_REAL_FFT",
+    "status": "Complete"
+  },
+  {
+    "version": "0.119.0",
+    "title": "Fractional-delay interpolation modes",
+    "guide": "DSP_INTERPOLATION",
+    "status": "Complete"
+  },
+  {
+    "version": "0.120.0",
+    "title": "Reusable DSP utilities",
+    "guide": "DSP_UTILITIES",
+    "status": "Complete"
+  },
+  {
+    "version": "0.121.0",
+    "title": "Double-precision processing",
+    "guide": "DSP_DOUBLE_PRECISION",
+    "status": "Complete"
+  },
+  {
+    "version": "0.122.0",
+    "title": "Impulse-response capture",
+    "guide": "DSP_IR_CAPTURE",
+    "status": "Complete"
+  },
+  {
+    "version": "0.123.0",
+    "title": "Multi-operator FM and phase modulation",
+    "guide": "DSP_FM_OPERATORS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.124.0",
+    "title": "Component-level circuit modelling",
+    "guide": "DSP_WAVE_DIGITAL",
+    "status": "Complete"
+  },
+  {
+    "version": "0.125.0",
+    "title": "Two-input spectral morphing",
+    "guide": "DSP_SPECTRAL_MORPH",
+    "status": "Complete"
+  },
+  {
+    "version": "0.126.0",
+    "title": "Polyphonic pitch and onset analysis",
+    "guide": "DSP_POLYPHONIC_ANALYSIS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.127.0",
+    "title": "Binaural spatial rendering",
+    "guide": "DSP_BINAURAL",
+    "status": "Complete"
+  },
+  {
+    "version": "0.128.0",
+    "title": "Reed and wind physical modelling",
+    "guide": "DSP_REED_WAVEGUIDE",
+    "status": "Complete"
+  },
+  {
+    "version": "0.129.0",
+    "title": "Loudness-targeted mastering renders",
+    "guide": "DSP_MASTERING",
+    "status": "Complete"
+  },
+  {
+    "version": "0.130.0",
+    "title": "NAM WaveNet playback",
+    "guide": "DSP_NAM_WAVENET",
+    "status": "Complete"
+  },
+  {
+    "version": "0.131.0",
+    "title": "Phase-locked multi-mic sample voices",
+    "guide": "DSP_MULTIMIC_SAMPLER",
+    "status": "Complete"
+  },
+  {
+    "version": "0.132.0",
+    "title": "Live monophonic pitch correction",
+    "guide": "DSP_PITCH_CORRECTION",
+    "status": "Complete"
+  },
+  {
+    "version": "0.133.0",
+    "title": "Cabinet IR alignment and blending",
+    "guide": "DSP_CABINET_BLEND",
+    "status": "Complete"
+  },
+  {
+    "version": "0.134.0",
+    "title": "Harmonic and percussive separation",
+    "guide": "DSP_HPSS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.135.0",
+    "title": "Tempo-synced live granular effects",
+    "guide": "DSP_GRANULAR_LIVE",
+    "status": "Complete"
+  },
+  {
+    "version": "0.136.0",
+    "title": "First-order Ambisonics",
+    "guide": "DSP_AMBISONICS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.137.0",
+    "title": "Audio-rate feedback patching",
+    "guide": "DSP_FEEDBACK_PATCH",
+    "status": "Complete"
+  },
+  {
+    "version": "0.138.0",
+    "title": "Half-band filter design and custom oversampling",
+    "guide": "DSP_HALF_BAND_DESIGN",
+    "status": "Complete"
+  },
+  {
+    "version": "0.139.0",
+    "title": "Shared convolution update queue",
+    "guide": "DSP_CONVOLUTION_UPDATE_QUEUE",
+    "status": "Complete"
+  },
+  {
+    "version": "0.140.0",
+    "title": "Lookup-table transforms",
+    "guide": "DSP_LOOKUP_TRANSFORM",
+    "status": "Complete"
+  },
+  {
+    "version": "0.141.0",
+    "title": "Borrowed audio sub-blocks",
+    "guide": "DSP_BLOCK_VIEW",
+    "status": "Complete"
+  },
+  {
+    "version": "0.142.0",
+    "title": "First-order TPT filters",
+    "guide": "DSP_FIRST_ORDER_TPT",
+    "status": "Complete"
+  },
+  {
+    "version": "0.143.0",
+    "title": "Logarithmic ramps",
+    "guide": "DSP_LOGARITHMIC_RAMP",
+    "status": "Complete"
+  },
+  {
+    "version": "0.144.0",
+    "title": "Selectable panning laws",
+    "guide": "DSP_STEREO_PANNER",
+    "status": "Complete"
+  },
+  {
+    "version": "0.145.0",
+    "title": "End-to-end f64 processing",
+    "guide": "DSP_ENGINE_PRECISION",
+    "status": "Complete"
+  },
+  {
+    "version": "0.146.0",
+    "title": "Reusable floating-point SIMD types",
+    "guide": "DSP_SIMD_VECTORS",
+    "status": "Complete"
+  }
+]

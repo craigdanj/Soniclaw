@@ -1,0 +1,15 @@
+[package]
+name="soniclaw-mixer"
+description="Prepared stereo channel strips, sends, groups and atomic meters"
+version.workspace=true
+edition.workspace=true
+license.workspace=true
+rust-version.workspace=true
+[dependencies]
+soniclaw-core.workspace=true
+serde={version="1",features=["derive"]}
+serde_json="1"
+[dev-dependencies]
+allocation-counter="=0.8.1"
+[lints]
+workspace=true

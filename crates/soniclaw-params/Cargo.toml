@@ -1,0 +1,15 @@
+[package]
+name="soniclaw-params"
+description="Typed audio parameter declarations, host presentation and versioned normalized snapshots"
+version.workspace=true
+edition.workspace=true
+license.workspace=true
+rust-version.workspace=true
+[dependencies]
+soniclaw-core.workspace=true
+serde={version="1",features=["derive"]}
+serde_json="1"
+[lints]
+workspace=true
+[dev-dependencies]
+allocation-counter="=0.8.1"

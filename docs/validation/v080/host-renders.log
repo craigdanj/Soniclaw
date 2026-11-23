@@ -1,0 +1,6 @@
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.13s
+     Running `target/debug/soniclaw-sdk-tools --host target/debug/libsoniclaw_workbench.so /workspace/scratch/cd89c8ef929d/verification/v080-final/host-renders`
+PASS hosted org.soniclaw.workbench.fx
+PASS hosted org.soniclaw.workbench.granular
+PASS hosted org.soniclaw.workbench.polymod
+PASS hosted org.soniclaw.workbench.sampler

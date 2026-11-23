@@ -1,0 +1,133 @@
+   Compiling soniclaw-dsp-suite v0.115.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/dsp-suite)
+   Compiling soniclaw-parallel-compressor v0.115.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/parallel-compressor)
+   Compiling soniclaw-dsp v0.115.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-dsp)
+    Finished `test` profile [unoptimized] target(s) in 7.15s
+     Running unittests src/lib.rs (target/debug/build/soniclaw-dsp/0e92066331940cd8/out/soniclaw_dsp-0e92066331940cd8)
+
+running 98 tests
+test advanced::analysis::tests::true_peak_detects_intersample_crest ... ok
+test advanced::crossover::tests::crossover_branches_are_minus_six_db_at_cutoff ... ok
+test advanced::creative::tests::tempo_delay_impulse_and_tremolo_bounds ... ok
+test advanced::spectral::tests::fft_inverse_and_analyzer_calibration ... ok
+test advanced::dynamics::tests::rms_ratio_and_transient_bypass ... ok
+test amp_models::tests::implicit_solution_and_asymmetry ... ok
+test advanced::spectral::tests::stft_identity_has_exact_declared_latency ... ok
+test automated::tests::live_gain_is_smoothed_and_partition_independent ... ok
+test block_dsp::tests::layouts_and_scalar_agree ... ok
+test composition::tests::aligned_lookahead_and_separate_processing ... ok
+test composition::tests::dry_path_crossfades_without_changing_delay ... ok
+test composition::tests::duplicated_mono_uses_independent_history ... ok
+test advanced::filters::tests::svf_response_and_ladder_decay ... ok
+test creative_filters::continuity_tests::near_zero_drive_matches_linear_limit ... ok
+test convolution::tests::fft_matches_direct_convolution_across_ir_partitions_and_variable_blocks ... ok
+test creative_filters::response_tests::linear_limit_has_expected_cutoff_gain ... ok
+test creative_filters::response_tests::formant_partition_channel_isolation_and_reset ... ok
+test creative_filters::tests::comb_impulse_tuning_decay_partition_and_allocations ... ok
+test advanced::wavetable::tests::mipmaps_remove_out_of_band_harmonics ... ok
+test dither::tests::deterministic_split_and_silence_statistics ... ok
+test dynamics::tests::curve_modes_knee_and_limits ... ok
+test effects::tests::chorus_wet_path_and_parameter_rejection ... ok
+test dynamics::tests::keyed_partition_latency_and_invalid_rejection ... ok
+test advanced::analysis::tests::pitch_and_stereo ... ok
+test effects::tests::dynamics_ceiling_and_ratio ... ok
+test expressive::tests::mpe_combines_master_and_member_pitch ... ok
+test expressive::tests::note_ids_isolate_unison_and_choke ... ok
+test filter_design::tests::endpoints_cutoff_and_fir_delay ... ok
+test fractional_delay::tests::stereo_impulse_and_bounded_slew ... ok
+test advanced::crossover::tests::two_and_three_way_recombination_flat ... ok
+test granular::tests::zero_velocity_id_releases_only_the_matching_note ... ok
+test effects::tests::eq_peak_boost_at_center ... ok
+test iir_oversampling::tests::dc_partition_and_rejection ... ok
+test modulation::compiled::config_tests::prepared_memory_budget_rejects_oversized_config ... ok
+test modulation::compiled::config_tests::source_updates_preserve_phase_and_validate_topology ... ok
+test modulation::compiled::smoothing_tests::slow_high_rate_smoothing_does_not_stall_at_f32_resolution ... ok
+test modulation::compiled::tests::invalid_inputs_do_not_advance_or_change_base ... ok
+test modulation::compiled::tests::partition_equality_allocations_and_evaluation_budget ... ok
+test modulation::tests::base_is_preserved_and_modulation_bounded ... ok
+test modulation::tests::envelope_releases_from_current_level ... ok
+test nonlinear::tests::integer_latency_partition_zero_alloc_and_reset ... ok
+test nonlinear::tests::invalid_controls_are_transactional ... ok
+test nonlinear::tests::repeated_inputs_and_analytic_integral_are_stable ... ok
+test advanced::analysis::tests::loudness_reference_gate_and_bounded_history ... ok
+test creative_filters::tests::nonlinear_filter_sweeps_and_morph_stay_finite ... ok
+test oscillators::tests::generator_padding_and_reset ... ok
+test linear_phase::tests::three_bands_recombine_with_reported_delay ... ok
+test oversampling::multirate::tests::wrapper_retimes_events_and_clock ... ok
+test oversampling::tests::reported_latency_matches_impulse_peak_and_dry ... ok
+test physical::tests::modal_impulse_has_correct_decay ... ok
+test oversampling::multirate::tests::callback_allocations_reset_and_invalid_input ... ok
+test physical::tests::string_partition_and_stereo_coherence ... ok
+test physical::tests::pluck_tuning_decay_and_reset ... ok
+test effects::tests::gate_rejects_quiet_and_reset_clears_tails ... ok
+test pitch_quality::tests::unity_is_unchanged_and_controls_validate ... ok
+test advanced::dynamics::tests::lookahead_latency_and_intersample_peak ... ok
+test pitch_quality::tests::formant_shift_is_finite_and_partition_invariant ... ok
+test prepared_resample::tests::coefficients_match_reference_at_band_rates_and_allocate_nothing ... ok
+test amp_models::tests::prepared_chain_partition_and_reset ... ok
+test resample::tests::channels_duration_dc_and_bad_inputs ... ok
+test resample::tests::integer_linear_samples_do_not_read_a_zero_weight_page ... ok
+test restoration::tests::click_repair_preserves_channels ... ok
+test prepared_resample::tests::above_nyquist_fixture_is_attenuated ... ok
+test rt_controls::prepared_control_commands_do_not_allocate_or_drop_assets ... ok
+test restoration::tests::notch_at_mains_frequency ... ok
+test sample_playback::tests::loop_search_finds_period_and_rejects_outside_windows ... ok
+test sample_playback::tests::high_rate_small_loop_stays_inside ... ok
+test rack::tests::dynamic_eq_reduces_loud_center_tone ... ok
+test sample_playback::tests::reverse_and_pingpong_endpoints ... ok
+test sampler::tests::rejects_nonfinite_and_partial_frames ... ok
+test sampler::tests::sample_rate_conversion_and_end_of_sample ... ok
+test oscillators::tests::modulation_partition_and_allocation ... ok
+test spatial::tests::true_stereo_routing_latency_and_partition ... ok
+test sample_playback::tests::overlap_skip_and_callback_partition ... ok
+test sample_playback::tests::prepared_tables_are_shared_and_rate_is_guarded ... ok
+test spectral_fx::tests::freeze_continues_after_input_silence ... ok
+test spectral_fx::tests::hilbert_frequency_shift_translates_tone ... ok
+test stereo_convolution::tests::swap_crossfades_and_retires_on_control ... ok
+test rack::tests::neutral_rack_recombines_and_solo_is_band_selective ... ok
+test streaming::linked_tests::selected_reference_owns_all_grain_decisions ... ok
+test stream_resample::tests::partition_equivalence_and_exact_length ... ok
+test resample::tests::downsample_rejects_alias_and_preserves_passband ... ok
+test streaming::tests::wsola_backpressure_finish_errors_and_reset ... ok
+test streaming::tests::onsets_reset_phase_and_reset_clears_state ... ok
+test tests::a4_pitch_and_sine_period ... ok
+test tests::delay_impulse_is_at_expected_frame ... ok
+test tests::envelope_release_from_current_level_terminates ... ok
+test tests::synth_obeys_sample_offsets_and_panic ... ok
+test voice_mod::tests::voices_have_independent_lfos_envelopes_and_release ... ok
+test wavetable_author::tests::detects_circular_phase_offset ... ok
+test oversampling::multirate::tests::all_factors_latency_dc_partition_and_channel_isolation ... ok
+test granular::tests::grains_are_deterministic_and_release ... ok
+test advanced::reverb::tests::reverb_has_predelay_decay_and_reset ... ok
+test spatial::tests::hybrid_dry_alignment_reset_and_tail ... ok
+test streaming::tests::phase_locked_pitch_frequency_partition_unity_and_invalid ... ok
+test streaming::tests::wsola_duration_pitch_stereo_coherence_partition_and_no_alloc ... ok
+test spectral_fx::tests::offline_stretch_duration_and_pitch ... ok
+test stereo_convolution::tests::stereo_two_tier_matches_direct_and_uniform_latency ... ok
+
+test result: ok. 98 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.09s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-dsp-suite/257a23b484f65143/out/soniclaw_dsp_suite-257a23b484f65143)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-parallel-compressor/c1e730c928d7f741/out/soniclaw_parallel_compressor-c1e730c928d7f741)
+
+running 1 test
+test tests::plug_in_reports_latency_and_zero_mix_is_aligned ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_dsp
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_parallel_compressor
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

@@ -1,0 +1,13 @@
+{
+  "mappings": [
+    {
+      "channel": 0,
+      "controller": 7,
+      "parameter": "gain",
+      "range": [
+        0.0,
+        1.0
+      ]
+    }
+  ]
+}

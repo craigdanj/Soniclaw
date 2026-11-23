@@ -1,0 +1,408 @@
+[
+  {
+    "feature": "oscillators",
+    "report": {
+      "feature": "oscillators",
+      "results": {
+        "cases": [
+          {
+            "audio": "pwm.wav",
+            "callback_allocations": 0,
+            "latency_frames": 96,
+            "name": "pwm",
+            "peak": 0.23355191946029663
+          },
+          {
+            "audio": "fm.wav",
+            "callback_allocations": 0,
+            "latency_frames": 96,
+            "name": "fm",
+            "peak": 0.23206137120723724
+          },
+          {
+            "audio": "pm-warp.wav",
+            "callback_allocations": 0,
+            "latency_frames": 96,
+            "name": "pm-warp",
+            "peak": 0.19999991357326508
+          },
+          {
+            "audio": "sync.wav",
+            "callback_allocations": 0,
+            "latency_frames": 96,
+            "name": "sync",
+            "peak": 0.22900190949440002
+          },
+          {
+            "audio": "wavetable.wav",
+            "callback_allocations": 0,
+            "latency_frames": 96,
+            "name": "wavetable",
+            "peak": 0.18436893820762634
+          }
+        ],
+        "pulse_alias_fixture": {
+          "bin": 851,
+          "fft": 4096,
+          "naive_residual_db": -6.313406975628641,
+          "oversampled_residual_db": -19.09846926506728
+        }
+      },
+      "version": "0.100.0"
+    },
+    "wav_sha256": {
+      "fm.wav": "705040e52c186804a5e79047eb2504e52b3cf67f20fc9e2ef984353009b72b1b",
+      "pm-warp.wav": "a7888f604fe78d5bc38e17f480f1985be584328a95525644b99149264c4d14ca",
+      "pulse-naive.wav": "76ad585103907133c30362e5889167627e9c02c523e5bf24cb313b35b1e31098",
+      "pulse-oversampled.wav": "d898adcbe3ded60e54d2e78d7160d45467ec2167c78fd66f77eff8f4fab1f9ce",
+      "pwm.wav": "ed1ecc0b4dfc38974db8b60f5adb746e0c356e9fc7623b3b76bfe1770f3e57f9",
+      "sync.wav": "49e6f73ca541bdf1cca7dd303009ac88067fd92c27d926853226691ae6d43eb2",
+      "wavetable.wav": "c9ec0278e497e6961cafa94115cc7c333c03203d48c54512914660e919004fde"
+    }
+  },
+  {
+    "feature": "pitch",
+    "report": {
+      "feature": "pitch",
+      "results": {
+        "fixture": "synthetic harmonics; listening quality not certified",
+        "pitch_cases": [
+          {
+            "audio": "pitch-up-plain.wav",
+            "callback_allocations": 0,
+            "latency_frames": 2048,
+            "name": "pitch-up-plain",
+            "peak": 0.21888406574726105
+          },
+          {
+            "audio": "pitch-up-envelope.wav",
+            "callback_allocations": 0,
+            "latency_frames": 2048,
+            "name": "pitch-up-envelope",
+            "peak": 0.126820906996727
+          },
+          {
+            "audio": "pitch-up-shifted-envelope.wav",
+            "callback_allocations": 0,
+            "latency_frames": 2048,
+            "name": "pitch-up-shifted-envelope",
+            "peak": 0.08600609004497528
+          }
+        ],
+        "stretch": {
+          "callback_allocations": 0,
+          "input_frames": 48000,
+          "output_frames": 72000,
+          "ratio": 1.5
+        }
+      },
+      "version": "0.100.0"
+    },
+    "wav_sha256": {
+      "pitch-up-envelope.wav": "6298c4b072184758cce6b2ba825d7f4ae7bdcf68320c6a286c9dbfbef82d25c1",
+      "pitch-up-plain.wav": "5ffb8c74e689544cfd0d4ca1ccd6f1d2110e09ca064b7bf18582ef873a5501bd",
+      "pitch-up-shifted-envelope.wav": "498f04032fda4a1e3346f85f5ec52898242609541ec940ef1ce01a47e3f4b70b",
+      "stretch-music.wav": "527d28b9bd3a43567d3e54bbb9698cb8d61892393aac1051bf0201c4fcfaa918"
+    }
+  },
+  {
+    "feature": "physical",
+    "report": {
+      "feature": "physical",
+      "results": {
+        "cases": [
+          {
+            "audio": "picked-string.wav",
+            "callback_allocations": 0,
+            "latency_frames": 0,
+            "name": "picked-string",
+            "peak": 0.5274993777275085
+          },
+          {
+            "audio": "friction-string.wav",
+            "callback_allocations": 0,
+            "latency_frames": 0,
+            "name": "friction-string",
+            "peak": 0.5274993777275085
+          },
+          {
+            "audio": "modal-metal.wav",
+            "callback_allocations": 0,
+            "latency_frames": 0,
+            "name": "modal-metal",
+            "peak": 0.6870326995849609
+          }
+        ]
+      },
+      "version": "0.100.0"
+    },
+    "wav_sha256": {
+      "friction-string.wav": "cddcf9b2e365e9afc0fede1c1f9425b3a27c2f4fc20d2de3c750a4571e155fe9",
+      "modal-metal.wav": "e7dfcdf407b112dbc83f120cf4b75490f31378db584b88b55bbb9e8fd2215970",
+      "picked-string.wav": "bec1d61cdc6db261ff02bcd4bdd6460a36e4bb1655b98311024ce08946a6ed0d"
+    }
+  },
+  {
+    "feature": "amp",
+    "report": {
+      "feature": "amp",
+      "results": {
+        "cabinet": "synthetic decaying impulse",
+        "cases": [
+          {
+            "audio": "amp-clean.wav",
+            "callback_allocations": 0,
+            "latency_frames": 96,
+            "name": "amp-clean",
+            "peak": 0.17489497363567352
+          },
+          {
+            "audio": "pedal-asymmetric.wav",
+            "callback_allocations": 0,
+            "latency_frames": 96,
+            "name": "pedal-asymmetric",
+            "peak": 0.6023836135864258
+          },
+          {
+            "audio": "amp-sag-cabinet.wav",
+            "callback_allocations": 0,
+            "latency_frames": 160,
+            "name": "amp-sag-cabinet",
+            "peak": 0.24641549587249756
+          }
+        ],
+        "input": "owned synthetic plucked harmonics"
+      },
+      "version": "0.100.0"
+    },
+    "wav_sha256": {
+      "amp-clean.wav": "6b841bbdeeeb5f5474de7b9e94b3bf28678ffa3458ee9e647c36580e29d6f31c",
+      "amp-sag-cabinet.wav": "425529c62e76a6804feb5b1a67e575d16179126489e2a98b946c23f6bcf69d83",
+      "pedal-asymmetric.wav": "a20608540155308a4537bc9dc548408c5dc03e7985387198d1192f81218e6334"
+    }
+  },
+  {
+    "feature": "spatial",
+    "report": {
+      "feature": "spatial",
+      "results": {
+        "cases": [
+          {
+            "audio": "true-stereo.wav",
+            "callback_allocations": 0,
+            "latency_frames": 64,
+            "name": "true-stereo",
+            "peak": 0.5600000023841858
+          },
+          {
+            "audio": "hybrid-room.wav",
+            "callback_allocations": 0,
+            "latency_frames": 64,
+            "name": "hybrid-room",
+            "peak": 0.2240000069141388
+          }
+        ],
+        "path_order": [
+          "LL",
+          "LR",
+          "RL",
+          "RR"
+        ]
+      },
+      "version": "0.100.0"
+    },
+    "wav_sha256": {
+      "hybrid-room.wav": "b07d7fdf283fa8894180a855017c33888d1d2b4c97cfaf22588bab1157aa397e",
+      "true-stereo.wav": "eabe1584f96d4995581e8f57a654f57dedff975e05c0fba4d20d77d3bf8fe401"
+    }
+  },
+  {
+    "feature": "dynamics",
+    "report": {
+      "feature": "dynamics",
+      "results": {
+        "cases": [
+          {
+            "audio": "compress.wav",
+            "callback_allocations": 0,
+            "latency_frames": 96,
+            "name": "compress",
+            "peak": 0.42641812562942505
+          },
+          {
+            "audio": "expand.wav",
+            "callback_allocations": 0,
+            "latency_frames": 96,
+            "name": "expand",
+            "peak": 0.49829041957855225
+          },
+          {
+            "audio": "upward.wav",
+            "callback_allocations": 0,
+            "latency_frames": 96,
+            "name": "upward",
+            "peak": 1.1616812944412231
+          },
+          {
+            "audio": "keyed-duck.wav",
+            "callback_allocations": 0,
+            "latency_frames": 96,
+            "name": "keyed-duck",
+            "peak": 0.3125862181186676
+          }
+        ]
+      },
+      "version": "0.100.0"
+    },
+    "wav_sha256": {
+      "compress.wav": "888175bef328c1f2c850a270f62cae4c1ed35d0cd41a7a06c822e241f96c8ea2",
+      "expand.wav": "25b184b99c6d7f72b90d0b38e35e4019d5795e95abb7ce26f7e5491952159ea8",
+      "keyed-duck.wav": "c862341e0edf1de3e4feb029cdba729a384da15b01b5b7d93741187a54dca272",
+      "upward.wav": "249efb67cf80c873aedb93c439d3f731fbc205811615e5bf4549675e21e0d29e"
+    }
+  },
+  {
+    "feature": "playback",
+    "report": {
+      "feature": "playback",
+      "results": {
+        "cases": [
+          {
+            "audio": "forward.wav",
+            "callback_allocations": 0,
+            "latency_frames": 0,
+            "name": "forward",
+            "peak": 0.27032944560050964
+          },
+          {
+            "audio": "reverse.wav",
+            "callback_allocations": 0,
+            "latency_frames": 0,
+            "name": "reverse",
+            "peak": 0.2704911530017853
+          },
+          {
+            "audio": "crossfaded-loop.wav",
+            "callback_allocations": 0,
+            "latency_frames": 0,
+            "name": "crossfaded-loop",
+            "peak": 0.27032944560050964
+          },
+          {
+            "audio": "pingpong-loop.wav",
+            "callback_allocations": 0,
+            "latency_frames": 0,
+            "name": "pingpong-loop",
+            "peak": 0.27032944560050964
+          }
+        ],
+        "offline_matched_end": 15942
+      },
+      "version": "0.100.0"
+    },
+    "wav_sha256": {
+      "crossfaded-loop.wav": "48930ca4d4a247b0e792ea4c43e880feaf1b19df840030d98fda9e892ecce86f",
+      "forward.wav": "7705c30f44f939b48b9b517800c4039556fc814768ed564abc30219b4620b71f",
+      "pingpong-loop.wav": "b0fdb810578f639839e56ddca10e9738f18e3286ab55985d92e3c3909b298797",
+      "reverse.wav": "3675f60b16924d2182d8479f96817a8fbe9204b81b8149d0c2e6bf4c635407d3"
+    }
+  },
+  {
+    "feature": "optimization",
+    "report": {
+      "feature": "optimization",
+      "results": {
+        "architecture": "x86_64",
+        "backend": "Avx2",
+        "cases": [
+          {
+            "callback_allocations": 0,
+            "exact_runs_us": [
+              37953,
+              31131,
+              29862
+            ],
+            "exact_sinc_us": 31131,
+            "frames": 24000,
+            "increment": 1.0,
+            "maximum_absolute_error": 5.960464477539063e-08,
+            "observed_ratio": 9.12664907651715,
+            "prepared_runs_us": [
+              3411,
+              3447,
+              3310
+            ],
+            "prepared_us": 3411
+          },
+          {
+            "callback_allocations": 0,
+            "exact_runs_us": [
+              60059,
+              64985,
+              84181
+            ],
+            "exact_sinc_us": 64985,
+            "frames": 24000,
+            "increment": 2.0,
+            "maximum_absolute_error": 2.9802322387695312e-08,
+            "observed_ratio": 9.924404398289553,
+            "prepared_runs_us": [
+              6577,
+              6548,
+              5638
+            ],
+            "prepared_us": 6548
+          },
+          {
+            "callback_allocations": 0,
+            "exact_runs_us": [
+              124337,
+              117175,
+              172568
+            ],
+            "exact_sinc_us": 124337,
+            "frames": 24000,
+            "increment": 4.0,
+            "maximum_absolute_error": 2.9802322387695312e-08,
+            "observed_ratio": 8.711343095354867,
+            "prepared_runs_us": [
+              14273,
+              10560,
+              20206
+            ],
+            "prepared_us": 14273
+          },
+          {
+            "callback_allocations": 0,
+            "exact_runs_us": [
+              272216,
+              231613,
+              263840
+            ],
+            "exact_sinc_us": 263840,
+            "frames": 24000,
+            "increment": 8.0,
+            "maximum_absolute_error": 2.9802322387695312e-08,
+            "observed_ratio": 12.577584974019164,
+            "prepared_runs_us": [
+              20977,
+              20943,
+              21335
+            ],
+            "prepared_us": 20977
+          }
+        ],
+        "prepare_us": 11773,
+        "release_build": true,
+        "scope": "local synthetic exact band rates; not a universal speedup",
+        "statistic": "median of three; alternating order; 512-frame warmup",
+        "table_bytes": 984960
+      },
+      "version": "0.100.0"
+    },
+    "wav_sha256": {
+      "exact-sinc.wav": "a04bc8bbf4c14e66165532bfc6e8dd92a0ab828b6e32aae0ca177fb1faa1fc1b",
+      "prepared-sinc.wav": "ef1f516cf220c83b2f8a350d82f2a1dad13587d4a540c3388433637a83028159"
+    }
+  }
+]

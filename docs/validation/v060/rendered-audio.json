@@ -1,0 +1,58 @@
+[
+  {
+    "file": "ir-crossfade.wav",
+    "frames": 96000,
+    "sample_rate": 48000,
+    "channels": 2,
+    "peak": 0.100006103515625,
+    "rms": 0.0652979107832586
+  },
+  {
+    "file": "pitch-shift-7.wav",
+    "frames": 96000,
+    "sample_rate": 48000,
+    "channels": 1,
+    "peak": 0.29736328125,
+    "rms": 0.13492059086297625
+  },
+  {
+    "file": "preset-0.wav",
+    "frames": 96000,
+    "sample_rate": 48000,
+    "channels": 2,
+    "peak": 0.117095947265625,
+    "rms": 0.020474150642353327
+  },
+  {
+    "file": "preset-1.wav",
+    "frames": 96000,
+    "sample_rate": 48000,
+    "channels": 2,
+    "peak": 0.1199951171875,
+    "rms": 0.08470223570931353
+  },
+  {
+    "file": "preset-2.wav",
+    "frames": 96000,
+    "sample_rate": 48000,
+    "channels": 2,
+    "peak": 0.09075927734375,
+    "rms": 0.01118871828589361
+  },
+  {
+    "file": "preset-3.wav",
+    "frames": 96000,
+    "sample_rate": 48000,
+    "channels": 2,
+    "peak": 0.14556884765625,
+    "rms": 0.035696644860185395
+  },
+  {
+    "file": "time-stretch-150.wav",
+    "frames": 144000,
+    "sample_rate": 48000,
+    "channels": 1,
+    "peak": 0.315948486328125,
+    "rms": 0.13529570298363747
+  }
+]

@@ -1,0 +1,19 @@
+   Compiling soniclaw-dsp v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/crates/soniclaw-dsp)
+   Compiling soniclaw-midi v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/crates/soniclaw-midi)
+   Compiling soniclaw-session v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/crates/soniclaw-session)
+   Compiling soniclaw-host v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/crates/soniclaw-host)
+   Compiling soniclaw-state v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/crates/soniclaw-state)
+   Compiling soniclaw-sampler v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/crates/soniclaw-sampler)
+   Compiling soniclaw-io v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/crates/soniclaw-io)
+   Compiling soniclaw-stream v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/crates/soniclaw-stream)
+   Compiling soniclaw-plugin v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/crates/soniclaw-plugin)
+   Compiling soniclaw-registry v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/crates/soniclaw-registry)
+   Compiling soniclaw-diagnostics v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/crates/soniclaw-diagnostics)
+   Compiling soniclaw-clap v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/crates/soniclaw-clap)
+   Compiling soniclaw v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/crates/soniclaw)
+   Compiling soniclaw-example-processors v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/examples/processor-pack)
+   Compiling soniclaw-workbench v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/examples/workbench)
+   Compiling soniclaw-sdk-tools v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/examples/sdk-tools)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 5.58s
+     Running `target/debug/soniclaw-sdk-tools --registry-demo /workspace/scratch/cd89c8ef929d/verification/v090/registry-demo`
+PASS registered DSP audio, state migration, stable controls and portable reload

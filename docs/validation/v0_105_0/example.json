@@ -1,0 +1,15 @@
+{
+  "feature": "linear-phase",
+  "results": {
+    "equalizer": {
+      "audio": "linear-phase-eq.wav",
+      "callback_allocations": 0,
+      "latency_frames": 97,
+      "name": "linear-phase-eq",
+      "peak": 0.3403612971305847
+    },
+    "latency_frames": 97,
+    "recombination_error": 2.9802322387695312e-8
+  },
+  "version": "0.105.0"
+}

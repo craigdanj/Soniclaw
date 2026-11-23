@@ -1,0 +1,30 @@
+{
+  "feature": "real-fft",
+  "results": {
+    "callback_allocations": 0,
+    "cases": [
+      {
+        "bin_center_amplitude": 0.4999999701976776,
+        "half_bin_amplitude": 0.42441320419311523,
+        "window": "Hann"
+      },
+      {
+        "bin_center_amplitude": 0.5,
+        "half_bin_amplitude": 0.4546647369861603,
+        "window": "BlackmanHarris"
+      },
+      {
+        "bin_center_amplitude": 0.5,
+        "half_bin_amplitude": 0.499439001083374,
+        "window": "FlatTop"
+      },
+      {
+        "bin_center_amplitude": 0.49999988079071045,
+        "half_bin_amplitude": 0.44227588176727295,
+        "window": "Kaiser { beta: 9.0 }"
+      }
+    ],
+    "size": 4096
+  },
+  "version": "0.118.0"
+}

@@ -1,0 +1,31 @@
+   Compiling soniclaw-core v0.47.0 (/workspace/scratch/cd89c8ef929d/desktop-series/soniclaw/crates/soniclaw-core)
+   Compiling soniclaw-kernels v0.47.0 (/workspace/scratch/cd89c8ef929d/desktop-series/soniclaw/crates/soniclaw-kernels)
+   Compiling soniclaw-tuning v0.47.0 (/workspace/scratch/cd89c8ef929d/desktop-series/soniclaw/crates/soniclaw-tuning)
+   Compiling soniclaw-transport v0.47.0 (/workspace/scratch/cd89c8ef929d/desktop-series/soniclaw/crates/soniclaw-transport)
+   Compiling soniclaw-mixer v0.47.0 (/workspace/scratch/cd89c8ef929d/desktop-series/soniclaw/crates/soniclaw-mixer)
+   Compiling soniclaw-dsp v0.47.0 (/workspace/scratch/cd89c8ef929d/desktop-series/soniclaw/crates/soniclaw-dsp)
+   Compiling soniclaw-automation v0.47.0 (/workspace/scratch/cd89c8ef929d/desktop-series/soniclaw/crates/soniclaw-automation)
+   Compiling soniclaw-clips v0.47.0 (/workspace/scratch/cd89c8ef929d/desktop-series/soniclaw/crates/soniclaw-clips)
+   Compiling soniclaw-record v0.47.0 (/workspace/scratch/cd89c8ef929d/desktop-series/soniclaw/crates/soniclaw-record)
+   Compiling soniclaw-graph v0.47.0 (/workspace/scratch/cd89c8ef929d/desktop-series/soniclaw/crates/soniclaw-graph)
+   Compiling soniclaw-stream v0.47.0 (/workspace/scratch/cd89c8ef929d/desktop-series/soniclaw/crates/soniclaw-stream)
+   Compiling soniclaw-studio v0.47.0 (/workspace/scratch/cd89c8ef929d/desktop-series/soniclaw/crates/soniclaw-studio)
+    Finished `test` profile [unoptimized] target(s) in 5.87s
+     Running unittests src/lib.rs (target/debug/build/soniclaw-studio/22c3a6abe7c7efc4/out/soniclaw_studio-22c3a6abe7c7efc4)
+
+running 6 tests
+test tests::midi_while_stopped_and_invalid_input ... ok
+test tests::replacement_is_atomic_and_old_processors_retire_off_callback ... ok
+test tests::document_roundtrip_factory_failure_and_record_tap ... ok
+test freeze::tests::cache_reuse_bypass_restore_and_invalidation ... ok
+test multitrack_integration::captures_complete_tracks_and_blocks_replacement_until_control_retirement ... ok
+test tests::live_clips_inserts_mixer_clock_loop_and_partition ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+   Doc-tests soniclaw_studio
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

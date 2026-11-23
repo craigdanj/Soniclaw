@@ -1,0 +1,24 @@
+{
+  "inputs": [
+    {
+      "id": "mono",
+      "name": "Mono",
+      "channels": 1,
+      "role": "Main"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "main",
+      "name": "Stereo",
+      "channels": 2,
+      "role": "Main"
+    },
+    {
+      "id": "aux",
+      "name": "Aux",
+      "channels": 1,
+      "role": "Auxiliary"
+    }
+  ]
+}

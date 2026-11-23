@@ -1,0 +1,42 @@
+   Compiling soniclaw-studio v0.56.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-studio)
+   Compiling soniclaw-stream v0.56.0 (/workspace/scratch/cd89c8ef929d/studio-series/soniclaw/crates/soniclaw-stream)
+    Finished `test` profile [unoptimized] target(s) in 3.68s
+     Running unittests src/lib.rs (target/debug/build/soniclaw-stream/120713cec87cfa9e/out/soniclaw_stream-120713cec87cfa9e)
+
+running 6 tests
+test tests::worker_stream_matches_pcm_and_has_silent_eof ... ok
+test paged::tests::disk_voices_layer_and_obey_note_ids ... ok
+test clips::tests::offsets_fades_loops_overlap_and_no_callback_allocations ... ok
+test clips::tests::seek_prefetch_generation_and_metadata_rejection ... ok
+test paged::tests::cache_budget_and_underrun_recovery ... ok
+test paged::tests::seek_generations_pause_and_loop ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.52s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-studio/74344d153816bbd1/out/soniclaw_studio-74344d153816bbd1)
+
+running 9 tests
+test project::tests::portable_roundtrip_and_corruption_leave_original_intact ... ok
+test tests::midi_while_stopped_and_invalid_input ... ok
+test tests::replacement_is_atomic_and_old_processors_retire_off_callback ... ok
+test loop_capture_tests::actual_clock_wraps_become_sample_exact_take_passes ... ok
+test freeze::tests::cache_reuse_bypass_restore_and_invalidation ... ok
+test tests::document_roundtrip_factory_failure_and_record_tap ... ok
+test multitrack_integration::captures_complete_tracks_and_blocks_replacement_until_control_retirement ... ok
+test tests::live_clips_inserts_mixer_clock_loop_and_partition ... ok
+test tempo_cache::tests::mixed_rate_warp_exact_clock_pitch_portability_stale_and_cancel ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.66s
+
+   Doc-tests soniclaw_stream
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_studio
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

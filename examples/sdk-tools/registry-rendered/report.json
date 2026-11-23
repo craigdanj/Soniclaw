@@ -1,0 +1,9 @@
+{
+  "bundle_reload": true,
+  "frames": 48000,
+  "migration": "1 -> 2",
+  "parameters": 4,
+  "processor_id": "org.soniclaw.example.tape",
+  "registered_crate": "soniclaw-example-processors",
+  "stable_parameter_handles": true
+}

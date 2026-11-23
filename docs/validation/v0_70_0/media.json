@@ -1,0 +1,61 @@
+{
+  "consolidated_copy_reopened_and_unfrozen": true,
+  "consolidation": {
+    "omitted_assets": 2,
+    "report": {
+      "entries": [
+        {
+          "bytes": 192000,
+          "id": "bass",
+          "referenced": true,
+          "storage": "Memory"
+        },
+        {
+          "bytes": 192000,
+          "id": "unused-memory",
+          "referenced": false,
+          "storage": "Memory"
+        },
+        {
+          "bytes": 384068,
+          "id": "freeze.bass",
+          "referenced": true,
+          "storage": "Disk"
+        },
+        {
+          "bytes": 192068,
+          "id": "source",
+          "referenced": true,
+          "storage": "Disk"
+        },
+        {
+          "bytes": 192068,
+          "id": "unused-disk",
+          "referenced": false,
+          "storage": "Disk"
+        },
+        {
+          "bytes": 192068,
+          "id": "warp-cache",
+          "referenced": true,
+          "storage": "Disk"
+        }
+      ],
+      "opaque_dependencies": false,
+      "project_id": "project.d06783296f3e06c9f0c6ecb25122ac4bea28cdd80e799cd6",
+      "removable_disk_bytes": 192068,
+      "removable_memory_bytes": 192000,
+      "schema": 1,
+      "warnings": [
+        "Take folders and freeze histories are retained; their storage is outside direct-asset byte totals."
+      ]
+    },
+    "retained_assets": 4,
+    "schema": 1,
+    "source_project_id": "project.d06783296f3e06c9f0c6ecb25122ac4bea28cdd80e799cd6"
+  },
+  "freeze_original_dependency_retained": true,
+  "original_files_unchanged": true,
+  "stale_plan_rejected": true,
+  "warp_original_dependency_retained": true
+}

@@ -1,0 +1,12 @@
+{
+  "callback_allocations": 0,
+  "comp_sections": 2,
+  "crossfade_frames": 16,
+  "headless_take_lanes": true,
+  "live_playback_peak": 0.3535533845424652,
+  "loop_frames": 256,
+  "original_unchanged": true,
+  "passes": 4,
+  "physical_device_tested": false,
+  "portable_comp_reload": true
+}

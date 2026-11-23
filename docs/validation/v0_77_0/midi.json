@@ -1,0 +1,9 @@
+{
+  "bend_chased": 12000,
+  "edited_controller_points": 5,
+  "hardware_opened": false,
+  "portable_reopen": true,
+  "recorded_controller_points": 4,
+  "sustain_seek_chase_after_key_release": true,
+  "undo_redo": true
+}

@@ -1,0 +1,155 @@
+{
+  "schema_version": 2,
+  "product_id": "org.soniclaw.dsp-lab.effect",
+  "name": "Soniclaw DSP Lab FX",
+  "parameters": {
+    "delay.beats": 0.5,
+    "delay.feedback": 0.3,
+    "delay.mix": 0.3,
+    "filter.drive": 0.0,
+    "filter.frequency": 1000.0,
+    "filter.mode": 0.0,
+    "filter.q": 0.707,
+    "flanger.depth_ms": 3.0,
+    "flanger.feedback": 0.3,
+    "flanger.mix": 0.5,
+    "flanger.rate_hz": 0.25,
+    "limiter.ceiling_db": -1.0,
+    "limiter.release_ms": 100.0,
+    "phaser.depth": 0.7,
+    "phaser.feedback": 0.2,
+    "phaser.mix": 0.5,
+    "phaser.rate_hz": 0.3,
+    "rms.attack_ms": 10.0,
+    "rms.makeup_db": 0.0,
+    "rms.ratio": 4.0,
+    "rms.release_ms": 100.0,
+    "rms.threshold_db": -18.0,
+    "rms.window_ms": 10.0,
+    "space.damping_hz": 6000.0,
+    "space.diffusion": 0.7,
+    "space.mix": 0.25,
+    "space.modulation": 0.3,
+    "space.predelay_ms": 15.0,
+    "space.rt60": 2.0,
+    "spectral.mix": 1.0,
+    "spectral.threshold_db": -60.0,
+    "stereo.width": 1.0,
+    "transient.attack_db": 0.0,
+    "transient.sustain_db": 0.0
+  },
+  "assets": [],
+  "zones": [],
+  "nodes": [
+    {
+      "id": "filter",
+      "kind": "state_variable",
+      "settings": {},
+      "input_gain": 1.0
+    },
+    {
+      "id": "transient",
+      "kind": "transient_shaper",
+      "settings": {},
+      "input_gain": 0.0
+    },
+    {
+      "id": "rms",
+      "kind": "rms_compressor",
+      "settings": {},
+      "input_gain": 0.0
+    },
+    {
+      "id": "phaser",
+      "kind": "phaser",
+      "settings": {},
+      "input_gain": 0.0
+    },
+    {
+      "id": "flanger",
+      "kind": "flanger",
+      "settings": {},
+      "input_gain": 0.0
+    },
+    {
+      "id": "delay",
+      "kind": "multi_tap_delay",
+      "settings": {},
+      "input_gain": 0.0
+    },
+    {
+      "id": "space",
+      "kind": "fdn_reverb",
+      "settings": {},
+      "input_gain": 0.0
+    },
+    {
+      "id": "spectral",
+      "kind": "spectral_gate",
+      "settings": {},
+      "input_gain": 0.0
+    },
+    {
+      "id": "limiter",
+      "kind": "lookahead_limiter",
+      "settings": {},
+      "input_gain": 0.0
+    },
+    {
+      "id": "stereo",
+      "kind": "stereo_width",
+      "settings": {},
+      "input_gain": 0.0
+    }
+  ],
+  "connections": [
+    {
+      "from": "filter",
+      "to": "transient",
+      "gain": 1.0
+    },
+    {
+      "from": "transient",
+      "to": "rms",
+      "gain": 1.0
+    },
+    {
+      "from": "rms",
+      "to": "phaser",
+      "gain": 1.0
+    },
+    {
+      "from": "phaser",
+      "to": "flanger",
+      "gain": 1.0
+    },
+    {
+      "from": "flanger",
+      "to": "delay",
+      "gain": 1.0
+    },
+    {
+      "from": "delay",
+      "to": "space",
+      "gain": 1.0
+    },
+    {
+      "from": "space",
+      "to": "spectral",
+      "gain": 1.0
+    },
+    {
+      "from": "spectral",
+      "to": "limiter",
+      "gain": 1.0
+    },
+    {
+      "from": "limiter",
+      "to": "stereo",
+      "gain": 1.0
+    }
+  ],
+  "outputs": {
+    "stereo": 1.0
+  }
+}

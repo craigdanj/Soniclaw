@@ -1,0 +1,28 @@
+{
+  "bus_aux_main_cue_alignment_sample": 40,
+  "count_in_boundary_preserves_cue_subranges": true,
+  "cue_callback_allocations": 0,
+  "cue_click_alignment_frames": 17,
+  "cue_click_obeys_enabled_gain_balance": true,
+  "cue_mix_samples": [
+    0.2,
+    0.0,
+    0.3,
+    0.25,
+    0.3
+  ],
+  "hardware_opened": false,
+  "highest_mapped_port": 11,
+  "independent_cues": 4,
+  "internal_automation_partition_invariant": true,
+  "live_cue_graph_replacement_rejected": true,
+  "main_muted_while_pre_and_raw_cues_play": true,
+  "mapping_callback_allocations": 0,
+  "missing_input_is_silent": true,
+  "overlap_rejected": true,
+  "physical_channels": 12,
+  "portable_cues_and_history": true,
+  "post_tap_obeys_track_mute": true,
+  "processing_channels": 2,
+  "unmapped_channels_zero": true
+}

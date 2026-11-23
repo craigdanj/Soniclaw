@@ -1,0 +1,7 @@
+{
+  "identity_change_resets_reopen": true,
+  "invalid_scale_rejected": true,
+  "modules_loaded": 0,
+  "native_window_runtime_tested": false,
+  "preferences_roundtrip": true
+}

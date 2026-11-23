@@ -1,0 +1,4 @@
+    Checking soniclaw-dsp v0.103.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-dsp)
+    Checking soniclaw-quality v0.103.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-quality)
+    Checking soniclaw-dsp-suite v0.103.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/dsp-suite)
+    Finished `dev` profile [unoptimized] target(s) in 3.57s

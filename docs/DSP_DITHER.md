@@ -1,0 +1,7 @@
+# TPDF dither and noise shaping
+
+Create Quantizer using Settings with PCM bit depth, Flat or FirstOrder shaping, and a reproducible seed. Apply it once, after gain and sample-rate conversion, to convert an interleaved float stream to signed i32 slots carrying 16-bit or 24-bit PCM values. Write those integers directly to a WAV writer configured at the same depth. Do not rescale them again. TPDF uses the difference of independent uniform draws per sample. FirstOrder feeds back 85% of the previous quantization error to push more of the error towards higher frequencies.
+
+Construction allocates independent channel state. Processing and reset are allocation-free. Keep one owner per continuous export. Reset for an independently reproducible item. Persist Settings and channel layout in export preferences. Existing WAV export remains compatible and this quantizer is opt-in. Quantization clips to the signed range. Keep headroom where overload is undesirable. Inputs must be finite, lengths equal, and interleaving complete for 1–64 channels. Rejection precedes any output or history changes. The test checks seed reproducibility and the expected distribution for dithered digital silence. The example writes low-level fade WAVs and reports error energy. Shaping changes the error spectrum and may raise full-band error.
+
+Run `cargo run -p soniclaw-dsp-suite --locked --offline -- dither NEW_DIRECTORY`. [Executed checks](validation/v0_107_0/REPORT.md).

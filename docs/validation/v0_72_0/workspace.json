@@ -1,0 +1,9 @@
+{
+  "blank_project": true,
+  "folder_portability": true,
+  "hardware_opened": false,
+  "multiple_editable_midi_clips": true,
+  "project_schema": 3,
+  "track_lifecycle_and_reindex": true,
+  "undo_redo": true
+}

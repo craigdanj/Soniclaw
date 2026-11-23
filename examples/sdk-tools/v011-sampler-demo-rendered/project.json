@@ -1,0 +1,94 @@
+{
+  "schema_version": 2,
+  "product_id": "org.soniclaw.workbench",
+  "name": "instrument",
+  "parameters": {},
+  "assets": [
+    {
+      "id": "sfz-0",
+      "path": "soft.wav",
+      "root_note": 60
+    },
+    {
+      "id": "sfz-1",
+      "path": "hard.wav",
+      "root_note": 60
+    },
+    {
+      "id": "sfz-2",
+      "path": "release.wav",
+      "root_note": 60
+    }
+  ],
+  "zones": [
+    {
+      "velocity_fade_out": [
+        32,
+        96
+      ],
+      "velocity_power": true,
+      "asset": "sfz-0",
+      "keys": [
+        60,
+        60
+      ],
+      "velocities": [
+        1,
+        127
+      ],
+      "group": 0,
+      "gain": 1.0,
+      "one_shot": false,
+      "loop_frames": null
+    },
+    {
+      "velocity_fade_in": [
+        32,
+        96
+      ],
+      "velocity_power": true,
+      "asset": "sfz-1",
+      "keys": [
+        60,
+        60
+      ],
+      "velocities": [
+        1,
+        127
+      ],
+      "group": 1,
+      "gain": 1.0,
+      "one_shot": false,
+      "loop_frames": null
+    },
+    {
+      "release_trigger": true,
+      "velocity_power": true,
+      "asset": "sfz-2",
+      "keys": [
+        60,
+        60
+      ],
+      "velocities": [
+        1,
+        127
+      ],
+      "group": 2,
+      "gain": 0.5011872,
+      "one_shot": true,
+      "loop_frames": null
+    }
+  ],
+  "nodes": [
+    {
+      "id": "sampler",
+      "kind": "sampler",
+      "settings": {},
+      "input_gain": 0.0
+    }
+  ],
+  "connections": [],
+  "outputs": {
+    "sampler": 1.0
+  }
+}

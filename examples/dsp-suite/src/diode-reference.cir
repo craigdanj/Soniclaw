@@ -1,0 +1,16 @@
+Soniclaw wave-digital diode overdrive independent transient reference
+Vsrc input 0 SIN(0 1.5 997)
+Rsrc input out 2200
+Cshunt out 0 22n
+Dforward out 0 odd
+Dreverse 0 out odd
+.model odd D(IS=2.52e-9 N=1.752)
+.temp 27
+.control
+set wr_singlescale
+set wr_vecnames
+tran 1u 100m 0 1u
+wrdata spice-response.txt v(out)
+quit
+.endc
+.end

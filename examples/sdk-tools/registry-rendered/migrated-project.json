@@ -1,0 +1,35 @@
+{
+  "schema_version": 2,
+  "product_id": "org.soniclaw.workbench",
+  "name": "Tape Colour Rack",
+  "parameters": {
+    "tape.drive": 4.0,
+    "tape.mix": 1.0,
+    "tape.output": 1.0,
+    "tape.tone": 12000.0
+  },
+  "assets": [],
+  "zones": [],
+  "nodes": [
+    {
+      "custom": {
+        "processor_id": "org.soniclaw.example.tape",
+        "version": 2,
+        "data": {
+          "asymmetry": 0.1
+        }
+      },
+      "id": "tape",
+      "kind": "custom",
+      "settings": {
+        "drive": 4.0,
+        "mix": 1.0
+      },
+      "input_gain": 1.0
+    }
+  ],
+  "connections": [],
+  "outputs": {
+    "tape": 1.0
+  }
+}

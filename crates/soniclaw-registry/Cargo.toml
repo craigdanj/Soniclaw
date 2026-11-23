@@ -1,0 +1,17 @@
+[package]
+name = "soniclaw-registry"
+description = "Compiled DSP registration, parameter factories and versioned project nodes"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+[features]
+default = []
+ui = ["dep:egui"]
+[dependencies]
+soniclaw-core.workspace = true
+soniclaw-state = {path="../soniclaw-state",version="0.146.0"}
+serde_json = "1"
+egui = {version="=0.36.1",optional=true}
+[lints]
+workspace = true

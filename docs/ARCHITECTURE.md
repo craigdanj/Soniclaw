@@ -23,7 +23,7 @@ MIDI parsing produces core events. JSON state and WAV I/O run on control/worker 
 
 `Engine` validates preparation, frame alignment and ordered MIDI events. `process_automated` also validates all parameter IDs/ranges before changing a block. It splits at automation offsets, applies all same-frame changes before render, translates MIDI offsets and supplies the segment's transport position. Processing stores scratch events allocated at preparation. Each MIDI/automation list is limited to 1024 events when automation splitting is used; native CLAP input is always bounded to 1024 incoming events.
 
-Scalar parameter reads/stores use relaxed atomics because they carry no dependent data. Same-frame engine events are coherent to processors because the group is applied by the rendering thread. Arbitrary multi-parameter UI writes are still independent scalar changes. Gain smooths over 10 ms; exact event scheduling does not remove that intentional ramp. Cutoff coefficients are read per segment and are not smoothed.
+Scalar parameter reads/stores use relaxed atomics because they carry no dependent data. Same-frame engine events are coherent to processors because the group is applied by the rendering thread. Arbitrary multi-parameter UI writes are still independent scalar changes. Gain smooths over 10 ms; exact event scheduling does not remove that intentional ramp. The legacy `LowPass` still updates per segment. `AutomatedEffect` provides per-frame smoothing for its live filter and other controls.
 
 `render` and `render_automated` are allocating offline helpers. `suspend` clears processor state; suspended blocks return silence and do not advance transport. Resume permits future processing. Incoming events while suspended are not queued for later replay.
 
@@ -49,14 +49,14 @@ Recording uses a separate fixed-packet queue. The worker owns its WAV writer. Pa
 
 `PluginInstance` binds persistent parameter names to stable FNV-1a numeric IDs, rejects collisions, and owns the engine lifecycle. `soniclaw-clap` translates planar host buffers into prepared interleaved scratch storage before processing, including in-place buffers and input constant masks. It translates MIDI and parameter events and reports fixed ports/latency/tail.
 
-The mutable runtime is exclusively accessed under CLAP's lifecycle/thread rules. Shared metadata/parameter callbacks do not borrow it. Sequence-stamped atomic state staging lets a complete validated parameter snapshot apply at a render boundary. Presets are parameter snapshots; voices, delay history, samples and topology are not persisted. See [CLAP.md](CLAP.md) for the narrow unsafe boundary and unsupported capabilities.
+The mutable runtime is exclusively accessed under CLAP's lifecycle/thread rules. Shared metadata/parameter callbacks do not borrow it. Sequence-stamped atomic state staging lets a complete validated parameter snapshot apply at a render boundary. Schema-1 presets are parameter snapshots. Opt-in schema-2 project state persists asset references, sample maps, rack settings and routing; reconstruction happens while deactivated. Voices and delay history are not persisted. See [projects](PROJECTS.md). See [CLAP.md](CLAP.md) for the narrow unsafe boundary and unsupported capabilities.
 
 ## Dependencies
 
 Pinned integration versions use documented APIs; they are not claims of being the latest release. `Cargo.lock` records this workspace's resolution.
 
 - [CPAL 0.15.3](https://docs.rs/cpal/0.15.3/cpal/): devices and streams.
-- [eframe/egui 0.31.1](https://docs.rs/eframe/0.31.1/eframe/): windowing and controls.
+- [eframe/egui 0.36.1](https://docs.rs/eframe/0.36.1/eframe/): windowing and controls.
 - [rtrb 0.3.2](https://docs.rs/rtrb/0.3.2/rtrb/): bounded SPSC queues.
 - [midir 0.10.1](https://docs.rs/midir/0.10.1/midir/): native MIDI.
 - [hound 3.5.1](https://docs.rs/hound/3.5.1/hound/): WAV files.

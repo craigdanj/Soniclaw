@@ -1,0 +1,81 @@
+{
+  "bundle": "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/build/formats/Release/SoniclawReference.vst3",
+  "timeout_seconds": 10.0,
+  "is_security_sandbox": false,
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "\tAUDIO in: 1, out: 1\n\tAUDIO in: 1, out: 1\n",
+  "status": "passed",
+  "metadata": {
+    "info": {
+      "path": "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/build/formats/Release/SoniclawReference.vst3",
+      "name": "Soniclaw Gain + Filter",
+      "vendor": "Soniclaw",
+      "version": "0.23.0",
+      "category": "Fx|Tools",
+      "uid": "E4194457A25F52568C08A76C9D0A6415",
+      "audio_inputs": 1,
+      "audio_outputs": 1,
+      "has_midi_input": false,
+      "has_midi_output": false,
+      "has_gui": true
+    },
+    "factory": {
+      "vendor": "Soniclaw",
+      "url": "",
+      "email": "info@",
+      "flags": 16
+    },
+    "classes": [
+      {
+        "name": "Soniclaw Gain + Filter",
+        "category": "Audio Module Class",
+        "class_id": "E4194457A25F52568C08A76C9D0A6415",
+        "cardinality": 2147483647,
+        "version": "0.23.0"
+      },
+      {
+        "name": "Soniclaw Sidechain Ducker",
+        "category": "Audio Module Class",
+        "class_id": "155D45AD35A25FFA9E5F74B42FFE7AE9",
+        "cardinality": 2147483647,
+        "version": "0.23.0"
+      },
+      {
+        "name": "Soniclaw Multisample Drums",
+        "category": "Audio Module Class",
+        "class_id": "9A812D09504F5723B0C771437AAF92F3",
+        "cardinality": 2147483647,
+        "version": "0.23.0"
+      },
+      {
+        "name": "Soniclaw Effects Rack",
+        "category": "Audio Module Class",
+        "class_id": "9F462C2AE33D517EB4808E9F54818FDD",
+        "cardinality": 2147483647,
+        "version": "0.23.0"
+      }
+    ],
+    "buses": {
+      "audio_inputs": [
+        {
+          "name": "Stereo Input",
+          "bus_type": 0,
+          "flags": 1,
+          "channel_count": 2
+        }
+      ],
+      "audio_outputs": [
+        {
+          "name": "Stereo Output",
+          "bus_type": 0,
+          "flags": 1,
+          "channel_count": 2
+        }
+      ],
+      "event_inputs": [],
+      "event_outputs": []
+    }
+  },
+  "seconds": 0.044
+}

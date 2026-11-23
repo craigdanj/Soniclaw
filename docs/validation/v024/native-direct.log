@@ -1,0 +1,4 @@
+	AUDIO in: 1, out: 1
+	AUDIO in: 1, out: 1
+	AUDIO in: 1, out: 1
+PASS native direct VST3, arbitrary callback sizes, zero host allocations, controls and owner-first revocation

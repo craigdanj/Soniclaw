@@ -1,0 +1,16 @@
+{
+  "feature": "granular-fx",
+  "results": {
+    "audio": {
+      "audio": "beat-granular-freeze.wav",
+      "callback_allocations": 0,
+      "latency_frames": 0,
+      "name": "beat-granular-freeze",
+      "peak": 0.2829190790653229
+    },
+    "freeze_frame": 24576,
+    "interval_beats": 0.25,
+    "tempo": 120
+  },
+  "version": "0.135.0"
+}

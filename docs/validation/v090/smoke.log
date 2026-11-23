@@ -1,0 +1,7 @@
+   Compiling serde_core v1.0.229
+   Compiling serde_json v1.0.154
+   Compiling soniclaw-clap-smoke v0.9.0 (/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/tools/clap-smoke)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.47s
+     Running `target/debug/soniclaw-clap-smoke`
+PASS Soniclaw Gain: ports, MIDI timing/audio, automation, text conversion, partial-stream state restore, lifecycle, tail, latency, invalid block handling
+PASS Soniclaw Synth: ports, MIDI timing/audio, automation, text conversion, partial-stream state restore, lifecycle, tail, latency, invalid block handling

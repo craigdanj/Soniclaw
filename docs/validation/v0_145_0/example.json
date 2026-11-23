@@ -1,0 +1,13 @@
+{
+  "feature": "engine-precision",
+  "results": {
+    "session": {
+      "callback_allocations": 0,
+      "input": "source-f64.wav",
+      "latency_frames": 1,
+      "output": "render-f64.wav",
+      "residual": 9.094947017729282e-13
+    }
+  },
+  "version": "0.145.0"
+}

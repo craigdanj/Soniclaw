@@ -1,0 +1,12 @@
+   Compiling soniclaw-dsp v0.34.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-dsp)
+   Compiling soniclaw-io v0.34.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-io)
+   Compiling soniclaw-formats v0.34.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-formats)
+   Compiling soniclaw-waveform v0.34.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-waveform)
+    Finished `test` profile [unoptimized] target(s) in 3.30s
+     Running unittests src/lib.rs (target/debug/build/soniclaw-waveform/84b66b79e53821c6/out/soniclaw_waveform-84b66b79e53821c6)
+
+running 1 test
+test tests::native_formats_backend_matches_pcm_wave ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 5 filtered out; finished in 0.00s
+

@@ -1,0 +1,172 @@
+[
+  {
+    "increment": false,
+    "label": null,
+    "max": null,
+    "min": null,
+    "numeric_value": null,
+    "role": "GenericContainer",
+    "set_value": false,
+    "value": null
+  },
+  {
+    "increment": false,
+    "label": null,
+    "max": null,
+    "min": null,
+    "numeric_value": null,
+    "role": "GenericContainer",
+    "set_value": false,
+    "value": null
+  },
+  {
+    "increment": false,
+    "label": null,
+    "max": null,
+    "min": null,
+    "numeric_value": null,
+    "role": "Window",
+    "set_value": false,
+    "value": null
+  },
+  {
+    "increment": false,
+    "label": null,
+    "max": null,
+    "min": null,
+    "numeric_value": null,
+    "role": "GenericContainer",
+    "set_value": false,
+    "value": null
+  },
+  {
+    "increment": true,
+    "label": "Output gain",
+    "max": 2.0,
+    "min": 0.0,
+    "numeric_value": 1.0,
+    "role": "Slider",
+    "set_value": true,
+    "value": "1.0000"
+  },
+  {
+    "increment": false,
+    "label": null,
+    "max": null,
+    "min": null,
+    "numeric_value": null,
+    "role": "TextRun",
+    "set_value": false,
+    "value": "1.0000"
+  },
+  {
+    "increment": true,
+    "label": "Output gain",
+    "max": 2.0,
+    "min": 0.0,
+    "numeric_value": 1.0,
+    "role": "Slider",
+    "set_value": true,
+    "value": "1.0000"
+  },
+  {
+    "increment": false,
+    "label": null,
+    "max": null,
+    "min": null,
+    "numeric_value": null,
+    "role": "TextRun",
+    "set_value": false,
+    "value": "Output gain"
+  },
+  {
+    "increment": false,
+    "label": null,
+    "max": null,
+    "min": null,
+    "numeric_value": null,
+    "role": "TextRun",
+    "set_value": false,
+    "value": "1.0000"
+  },
+  {
+    "increment": false,
+    "label": null,
+    "max": null,
+    "min": null,
+    "numeric_value": null,
+    "role": "GenericContainer",
+    "set_value": false,
+    "value": null
+  },
+  {
+    "increment": false,
+    "label": null,
+    "max": null,
+    "min": null,
+    "numeric_value": null,
+    "role": "GenericContainer",
+    "set_value": false,
+    "value": null
+  },
+  {
+    "increment": false,
+    "label": null,
+    "max": null,
+    "min": null,
+    "numeric_value": null,
+    "role": "GenericContainer",
+    "set_value": false,
+    "value": null
+  },
+  {
+    "increment": false,
+    "label": null,
+    "max": null,
+    "min": null,
+    "numeric_value": null,
+    "role": "Label",
+    "set_value": false,
+    "value": "1.0000"
+  },
+  {
+    "increment": false,
+    "label": null,
+    "max": null,
+    "min": null,
+    "numeric_value": null,
+    "role": "Label",
+    "set_value": false,
+    "value": "1.0000"
+  },
+  {
+    "increment": false,
+    "label": null,
+    "max": null,
+    "min": null,
+    "numeric_value": null,
+    "role": "Label",
+    "set_value": false,
+    "value": "Output gain"
+  },
+  {
+    "increment": false,
+    "label": null,
+    "max": null,
+    "min": null,
+    "numeric_value": null,
+    "role": "Label",
+    "set_value": false,
+    "value": "Output gain"
+  },
+  {
+    "increment": false,
+    "label": null,
+    "max": null,
+    "min": null,
+    "numeric_value": null,
+    "role": "TextRun",
+    "set_value": false,
+    "value": "Output gain"
+  }
+]

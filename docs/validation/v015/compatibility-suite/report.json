@@ -1,0 +1,292 @@
+{
+  "schema": 1,
+  "environment": {
+    "system": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "machine": "x86_64",
+    "python": "3.12.14"
+  },
+  "checks": [
+    {
+      "name": "source-contract",
+      "status": "passed",
+      "details": {
+        "version": "0.15.0",
+        "packages": 38,
+        "manifests": 39,
+        "release_notes": 15,
+        "entry_points": 5
+      }
+    },
+    {
+      "name": "rust-toolchain",
+      "status": "passed",
+      "command": [
+        "rustc",
+        "-Vv"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "seconds": 0.032,
+      "log": "rust-toolchain.log"
+    },
+    {
+      "name": "python-tool-tests",
+      "status": "passed",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "seconds": 0.469,
+      "log": "python-tool-tests.log"
+    },
+    {
+      "name": "fmt",
+      "status": "passed",
+      "command": [
+        "cargo",
+        "fmt",
+        "--all",
+        "--check"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "seconds": 1.175,
+      "log": "fmt.log"
+    },
+    {
+      "name": "clippy",
+      "status": "passed",
+      "command": [
+        "cargo",
+        "clippy",
+        "--workspace",
+        "--all-targets",
+        "--all-features",
+        "--locked",
+        "--offline",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "seconds": 3.615,
+      "log": "clippy.log"
+    },
+    {
+      "name": "tests",
+      "status": "passed",
+      "command": [
+        "cargo",
+        "test",
+        "--workspace",
+        "--all-features",
+        "--locked",
+        "--offline"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "seconds": 21.548,
+      "log": "tests.log"
+    },
+    {
+      "name": "docs",
+      "status": "passed",
+      "command": [
+        "cargo",
+        "doc",
+        "--workspace",
+        "--all-features",
+        "--no-deps",
+        "--locked",
+        "--offline"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "seconds": 9.426,
+      "log": "docs.log"
+    },
+    {
+      "name": "build",
+      "status": "passed",
+      "command": [
+        "cargo",
+        "build",
+        "-p",
+        "soniclaw-sdk-tools",
+        "-p",
+        "soniclaw-host-fixture",
+        "-p",
+        "soniclaw-workbench",
+        "-p",
+        "soniclaw-clap-smoke",
+        "--locked",
+        "--offline"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "seconds": 8.166,
+      "log": "build.log"
+    },
+    {
+      "name": "export-reopen-0",
+      "status": "passed",
+      "command": [
+        "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/soniclaw-clap-smoke",
+        "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/libsoniclaw_workbench.so",
+        "--workbench"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "seconds": 0.745,
+      "log": "export-reopen-0.log"
+    },
+    {
+      "name": "export-reopen-1",
+      "status": "passed",
+      "command": [
+        "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/soniclaw-clap-smoke",
+        "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/libsoniclaw_workbench.so",
+        "--workbench"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "seconds": 0.529,
+      "log": "export-reopen-1.log"
+    },
+    {
+      "name": "export-reopen-2",
+      "status": "passed",
+      "command": [
+        "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/soniclaw-clap-smoke",
+        "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/libsoniclaw_workbench.so",
+        "--workbench"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "seconds": 0.467,
+      "log": "export-reopen-2.log"
+    },
+    {
+      "name": "catalog-workflow",
+      "status": "passed",
+      "command": [
+        "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/soniclaw-sdk-tools",
+        "--catalog-demo",
+        "/workspace/scratch/cd89c8ef929d/compat015-final/catalog-demo"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "seconds": 0.124,
+      "log": "catalog-workflow.log"
+    },
+    {
+      "name": "sampler-workflow",
+      "status": "passed",
+      "command": [
+        "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/soniclaw-sdk-tools",
+        "--sampler-demo",
+        "/workspace/scratch/cd89c8ef929d/compat015-final/sampler-demo"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "seconds": 1.558,
+      "log": "sampler-workflow.log"
+    },
+    {
+      "name": "automation-workflow",
+      "status": "passed",
+      "command": [
+        "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/soniclaw-sdk-tools",
+        "--automation-demo",
+        "/workspace/scratch/cd89c8ef929d/compat015-final/automation-demo"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "seconds": 0.322,
+      "log": "automation-workflow.log"
+    },
+    {
+      "name": "host-contract",
+      "status": "passed",
+      "command": [
+        "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/soniclaw-sdk-tools",
+        "--host-contract",
+        "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/libsoniclaw_host_fixture.so",
+        "/workspace/scratch/cd89c8ef929d/compat015-final/host-contract.json"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "seconds": 0.017,
+      "log": "host-contract.log"
+    },
+    {
+      "name": "live-rack-contract",
+      "status": "passed",
+      "command": [
+        "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/soniclaw-sdk-tools",
+        "--live-rack-demo",
+        "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/libsoniclaw_host_fixture.so",
+        "/workspace/scratch/cd89c8ef929d/compat015-final/live-rack-demo"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "seconds": 0.065,
+      "log": "live-rack-contract.log"
+    },
+    {
+      "name": "processor-audit",
+      "status": "passed",
+      "command": [
+        "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/soniclaw-sdk-tools",
+        "--audit",
+        "/workspace/scratch/cd89c8ef929d/compat015-final/processor-audit.json"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "seconds": 2.117,
+      "log": "processor-audit.log"
+    },
+    {
+      "name": "isolated-native-probe",
+      "status": "passed",
+      "command": [
+        "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/soniclaw-sdk-tools",
+        "--probe-trusted",
+        "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/libsoniclaw_host_fixture.so",
+        "/workspace/scratch/cd89c8ef929d/compat015-final/probe.json"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "seconds": 0.036,
+      "log": "isolated-native-probe.log"
+    },
+    {
+      "name": "acceptance-linux",
+      "status": "skipped",
+      "reason": "No target-machine operator acceptance record supplied"
+    },
+    {
+      "name": "acceptance-macos",
+      "status": "skipped",
+      "reason": "No target-machine operator acceptance record supplied"
+    },
+    {
+      "name": "acceptance-windows",
+      "status": "skipped",
+      "reason": "No target-machine operator acceptance record supplied"
+    }
+  ],
+  "automated_status": "passed",
+  "acceptance_status": "pending",
+  "scope": "Local automated checks; physical audio, real DAW and other operating systems require explicit acceptance records.",
+  "acceptances": [],
+  "generated_at_utc": "2026-11-17T12:25:16.720836+00:00"
+}

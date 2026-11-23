@@ -1,0 +1,17 @@
+[
+  {
+    "check": "sample-map.png",
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/soniclaw-workbench",
+      "--screenshot",
+      "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/docs/validation/v011/sample-map.png",
+      "--preset",
+      "5",
+      "--tab",
+      "4"
+    ],
+    "exit_code": 0,
+    "seconds": 3.442,
+    "display": "native Xvfb/software OpenGL; no audio device opened"
+  }
+]

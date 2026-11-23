@@ -1,0 +1,3 @@
+   Compiling soniclaw-studio-media-audit v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/examples/studio-media-audit)
+    Finished `dev` profile [unoptimized] target(s) in 0.70s
+     Running `target/debug/soniclaw-studio-media-audit /workspace/scratch/cd89c8ef929d/workflow-work/final-examples70/studio-media-audit`

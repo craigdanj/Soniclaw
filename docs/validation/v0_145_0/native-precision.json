@@ -1,0 +1,41 @@
+{
+  "fixtures": [
+    {
+      "actual": [
+        0.5000000000004547,
+        -0.5000000000004547,
+        0.25,
+        0.125
+      ],
+      "callback_allocations": 0,
+      "expected": [
+        0.5000000000004547,
+        -0.5000000000004547,
+        0.25,
+        0.125
+      ],
+      "f32_compatibility": true,
+      "format": "clap",
+      "sample_precision": 64
+    },
+    {
+      "actual": [
+        0.5000000000004547,
+        -0.5000000000004547,
+        0.25,
+        0.125
+      ],
+      "callback_allocations": 0,
+      "expected": [
+        0.5000000000004547,
+        -0.5000000000004547,
+        0.25,
+        0.125
+      ],
+      "f32_compatibility": true,
+      "format": "vst3",
+      "sample_precision": 64
+    }
+  ],
+  "version": "0.145.0"
+}

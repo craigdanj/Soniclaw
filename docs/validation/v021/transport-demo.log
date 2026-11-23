@@ -1,0 +1,3 @@
+    Finished `dev` profile [unoptimized] target(s) in 0.14s
+     Running `target/debug/soniclaw-sdk-tools --transport-demo target/debug/libsoniclaw_host_fixture.so /workspace/scratch/cd89c8ef929d/verification-series/v021/transport-demo`
+PASS analytic tempo ramp, meter/loop clock, mapped project automation and native musical transport

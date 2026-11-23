@@ -1,0 +1,15 @@
+[package]
+name = "soniclaw-diagnostics"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+[features]
+allocations = ["dep:allocation-counter"]
+[dependencies]
+soniclaw-core.workspace = true
+soniclaw-plugin = {path="../soniclaw-plugin",version="0.146.0"}
+serde = {version="1",features=["derive"]}
+allocation-counter = {version="=0.8.1",optional=true}
+[lints]
+workspace = true

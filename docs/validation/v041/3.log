@@ -1,0 +1,73 @@
+   Compiling soniclaw-kernels v0.41.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-kernels)
+   Compiling soniclaw-core v0.41.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-core)
+   Compiling soniclaw-tuning v0.41.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-tuning)
+   Compiling soniclaw-dsp v0.41.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-dsp)
+    Finished `test` profile [unoptimized] target(s) in 5.68s
+     Running unittests src/lib.rs (target/debug/build/soniclaw-dsp/8de3551219453981/out/soniclaw_dsp-8de3551219453981)
+
+running 42 tests
+test advanced::analysis::tests::true_peak_detects_intersample_crest ... ok
+test advanced::crossover::tests::crossover_branches_are_minus_six_db_at_cutoff ... ok
+test advanced::creative::tests::tempo_delay_impulse_and_tremolo_bounds ... ok
+test advanced::spectral::tests::fft_inverse_and_analyzer_calibration ... ok
+test advanced::dynamics::tests::rms_ratio_and_transient_bypass ... ok
+test automated::tests::live_gain_is_smoothed_and_partition_independent ... ok
+test convolution::tests::fft_matches_direct_convolution_across_ir_partitions_and_variable_blocks ... ok
+test effects::tests::chorus_wet_path_and_parameter_rejection ... ok
+test advanced::spectral::tests::stft_identity_has_exact_declared_latency ... ok
+test advanced::filters::tests::svf_response_and_ladder_decay ... ok
+test effects::tests::dynamics_ceiling_and_ratio ... ok
+test advanced::wavetable::tests::mipmaps_remove_out_of_band_harmonics ... ok
+test expressive::tests::mpe_combines_master_and_member_pitch ... ok
+test expressive::tests::note_ids_isolate_unison_and_choke ... ok
+test granular::tests::zero_velocity_id_releases_only_the_matching_note ... ok
+test modulation::tests::base_is_preserved_and_modulation_bounded ... ok
+test modulation::tests::envelope_releases_from_current_level ... ok
+test oversampling::tests::reported_latency_matches_impulse_peak_and_dry ... ok
+test effects::tests::eq_peak_boost_at_center ... ok
+test advanced::analysis::tests::pitch_and_stereo ... ok
+test resample::tests::channels_duration_dc_and_bad_inputs ... ok
+test advanced::crossover::tests::two_and_three_way_recombination_flat ... ok
+test sampler::tests::rejects_nonfinite_and_partial_frames ... ok
+test sampler::tests::sample_rate_conversion_and_end_of_sample ... ok
+test rack::tests::dynamic_eq_reduces_loud_center_tone ... ok
+test effects::tests::gate_rejects_quiet_and_reset_clears_tails ... ok
+test spectral_fx::tests::freeze_continues_after_input_silence ... ok
+test advanced::dynamics::tests::lookahead_latency_and_intersample_peak ... ok
+test stereo_convolution::tests::swap_crossfades_and_retires_on_control ... ok
+test tests::a4_pitch_and_sine_period ... ok
+test tests::delay_impulse_is_at_expected_frame ... ok
+test tests::envelope_release_from_current_level_terminates ... ok
+test tests::synth_obeys_sample_offsets_and_panic ... ok
+test voice_mod::tests::voices_have_independent_lfos_envelopes_and_release ... ok
+test rack::tests::neutral_rack_recombines_and_solo_is_band_selective ... ok
+test advanced::analysis::tests::loudness_reference_gate_and_bounded_history ... ok
+test spectral_fx::tests::hilbert_frequency_shift_translates_tone ... ok
+test resample::tests::downsample_rejects_alias_and_preserves_passband ... ok
+test advanced::reverb::tests::reverb_has_predelay_decay_and_reset ... ok
+test granular::tests::grains_are_deterministic_and_release ... ok
+test spectral_fx::tests::offline_stretch_duration_and_pitch ... ok
+test stereo_convolution::tests::stereo_two_tier_matches_direct_and_uniform_latency ... ok
+
+test result: ok. 42 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.88s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-kernels/f2de542ea2d2831d/out/soniclaw_kernels-f2de542ea2d2831d)
+
+running 2 tests
+test tests::errors_leave_destinations_untouched ... ok
+test tests::available_backends_match_scalar_for_unaligned_tails_and_do_not_allocate ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+   Doc-tests soniclaw_dsp
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_kernels
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

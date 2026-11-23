@@ -1,0 +1,8 @@
+{
+  "feature": "fractional-delay",
+  "results": {
+    "callback_allocations": 0,
+    "frames": 48000
+  },
+  "version": "0.102.0"
+}

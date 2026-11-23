@@ -1,0 +1,7 @@
+{
+  "file": "soniclaw-rust-audio-framework-v0.5.0-source.zip",
+  "sha256": "a0b18d83f5caa5ca5b82299ecf2c74e5f7b92fbc05d0d5458ad6d74f8c2fa3cc",
+  "fixture_source": "tools/benchmark-dsp.py",
+  "gain_setting": 0.5,
+  "note": "Optimized five-case CPU fixture; unrelated later note-ID edge fix does not change measured processor paths."
+}

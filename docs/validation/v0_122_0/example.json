@@ -1,0 +1,10 @@
+{
+  "feature": "ir-capture",
+  "results": {
+    "ir_frames": 1024,
+    "rate": 48000,
+    "start_frame": 425,
+    "strongest_frame": 441
+  },
+  "version": "0.122.0"
+}

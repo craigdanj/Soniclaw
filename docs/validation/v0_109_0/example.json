@@ -1,0 +1,11 @@
+{
+  "feature": "hybrid-voice",
+  "results": {
+    "elapsed_us_for_48000_frames": 120421,
+    "first_note_frame": 17,
+    "max_voices": 32,
+    "measured_callback_allocations": 0,
+    "optimized": true
+  },
+  "version": "0.109.0"
+}

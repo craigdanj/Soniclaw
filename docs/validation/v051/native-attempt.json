@@ -1,0 +1,9 @@
+{
+  "status": "blocked",
+  "command": "python3 tools/check-pipewire.py --server <PipeWire 1.4.2 binary> --report <new report>",
+  "exit_code": 1,
+  "observed_error": "could not load mandatory module libpipewire-module-protocol-native: Operation not permitted",
+  "server_routing_verified": false,
+  "physical_audio_tested": false,
+  "callback_unit_test_executed": true
+}

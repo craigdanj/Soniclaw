@@ -1,0 +1,31 @@
+   Compiling soniclaw-core v0.40.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-core)
+   Compiling soniclaw-midi v0.40.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-midi)
+    Finished `test` profile [unoptimized] target(s) in 1.55s
+     Running unittests src/lib.rs (target/debug/build/soniclaw-midi/3aaa00967c73e5ee/out/soniclaw_midi-3aaa00967c73e5ee)
+
+running 16 tests
+test controllers::tests::pickup_external_change_and_bank_rearm ... ok
+test controllers::tests::feedback_coalesces_retries_and_suppresses_only_sent_echoes ... ok
+test file::tests::ppqn_tempo_roundtrip_and_truncation_rejection ... ok
+test controllers::tests::relative_modes_toggle_and_no_alloc ... ok
+test learning::tests::learn_replaces_target_and_resolves_before_playback ... ok
+test performance::tests::chord_release_keeps_note_identity_after_scale_mapping ... ok
+test schedule::allocation_tests::prepared_scheduler_performs_no_heap_operations ... ok
+test schedule::tests::boundaries_stability_lateness_and_panic ... ok
+test schedule::tests::driver_anchor_is_explicit_and_bounded ... ok
+test tests::pitch_bend_and_one_byte_messages ... ok
+test tests::running_status_and_clock ... ok
+test tests::sysex_and_common_cancel_running_status ... ok
+test wire::tests::running_program_sysex_and_interleaved_clock ... ok
+test performance::tests::arp_partition_independence_and_transport_stop ... ok
+test wire::tests::sysex_overflow_recovers_without_allocating ... ok
+test output::tests::worker_sends_and_rejects_out_of_order_timestamps ... ok
+
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_midi
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

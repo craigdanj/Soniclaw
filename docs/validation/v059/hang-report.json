@@ -1,0 +1,27 @@
+{
+  "callback_allocations": 0,
+  "checkpoint_restored": true,
+  "faulted": true,
+  "layout": {
+    "inputs": [
+      {
+        "channels": 2,
+        "id": "0",
+        "name": "",
+        "role": "Main"
+      }
+    ],
+    "outputs": [
+      {
+        "channels": 2,
+        "id": "0",
+        "name": "",
+        "role": "Main"
+      }
+    ]
+  },
+  "missing_frames": 3648,
+  "peak": 0.0,
+  "pid": 4,
+  "recovered_pid": 10
+}

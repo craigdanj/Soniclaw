@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "product_id": "org.soniclaw.workbench",
+  "name": "Poly Motion",
+  "parameters": {},
+  "assets": [
+    {
+      "id": "grain-source",
+      "path": "assets/grain-source.wav",
+      "root_note": 57
+    },
+    {
+      "id": "stereo-ir",
+      "path": "assets/stereo-ir.wav",
+      "root_note": 60
+    }
+  ],
+  "zones": [],
+  "nodes": [
+    {
+      "id": "voice",
+      "kind": "poly_mod_synth",
+      "settings": {},
+      "input_gain": 0.0,
+      "voice_modulation": {
+        "envelopes": [
+          {
+            "attack": 0.008,
+            "decay": 0.14,
+            "sustain": 0.65,
+            "release": 0.25
+          },
+          {
+            "attack": 0.25,
+            "decay": 0.3,
+            "sustain": 0.4,
+            "release": 0.5
+          }
+        ],
+        "lfos": [
+          {
+            "shape": "sine",
+            "rate_hz": 4.0
+          },
+          {
+            "shape": "triangle",
+            "rate_hz": 0.7
+          }
+        ],
+        "routes": [
+          {
+            "source": "envelope2",
+            "destination": "cutoff",
+            "amount": 0.45
+          },
+          {
+            "source": "lfo1",
+            "destination": "pitch",
+            "amount": 0.006
+          },
+          {
+            "source": "velocity",
+            "destination": "level",
+            "amount": 0.25
+          },
+          {
+            "source": "pressure",
+            "destination": "cutoff",
+            "amount": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "id": "space",
+      "kind": "fdn_reverb",
+      "settings": {},
+      "input_gain": 0.0
+    },
+    {
+      "id": "limit",
+      "kind": "lookahead_limiter",
+      "settings": {},
+      "input_gain": 0.0
+    }
+  ],
+  "connections": [
+    {
+      "from": "voice",
+      "to": "space",
+      "gain": 1.0
+    },
+    {
+      "from": "space",
+      "to": "limit",
+      "gain": 1.0
+    }
+  ],
+  "outputs": {
+    "limit": 1.0
+  },
+  "midi": {
+    "mode": "up_down",
+    "chord": [
+      0,
+      4,
+      7,
+      11
+    ],
+    "scale_root": 0,
+    "scale_mask": 4095,
+    "step_beats": 0.25,
+    "gate": 0.6,
+    "swing": 0.2,
+    "humanize_ms": 3.0,
+    "velocity_jitter": 8,
+    "seed": 1
+  }
+}

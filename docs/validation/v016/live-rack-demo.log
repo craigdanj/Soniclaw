@@ -1,0 +1,3 @@
+    Finished `dev` profile [unoptimized] target(s) in 0.17s
+     Running `target/debug/soniclaw-sdk-tools --live-rack-demo target/debug/libsoniclaw_host_fixture.so /workspace/scratch/cd89c8ef929d/verification-series/v016/live-rack-demo`
+PASS two-node live rack, exact bridge delay, output events, main callbacks and floating editor ABI

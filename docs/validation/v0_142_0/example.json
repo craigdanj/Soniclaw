@@ -1,0 +1,33 @@
+{
+  "feature": "first-order-tpt",
+  "results": {
+    "cases": [
+      {
+        "audio": "modulated-lowpass.wav",
+        "callback_allocations": 0,
+        "latency_frames": 0,
+        "name": "modulated-lowpass",
+        "peak": 0.6456727981567383
+      },
+      {
+        "audio": "modulated-highpass.wav",
+        "callback_allocations": 0,
+        "latency_frames": 0,
+        "name": "modulated-highpass",
+        "peak": 0.6610928177833557
+      },
+      {
+        "audio": "modulated-allpass.wav",
+        "callback_allocations": 0,
+        "latency_frames": 0,
+        "name": "modulated-allpass",
+        "peak": 0.7366671562194824
+      }
+    ],
+    "cutoff_bounds_hz": [
+      120.0,
+      7120.0
+    ]
+  },
+  "version": "0.142.0"
+}

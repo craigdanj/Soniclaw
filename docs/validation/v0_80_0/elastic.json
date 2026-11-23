@@ -1,0 +1,23 @@
+{
+  "aligned_transient_samples": [
+    12000,
+    24000,
+    36000
+  ],
+  "cancelled_folder_removed": true,
+  "detected_onsets": [
+    7001,
+    19001,
+    31001,
+    43001
+  ],
+  "dissolve_keeps_audio": true,
+  "group_recipes_portable": true,
+  "hardware_opened": false,
+  "microphones": 4,
+  "original_regions_disabled_and_undo_restores": true,
+  "phase_residual_max": 0.0,
+  "rendered_frames": 48000,
+  "snapped_interior_anchors": 3,
+  "stale_job_rejected": true
+}

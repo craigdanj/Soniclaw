@@ -185,30 +185,53 @@ static REFERENCE: soniclaw_clap::ClapDescriptor = descriptor(
     c"org.sonora.reference",
     c"Soniclaw Gain + Filter",
     c"Soniclaw",
-    c"0.3.0",
+    c"0.146.0",
     false,
 );
 static DUCKER: soniclaw_clap::ClapDescriptor = descriptor(
     c"org.sonora.ducker",
     c"Soniclaw Sidechain Ducker",
     c"Soniclaw",
-    c"0.3.0",
+    c"0.146.0",
     false,
 );
 static DRUMS: soniclaw_clap::ClapDescriptor = descriptor(
     c"org.sonora.drums",
     c"Soniclaw Multisample Drums",
     c"Soniclaw",
-    c"0.3.0",
+    c"0.146.0",
     true,
 );
 static RACK: soniclaw_clap::ClapDescriptor = descriptor(
     c"org.sonora.fx-rack",
     c"Soniclaw Effects Rack",
     c"Soniclaw",
-    c"0.3.0",
+    c"0.146.0",
     false,
 );
+// A transparent topology makes accidental narrowing visible at the host boundary.
+fn create_precision() -> PluginInstance {
+    let mut engine = Engine64::default();
+    engine.push(soniclaw::dsp::precision::Gain64::new(0.5).unwrap());
+    PluginInstance::new_64(
+        description(
+            "org.soniclaw.precision-gain",
+            "Soniclaw Precision Gain",
+            false,
+        ),
+        engine,
+        Vec::new(),
+    )
+    .expect("valid reference product")
+}
+static PRECISION: soniclaw_clap::ClapDescriptor = descriptor(
+    c"org.soniclaw.precision-gain",
+    c"Soniclaw Precision Gain",
+    c"Soniclaw",
+    c"0.146.0",
+    false,
+);
+
 soniclaw_clap::export_clap!([
     Definition {
         descriptor: &REFERENCE,
@@ -233,5 +256,11 @@ soniclaw_clap::export_clap!([
         create: create_effect_rack,
         instrument: false,
         tail_seconds: 4.0
+    },
+    Definition {
+        descriptor: &PRECISION,
+        create: create_precision,
+        instrument: false,
+        tail_seconds: 0.0
     },
 ]);

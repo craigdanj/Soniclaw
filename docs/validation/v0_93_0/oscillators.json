@@ -1,0 +1,49 @@
+{
+  "feature": "oscillators",
+  "results": {
+    "cases": [
+      {
+        "audio": "pwm.wav",
+        "callback_allocations": 0,
+        "latency_frames": 96,
+        "name": "pwm",
+        "peak": 0.23355191946029663
+      },
+      {
+        "audio": "fm.wav",
+        "callback_allocations": 0,
+        "latency_frames": 96,
+        "name": "fm",
+        "peak": 0.23206137120723724
+      },
+      {
+        "audio": "pm-warp.wav",
+        "callback_allocations": 0,
+        "latency_frames": 96,
+        "name": "pm-warp",
+        "peak": 0.19999991357326508
+      },
+      {
+        "audio": "sync.wav",
+        "callback_allocations": 0,
+        "latency_frames": 96,
+        "name": "sync",
+        "peak": 0.22900190949440002
+      },
+      {
+        "audio": "wavetable.wav",
+        "callback_allocations": 0,
+        "latency_frames": 96,
+        "name": "wavetable",
+        "peak": 0.18436893820762634
+      }
+    ],
+    "pulse_alias_fixture": {
+      "bin": 851,
+      "fft": 4096,
+      "naive_residual_db": -6.313406975628641,
+      "oversampled_residual_db": -19.09846926506728
+    }
+  },
+  "version": "0.93.0"
+}

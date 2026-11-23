@@ -1,0 +1,71 @@
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in /workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/clap-wrapper/.git/
+From https://github.com/free-audio/clap-wrapper
+ * branch            806bba0a5f792e3966b99c1561ab9952d3316d7c -> FETCH_HEAD
+HEAD is now at 806bba0 0.17.0 release
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in /workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/clap/.git/
+From https://github.com/free-audio/clap
+ * branch            195b42a004144fab0b3cf95e9c067187d15365b7 -> FETCH_HEAD
+HEAD is now at 195b42a CLAP 1.2.10
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in /workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/.git/
+From https://github.com/steinbergmedia/vst3sdk
+ * branch            9fad9770f2ae8542ab1a548a68c1ad1ac690abe0 -> FETCH_HEAD
+HEAD is now at 9fad977 VST SDK 3.8.0
+Submodule 'base' (https://github.com/steinbergmedia/vst3_base) registered for path 'base'
+Submodule 'cmake' (https://github.com/steinbergmedia/vst3_cmake) registered for path 'cmake'
+Submodule 'pluginterfaces' (https://github.com/steinbergmedia/vst3_pluginterfaces) registered for path 'pluginterfaces'
+Submodule 'public.sdk' (https://github.com/steinbergmedia/vst3_public_sdk) registered for path 'public.sdk'
+Cloning into '/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/base'...
+Cloning into '/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/cmake'...
+Cloning into '/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/pluginterfaces'...
+Cloning into '/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/vendor/formats/vst3sdk/public.sdk'...
+From https://github.com/steinbergmedia/vst3_base
+ * branch            3d2e82f8e6bff59c1d8b7a27491a29c2286b5206 -> FETCH_HEAD
+Submodule path 'base': checked out '3d2e82f8e6bff59c1d8b7a27491a29c2286b5206'
+From https://github.com/steinbergmedia/vst3_cmake
+ * branch            de6e54eeaaab35b7145f5c32c279b5e892146e04 -> FETCH_HEAD
+Submodule path 'cmake': checked out 'de6e54eeaaab35b7145f5c32c279b5e892146e04'
+From https://github.com/steinbergmedia/vst3_pluginterfaces
+ * branch            31d6eeba6daaa3e2a8bfbe3e7a90ca0b7fbfbc1c -> FETCH_HEAD
+Submodule path 'pluginterfaces': checked out '31d6eeba6daaa3e2a8bfbe3e7a90ca0b7fbfbc1c'
+From https://github.com/steinbergmedia/vst3_public_sdk
+ * branch            a3911a4615dabbfdfd9d181ee26b05c70c289a95 -> FETCH_HEAD
+Submodule path 'public.sdk': checked out 'a3911a4615dabbfdfd9d181ee26b05c70c289a95'

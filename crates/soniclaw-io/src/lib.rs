@@ -1,4 +1,6 @@
 //! Blocking, allocating file APIs. Never call these on an audio thread.
+mod float_wav;
+pub use float_wav::{read_wav64_with_limit, write_wav64, AudioFile64};
 use std::path::Path;
 pub type FileError = Box<dyn std::error::Error>;
 #[derive(Debug)]
@@ -8,16 +10,48 @@ pub struct AudioFile {
     pub samples: Vec<f32>,
 }
 impl AudioFile {
+    /// Allocating, control-thread sample-rate conversion with selectable quality.
+    pub fn resampled(
+        &self,
+        rate: u32,
+        quality: soniclaw_dsp::resample::ResampleQuality,
+    ) -> Result<Self, FileError> {
+        Ok(Self {
+            sample_rate: rate,
+            channels: self.channels,
+            samples: soniclaw_dsp::resample::resample_interleaved(
+                &self.samples,
+                self.channels as usize,
+                self.sample_rate as f64,
+                rate as f64,
+                quality,
+            )?,
+        })
+    }
     pub fn frames(&self) -> usize {
         self.samples.len() / self.channels as usize
     }
 }
 /// Read PCM up to 32 bit or IEEE float32 WAV. No resampling is performed.
 pub fn read_wav(path: impl AsRef<Path>) -> Result<AudioFile, FileError> {
+    read_wav_with_limit(path, 256 * 1024 * 1024)
+}
+/// Reject oversized decoded PCM before allocating. Limit counts f32 PCM bytes.
+pub fn read_wav_with_limit(
+    path: impl AsRef<Path>,
+    max_pcm_bytes: usize,
+) -> Result<AudioFile, FileError> {
     let mut reader = hound::WavReader::open(path)?;
     let spec = reader.spec();
     if spec.channels == 0 || spec.sample_rate == 0 {
         return Err("invalid WAV configuration".into());
+    }
+    let bytes = (reader.duration() as usize)
+        .checked_mul(spec.channels as usize)
+        .and_then(|x| x.checked_mul(4))
+        .ok_or("PCM length overflow")?;
+    if bytes > max_pcm_bytes {
+        return Err("decoded PCM exceeds memory budget".into());
     }
     let samples: Vec<f32> = match spec.sample_format {
         hound::SampleFormat::Float => reader

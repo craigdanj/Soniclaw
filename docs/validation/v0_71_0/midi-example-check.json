@@ -1,0 +1,16 @@
+{
+  "command": [
+    "cargo",
+    "run",
+    "-p",
+    "soniclaw-studio-midi-recording",
+    "--offline",
+    "--",
+    "../../logs71/midi-example-final"
+  ],
+  "exit_code": 0,
+  "report": "midi-example.json",
+  "log": "midi-example.log",
+  "physical_midi_tested": false,
+  "native_audio_tested": false
+}

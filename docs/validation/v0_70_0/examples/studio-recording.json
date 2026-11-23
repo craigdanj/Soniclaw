@@ -1,0 +1,41 @@
+{
+  "dry_input_exact": true,
+  "frames": 7744,
+  "missing_frames": 0,
+  "monitor_click_excluded_from_master": true,
+  "physical_device_tested": false,
+  "portable_take_reopened": true,
+  "schedule": {
+    "acquisition_punch": [
+      7680,
+      14944
+    ],
+    "automatic_finish_frame": 14944,
+    "count_in_frames": 7200,
+    "latency_tail_frames": 64,
+    "pre_roll_frames": 480,
+    "project_start_frame": 3120,
+    "sample_rate": 48000,
+    "schema": 1,
+    "settings": {
+      "arms": [
+        {
+          "monitor_input": false,
+          "source": "DryInput",
+          "track": "bass"
+        }
+      ],
+      "click_gain": 0.10000000149011612,
+      "count_in_beats": 1,
+      "master": true,
+      "metronome": true,
+      "pre_roll_seconds": 0.01,
+      "punch_beats": [
+        0.5,
+        1.5
+      ],
+      "schema": 1,
+      "start_beat": 0.0
+    }
+  }
+}

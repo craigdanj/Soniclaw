@@ -1,0 +1,48 @@
+{
+  "feature": "interpolation",
+  "results": {
+    "cases": [
+      {
+        "audio": "integer.wav",
+        "callback_allocations": 0,
+        "latency_frames": 0,
+        "name": "integer",
+        "peak": 0.48646247386932373
+      },
+      {
+        "audio": "linear.wav",
+        "callback_allocations": 0,
+        "latency_frames": 0,
+        "name": "linear",
+        "peak": 0.48493608832359314
+      },
+      {
+        "audio": "cubic.wav",
+        "callback_allocations": 0,
+        "latency_frames": 0,
+        "name": "cubic",
+        "peak": 0.486092209815979
+      },
+      {
+        "audio": "lagrange.wav",
+        "callback_allocations": 0,
+        "latency_frames": 0,
+        "name": "lagrange",
+        "peak": 0.48604661226272583
+      },
+      {
+        "audio": "thiran.wav",
+        "callback_allocations": 0,
+        "latency_frames": 0,
+        "name": "thiran",
+        "peak": 0.48586660623550415
+      }
+    ],
+    "delay_range_frames": [
+      24.0,
+      40.0
+    ],
+    "mix": 0.5
+  },
+  "version": "0.119.0"
+}

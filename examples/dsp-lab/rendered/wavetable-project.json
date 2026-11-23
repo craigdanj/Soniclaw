@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "product_id": "org.soniclaw.dsp-lab.wavetable",
+  "name": "Soniclaw Wavetable Lab",
+  "parameters": {
+    "osc.detune": 8.0,
+    "osc.gain": 0.2,
+    "osc.morph": 0.9,
+    "osc.pwm": 0.7,
+    "osc.sync": 1.0,
+    "osc.width": 0.5
+  },
+  "assets": [],
+  "zones": [],
+  "nodes": [
+    {
+      "id": "osc",
+      "kind": "wavetable",
+      "settings": {},
+      "input_gain": 0.0
+    }
+  ],
+  "connections": [],
+  "outputs": {
+    "osc": 1.0
+  }
+}

@@ -1,0 +1,178 @@
+[
+  {
+    "package": "soniclaw-studio-history",
+    "exit_code": 0,
+    "seconds": 41.77,
+    "report": "studio-history.json",
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-studio-history",
+      "--offline",
+      "--",
+      "/workspace/scratch/cd89c8ef929d/workflow-work/final-examples70/studio-history"
+    ],
+    "log": "studio-history.log"
+  },
+  {
+    "package": "soniclaw-studio-recovery",
+    "exit_code": 0,
+    "seconds": 0.57,
+    "report": "studio-recovery.json",
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-studio-recovery",
+      "--offline",
+      "--",
+      "/workspace/scratch/cd89c8ef929d/workflow-work/final-examples70/studio-recovery"
+    ],
+    "log": "studio-recovery.log"
+  },
+  {
+    "package": "soniclaw-studio-recording",
+    "exit_code": 0,
+    "seconds": 0.57,
+    "report": "studio-recording.json",
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-studio-recording",
+      "--offline",
+      "--",
+      "/workspace/scratch/cd89c8ef929d/workflow-work/final-examples70/studio-recording"
+    ],
+    "log": "studio-recording.log"
+  },
+  {
+    "package": "soniclaw-waveform-warp-editor",
+    "exit_code": 0,
+    "seconds": 14.17,
+    "report": "waveform-warp-editor.json",
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-waveform-warp-editor",
+      "--offline",
+      "--",
+      "/workspace/scratch/cd89c8ef929d/workflow-work/final-examples70/waveform-warp-editor"
+    ],
+    "log": "waveform-warp-editor.log"
+  },
+  {
+    "package": "soniclaw-studio-jobs",
+    "exit_code": 0,
+    "seconds": 1.14,
+    "report": "studio-jobs.json",
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-studio-jobs",
+      "--offline",
+      "--",
+      "/workspace/scratch/cd89c8ef929d/workflow-work/final-examples70/studio-jobs"
+    ],
+    "log": "studio-jobs.log"
+  },
+  {
+    "package": "soniclaw-studio-export",
+    "exit_code": 0,
+    "seconds": 2.66,
+    "report": "studio-export.json",
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-studio-export",
+      "--offline",
+      "--",
+      "/workspace/scratch/cd89c8ef929d/workflow-work/final-examples70/studio-export"
+    ],
+    "log": "studio-export.log"
+  },
+  {
+    "package": "soniclaw-studio-routing",
+    "exit_code": 0,
+    "seconds": 1.17,
+    "report": "studio-routing.json",
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-studio-routing",
+      "--offline",
+      "--",
+      "/workspace/scratch/cd89c8ef929d/workflow-work/final-examples70/studio-routing"
+    ],
+    "log": "studio-routing.log"
+  },
+  {
+    "package": "soniclaw-studio-plugin-windows",
+    "exit_code": 0,
+    "seconds": 3.42,
+    "report": "studio-plugin-windows.json",
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-studio-plugin-windows",
+      "--offline",
+      "--",
+      "/workspace/scratch/cd89c8ef929d/workflow-work/final-examples70/studio-plugin-windows"
+    ],
+    "log": "studio-plugin-windows.log"
+  },
+  {
+    "package": "soniclaw-export-conversion",
+    "exit_code": 0,
+    "seconds": 3.09,
+    "report": "export-conversion.json",
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-export-conversion",
+      "--offline",
+      "--",
+      "/workspace/scratch/cd89c8ef929d/workflow-work/final-examples70/export-conversion"
+    ],
+    "log": "export-conversion.log"
+  },
+  {
+    "package": "soniclaw-studio-automation-write",
+    "exit_code": 0,
+    "seconds": 0.57,
+    "report": "studio-automation-write.json",
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-studio-automation-write",
+      "--offline",
+      "--",
+      "/workspace/scratch/cd89c8ef929d/workflow-work/final-examples70/studio-automation-write"
+    ],
+    "log": "studio-automation-write.log"
+  },
+  {
+    "package": "soniclaw-studio-media-audit",
+    "exit_code": 0,
+    "seconds": 1.95,
+    "report": "studio-media-audit.json",
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-studio-media-audit",
+      "--offline",
+      "--",
+      "/workspace/scratch/cd89c8ef929d/workflow-work/final-examples70/studio-media-audit"
+    ],
+    "log": "studio-media-audit.log"
+  }
+]

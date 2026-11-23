@@ -1,0 +1,13 @@
+{
+  "feature": "binaural",
+  "results": {
+    "algorithmic_latency_frames": 0,
+    "callback_allocations": 0,
+    "left_over_right_rms": [
+      6.014419122924812,
+      0.16558356618735612
+    ],
+    "measurements": 710
+  },
+  "version": "0.127.0"
+}

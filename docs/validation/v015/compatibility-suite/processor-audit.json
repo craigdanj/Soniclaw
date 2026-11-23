@@ -1,0 +1,794 @@
+{
+  "multiband": {
+    "cases": [
+      {
+        "rate": 44100.0,
+        "max_block": 1,
+        "latency": 233,
+        "stats": {
+          "blocks": 4096,
+          "frames": 4096,
+          "overruns": 87,
+          "max_ns": 475069,
+          "nonfinite": 0
+        },
+        "peak": 0.11926696,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 20.9505429
+      },
+      {
+        "rate": 44100.0,
+        "max_block": 17,
+        "latency": 233,
+        "stats": {
+          "blocks": 286,
+          "frames": 4096,
+          "overruns": 0,
+          "max_ns": 217447,
+          "nonfinite": 0
+        },
+        "peak": 0.11399013,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 0.837851
+      },
+      {
+        "rate": 44100.0,
+        "max_block": 64,
+        "latency": 233,
+        "stats": {
+          "blocks": 77,
+          "frames": 4096,
+          "overruns": 0,
+          "max_ns": 463657,
+          "nonfinite": 0
+        },
+        "peak": 0.11784382,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 0.3194886515625
+      },
+      {
+        "rate": 44100.0,
+        "max_block": 257,
+        "latency": 233,
+        "stats": {
+          "blocks": 19,
+          "frames": 4096,
+          "overruns": 0,
+          "max_ns": 1421711,
+          "nonfinite": 0
+        },
+        "peak": 0.10700932,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 0.27074391627906974
+      },
+      {
+        "rate": 48000.0,
+        "max_block": 1,
+        "latency": 252,
+        "stats": {
+          "blocks": 4096,
+          "frames": 4096,
+          "overruns": 89,
+          "max_ns": 529822,
+          "nonfinite": 0
+        },
+        "peak": 0.119262524,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 25.431456
+      },
+      {
+        "rate": 48000.0,
+        "max_block": 17,
+        "latency": 252,
+        "stats": {
+          "blocks": 286,
+          "frames": 4096,
+          "overruns": 8,
+          "max_ns": 759241,
+          "nonfinite": 0
+        },
+        "peak": 0.11138708,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 2.143739294117647
+      },
+      {
+        "rate": 48000.0,
+        "max_block": 64,
+        "latency": 252,
+        "stats": {
+          "blocks": 77,
+          "frames": 4096,
+          "overruns": 0,
+          "max_ns": 1199555,
+          "nonfinite": 0
+        },
+        "peak": 0.1091222,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 0.89966625
+      },
+      {
+        "rate": 48000.0,
+        "max_block": 257,
+        "latency": 252,
+        "stats": {
+          "blocks": 19,
+          "frames": 4096,
+          "overruns": 0,
+          "max_ns": 1627386,
+          "nonfinite": 0
+        },
+        "peak": 0.10987557,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 0.30394757976653697
+      },
+      {
+        "rate": 96000.0,
+        "max_block": 1,
+        "latency": 492,
+        "stats": {
+          "blocks": 4096,
+          "frames": 4096,
+          "overruns": 153,
+          "max_ns": 811147,
+          "nonfinite": 0
+        },
+        "peak": 0.11929332,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 77.870112
+      },
+      {
+        "rate": 96000.0,
+        "max_block": 17,
+        "latency": 492,
+        "stats": {
+          "blocks": 286,
+          "frames": 4096,
+          "overruns": 9,
+          "max_ns": 408374,
+          "nonfinite": 0
+        },
+        "peak": 0.110574655,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 4.3559893333333335
+      },
+      {
+        "rate": 96000.0,
+        "max_block": 64,
+        "latency": 492,
+        "stats": {
+          "blocks": 77,
+          "frames": 4096,
+          "overruns": 3,
+          "max_ns": 1068360,
+          "nonfinite": 0
+        },
+        "peak": 0.11161081,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 1.60254
+      },
+      {
+        "rate": 96000.0,
+        "max_block": 257,
+        "latency": 492,
+        "stats": {
+          "blocks": 19,
+          "frames": 4096,
+          "overruns": 0,
+          "max_ns": 984032,
+          "nonfinite": 0
+        },
+        "peak": 0.11122224,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 0.4336893023255814
+      }
+    ],
+    "finite": true,
+    "allocation_clean": true
+  },
+  "poly_motion": {
+    "cases": [
+      {
+        "rate": 44100.0,
+        "max_block": 1,
+        "latency": 233,
+        "stats": {
+          "blocks": 4096,
+          "frames": 4096,
+          "overruns": 51,
+          "max_ns": 188733,
+          "nonfinite": 0
+        },
+        "peak": 0.049995735,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 8.3231253
+      },
+      {
+        "rate": 44100.0,
+        "max_block": 17,
+        "latency": 233,
+        "stats": {
+          "blocks": 286,
+          "frames": 4096,
+          "overruns": 1,
+          "max_ns": 299410,
+          "nonfinite": 0
+        },
+        "peak": 0.049995735,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 1.1491921
+      },
+      {
+        "rate": 44100.0,
+        "max_block": 64,
+        "latency": 233,
+        "stats": {
+          "blocks": 77,
+          "frames": 4096,
+          "overruns": 0,
+          "max_ns": 452587,
+          "nonfinite": 0
+        },
+        "peak": 0.049995735,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 0.4078060636363636
+      },
+      {
+        "rate": 44100.0,
+        "max_block": 257,
+        "latency": 233,
+        "stats": {
+          "blocks": 19,
+          "frames": 4096,
+          "overruns": 0,
+          "max_ns": 1339176,
+          "nonfinite": 0
+        },
+        "peak": 0.049995735,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 0.2297963486381323
+      },
+      {
+        "rate": 48000.0,
+        "max_block": 1,
+        "latency": 252,
+        "stats": {
+          "blocks": 4096,
+          "frames": 4096,
+          "overruns": 80,
+          "max_ns": 568604,
+          "nonfinite": 0
+        },
+        "peak": 0.050173786,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 27.292992
+      },
+      {
+        "rate": 48000.0,
+        "max_block": 17,
+        "latency": 252,
+        "stats": {
+          "blocks": 286,
+          "frames": 4096,
+          "overruns": 1,
+          "max_ns": 349384,
+          "nonfinite": 0
+        },
+        "peak": 0.050173786,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 1.5792746666666666
+      },
+      {
+        "rate": 48000.0,
+        "max_block": 64,
+        "latency": 252,
+        "stats": {
+          "blocks": 77,
+          "frames": 4096,
+          "overruns": 1,
+          "max_ns": 1840183,
+          "nonfinite": 0
+        },
+        "peak": 0.050173786,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 1.38013725
+      },
+      {
+        "rate": 48000.0,
+        "max_block": 257,
+        "latency": 252,
+        "stats": {
+          "blocks": 19,
+          "frames": 4096,
+          "overruns": 0,
+          "max_ns": 1393589,
+          "nonfinite": 0
+        },
+        "peak": 0.050173786,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 0.29166362790697675
+      },
+      {
+        "rate": 96000.0,
+        "max_block": 1,
+        "latency": 492,
+        "stats": {
+          "blocks": 4096,
+          "frames": 4096,
+          "overruns": 72,
+          "max_ns": 2544732,
+          "nonfinite": 0
+        },
+        "peak": 0.050134927,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 244.294272
+      },
+      {
+        "rate": 96000.0,
+        "max_block": 17,
+        "latency": 492,
+        "stats": {
+          "blocks": 286,
+          "frames": 4096,
+          "overruns": 3,
+          "max_ns": 2107513,
+          "nonfinite": 0
+        },
+        "peak": 0.050134927,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 22.356181333333332
+      },
+      {
+        "rate": 96000.0,
+        "max_block": 64,
+        "latency": 492,
+        "stats": {
+          "blocks": 77,
+          "frames": 4096,
+          "overruns": 0,
+          "max_ns": 235651,
+          "nonfinite": 0
+        },
+        "peak": 0.050134927,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 0.3972538181818182
+      },
+      {
+        "rate": 96000.0,
+        "max_block": 257,
+        "latency": 492,
+        "stats": {
+          "blocks": 19,
+          "frames": 4096,
+          "overruns": 0,
+          "max_ns": 1345558,
+          "nonfinite": 0
+        },
+        "peak": 0.050134927,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 0.5026208871595331
+      }
+    ],
+    "finite": true,
+    "allocation_clean": true
+  },
+  "registered_tape": {
+    "cases": [
+      {
+        "rate": 44100.0,
+        "max_block": 1,
+        "latency": 0,
+        "stats": {
+          "blocks": 4096,
+          "frames": 4096,
+          "overruns": 8,
+          "max_ns": 119734,
+          "nonfinite": 0
+        },
+        "peak": 0.1484113,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 5.2802694
+      },
+      {
+        "rate": 44100.0,
+        "max_block": 17,
+        "latency": 0,
+        "stats": {
+          "blocks": 286,
+          "frames": 4096,
+          "overruns": 0,
+          "max_ns": 199804,
+          "nonfinite": 0
+        },
+        "peak": 0.1484113,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 0.5183150823529412
+      },
+      {
+        "rate": 44100.0,
+        "max_block": 64,
+        "latency": 0,
+        "stats": {
+          "blocks": 77,
+          "frames": 4096,
+          "overruns": 0,
+          "max_ns": 289322,
+          "nonfinite": 0
+        },
+        "peak": 0.1484113,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 0.199360940625
+      },
+      {
+        "rate": 44100.0,
+        "max_block": 257,
+        "latency": 0,
+        "stats": {
+          "blocks": 19,
+          "frames": 4096,
+          "overruns": 0,
+          "max_ns": 150271,
+          "nonfinite": 0
+        },
+        "peak": 0.1484113,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 0.048529144186046515
+      },
+      {
+        "rate": 48000.0,
+        "max_block": 1,
+        "latency": 0,
+        "stats": {
+          "blocks": 4096,
+          "frames": 4096,
+          "overruns": 13,
+          "max_ns": 82545,
+          "nonfinite": 0
+        },
+        "peak": 0.14839861,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 3.96216
+      },
+      {
+        "rate": 48000.0,
+        "max_block": 17,
+        "latency": 0,
+        "stats": {
+          "blocks": 286,
+          "frames": 4096,
+          "overruns": 0,
+          "max_ns": 177271,
+          "nonfinite": 0
+        },
+        "peak": 0.14839861,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 0.9454453333333334
+      },
+      {
+        "rate": 48000.0,
+        "max_block": 64,
+        "latency": 0,
+        "stats": {
+          "blocks": 77,
+          "frames": 4096,
+          "overruns": 0,
+          "max_ns": 486370,
+          "nonfinite": 0
+        },
+        "peak": 0.14839861,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 0.7074472727272727
+      },
+      {
+        "rate": 48000.0,
+        "max_block": 257,
+        "latency": 0,
+        "stats": {
+          "blocks": 19,
+          "frames": 4096,
+          "overruns": 0,
+          "max_ns": 447998,
+          "nonfinite": 0
+        },
+        "peak": 0.14839861,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 0.08367277821011673
+      },
+      {
+        "rate": 96000.0,
+        "max_block": 1,
+        "latency": 0,
+        "stats": {
+          "blocks": 4096,
+          "frames": 4096,
+          "overruns": 7,
+          "max_ns": 183604,
+          "nonfinite": 0
+        },
+        "peak": 0.14832492,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 17.625984
+      },
+      {
+        "rate": 96000.0,
+        "max_block": 17,
+        "latency": 0,
+        "stats": {
+          "blocks": 286,
+          "frames": 4096,
+          "overruns": 0,
+          "max_ns": 103484,
+          "nonfinite": 0
+        },
+        "peak": 0.14832492,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 0.6507093333333334
+      },
+      {
+        "rate": 96000.0,
+        "max_block": 64,
+        "latency": 0,
+        "stats": {
+          "blocks": 77,
+          "frames": 4096,
+          "overruns": 0,
+          "max_ns": 149349,
+          "nonfinite": 0
+        },
+        "peak": 0.14832492,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 0.2240235
+      },
+      {
+        "rate": 96000.0,
+        "max_block": 257,
+        "latency": 0,
+        "stats": {
+          "blocks": 19,
+          "frames": 4096,
+          "overruns": 0,
+          "max_ns": 123321,
+          "nonfinite": 0
+        },
+        "peak": 0.14832492,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 0.04654586046511628
+      }
+    ],
+    "finite": true,
+    "allocation_clean": true
+  },
+  "sampler": {
+    "cases": [
+      {
+        "rate": 44100.0,
+        "max_block": 1,
+        "latency": 233,
+        "stats": {
+          "blocks": 4096,
+          "frames": 4096,
+          "overruns": 329,
+          "max_ns": 228939,
+          "nonfinite": 0
+        },
+        "peak": 0.17336537,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 10.0962099
+      },
+      {
+        "rate": 44100.0,
+        "max_block": 17,
+        "latency": 233,
+        "stats": {
+          "blocks": 286,
+          "frames": 4096,
+          "overruns": 36,
+          "max_ns": 723514,
+          "nonfinite": 0
+        },
+        "peak": 0.17336537,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 3.5452186
+      },
+      {
+        "rate": 44100.0,
+        "max_block": 64,
+        "latency": 233,
+        "stats": {
+          "blocks": 77,
+          "frames": 4096,
+          "overruns": 1,
+          "max_ns": 1014088,
+          "nonfinite": 0
+        },
+        "peak": 0.17336537,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 1.3551903272727273
+      },
+      {
+        "rate": 44100.0,
+        "max_block": 257,
+        "latency": 233,
+        "stats": {
+          "blocks": 19,
+          "frames": 4096,
+          "overruns": 2,
+          "max_ns": 5581445,
+          "nonfinite": 0
+        },
+        "peak": 0.17336537,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 1.2780439813953488
+      },
+      {
+        "rate": 48000.0,
+        "max_block": 1,
+        "latency": 252,
+        "stats": {
+          "blocks": 4096,
+          "frames": 4096,
+          "overruns": 652,
+          "max_ns": 19457072,
+          "nonfinite": 0
+        },
+        "peak": 0.17258483,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 933.939456
+      },
+      {
+        "rate": 48000.0,
+        "max_block": 17,
+        "latency": 252,
+        "stats": {
+          "blocks": 286,
+          "frames": 4096,
+          "overruns": 29,
+          "max_ns": 1605555,
+          "nonfinite": 0
+        },
+        "peak": 0.17258483,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 4.533331764705882
+      },
+      {
+        "rate": 48000.0,
+        "max_block": 64,
+        "latency": 252,
+        "stats": {
+          "blocks": 77,
+          "frames": 4096,
+          "overruns": 6,
+          "max_ns": 3917280,
+          "nonfinite": 0
+        },
+        "peak": 0.17258483,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 4.262784
+      },
+      {
+        "rate": 48000.0,
+        "max_block": 257,
+        "latency": 252,
+        "stats": {
+          "blocks": 19,
+          "frames": 4096,
+          "overruns": 0,
+          "max_ns": 4828616,
+          "nonfinite": 0
+        },
+        "peak": 0.17258483,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 0.9018426770428015
+      },
+      {
+        "rate": 96000.0,
+        "max_block": 1,
+        "latency": 492,
+        "stats": {
+          "blocks": 4096,
+          "frames": 4096,
+          "overruns": 4096,
+          "max_ns": 1646882,
+          "nonfinite": 0
+        },
+        "peak": 0.16090487,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 158.100672
+      },
+      {
+        "rate": 96000.0,
+        "max_block": 17,
+        "latency": 492,
+        "stats": {
+          "blocks": 286,
+          "frames": 4096,
+          "overruns": 266,
+          "max_ns": 3386839,
+          "nonfinite": 0
+        },
+        "peak": 0.16090487,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 23.349184
+      },
+      {
+        "rate": 96000.0,
+        "max_block": 64,
+        "latency": 492,
+        "stats": {
+          "blocks": 77,
+          "frames": 4096,
+          "overruns": 69,
+          "max_ns": 3395284,
+          "nonfinite": 0
+        },
+        "peak": 0.16090487,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 9.877189818181819
+      },
+      {
+        "rate": 96000.0,
+        "max_block": 257,
+        "latency": 492,
+        "stats": {
+          "blocks": 19,
+          "frames": 4096,
+          "overruns": 18,
+          "max_ns": 6916655,
+          "nonfinite": 0
+        },
+        "peak": 0.16090487,
+        "allocations": 0,
+        "allocation_balance": 0,
+        "max_block_ratio": 2.7259423255813955
+      }
+    ],
+    "finite": true,
+    "allocation_clean": true
+  }
+}

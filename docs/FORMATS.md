@@ -9,7 +9,7 @@ cargo build --release -p soniclaw-reference
 python3 tools/bundle-clap.py --library target/release/libsoniclaw_reference.so --name SoniclawReference
 ```
 
-Use `soniclaw_reference.dll` on Windows or `libsoniclaw_reference.dylib` on macOS. The library exports four stable IDs:
+Use `soniclaw_reference.dll` on Windows or `libsoniclaw_reference.dylib` on macOS. The library exports these stable IDs:
 
 | ID | Product |
 |---|---|
@@ -17,6 +17,7 @@ Use `soniclaw_reference.dll` on Windows or `libsoniclaw_reference.dylib` on macO
 | `org.sonora.ducker` | Main stereo input + separate stereo sidechain key, with gain |
 | `org.sonora.drums` | Multisample kick/snare/hat instrument (MIDI notes 36/38/42) |
 | `org.sonora.fx-rack` | High-pass/peaking EQ, compressor, chorus, reverb, gain and peak limiter |
+| `org.soniclaw.precision-gain` | Precision Gain with native f64 and f32 compatibility |
 
 Reference defaults include an embedded editor. `--no-default-features` builds headless. The original `soniclaw-clap-demo` keeps the existing gain/synth IDs and defaults to a host-generated parameter UI; enable its adapter editor feature via Cargo's dependency-feature syntax if needed.
 
@@ -34,7 +35,7 @@ python3 tools/build-formats.py --fetch --au
 
 Upstreams are pinned in `formats/dependencies.json`, with recursive VST3 SDK submodule revisions defined by the pinned SDK. Fetching is opt-in. The CMake integration links the Rust static archive and references its CLAP entry directly; it does not require a separately installed CLAP file. No plug-in is automatically installed. Default VST3 output is `build/formats/Release/SoniclawReference.vst3` on Linux; macOS/Windows output layouts depend on the generator.
 
-The VST3 exposes the four reference products. The AUv2 recipe intentionally registers the first product, Gain + Filter, with type `aufx`, manufacturer `Snra` and subtype `SnGF`; these provisional identities must be changed for an unrelated distributed product. AUv3/AAX are not integrated.
+The VST3 exposes the five reference products. Only Precision Gain advertises native f64 sample ports. See the [precision guide](DSP_ENGINE_PRECISION.md) for negotiation and the output bit-preservation test. The AUv2 recipe intentionally registers the first product, Gain + Filter, with type `aufx`, manufacturer `Snra` and subtype `SnGF`; these provisional identities must be changed for an unrelated distributed product. AUv3/AAX are not integrated.
 
 ## Embedded editor contract
 
@@ -42,6 +43,19 @@ The CLAP GUI adapter negotiates X11, Win32 or Cocoa on the corresponding platfor
 
 Controls use the shared Soniclaw UI widgets. Edits pass through a bounded queue; the audio consumer never locks. Every accepted adjustment emits a begin/value/end gesture. Partial host-output backpressure retains the current gesture stage rather than losing its end event. Restoring host state cancels outstanding GUI edits, acknowledges their sequences and completes any already-started gesture without replaying a stale value. Optimistic UI values are retained until the audio consumer acknowledges their sequence; subsequent host automation is read back from the shared atomics on repaint. UI edits are currently discrete adjustment gestures rather than a continuous touch gesture covering an entire drag. Keyboard capture is limited to the focused editor when egui requests it. Resize and host scale requests are supported; real multi-monitor DPI/focus testing on macOS/Windows remains pending.
 
-State remains the versioned parameter JSON schema with stable product/parameter IDs. Sample-bank replacement and new rack configuration are not serialized by this parameter-only schema; the supplied factories construct their fixed bank/rack before state restoration.
+The older reference products retain schema-1 parameter state and fixed factories. The new `soniclaw-project-plugin` exports `org.soniclaw.project-rack`, using schema-2 complete project state with deactivated structural reconstruction and stable parameter identities. See [projects](PROJECTS.md). Native wrappers still target the original reference factory unless explicitly adapted.
 
 Linux builds and validation evidence are in `docs/VALIDATION.md`. macOS AUv2 and Windows runtime behavior are not certified by a Linux build or CI configuration.
+
+## DSP Lab (v0.5)
+
+`cargo build -p soniclaw-dsp-lab` exports `org.soniclaw.dsp-lab.effect` and
+`org.soniclaw.dsp-lab.wavetable` as CLAP, with the shared editor feature enabled
+by default. Use `--no-default-features` for headless exports. State is schema 2.
+The independent smoke tool accepts the library path followed by `--dsp`.
+The CMake native-format recipe still targets the original reference factory;
+these new products are not automatically included in its VST3/AUv2 bundle.
+
+## Hosting VST3 products
+
+Version 0.23 adds trusted VST3 factory inspection, a common CLAP/VST3 control surface, native editors and a buffered stereo host. See [VST3 hosting](VST3_HOSTING.md) for API, workbench workflow, backend attribution, callback ownership and limitations. Export and hosting remain separate capabilities.

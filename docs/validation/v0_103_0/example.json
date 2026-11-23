@@ -1,0 +1,23 @@
+{
+  "feature": "iir-oversampling",
+  "results": {
+    "allocations": 0,
+    "fir_delay_frames": 32,
+    "iir_dc_delay_samples": 3.353731739986588,
+    "residual_db_excluding_fundamental_and_third": [
+      [
+        "direct",
+        -24.859521576883147
+      ],
+      [
+        "iir",
+        -56.99093874015884
+      ],
+      [
+        "fir",
+        -56.98712278857385
+      ]
+    ]
+  },
+  "version": "0.103.0"
+}

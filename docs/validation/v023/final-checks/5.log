@@ -1,0 +1,7 @@
+   Compiling soniclaw v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw)
+   Compiling soniclaw-host-fixture v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/host-fixture)
+   Compiling soniclaw-clap-smoke v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/tools/clap-smoke)
+   Compiling soniclaw-workbench v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/workbench)
+   Compiling soniclaw-reference v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/reference)
+   Compiling soniclaw-sdk-tools v0.23.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/sdk-tools)
+    Finished `dev` profile [unoptimized] target(s) in 6.38s

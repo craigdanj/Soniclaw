@@ -1,0 +1,30 @@
+{
+  "feature": "spectral-morph",
+  "results": {
+    "cases": [
+      {
+        "audio": "carrier.wav",
+        "callback_allocations": 0,
+        "latency_frames": 1024,
+        "name": "carrier",
+        "peak": 0.2813725173473358
+      },
+      {
+        "audio": "envelope-transfer.wav",
+        "callback_allocations": 0,
+        "latency_frames": 1024,
+        "name": "envelope-transfer",
+        "peak": 0.5806989669799805
+      },
+      {
+        "audio": "partial-blend.wav",
+        "callback_allocations": 0,
+        "latency_frames": 1024,
+        "name": "partial-blend",
+        "peak": 0.44659340381622314
+      }
+    ],
+    "frames_latency": 1024
+  },
+  "version": "0.125.0"
+}

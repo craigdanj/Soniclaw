@@ -1,0 +1,23 @@
+{
+  "feature": "filter-design",
+  "results": {
+    "fir": {
+      "audio": "fir.wav",
+      "callback_allocations": 0,
+      "latency_frames": 47,
+      "name": "fir",
+      "peak": 0.24052543938159943
+    },
+    "iir": {
+      "audio": "iir.wav",
+      "callback_allocations": 0,
+      "latency_frames": 0,
+      "name": "iir",
+      "peak": 0.245228111743927
+    },
+    "iir_sections": 4,
+    "response": "response.csv",
+    "taps": 95
+  },
+  "version": "0.101.0"
+}

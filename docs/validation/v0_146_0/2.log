@@ -1,0 +1,302 @@
+   Compiling syn v3.0.10
+   Compiling syn v2.0.119
+    Checking soniclaw-core v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-core)
+    Checking smallvec v1.16.5
+    Checking simd-adler32 v0.3.10
+    Checking soniclaw-kernels v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-kernels)
+    Checking miniz_oxide v0.9.1
+    Checking uuid v1.29.2
+    Checking kurbo v0.13.1
+   Compiling getrandom v0.3.4
+   Compiling ahash v0.8.12
+    Checking accesskit v0.24.1
+    Checking parking_lot_core v0.9.12
+    Checking soniclaw-engine v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-engine)
+    Checking parking_lot v0.12.5
+    Checking bitflags v1.3.2
+    Checking midir v0.10.1
+   Compiling shlex v2.0.1
+   Compiling find-msvc-tools v0.1.15
+    Checking soniclaw-graph v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-graph)
+   Compiling cc v1.11.2
+    Checking siphasher v1.0.4
+   Compiling crc32fast v1.5.5
+    Checking fdeflate v0.3.7
+    Checking miniz_oxide v0.8.9
+    Checking flate2 v1.1.11
+    Checking float-cmp v0.9.0
+    Checking strict-num v0.1.1
+    Checking arrayref v0.3.9
+    Checking svgtypes v0.16.2
+    Checking roxmltree v0.21.2
+    Checking png v0.18.1
+    Checking simplecss v0.2.2
+    Checking data-url v0.3.2
+    Checking imagesize v0.15.0
+    Checking pico-args v0.5.0
+   Compiling rustix v1.1.6
+    Checking tracing-core v0.1.36
+    Checking x11rb-protocol v0.13.2
+    Checking raw-window-handle v0.6.2
+   Compiling soniclaw-pipewire v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-pipewire)
+   Compiling hashbrown v0.17.1
+   Compiling equivalent v1.0.3
+   Compiling toml_parser v1.1.5+spec-1.1.0
+   Compiling indexmap v2.14.2
+   Compiling wayland-sys v0.31.11
+   Compiling toml_datetime v1.1.3+spec-1.1.0
+   Compiling wayland-backend v0.3.17
+   Compiling toml_edit v0.25.19+spec-1.1.0
+    Checking parking v2.2.1
+    Checking scoped-tls v1.0.1
+    Checking futures-core v0.3.34
+    Checking downcast-rs v1.2.1
+   Compiling wayland-client v0.31.15
+   Compiling serde_derive v1.0.229
+   Compiling thiserror-impl v2.0.21
+   Compiling bytemuck_derive v1.12.1
+    Checking thiserror v2.0.21
+   Compiling visibility v0.1.1
+   Compiling tracing-attributes v0.1.31
+    Checking rubato v5.1.0
+    Checking polling v3.11.0
+    Checking gethostname v1.1.0
+    Checking sofar v0.4.0
+   Compiling enumflags2_derive v0.7.12
+    Checking bytemuck v1.25.2
+    Checking font-types v0.12.7
+    Checking color v0.3.3
+    Checking read-fonts v0.41.0
+    Checking emath v0.36.2
+    Checking peniko v0.6.1
+    Checking tiny-skia-path v0.12.0
+    Checking vello_common v0.1.0
+    Checking ecolor v0.36.2
+    Checking rgb v0.8.53
+    Checking serde v1.0.229
+    Checking tiny-skia v0.12.0
+    Checking usvg v0.48.1
+    Checking soniclaw-tuning v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-tuning)
+    Checking vello_cpu v0.1.0
+    Checking soniclaw-dsp v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-dsp)
+    Checking soniclaw-transport v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-transport)
+    Checking soniclaw-bus v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-bus)
+    Checking soniclaw-midi v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-midi)
+    Checking soniclaw-record v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-record)
+    Checking soniclaw-clips v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-clips)
+    Checking soniclaw-mixer v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-mixer)
+    Checking vst3-host v0.11.1 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/third-party/vst3-host)
+    Checking resvg v0.48.1
+    Checking soniclaw-commands v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-commands)
+    Checking soniclaw-params v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-params)
+    Checking tracing v0.1.44
+    Checking calloop v0.14.4
+   Compiling proc-macro-crate v3.5.0
+   Compiling zvariant_utils v4.2.0
+   Compiling wayland-scanner v0.31.11
+   Compiling zvariant_derive v5.15.1
+    Checking x11rb v0.13.2
+    Checking unicode-ident v1.0.27
+    Checking proc-macro2 v1.0.107
+    Checking soniclaw-io v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-io)
+    Checking soniclaw-stream v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-stream)
+    Checking soniclaw-formats v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-formats)
+    Checking soniclaw-sampler v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-sampler)
+    Checking soniclaw-waveform v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-waveform)
+    Checking skrifa v0.44.0
+    Checking harfrust v0.12.0
+    Checking soniclaw-quality v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-quality)
+    Checking fastrand v2.5.0
+    Checking futures-io v0.3.34
+    Checking quote v1.0.47
+   Compiling zcheapstr v1.2.0
+   Compiling enumflags2 v0.7.12
+    Checking event-listener v5.4.2
+    Checking concurrent-queue v2.5.0
+   Compiling endi v1.1.1
+   Compiling zvariant v5.15.1
+    Checking event-listener-strategy v0.5.4
+    Checking futures-lite v2.6.1
+    Checking soniclaw-vst3 v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-vst3)
+   Compiling async-io v2.6.0
+    Checking wayland-protocols v0.32.13
+    Checking x11-clipboard v0.9.3
+    Checking errno v0.3.15
+    Checking async-task v4.7.1
+   Compiling khronos_api v3.1.0
+   Compiling cfg_aliases v0.2.2
+    Checking epaint v0.36.2
+    Checking signal-hook-registry v1.4.8
+    Checking baseview v0.3.4
+    Checking copypasta v0.10.2
+    Checking async-channel v2.5.0
+    Checking atomic-waker v1.1.2
+    Checking piper v0.2.5
+    Checking async-signal v0.2.14
+   Compiling zbus_names v4.3.5
+    Checking async-lock v3.5.0
+    Checking egui v0.36.1
+   Compiling rustix v0.38.44
+   Compiling zbus_xml v5.2.1
+   Compiling thiserror v1.0.69
+   Compiling xml-rs v0.8.29
+   Compiling zbus_macros v5.19.0
+   Compiling zbus-lockstep v0.5.2
+   Compiling gl_generator v0.14.0
+    Checking async-process v2.5.0
+    Checking blocking v1.7.0
+    Checking async-executor v1.14.1
+    Checking async-broadcast v0.7.2
+   Compiling thiserror-impl v1.0.69
+   Compiling serde_repr v0.1.21
+   Compiling async-recursion v1.2.0
+   Compiling async-trait v0.1.92
+    Checking ordered-stream v0.2.0
+    Checking hex v0.4.3
+    Checking linux-raw-sys v0.4.15
+    Checking cursor-icon v1.2.0
+    Checking zbus v5.19.0
+   Compiling phf_shared v0.13.1
+    Checking soniclaw-automation v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-automation)
+    Checking soniclaw-device v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-device)
+    Checking egui_glow v0.36.1
+    Checking egui-baseview v0.7.2
+    Checking soniclaw-studio v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-studio)
+    Checking soniclaw-state v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-state)
+    Checking wayland-protocols-wlr v0.3.12
+    Checking soniclaw-session v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-session)
+    Checking soniclaw-plugin v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-plugin)
+    Checking soniclaw-registry v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-registry)
+    Checking soniclaw-diagnostics v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-diagnostics)
+    Checking wayland-csd-frame v0.3.0
+   Compiling zbus-lockstep-macros v0.5.2
+    Checking wayland-cursor v0.31.14
+    Checking memmap2 v0.9.12
+    Checking static_assertions v1.1.0
+   Compiling smithay-client-toolkit v0.19.2
+   Compiling phf_generator v0.13.1
+   Compiling winit v0.30.13
+   Compiling phf_macros v0.13.1
+    Checking hashbrown v0.16.1
+    Checking wayland-protocols-plasma v0.3.12
+    Checking phf v0.13.1
+    Checking accesskit_consumer v0.36.0
+   Compiling glutin_egl_sys v0.7.1
+   Compiling glutin_glx_sys v0.6.1
+   Compiling futures-macro v0.3.34
+   Compiling smithay-client-toolkit v0.20.0
+    Checking smol_str v0.2.2
+    Checking calloop v0.13.0
+    Checking futures-task v0.3.34
+    Checking pxfm v0.1.30
+    Checking futures-util v0.3.34
+    Checking calloop-wayland-source v0.3.0
+    Checking wayland-protocols-misc v0.3.12
+    Checking wayland-protocols-experimental v20250721.0.1
+    Checking soniclaw-host v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-host)
+    Checking soniclaw-ui v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-ui)
+    Checking atspi-common v0.13.0
+   Compiling glutin v0.32.3
+    Checking calloop-wayland-source v0.4.1
+    Checking soniclaw-editor v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-editor)
+    Checking byteorder-lite v0.1.0
+    Checking moxcms v0.8.1
+    Checking soniclaw-clap v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw-clap)
+   Compiling glutin-winit v0.5.0
+    Checking soniclaw v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/crates/soniclaw)
+    Checking smithay-clipboard v0.7.3
+   Compiling litrs v1.0.1
+    Checking web-time v1.1.0
+    Checking soniclaw-example-processors v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/processor-pack)
+    Checking soniclaw-isolated-control v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/isolated-control)
+   Compiling document-features v0.2.12
+    Checking soniclaw-clap-isolation-helper v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/clap-isolation-helper)
+    Checking soniclaw-studio-plugin-windows v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/studio-plugin-windows)
+    Checking soniclaw-reconfigure-host v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/reconfigure-host)
+    Checking soniclaw-studio-demo v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/studio-demo)
+    Checking soniclaw-typed-effect v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/typed-effect)
+    Checking soniclaw-reference v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/reference)
+    Checking soniclaw-project-plugin v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/project-plugin)
+    Checking soniclaw-dsp-lab v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/dsp-lab)
+    Checking soniclaw-ecosystem v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/ecosystem)
+    Checking soniclaw-studio-media-audit v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/studio-media-audit)
+    Checking soniclaw-tempo-stream v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/tempo-stream)
+    Checking soniclaw-studio-history v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/studio-history)
+    Checking soniclaw-studio-recovery v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/studio-recovery)
+    Checking soniclaw-studio-automation-write v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/studio-automation-write)
+    Checking soniclaw-studio-recording v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/studio-recording)
+    Checking soniclaw-freeze-session v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/freeze-session)
+    Checking soniclaw-studio-midi-recording v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/studio-midi-recording)
+    Checking soniclaw-studio-export v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/studio-export)
+    Checking soniclaw-waveform-warp-editor v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/waveform-warp-editor)
+    Checking soniclaw-multitrack-session v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/multitrack-session)
+    Checking soniclaw-streamed-session v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/streamed-session)
+    Checking soniclaw-audio-editing v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/audio-editing)
+    Checking soniclaw-loop-comp v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/loop-comp)
+    Checking atspi-proxies v0.13.0
+    Checking accesskit_atspi_common v0.18.1
+    Checking soniclaw-stream-freeze v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/stream-freeze)
+    Checking soniclaw-export-conversion v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/export-conversion)
+    Checking image v0.25.10
+    Checking soniclaw-studio-routing v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/studio-routing)
+    Checking soniclaw-quality-suite v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/quality-suite)
+    Checking soniclaw-studio-jobs v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/studio-jobs)
+    Checking soniclaw-daw-mixing v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/daw-mixing)
+    Checking soniclaw-daw-timing v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/daw-timing)
+    Checking soniclaw-daw-midi v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/daw-midi)
+    Checking soniclaw-daw-delivery v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/daw-delivery)
+    Checking soniclaw-microtuning v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/microtuning)
+    Checking soniclaw-daw-workspace v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/daw-workspace)
+    Checking soniclaw-studio-isolation v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/studio-isolation)
+    Checking soniclaw-controller-demo v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/controller-demo)
+    Checking soniclaw-render v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/render)
+    Checking soniclaw-parallel-compressor v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/parallel-compressor)
+    Checking soniclaw-sample-author v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/sample-author)
+    Checking soniclaw-daw-takes v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/daw-takes)
+    Checking soniclaw-daw-elastic v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/daw-elastic)
+    Checking soniclaw-daw-arrangement v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/daw-arrangement)
+    Checking soniclaw-studio-native-buses v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/studio-native-buses)
+    Checking atspi v0.29.0
+    Checking accesskit_unix v0.21.1
+    Checking soniclaw-dsp-suite v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/dsp-suite)
+    Checking soniclaw-daw-automation v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/daw-automation)
+    Checking soniclaw-daw-sessions v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/daw-sessions)
+    Checking soniclaw-native-editor v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/native-editor)
+    Checking arboard v3.7.0
+    Checking soniclaw-pitch-time v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/pitch-time)
+    Checking soniclaw-clap-demo v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/clap-demo)
+    Checking soniclaw-daw-tools v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/daw-tools)
+    Checking soniclaw-daw-cues v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/daw-cues)
+    Checking soniclaw-daw-multichannel v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/daw-multichannel)
+    Checking soniclaw-daw-plugins v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/daw-plugins)
+    Checking soniclaw-isolated-clap-host v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/isolated-clap-host)
+    Checking soniclaw-scalable-editors v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/scalable-editors)
+    Checking soniclaw-accessibility-audit v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/accessibility-audit)
+    Checking soniclaw-hybrid-instrument v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/hybrid-instrument)
+    Checking accesskit_winit v0.32.2
+    Checking egui-winit v0.36.1
+    Checking soniclaw-musical-host v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/musical-host)
+    Checking soniclaw-multibus-host v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/multibus-host)
+    Checking eframe v0.36.1
+    Checking soniclaw-crash-host v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/crash-host)
+    Checking soniclaw-isolation-helper v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/isolation-helper)
+    Checking soniclaw-dsp-nonlinear v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/dsp-nonlinear)
+    Checking soniclaw-waveform-cache-demo v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/waveform-cache)
+    Checking soniclaw-workbench v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/workbench)
+    Checking soniclaw-live-fx v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/live-fx)
+    Checking soniclaw-sdk-tools v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/sdk-tools)
+    Checking soniclaw-desktop-studio v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/desktop-studio)
+    Checking soniclaw-ui-gallery v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/ui-gallery)
+    Checking soniclaw-clip-studio v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/clip-studio)
+    Checking soniclaw-mixer-studio v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/mixer-studio)
+    Checking soniclaw-reference-studio v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/reference-studio)
+    Checking soniclaw-desktop v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/desktop)
+    Checking soniclaw-dsp-modulation v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/dsp-modulation)
+    Checking soniclaw-dsp-oversampling v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/dsp-oversampling)
+    Checking soniclaw-dsp-filters v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/dsp-filters)
+    Checking soniclaw-pipewire-probe v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/pipewire-probe)
+    Checking soniclaw-clap-smoke v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/tools/clap-smoke)
+    Checking soniclaw-host-fixture v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/host-fixture)
+    Checking soniclaw-kernel-bench v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/examples/kernel-bench)
+    Checking cargo-soniclaw v0.146.0 (/workspace/scratch/cd89c8ef929d/juce-gap-review/soniclaw/tools/cargo-soniclaw)
+    Finished `dev` profile [unoptimized] target(s) in 59.84s

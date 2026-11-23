@@ -1,0 +1,18 @@
+    Blocking waiting for file lock on build directory
+   Compiling soniclaw-midi v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/crates/soniclaw-midi)
+   Compiling soniclaw-bus v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/crates/soniclaw-bus)
+   Compiling soniclaw-waveform v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/crates/soniclaw-waveform)
+   Compiling soniclaw-quality v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/crates/soniclaw-quality)
+   Compiling soniclaw-state v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/crates/soniclaw-state)
+   Compiling soniclaw-sampler v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/crates/soniclaw-sampler)
+   Compiling soniclaw-params v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/crates/soniclaw-params)
+   Compiling soniclaw-commands v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/crates/soniclaw-commands)
+   Compiling soniclaw-plugin v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/crates/soniclaw-plugin)
+   Compiling soniclaw-diagnostics v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/crates/soniclaw-diagnostics)
+   Compiling soniclaw-registry v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/crates/soniclaw-registry)
+   Compiling soniclaw-session v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/crates/soniclaw-session)
+   Compiling soniclaw v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/crates/soniclaw)
+   Compiling soniclaw-studio-demo v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/examples/studio-demo)
+   Compiling soniclaw-studio-history v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/examples/studio-history)
+    Finished `dev` profile [unoptimized] target(s) in 41.73s
+     Running `target/debug/soniclaw-studio-history /workspace/scratch/cd89c8ef929d/workflow-work/final-examples70/studio-history`

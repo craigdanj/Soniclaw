@@ -1,0 +1,68 @@
+[
+  {
+    "file": "creative-chain.wav",
+    "frames": 144000,
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  {
+    "file": "crossover-high.wav",
+    "frames": 144000,
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  {
+    "file": "crossover-low.wav",
+    "frames": 144000,
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  {
+    "file": "crossover-mid.wav",
+    "frames": 144000,
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  {
+    "file": "dynamics.wav",
+    "frames": 144000,
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  {
+    "file": "fdn-reverb.wav",
+    "frames": 144000,
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  {
+    "file": "ladder-filter.wav",
+    "frames": 144000,
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  {
+    "file": "source.wav",
+    "frames": 144000,
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  {
+    "file": "spectral-gate.wav",
+    "frames": 144000,
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  {
+    "file": "state-variable-filter.wav",
+    "frames": 144000,
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  {
+    "file": "wavetable-unison.wav",
+    "frames": 144000,
+    "sample_rate": 48000,
+    "channels": 2
+  }
+]

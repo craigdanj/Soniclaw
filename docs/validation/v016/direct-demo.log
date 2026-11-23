@@ -1,0 +1,3 @@
+    Finished `dev` profile [unoptimized] target(s) in 0.21s
+     Running `target/debug/soniclaw-sdk-tools --direct-demo target/debug/libsoniclaw_host_fixture.so /workspace/scratch/cd89c8ef929d/verification-series/v016/direct-demo`
+PASS direct callback: zero bridge delay, exact serial gain, no heap, safe owner-first destruction

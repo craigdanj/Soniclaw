@@ -1,0 +1,12 @@
+{
+  "callback_allocations": 0,
+  "cycle_rejected": true,
+  "independent_return_track": true,
+  "live_latency": 1024,
+  "muted_key_still_drives_native_input": true,
+  "native_keyed_main": 0.0625,
+  "offline_latency": 0,
+  "save_reopen": true,
+  "separate_output": 0.25,
+  "version": "0.87.0"
+}

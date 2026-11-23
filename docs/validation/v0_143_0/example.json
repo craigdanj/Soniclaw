@@ -1,0 +1,15 @@
+{
+  "feature": "logarithmic-ramp",
+  "results": {
+    "half_fall": 0.8807970881462097,
+    "half_rise": 0.862713634967804,
+    "render": {
+      "audio": "logarithmic-envelope.wav",
+      "callback_allocations": 0,
+      "latency_frames": 0,
+      "name": "logarithmic-envelope",
+      "peak": 0.549912691116333
+    }
+  },
+  "version": "0.143.0"
+}

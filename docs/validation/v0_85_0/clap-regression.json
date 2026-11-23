@@ -1,0 +1,16 @@
+{
+  "blob_bytes": 131072,
+  "corruption_rejected": true,
+  "metadata_under_64k": true,
+  "missing_bypass_latency": 17,
+  "native": {
+    "callback_allocations": 0,
+    "format": "clap",
+    "latency": 0,
+    "peak": 0.13069427013397217,
+    "product": "org.sonora.reference",
+    "save_reload": true
+  },
+  "undo_redo": true,
+  "version": "0.85.0"
+}

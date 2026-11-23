@@ -1,0 +1,13 @@
+     Locking 10 packages to highest compatible versions
+   Compiling autocfg v1.5.1
+   Compiling strength_reduce v0.2.4
+   Compiling soniclaw-core v0.5.0 (/tmp/soniclaw-v050-cpu-baseline/soniclaw/crates/soniclaw-core)
+   Compiling num-traits v0.2.19
+   Compiling num-integer v0.1.47
+   Compiling num-complex v0.4.6
+   Compiling transpose v0.2.3
+   Compiling primal-check v0.3.4
+   Compiling rustfft v6.4.1
+   Compiling soniclaw-dsp v0.5.0 (/tmp/soniclaw-v050-cpu-baseline/soniclaw/crates/soniclaw-dsp)
+   Compiling soniclaw-cpu-fixture v0.0.0 (/tmp/soniclaw-cpu-gr6itvhm/baseline)
+    Finished `release` profile [optimized] target(s) in 16.65s

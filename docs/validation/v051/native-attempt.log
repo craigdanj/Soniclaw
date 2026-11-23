@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/cd89c8ef929d/desktop-series/soniclaw/tools/check-pipewire.py", line 16, in <module>
+    if daemon.poll()is not None:raise RuntimeError(f'daemon failed: inspect {log.name}')
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: daemon failed: inspect /workspace/scratch/cd89c8ef929d/series-work/pipewire-probe.daemon.log

@@ -1,0 +1,17 @@
+{
+  "callback_allocations": 0,
+  "dry_plus_sidechain_wet_impulse": 1.125,
+  "failed_config_preserved_owner": true,
+  "failed_graph_preserved_owner": true,
+  "graph_latency_frames": 272,
+  "impulse_frame": 272,
+  "latest_gain_preserved": true,
+  "low_budget_rejected": true,
+  "native_gui_opened": false,
+  "native_latency_after": 16,
+  "native_latency_before": 0,
+  "old_audio_silent": true,
+  "pipeline_frames": 256,
+  "request_bits": 67,
+  "stale_candidate_rejected": true
+}

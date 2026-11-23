@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "environment": {
+    "system": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "machine": "x86_64",
+    "python": "3.12.14"
+  },
+  "checks": [
+    {
+      "name": "source-contract",
+      "status": "passed",
+      "details": {
+        "version": "0.23.0",
+        "packages": 41,
+        "manifests": 42,
+        "release_notes": 23,
+        "entry_points": 5
+      }
+    },
+    {
+      "name": "rust-toolchain",
+      "status": "passed",
+      "command": [
+        "rustc",
+        "-Vv"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "seconds": 0.22,
+      "log": "rust-toolchain.log"
+    },
+    {
+      "name": "python-tool-tests",
+      "status": "passed",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "error": null,
+      "seconds": 1.275,
+      "log": "python-tool-tests.log"
+    },
+    {
+      "name": "build-export-workflows",
+      "status": "skipped",
+      "reason": "Use --full for builds, Rust checks, exported ABI reopen tests and workflows"
+    },
+    {
+      "name": "acceptance-linux",
+      "status": "skipped",
+      "reason": "No target-machine operator acceptance record supplied"
+    },
+    {
+      "name": "acceptance-macos",
+      "status": "skipped",
+      "reason": "No target-machine operator acceptance record supplied"
+    },
+    {
+      "name": "acceptance-windows",
+      "status": "skipped",
+      "reason": "No target-machine operator acceptance record supplied"
+    }
+  ],
+  "automated_status": "passed",
+  "acceptance_status": "pending",
+  "scope": "Local automated checks; physical audio, real DAW and other operating systems require explicit acceptance records.",
+  "acceptances": [],
+  "generated_at_utc": "2026-11-17T16:14:24.705215+00:00"
+}

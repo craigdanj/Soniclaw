@@ -1,0 +1,16 @@
+    Checking soniclaw-dsp v0.138.0 (/workspace/scratch/cd89c8ef929d/dsp144-work/soniclaw/crates/soniclaw-dsp)
+ Documenting soniclaw-dsp v0.138.0 (/workspace/scratch/cd89c8ef929d/dsp144-work/soniclaw/crates/soniclaw-dsp)
+    Checking soniclaw-state v0.138.0 (/workspace/scratch/cd89c8ef929d/dsp144-work/soniclaw/crates/soniclaw-state)
+    Checking soniclaw-io v0.138.0 (/workspace/scratch/cd89c8ef929d/dsp144-work/soniclaw/crates/soniclaw-io)
+    Checking soniclaw-stream v0.138.0 (/workspace/scratch/cd89c8ef929d/dsp144-work/soniclaw/crates/soniclaw-stream)
+    Checking soniclaw-sampler v0.138.0 (/workspace/scratch/cd89c8ef929d/dsp144-work/soniclaw/crates/soniclaw-sampler)
+    Checking soniclaw-quality v0.138.0 (/workspace/scratch/cd89c8ef929d/dsp144-work/soniclaw/crates/soniclaw-quality)
+    Checking soniclaw-formats v0.138.0 (/workspace/scratch/cd89c8ef929d/dsp144-work/soniclaw/crates/soniclaw-formats)
+    Checking soniclaw-studio v0.138.0 (/workspace/scratch/cd89c8ef929d/dsp144-work/soniclaw/crates/soniclaw-studio)
+    Checking soniclaw-plugin v0.138.0 (/workspace/scratch/cd89c8ef929d/dsp144-work/soniclaw/crates/soniclaw-plugin)
+    Checking soniclaw-registry v0.138.0 (/workspace/scratch/cd89c8ef929d/dsp144-work/soniclaw/crates/soniclaw-registry)
+    Checking soniclaw-diagnostics v0.138.0 (/workspace/scratch/cd89c8ef929d/dsp144-work/soniclaw/crates/soniclaw-diagnostics)
+    Checking soniclaw v0.138.0 (/workspace/scratch/cd89c8ef929d/dsp144-work/soniclaw/crates/soniclaw)
+ Documenting soniclaw-dsp-suite v0.138.0 (/workspace/scratch/cd89c8ef929d/dsp144-work/soniclaw/examples/dsp-suite)
+    Finished `dev` profile [unoptimized] target(s) in 8.26s
+   Generated /workspace/scratch/cd89c8ef929d/dsp144-work/soniclaw/target/doc/soniclaw_dsp/index.html and 1 other file

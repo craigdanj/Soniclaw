@@ -1,0 +1,19 @@
+{
+  "feature": "lookup-transform",
+  "results": {
+    "grid_points": 20003,
+    "max_absolute_error": 0.00021117925643920898,
+    "max_relative_error": 0.0007313557169449629,
+    "relative_floor": 0.001,
+    "render": {
+      "audio": "lookup-soft-clip.wav",
+      "callback_allocations": 0,
+      "latency_frames": 0,
+      "name": "lookup-soft-clip",
+      "peak": 0.9836638569831848
+    },
+    "rms_absolute_error": 0.000059791034854090165,
+    "table_points": 257
+  },
+  "version": "0.140.0"
+}

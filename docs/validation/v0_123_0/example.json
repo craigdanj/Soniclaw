@@ -1,0 +1,31 @@
+{
+  "feature": "fm-operators",
+  "results": {
+    "cases": [
+      {
+        "audio": "fm-bass.wav",
+        "callback_allocations": 0,
+        "latency_frames": 0,
+        "name": "fm-bass",
+        "peak": 0.22036096453666687
+      },
+      {
+        "audio": "pm-electric-piano.wav",
+        "callback_allocations": 0,
+        "latency_frames": 0,
+        "name": "pm-electric-piano",
+        "peak": 0.219999760389328
+      },
+      {
+        "audio": "pm-bell.wav",
+        "callback_allocations": 0,
+        "latency_frames": 0,
+        "name": "pm-bell",
+        "peak": 0.21923422813415527
+      }
+    ],
+    "operators": 4,
+    "voices": 8
+  },
+  "version": "0.123.0"
+}

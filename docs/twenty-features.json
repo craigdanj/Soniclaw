@@ -1,0 +1,122 @@
+[
+  {
+    "version": "0.24.0",
+    "title": "Direct VST3 processing",
+    "guide": "VST3_DIRECT",
+    "status": "Complete"
+  },
+  {
+    "version": "0.25.0",
+    "title": "Unified plug-in graphs and sessions",
+    "guide": "MIXED_SESSIONS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.26.0",
+    "title": "Continuous offline rendering",
+    "guide": "HOST_RENDERING",
+    "status": "Complete"
+  },
+  {
+    "version": "0.27.0",
+    "title": "VST3 musical integration",
+    "guide": "VST3_MUSICAL",
+    "status": "Complete"
+  },
+  {
+    "version": "0.28.0",
+    "title": "Multichannel hosting and delay compensation",
+    "guide": "HOST_CHANNELS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.29.0",
+    "title": "Plug-in crash isolation",
+    "guide": "PLUGIN_ISOLATION",
+    "status": "Complete"
+  },
+  {
+    "version": "0.30.0",
+    "title": "Desktop editor integration",
+    "guide": "DESKTOP_EDITORS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.31.0",
+    "title": "Platform validation and release tooling",
+    "guide": "PLATFORM_RELEASES",
+    "status": "Complete"
+  },
+  {
+    "version": "0.32.0",
+    "title": "Typed parameter SDK",
+    "guide": "TYPED_PARAMETERS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.33.0",
+    "title": "Themeable audio UI toolkit",
+    "guide": "UI_TOOLKIT",
+    "status": "Complete"
+  },
+  {
+    "version": "0.34.0",
+    "title": "Waveform thumbnail cache",
+    "guide": "WAVEFORM_CACHE",
+    "status": "Complete"
+  },
+  {
+    "version": "0.35.0",
+    "title": "Audio and MIDI clip toolkit",
+    "guide": "CLIPS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.36.0",
+    "title": "Application command framework",
+    "guide": "COMMANDS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.37.0",
+    "title": "Reusable mixer toolkit",
+    "guide": "MIXER",
+    "status": "Complete"
+  },
+  {
+    "version": "0.38.0",
+    "title": "Sample-instrument authoring tools",
+    "guide": "SAMPLE_AUTHORING",
+    "status": "Complete"
+  },
+  {
+    "version": "0.39.0",
+    "title": "Microtuning support",
+    "guide": "MICROTUNING",
+    "status": "Complete"
+  },
+  {
+    "version": "0.40.0",
+    "title": "Hardware controller integration",
+    "guide": "CONTROLLERS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.41.0",
+    "title": "Optimized DSP backends",
+    "guide": "DSP_KERNELS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.42.0",
+    "title": "Audio-quality regression suite",
+    "guide": "DSP_QUALITY",
+    "status": "Complete"
+  },
+  {
+    "version": "0.43.0",
+    "title": "Improved streaming pitch and time processing",
+    "guide": "PITCH_TIME",
+    "status": "Complete"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "check": "workbench-controls.png",
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/target/debug/soniclaw-workbench",
+      "--screenshot",
+      "/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/docs/validation/v060/workbench-controls.png",
+      "--preset",
+      "0",
+      "--tab",
+      "0"
+    ],
+    "exit_code": 0,
+    "seconds": 1.423,
+    "display": "Xvfb 1440x1100x24, software OpenGL; no physical audio device opened"
+  },
+  {
+    "check": "workbench-modulation.png",
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/target/debug/soniclaw-workbench",
+      "--screenshot",
+      "/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/docs/validation/v060/workbench-modulation.png",
+      "--preset",
+      "0",
+      "--tab",
+      "1"
+    ],
+    "exit_code": 0,
+    "seconds": 1.63,
+    "display": "Xvfb 1440x1100x24, software OpenGL; no physical audio device opened"
+  },
+  {
+    "check": "workbench-granular.png",
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/target/debug/soniclaw-workbench",
+      "--screenshot",
+      "/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/docs/validation/v060/workbench-granular.png",
+      "--preset",
+      "2",
+      "--tab",
+      "0"
+    ],
+    "exit_code": 0,
+    "seconds": 2.49,
+    "display": "Xvfb 1440x1100x24, software OpenGL; no physical audio device opened"
+  }
+]

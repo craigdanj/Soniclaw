@@ -1,0 +1,7 @@
+   Compiling soniclaw-host v0.14.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-host)
+   Compiling soniclaw v0.14.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw)
+   Compiling soniclaw-workbench v0.14.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/workbench)
+   Compiling soniclaw-sdk-tools v0.14.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/sdk-tools)
+    Finished `dev` profile [unoptimized] target(s) in 3.10s
+     Running `target/debug/soniclaw-sdk-tools --live-rack-demo target/debug/libsoniclaw_host_fixture.so /workspace/scratch/cd89c8ef929d/verification-series/v014/live-rack-demo`
+PASS two-node live rack, exact bridge delay, output events, main callbacks and floating editor ABI

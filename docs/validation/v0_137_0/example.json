@@ -1,0 +1,29 @@
+{
+  "feature": "feedback-patch",
+  "results": {
+    "cases": [
+      {
+        "audio": {
+          "audio": "short-resonator.wav",
+          "callback_allocations": 0,
+          "latency_frames": 0,
+          "name": "short-resonator",
+          "peak": 0.5580023527145386
+        },
+        "feedback_samples": 144
+      },
+      {
+        "audio": {
+          "audio": "saturated-tape-echo.wav",
+          "callback_allocations": 0,
+          "latency_frames": 0,
+          "name": "saturated-tape-echo",
+          "peak": 0.33516696095466614
+        },
+        "feedback_samples": 7200
+      }
+    ],
+    "sample_rate": 48000
+  },
+  "version": "0.137.0"
+}

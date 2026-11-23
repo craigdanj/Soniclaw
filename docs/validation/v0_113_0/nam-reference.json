@@ -1,0 +1,8 @@
+{
+  "upstream_commit": "d3189ed482ded880c128bf312941266c4fa5ceec",
+  "compared_samples": 12000,
+  "maximum_absolute_error": 0.0,
+  "rms_error": 0.0,
+  "input": "owned generated two-layer mono LSTM fixture",
+  "platform": "Linux x86_64 little endian"
+}

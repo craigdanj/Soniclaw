@@ -1,0 +1,69 @@
+{
+  "controls": [
+    "knobs",
+    "modulation ring",
+    "fader",
+    "toggle",
+    "enum",
+    "SVG button",
+    "filmstrip"
+  ],
+  "dimensions": [
+    920,
+    940
+  ],
+  "native_gpu_screenshot": true,
+  "svg_filmstrip_frames": 13,
+  "svg_icon": true,
+  "theme": {
+    "accent": [
+      67,
+      216,
+      172,
+      255
+    ],
+    "background": [
+      20,
+      25,
+      35,
+      255
+    ],
+    "control": [
+      43,
+      53,
+      68,
+      255
+    ],
+    "corner_radius": 6,
+    "danger": [
+      249,
+      99,
+      110,
+      255
+    ],
+    "dark": true,
+    "fader_height": 170.0,
+    "knob_size": 72.0,
+    "muted": [
+      156,
+      168,
+      187,
+      255
+    ],
+    "name": "Carbon",
+    "schema": 1,
+    "spacing": 10.0,
+    "surface": [
+      27,
+      35,
+      47,
+      255
+    ],
+    "text": [
+      231,
+      237,
+      246,
+      255
+    ]
+  }
+}

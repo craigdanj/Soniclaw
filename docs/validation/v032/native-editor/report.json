@@ -1,0 +1,45 @@
+{
+  "events": [
+    {
+      "Resized": {
+        "node": 0,
+        "size": [
+          800,
+          600
+        ]
+      }
+    },
+    {
+      "Resized": {
+        "node": 0,
+        "size": [
+          1000,
+          750
+        ]
+      }
+    }
+  ],
+  "first_size": [
+    1000,
+    750
+  ],
+  "fixture_gui_mock": false,
+  "native_gui_render": true,
+  "product": "org.soniclaw.typed-effect",
+  "reopened_size": [
+    1000,
+    750
+  ],
+  "resize": {
+    "Ok": null
+  },
+  "scale": {
+    "Ok": null
+  },
+  "services": {
+    "fd_dispatches": 0,
+    "fds": 0,
+    "timer_dispatches": 0,
+    "timers": 0
+  }
+}

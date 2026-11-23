@@ -1,0 +1,119 @@
+[
+  {
+    "check": "fmt",
+    "command": [
+      "cargo",
+      "fmt",
+      "--all",
+      "--check"
+    ],
+    "exit_code": 0,
+    "seconds": 1.149
+  },
+  {
+    "check": "clippy",
+    "command": [
+      "cargo",
+      "clippy",
+      "--workspace",
+      "--all-targets",
+      "--all-features",
+      "--locked",
+      "--offline",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "exit_code": 0,
+    "seconds": 5.732
+  },
+  {
+    "check": "tests",
+    "command": [
+      "cargo",
+      "test",
+      "--workspace",
+      "--all-features",
+      "--locked",
+      "--offline"
+    ],
+    "exit_code": 0,
+    "seconds": 32.232
+  },
+  {
+    "check": "docs",
+    "command": [
+      "cargo",
+      "doc",
+      "--workspace",
+      "--all-features",
+      "--no-deps",
+      "--locked",
+      "--offline"
+    ],
+    "exit_code": 0,
+    "seconds": 9.985
+  },
+  {
+    "check": "build",
+    "command": [
+      "cargo",
+      "build",
+      "-p",
+      "soniclaw-workbench",
+      "-p",
+      "soniclaw-sdk-tools",
+      "-p",
+      "soniclaw-host-fixture",
+      "-p",
+      "soniclaw-clap-smoke",
+      "--locked",
+      "--offline"
+    ],
+    "exit_code": 0,
+    "seconds": 12.592
+  },
+  {
+    "check": "live-rack-demo",
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-sdk-tools",
+      "--locked",
+      "--offline",
+      "--",
+      "--live-rack-demo",
+      "target/debug/libsoniclaw_host_fixture.so",
+      "/workspace/scratch/cd89c8ef929d/verification-series/v014/live-rack-demo"
+    ],
+    "exit_code": 0,
+    "seconds": 3.164
+  },
+  {
+    "check": "host-contract",
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-sdk-tools",
+      "--locked",
+      "--offline",
+      "--",
+      "--host-contract",
+      "target/debug/libsoniclaw_host_fixture.so",
+      "/workspace/scratch/cd89c8ef929d/verification-series/v014/host-contract.json"
+    ],
+    "exit_code": 0,
+    "seconds": 0.166
+  },
+  {
+    "check": "native-gui",
+    "command": [
+      "python3",
+      "/workspace/scratch/cd89c8ef929d/capture-v014.py"
+    ],
+    "exit_code": 0,
+    "seconds": 2.137
+  }
+]

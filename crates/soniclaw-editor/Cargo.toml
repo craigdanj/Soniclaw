@@ -12,6 +12,6 @@ soniclaw-ui.workspace = true
 egui = { version = "=0.36.1", features = ["default_fonts"] }
 egui-baseview = { version = "=0.7.2", default-features = false, features = ["opengl", "log"] }
 raw-window-handle = "=0.6.2"
-rtrb = "=0.3.2"
+rtrb = "=0.3.5"
 [lints.rust]
 unsafe_op_in_unsafe_fn = "deny"

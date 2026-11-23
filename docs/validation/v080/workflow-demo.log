@@ -1,0 +1,3 @@
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.36s
+     Running `target/debug/soniclaw-sdk-tools --workflow-demo /workspace/scratch/cd89c8ef929d/verification/v080-final/workflow-demo`
+PASS bundle, background autosave, recovery load and prepared sampler render

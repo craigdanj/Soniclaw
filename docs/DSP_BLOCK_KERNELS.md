@@ -1,0 +1,7 @@
+# General-purpose block DSP kernels
+
+Borrow contiguous planar (one channel after another) or interleaved memory through Block and BlockMut. Build a ChannelMatrix from output-major linear gains. mix replaces all output samples and checks both channel counts and frame count before writing. Planar mixing reuses the architecture-dispatched mix-add kernel. Any interleaved view uses a scalar traversal without transposing. Force the scalar backend with with_backend for a portable reference. GainRamp applies one common gain step per frame, starts at the current gain when interrupted, and reaches the target on the last ramp frame.
+
+Allocate the matrix on a control thread and share it immutably. GainRamp belongs to its audio owner. Views and callback operations do not allocate or lock. Persist gains, layouts and intended durations in domain presets. Earlier formats stay compatible. Limits are 1–64 channels and finite matrix gain within ±16. Shape errors preserve output. NaN audio can propagate along nonzero paths. Recreate the matrix when routing changes. Test output ordering and reference agreement before integrating a new layout. The example records short and large block timings and checks allocation counts. Add --release before -p for optimized timings.
+
+Run `cargo run -p soniclaw-dsp-suite --locked --offline -- block-dsp NEW_DIRECTORY`. [Executed checks](validation/v0_106_0/REPORT.md).

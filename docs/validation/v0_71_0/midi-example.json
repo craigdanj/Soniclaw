@@ -1,0 +1,15 @@
+{
+  "block_partitions": [
+    64,
+    127
+  ],
+  "captured_input_events": 7,
+  "controllers_and_bend_in_smf": true,
+  "exact_input_frame_offsets": true,
+  "native_audio_tested": false,
+  "physical_midi_tested": false,
+  "quantized_clip_prepared_undo_redo_reopened": true,
+  "raw_json_roundtrip": true,
+  "recorded_notes": 3,
+  "zero_callback_allocations": true
+}

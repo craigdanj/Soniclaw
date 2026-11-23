@@ -1,0 +1,103 @@
+[
+  {
+    "check": "fmt",
+    "command": [
+      "cargo",
+      "fmt",
+      "--all",
+      "--check"
+    ],
+    "exit_code": 0,
+    "seconds": 1.009
+  },
+  {
+    "check": "clippy",
+    "command": [
+      "cargo",
+      "clippy",
+      "--workspace",
+      "--all-targets",
+      "--all-features",
+      "--locked",
+      "--offline",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "exit_code": 0,
+    "seconds": 1.388
+  },
+  {
+    "check": "tests",
+    "command": [
+      "cargo",
+      "test",
+      "--workspace",
+      "--all-features",
+      "--locked",
+      "--offline"
+    ],
+    "exit_code": 0,
+    "seconds": 63.797
+  },
+  {
+    "check": "docs",
+    "command": [
+      "cargo",
+      "doc",
+      "--workspace",
+      "--all-features",
+      "--no-deps",
+      "--locked",
+      "--offline"
+    ],
+    "exit_code": 0,
+    "seconds": 5.757
+  },
+  {
+    "check": "build",
+    "command": [
+      "cargo",
+      "build",
+      "-p",
+      "soniclaw-workbench",
+      "-p",
+      "soniclaw-sdk-tools",
+      "-p",
+      "soniclaw-host-fixture",
+      "-p",
+      "soniclaw-clap-smoke",
+      "--locked",
+      "--offline"
+    ],
+    "exit_code": 0,
+    "seconds": 12.445
+  },
+  {
+    "check": "duplex-demo",
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-sdk-tools",
+      "--features",
+      "device-tools",
+      "--locked",
+      "--offline",
+      "--",
+      "--duplex-demo",
+      "/workspace/scratch/cd89c8ef929d/verification-series/v012/duplex-demo"
+    ],
+    "exit_code": 0,
+    "seconds": 10.357
+  },
+  {
+    "check": "native-gui",
+    "command": [
+      "python3",
+      "/workspace/scratch/cd89c8ef929d/capture-v012.py"
+    ],
+    "exit_code": 0,
+    "seconds": 2.347
+  }
+]

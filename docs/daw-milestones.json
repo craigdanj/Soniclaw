@@ -1,0 +1,47 @@
+{
+  "baseline": "0.71.0",
+  "milestones": [
+    {
+      "id": 1,
+      "name": "Usable recording DAW",
+      "status": "Software workflows implemented; target acceptance pending",
+      "releases": [
+        "0.72.0",
+        "0.73.0",
+        "0.74.0",
+        "0.75.0",
+        "0.76.0"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Complete music-production workflow",
+      "status": "Software workflows implemented; target acceptance pending",
+      "releases": [
+        "0.77.0",
+        "0.78.0",
+        "0.79.0",
+        "0.80.0"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Complete mixing workflow",
+      "status": "Software workflows implemented; target acceptance pending",
+      "releases": [
+        "0.81.0",
+        "0.82.0",
+        "0.83.0",
+        "0.84.0",
+        "0.85.0"
+      ]
+    }
+  ],
+  "acceptance": {
+    "software_workflows": "Recording, production and mixing software workflows implemented with documented bounds through 0.85.0",
+    "physical_audio_midi": "Pending",
+    "native_third_party_plugins": "Pending",
+    "windows_macos_runtime": "Pending",
+    "native_owned_fixtures": "Executed on Linux: trusted CLAP and VST3 state/processing, sample-timed automation, continuous offline note identity/expression and integrated routed export"
+  }
+}

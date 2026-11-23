@@ -1,0 +1,15 @@
+   Compiling soniclaw-dsp-nonlinear v0.90.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/dsp-nonlinear)
+    Finished `dev` profile [unoptimized] target(s) in 1.79s
+     Running `target/debug/soniclaw-dsp-nonlinear ../../dsp-work/nonlinear90-final`
+HardClip oversampled=false baseline=-14.71 residual=-32.19 improvement=17.49
+HardClip oversampled=true baseline=-14.71 residual=-26.07 improvement=11.37
+Tanh oversampled=false baseline=-17.43 residual=-35.70 improvement=18.28
+Tanh oversampled=true baseline=-17.43 residual=-27.11 improvement=9.68
+Cubic oversampled=false baseline=-13.35 residual=-30.31 improvement=16.96
+Cubic oversampled=true baseline=-13.35 residual=-25.76 improvement=12.41
+HardClip oversampled=false baseline=-11.87 residual=-23.13 improvement=11.25
+HardClip oversampled=true baseline=-11.87 residual=-55.70 improvement=43.83
+Tanh oversampled=false baseline=-14.34 residual=-24.76 improvement=10.41
+Tanh oversampled=true baseline=-14.34 residual=-78.91 improvement=64.57
+Cubic oversampled=false baseline=-10.71 residual=-22.61 improvement=11.90
+Cubic oversampled=true baseline=-10.71 residual=-70.15 improvement=59.43

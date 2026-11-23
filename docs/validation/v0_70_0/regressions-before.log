@@ -1,0 +1,55 @@
+   Compiling soniclaw-studio v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/crates/soniclaw-studio)
+    Finished `test` profile [unoptimized] target(s) in 1.21s
+     Running unittests src/lib.rs (target/debug/build/soniclaw-studio/1bc88c02b4575f11/out/soniclaw_studio-1bc88c02b4575f11)
+
+running 1 test
+test jobs::tests::consumed_tickets_do_not_retain_unbounded_replacement_keys ... FAILED
+
+failures:
+
+---- jobs::tests::consumed_tickets_do_not_retain_unbounded_replacement_keys stdout ----
+
+thread 'jobs::tests::consumed_tickets_do_not_retain_unbounded_replacement_keys' (310) panicked at crates/soniclaw-studio/src/jobs.rs:429:9:
+consumed tickets must not keep replacement keys alive: 128
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    jobs::tests::consumed_tickets_do_not_retain_unbounded_replacement_keys
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 24 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `-p soniclaw-studio --lib`
+
+   Compiling soniclaw-tuning v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/crates/soniclaw-tuning)
+   Compiling soniclaw-transport v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/crates/soniclaw-transport)
+   Compiling soniclaw-record v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/crates/soniclaw-record)
+   Compiling soniclaw-dsp v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/crates/soniclaw-dsp)
+   Compiling soniclaw-clips v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/crates/soniclaw-clips)
+   Compiling soniclaw-automation v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/crates/soniclaw-automation)
+   Compiling soniclaw-mixer v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/crates/soniclaw-mixer)
+   Compiling soniclaw-io v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/crates/soniclaw-io)
+   Compiling soniclaw-stream v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/crates/soniclaw-stream)
+   Compiling soniclaw-formats v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/crates/soniclaw-formats)
+   Compiling soniclaw-studio v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/crates/soniclaw-studio)
+    Finished `test` profile [unoptimized] target(s) in 10.93s
+     Running unittests src/lib.rs (target/debug/build/soniclaw-studio/1bc88c02b4575f11/out/soniclaw_studio-1bc88c02b4575f11)
+
+running 1 test
+test recording::seek_recording_tests::streamed_recording_is_primed_at_selected_start_before_first_callback ... FAILED
+
+failures:
+
+---- recording::seek_recording_tests::streamed_recording_is_primed_at_selected_start_before_first_callback stdout ----
+
+thread 'recording::seek_recording_tests::streamed_recording_is_primed_at_selected_start_before_first_callback' (1230) panicked at crates/soniclaw-studio/src/recording.rs:626:9:
+first captured callback must contain the selected disk source, not startup starvation
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    recording::seek_recording_tests::streamed_recording_is_primed_at_selected_start_before_first_callback
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 23 filtered out; finished in 0.01s
+
+error: test failed, to rerun pass `-p soniclaw-studio --lib`

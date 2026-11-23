@@ -1,0 +1,26 @@
+{
+  "feature": "dsp-utilities",
+  "results": {
+    "backend": "Avx2",
+    "block_math_allocations": 0,
+    "cases": [
+      {
+        "audio": "peak.wav",
+        "callback_allocations": 0,
+        "latency_frames": 0,
+        "name": "peak",
+        "peak": 0.7477201819419861
+      },
+      {
+        "audio": "rms.wav",
+        "callback_allocations": 0,
+        "latency_frames": 0,
+        "name": "rms",
+        "peak": 0.763288140296936
+      }
+    ],
+    "peak": 0.800000011920929,
+    "rms": 0.318027138710022
+  },
+  "version": "0.120.0"
+}

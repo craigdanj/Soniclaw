@@ -6,9 +6,9 @@ edition.workspace = true
 license.workspace = true
 rust-version.workspace = true
 [dependencies]
-soniclaw-bus = { path = "../soniclaw-bus", version = "0.3.0" }
+soniclaw-bus = { path = "../soniclaw-bus", version = "0.146.0" }
 soniclaw-core.workspace = true
 soniclaw-engine.workspace = true
-soniclaw-state = { path = "../soniclaw-state", version = "0.3.0" }
+soniclaw-state = { path = "../soniclaw-state", version = "0.146.0" }
 [lints]
 workspace = true

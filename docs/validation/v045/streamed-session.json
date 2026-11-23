@@ -1,0 +1,19 @@
+{
+  "callback_allocations": 0,
+  "file_bytes": 11520068,
+  "paced_worker_test": true,
+  "physical_device_tested": false,
+  "rendered_frames": 144000,
+  "source_frames": 2880000,
+  "streams": [
+    {
+      "clip": "long-recording",
+      "io_errors": 0,
+      "pages_read": 143,
+      "pcm_cache_bytes": 74016,
+      "request_overflows": 0,
+      "stale_pages": 1,
+      "underrun_frames": 0
+    }
+  ]
+}

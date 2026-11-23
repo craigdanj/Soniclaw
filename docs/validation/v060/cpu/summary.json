@@ -1,0 +1,36 @@
+{
+  "environment": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "rustc": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
+  "rounds": 7,
+  "target_cpu": "x86-64",
+  "baseline": "/tmp/soniclaw-v050-cpu-baseline/soniclaw",
+  "current": "/workspace/scratch/cd89c8ef929d/v050-work/soniclaw",
+  "measurement": "256-frame stereo blocks, 48 kHz; wall time includes input copy, wrapper and black_box; static controls; 256 warmup/4096 timed blocks per case; alternating binary order; shared Linux VM, no pinning, no driver or DAW",
+  "cases": {
+    "fdn_reverb": {
+      "baseline": 153.90108013153076,
+      "current": 142.77340984344482,
+      "change_percent": -7.230404282137415
+    },
+    "gain": {
+      "baseline": 2.5016403198242188,
+      "current": 0.14550113677978516,
+      "change_percent": -94.18377071928515
+    },
+    "low_pass": {
+      "baseline": 7.905241012573242,
+      "current": 7.920952796936035,
+      "change_percent": 0.19875149078698584
+    },
+    "rms_compressor": {
+      "baseline": 26.422988891601562,
+      "current": 11.625432968139648,
+      "change_percent": -56.00258163135079
+    },
+    "state_variable": {
+      "baseline": 10.520462989807129,
+      "current": 9.919233322143555,
+      "change_percent": -5.714859395884786
+    }
+  }
+}

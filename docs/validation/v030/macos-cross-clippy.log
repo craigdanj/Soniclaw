@@ -1,0 +1,7 @@
+    Checking soniclaw-core v0.30.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-core)
+    Checking soniclaw-engine v0.30.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-engine)
+    Checking soniclaw-transport v0.30.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-transport)
+    Checking soniclaw-bus v0.30.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-bus)
+    Checking soniclaw-vst3 v0.30.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-vst3)
+    Checking soniclaw-host v0.30.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-host)
+    Finished `dev` profile [unoptimized] target(s) in 1.66s

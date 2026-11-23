@@ -1,0 +1,36 @@
+Created v080-app (app)
+     Locking 360 packages to highest compatible versions
+    Checking soniclaw-core v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw-core)
+    Checking soniclaw-record v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw-record)
+    Checking soniclaw-dsp v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw-dsp)
+    Checking soniclaw-engine v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw-engine)
+    Checking soniclaw-midi v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw-midi)
+    Checking soniclaw-graph v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw-graph)
+    Checking soniclaw-bus v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw-bus)
+    Checking soniclaw-device v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw-device)
+    Checking soniclaw-session v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw-session)
+    Checking soniclaw-state v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw-state)
+    Checking soniclaw-stream v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw-stream)
+    Checking soniclaw-sampler v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw-sampler)
+    Checking soniclaw-io v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw-io)
+    Checking soniclaw-plugin v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw-plugin)
+    Checking soniclaw-ui v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw-ui)
+    Checking soniclaw-diagnostics v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw-diagnostics)
+    Checking soniclaw v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw)
+    Checking v080-app v0.1.0 (/workspace/scratch/cd89c8ef929d/verification/v080-final/template checks/v080-app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 7.80s
+Created v080-clap (clap)
+     Locking 260 packages to highest compatible versions
+    Checking soniclaw-ui v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw-ui)
+    Checking soniclaw-session v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw-session)
+    Checking soniclaw v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw)
+    Checking soniclaw-editor v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw-editor)
+    Checking soniclaw-clap v0.8.0 (/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/crates/soniclaw-clap)
+    Checking v080-clap v0.1.0 (/workspace/scratch/cd89c8ef929d/verification/v080-final/template checks/v080-clap)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.42s
+Created v080-sampler (sampler)
+     Locking 260 packages to highest compatible versions
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Checking v080-sampler v0.1.0 (/workspace/scratch/cd89c8ef929d/verification/v080-final/template checks/v080-sampler)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.18s

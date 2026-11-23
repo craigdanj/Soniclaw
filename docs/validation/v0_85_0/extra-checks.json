@@ -1,0 +1,47 @@
+[
+  {
+    "command": [
+      "cargo",
+      "clippy",
+      "-p",
+      "soniclaw-host",
+      "--no-default-features",
+      "--features",
+      "studio",
+      "--locked",
+      "--offline",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "exit_code": 0,
+    "log": "host-studio-only.log"
+  },
+  {
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-daw-delivery",
+      "--",
+      "NEW_FOLDER",
+      "build/formats/fixtures/HostProtocolFixture.vst3"
+    ],
+    "exit_code": 0,
+    "report": "integrated.json"
+  },
+  {
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-daw-plugins",
+      "--",
+      "NEW_FOLDER",
+      "clap",
+      "target/release/libsoniclaw_reference.so"
+    ],
+    "exit_code": 0,
+    "report": "clap-regression.json"
+  }
+]

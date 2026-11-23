@@ -1,0 +1,32 @@
+[
+  {
+    "command": "cargo fmt --all --check",
+    "exit_code": 0,
+    "seconds": 2.34,
+    "log": "1.log"
+  },
+  {
+    "command": "cargo clippy --workspace --all-targets --all-features --locked --offline -- -D warnings",
+    "exit_code": 0,
+    "seconds": 5.88,
+    "log": "2.log"
+  },
+  {
+    "command": "cargo test --workspace --all-features --locked --offline",
+    "exit_code": 0,
+    "seconds": 34.06,
+    "log": "3.log"
+  },
+  {
+    "command": "RUSTDOCFLAGS=\"-D warnings\" cargo doc --workspace --all-features --no-deps --locked --offline",
+    "exit_code": 0,
+    "seconds": 4.82,
+    "log": "4.log"
+  },
+  {
+    "command": "cargo build -p soniclaw-workbench -p soniclaw-sdk-tools -p soniclaw-host-fixture -p soniclaw-reference -p soniclaw-clap-smoke --locked --offline",
+    "exit_code": 0,
+    "seconds": 3.9,
+    "log": "5.log"
+  }
+]

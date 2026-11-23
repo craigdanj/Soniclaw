@@ -1,0 +1,47 @@
+   Compiling soniclaw-core v0.24.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-core)
+   Compiling vst3-host v0.11.1 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/third-party/vst3-host)
+   Compiling soniclaw-engine v0.24.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-engine)
+   Compiling soniclaw-bus v0.24.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-bus)
+   Compiling soniclaw-transport v0.24.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-transport)
+   Compiling soniclaw-vst3 v0.24.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-vst3)
+   Compiling soniclaw-host v0.24.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-host)
+    Finished `test` profile [unoptimized] target(s) in 8.20s
+     Running unittests src/lib.rs (target/debug/build/soniclaw-host/b721bd292d6273c1/out/soniclaw_host-b721bd292d6273c1)
+
+running 9 tests
+test direct::tests::impulse_alignment_limits ... ok
+test live::buffered_config_tests::one_packet_lookahead_has_one_packet_delay ... ok
+test live::tests::future_packet_survives_missing_block ... ok
+test live::tests::invalid_layout_and_stopped_owner_silence ... ok
+test live::tests::callback_backpressure_is_bounded_and_heap_free ... ok
+test session::tests::bypass_delay_tracks_history_when_not_bypassed ... ok
+test live::tests::variable_callback_sizes_and_exact_bridge_delay ... ok
+test session::tests::state_corruption_and_duplicate_slots_rejected ... ok
+test session::tests::merge_preserves_missing_payload_and_is_transactional ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-vst3/c8dd2deb9a2897f8/out/soniclaw_vst3-c8dd2deb9a2897f8)
+
+running 6 tests
+test direct::tests::revoked_callback_remains_silent_without_allocation ... ok
+test direct::tests::parameter_pool_is_bounded_and_reuses_slots ... ok
+test bridge_tests::callback_partitions_preserve_fixed_delay_and_allocate_nothing ... ok
+test bridge_tests::state_file_roundtrip_is_bounded_and_failed_write_preserves_destination ... ok
+test tests::retained_processor_revoked_without_allocation ... ok
+test tests::corrupt_state_rejected_before_native ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_host
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_vst3
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

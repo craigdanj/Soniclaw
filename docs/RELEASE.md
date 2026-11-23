@@ -45,14 +45,14 @@ Generated plug-in projects enable an embedded editor by default. Their `--no-def
 
 ## Performance regression checks
 
-The frozen v0.2 baseline contains byte-identical crate sources plus a matching small reference effect. Both versions use the same independent CLAP host, Rust toolchain, generic CPU target and optimized thin-LTO configuration. Run versions sequentially with other builds stopped.
+The frozen v0.2 baseline contains byte-identical crate sources plus a matching small reference effect. Use the same independent CLAP host, Rust toolchain, generic CPU target and optimized thin-LTO configuration for the baseline and current release. Run them sequentially with other builds stopped. The preserved v0.3 results are historical; v0.5 benchmarks have not been rerun as part of this feature release.
 
 ```sh
 cargo build --release --manifest-path benchmarks/baseline-v020/Cargo.toml -p sonora-reference-baseline
 cargo build --release -p soniclaw-reference
 python3 tools/run-compat.py --library benchmarks/baseline-v020/target/release/libsonora_reference_baseline.so --clap-sdk vendor/formats/clap --output benchmarks/results/v020
-python3 tools/run-compat.py --library target/release/libsoniclaw_reference.so --clap-sdk vendor/formats/clap --output benchmarks/results/v030
-python3 tools/compare-benchmarks.py benchmarks/results/v020/callback-batches.csv benchmarks/results/v030/callback-batches.csv
+python3 tools/run-compat.py --library target/release/libsoniclaw_reference.so --clap-sdk vendor/formats/clap --output benchmarks/results/v050
+python3 tools/compare-benchmarks.py benchmarks/results/v020/callback-batches.csv benchmarks/results/v050/callback-batches.csv
 ```
 
 `--fail-regression-percent N` is available for an optional gate on a controlled runner. It is not enabled on shared CI/VMs, where normal variance can exceed small thresholds. Raw per-round measurements, compiler/environment data and comparison limits accompany the results. This is a Soniclaw-before/after comparison; it is not a fresh JUCE benchmark.
@@ -71,3 +71,12 @@ The package helper stages an already-built artifact, copies first-party licenses
 On macOS, `--installer` invokes `pkgbuild`; `--sign-identity <identity>` explicitly invokes `codesign` for the plug-in. Installer signing/notarization and distribution credentials are not automatic. On Windows, `packaging/windows/Soniclaw.iss` provides an Inno Setup VST3 bundle installer recipe. Windows/macOS recipes have not been executed in this Linux environment.
 
 The CI configuration checks Linux/macOS/Windows source builds and generated projects. A workflow file is not evidence of successful remote runs. No signing identity, certificate or developer account is included, and nothing has been installed into the user's DAW directories or published.
+
+## v0.6 portable DSP CPU fixtures
+
+`tools/benchmark-dsp.py --baseline /path/to/extracted-v0.5/soniclaw --output /new/results`
+compiles identical Gain/LowPass/SVF/RMS/FDN fixtures against two checkouts before
+alternating seven optimized measurement rounds. Raw CSV, compiler/environment,
+method and medians are in [v0.6 evidence](validation/v060/cpu/summary.json).
+These are static-control DSP microbenchmarks on a shared VM, not a new JUCE,
+CLAP-host, driver or dense-modulation performance comparison.

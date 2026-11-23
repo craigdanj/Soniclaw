@@ -1,0 +1,10 @@
+{
+  "feature": "double-precision",
+  "results": {
+    "callback_allocations": 0,
+    "input_delta": 9.094947017729282e-13,
+    "lookahead_frames": 48,
+    "maximum_residual": 3.4205971388701073e-13
+  },
+  "version": "0.121.0"
+}

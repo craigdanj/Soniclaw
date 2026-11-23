@@ -1,0 +1,50 @@
+[
+  {
+    "version": "0.44.0",
+    "title": "Unified live session engine",
+    "guide": "LIVE_SESSIONS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.45.0",
+    "title": "Disk-streamed arrangement clips",
+    "guide": "STREAMED_CLIPS",
+    "status": "Complete"
+  },
+  {
+    "version": "0.46.0",
+    "title": "Multitrack recording and takes",
+    "guide": "MULTITRACK_RECORDING",
+    "status": "Complete"
+  },
+  {
+    "version": "0.47.0",
+    "title": "Track freeze and bounce-in-place",
+    "guide": "TRACK_FREEZE",
+    "status": "Complete"
+  },
+  {
+    "version": "0.48.0",
+    "title": "Multicore graph processing",
+    "guide": "PARALLEL_GRAPH",
+    "status": "Complete"
+  },
+  {
+    "version": "0.49.0",
+    "title": "Broader plug-in isolation",
+    "guide": "EXPANDED_ISOLATION",
+    "status": "Complete"
+  },
+  {
+    "version": "0.50.0",
+    "title": "Accessible audio controls",
+    "guide": "ACCESSIBILITY",
+    "status": "Complete"
+  },
+  {
+    "version": "0.51.0",
+    "title": "Native PipeWire integration",
+    "guide": "PIPEWIRE",
+    "status": "Complete"
+  }
+]

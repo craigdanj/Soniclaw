@@ -1,0 +1,9 @@
+{
+  "feature": "polyphonic-analysis",
+  "results": {
+    "fixture": true,
+    "notes": 6,
+    "sample_rate": 48000
+  },
+  "version": "0.126.0"
+}

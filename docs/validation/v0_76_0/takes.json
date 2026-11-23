@@ -1,0 +1,17 @@
+{
+  "complete_audio_passes": 4,
+  "complete_midi_passes": 4,
+  "dry_comp_inserts_preserved": true,
+  "hardware_opened": false,
+  "original_interrupted_bytes_unchanged": true,
+  "phase_locked_stems": 2,
+  "portable_group_reopen": true,
+  "recovered_audio": {
+    "channels": 1,
+    "discarded_bytes": 2,
+    "recovered_frames": 1152,
+    "sample_rate": 48000
+  },
+  "selected_midi_pass": 1,
+  "source_solo_restored": true
+}

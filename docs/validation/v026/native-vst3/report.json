@@ -1,0 +1,15 @@
+{
+  "block_sizes": [
+    64,
+    256
+  ],
+  "frames": 7200,
+  "latency_trimmed": 0,
+  "max_partition_difference": 0.0,
+  "native_state_preserved_across_blocks": true,
+  "stems": [
+    "docs/validation/v026/native-vst3/stems/A.wav",
+    "docs/validation/v026/native-vst3/stems/B.wav"
+  ],
+  "tail_energy": 201.693560517604
+}

@@ -1,0 +1,14 @@
+{
+  "available": 2,
+  "bypass_restored": true,
+  "missing": [
+    {
+      "reason": "No such file or directory (os error 2)",
+      "slot": 1
+    }
+  ],
+  "opaque_and_parameter_state": true,
+  "restored_gain": 0.699999988079071,
+  "schema": 1,
+  "slots": 3
+}

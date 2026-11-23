@@ -1,0 +1,115 @@
+   Compiling soniclaw-core v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-core)
+   Compiling soniclaw-kernels v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-kernels)
+   Compiling soniclaw-waveform v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-waveform)
+   Compiling soniclaw-tuning v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-tuning)
+   Compiling soniclaw-transport v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-transport)
+   Compiling soniclaw-dsp v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-dsp)
+   Compiling soniclaw-automation v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-automation)
+   Compiling soniclaw-midi v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-midi)
+   Compiling soniclaw-record v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-record)
+   Compiling soniclaw-engine v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-engine)
+   Compiling soniclaw-clips v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-clips)
+   Compiling soniclaw-graph v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-graph)
+   Compiling soniclaw-io v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-io)
+   Compiling soniclaw-mixer v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-mixer)
+   Compiling soniclaw-formats v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-formats)
+   Compiling soniclaw-stream v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-stream)
+   Compiling soniclaw-sampler v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-sampler)
+   Compiling soniclaw-state v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-state)
+   Compiling soniclaw-bus v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-bus)
+   Compiling soniclaw-studio v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-studio)
+   Compiling soniclaw-plugin v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-plugin)
+   Compiling soniclaw-device v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-device)
+   Compiling soniclaw-commands v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-commands)
+   Compiling soniclaw-session v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-session)
+   Compiling soniclaw-diagnostics v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-diagnostics)
+   Compiling soniclaw-registry v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-registry)
+   Compiling soniclaw-quality v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-quality)
+   Compiling soniclaw-params v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-params)
+   Compiling soniclaw-host v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-host)
+   Compiling soniclaw-ui v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-ui)
+   Compiling soniclaw v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw)
+   Compiling soniclaw-studio-demo v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/studio-demo)
+   Compiling soniclaw-desktop-studio v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/desktop-studio)
+   Compiling soniclaw-daw-mixing v0.81.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/daw-mixing)
+    Finished `test` profile [unoptimized] target(s) in 19.90s
+     Running unittests src/main.rs (target/debug/build/soniclaw-daw-mixing/107526435f769d0a/out/soniclaw_daw_mixing-107526435f769d0a)
+
+running 1 test
+test tests::submix_sidechain_workflow ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/main.rs (target/debug/build/soniclaw-desktop-studio/5f5c5eae9e62deaa/out/soniclaw_desktop_studio-5f5c5eae9e62deaa)
+
+running 1 test
+test gui::tests::reference_ui_and_project_actions_work_without_opening_a_device ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.44s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-mixer/fbb483809acb85a8/out/soniclaw_mixer-fbb483809acb85a8)
+
+running 3 tests
+test tests::sample_automation_partition_and_invalid_is_transactional ... ok
+test tests::pan_sends_meters_and_no_alloc ... ok
+test tests::persistence_and_group_mute ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-studio/310027923bb17fa0/out/soniclaw_studio-310027923bb17fa0)
+
+running 39 tests
+test arrangement::tests::partial_automation_splines_keep_values ... ok
+test arrangement::tests::failed_timing_or_labels_leave_project_unchanged ... ok
+test export::tests::settings_reject_live_loop_duplicate_codec_and_future_schema ... ok
+test jobs::tests::priority_fifo_and_replacement ... ok
+test media::tests::reachability_keeps_disabled_and_opaque_resources ... ok
+test jobs::tests::consumed_tickets_do_not_retain_unbounded_replacement_keys ... ok
+test history::tests::branch_noop_limits_and_invalid_editor_commit ... ok
+test automation_write::tests::touch_latch_snap_and_stale_publication ... ok
+test history::tests::grouped_project_edits_undo_redo_and_failed_prepare_are_atomic ... ok
+test jobs::tests::capacity_progress_stale_cancellation_and_shutdown ... ok
+test midi_recording::tests::nonzero_start_and_step_tempo_boundaries_keep_absolute_clock ... ok
+test loop_capture_tests::actual_clock_wraps_become_sample_exact_take_passes ... ok
+test freeze::tests::cache_reuse_bypass_restore_and_invalidation ... ok
+test midi_pass::tests::loop_chase_keeps_multiple_pedal_held_voices_and_controller_state ... ok
+test midi_recording::tests::filtering_quantization_and_stale_timeline ... ok
+test midi_recording::tests::sample_offsets_partition_invariance_raw_controllers_and_hanging_notes ... ok
+test pending::tests::retention_and_torn_write_fallback ... ok
+test midi_recording::tests::queue_overflow_unsupported_and_input_loss_never_publish_as_complete ... ok
+test midi_pass::tests::passes_are_partition_invariant_and_chase_held_notes ... ok
+test project::tests::portable_roundtrip_and_corruption_leave_original_intact ... ok
+test project::tests::legacy_migration_and_exact_missing_resource_repair ... ok
+test recording::tests::controls_reject_invalid_arming_loop_punch_and_roundtrip ... ok
+test routing::tests::removal_remaps_lanes_values_and_failed_prepare_is_atomic ... ok
+test midi_recording::tests::ramps_capture_in_beats_but_do_not_silently_approximate_smf ... ok
+test multitrack_integration::captures_complete_tracks_and_blocks_replacement_until_control_retirement ... ok
+test recovery::tests::lock_and_background_tick_bound_concurrency ... ok
+test tests::document_roundtrip_factory_failure_and_record_tap ... ok
+test tests::midi_while_stopped_and_invalid_input ... ok
+test recovery::tests::retained_snapshots_skip_incomplete_corrupt_latest_and_preserve_working_copy ... ok
+test sessions::tests::repeated_save_stale_identity_failed_resource_and_verified_open ... ok
+test timing::tests::impulse_polarity_noise_and_zero_boundary ... ok
+test tests::replacement_is_atomic_and_old_processors_retire_off_callback ... ok
+test workspace::tests::structural_commands_reindex_and_preserve_history_and_resources ... ok
+test recording::seek_recording_tests::streamed_recording_is_primed_at_selected_start_before_first_callback ... ok
+test midi_recording::tests::duration_limit_and_seek_discontinuities_are_visible ... ok
+test tests::live_clips_inserts_mixer_clock_loop_and_partition ... ok
+test recording::tests::count_in_preroll_punch_and_click_exclusion_are_partition_invariant ... ok
+test freeze::tests::streamed_offline_job_waveform_cancel_and_stale_result ... ok
+test tempo_cache::tests::mixed_rate_warp_exact_clock_pitch_portability_stale_and_cancel ... ok
+
+test result: ok. 39 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.51s
+
+   Doc-tests soniclaw_mixer
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_studio
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

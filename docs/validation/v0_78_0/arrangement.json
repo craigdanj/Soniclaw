@@ -1,0 +1,12 @@
+{
+  "audio_beats_anchor": 384000,
+  "audio_seconds_anchor": 192000,
+  "chosen_playback_sample": 384000,
+  "copied_regions": 2,
+  "hardware_opened": false,
+  "loop_audio_phase_preserved": true,
+  "markers_and_sections_portable": true,
+  "midi_expression_preserved": true,
+  "source_curve_preserved": true,
+  "undo_redo": true
+}

@@ -1,0 +1,29 @@
+{
+  "feature": "physical",
+  "results": {
+    "cases": [
+      {
+        "audio": "picked-string.wav",
+        "callback_allocations": 0,
+        "latency_frames": 0,
+        "name": "picked-string",
+        "peak": 0.5274993777275085
+      },
+      {
+        "audio": "friction-string.wav",
+        "callback_allocations": 0,
+        "latency_frames": 0,
+        "name": "friction-string",
+        "peak": 0.5274993777275085
+      },
+      {
+        "audio": "modal-metal.wav",
+        "callback_allocations": 0,
+        "latency_frames": 0,
+        "name": "modal-metal",
+        "peak": 0.6870326995849609
+      }
+    ]
+  },
+  "version": "0.95.0"
+}

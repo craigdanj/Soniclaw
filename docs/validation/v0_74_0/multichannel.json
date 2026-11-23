@@ -1,0 +1,12 @@
+{
+  "frames": 2048,
+  "hardware_opened": false,
+  "independent_stem_channels": [
+    1,
+    2
+  ],
+  "missing": 0,
+  "physical_channels_simulated": 4,
+  "placed_regions": 2,
+  "portable_reopen": true
+}

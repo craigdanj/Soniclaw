@@ -1,0 +1,10 @@
+# Streamed sampler articulations
+
+Import with soniclaw::sampling::import_streamed_sfz, then call DiskInstrument::open on the control thread. The import reuses the existing SFZ tokenizer and reads a separate supported subset for streamed WAVs. Supported opcodes include note and velocity ranges, volume, one-shot and sustain loops, sw_last, sw_default and ampeg_release. Set the latter in seconds. Release ramps are per zone, and keyswitch selection applies per MIDI channel to new note-ons. Existing playing notes keep their zone and release. Known switches are consumed as selection notes before voice starts.
+
+The paged engine preloads the first page of each unique path/root pair and allocates its existing per-voice caches and queues within the explicit PCM memory budget. Run callbacks with the worker alive and inspect underrun_frames and io_errors. An underrun emits silence while playback time continues. Preloading does not guarantee all subsequent disk access deadlines. On errors, stop rendering before dropping the handle, then reopen off the audio thread. Reset restores the default switch.
+
+The control-thread API also accepts DiskInstrument recipes assembled by an application. Keep assets and recipe together and re-import on restore. The existing DiskZone and in-memory SFZ schemas remain compatible. Only local mono/stereo WAV files resolved beneath the SFZ directory are supported on this path. Limits include 255 parsed regions, 128 WAV/root pairs, 64 voices and bounded PCM cache memory. The streamed dialect rejects opcodes outside the documented subset, including release triggers and SFZ sequencing on this path. The resident SFZ API remains available for its earlier supported opcodes.
+
+Run `cargo run -p soniclaw-dsp-suite --locked --offline -- articulations NEW_DIRECTORY`. The fixture builds and imports a two-articulation SFZ, keyswitches at the same sample offset as a note, and checks worker paging past the preload, compares short and long release behavior, and verifies allocation counts and underrun telemetry. [Executed checks](validation/v0_112_0/REPORT.md).
+

@@ -6,6 +6,9 @@ edition.workspace = true
 license.workspace = true
 rust-version.workspace = true
 [dependencies]
+rtrb = "=0.3.5"
 soniclaw-core.workspace = true
+[dev-dependencies]
+allocation-counter="=0.8.1"
 [lints]
 workspace = true

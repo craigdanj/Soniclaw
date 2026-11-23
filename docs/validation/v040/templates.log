@@ -1,0 +1,60 @@
+Created v040-app (app)
+     Locking 352 packages to highest compatible versions
+    Checking soniclaw-core v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-core)
+    Checking winit v0.30.13
+    Checking soniclaw-record v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-record)
+    Checking soniclaw-dsp v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-dsp)
+    Checking soniclaw-engine v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-engine)
+    Checking soniclaw-state v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-state)
+    Checking soniclaw-graph v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-graph)
+    Checking soniclaw-midi v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-midi)
+    Checking soniclaw-device v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-device)
+    Checking soniclaw-bus v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-bus)
+    Checking soniclaw-session v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-session)
+    Checking soniclaw-plugin v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-plugin)
+    Checking soniclaw-sampler v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-sampler)
+    Checking soniclaw-io v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-io)
+    Checking soniclaw-ui v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-ui)
+    Checking soniclaw-stream v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-stream)
+    Checking soniclaw v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw)
+    Checking egui-winit v0.36.1
+    Checking glutin-winit v0.5.0
+    Checking eframe v0.36.1
+    Checking v040-app v0.1.0 (/tmp/soniclaw-v040 template checks/v040-app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 8.58s
+Created v040-clap (clap)
+     Locking 252 packages to highest compatible versions
+    Checking smallvec v1.16.5
+    Checking rustix v1.1.6
+    Checking ahash v0.8.12
+    Checking x11rb-protocol v0.13.2
+    Checking raw-window-handle v0.6.2
+    Checking soniclaw-session v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-session)
+    Checking kurbo v0.13.1
+    Checking parking_lot_core v0.9.12
+    Checking harfrust v0.12.0
+    Checking soniclaw v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw)
+    Checking parking_lot v0.12.5
+    Checking peniko v0.6.1
+    Checking vello_common v0.1.0
+    Checking vello_cpu v0.1.0
+    Checking epaint v0.36.2
+    Checking gethostname v1.1.0
+    Checking polling v3.11.0
+    Checking calloop v0.14.4
+    Checking egui v0.36.1
+    Checking x11rb v0.13.2
+    Checking x11-clipboard v0.9.3
+    Checking baseview v0.3.4
+    Checking copypasta v0.10.2
+    Checking egui_glow v0.36.1
+    Checking soniclaw-ui v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-ui)
+    Checking egui-baseview v0.7.2
+    Checking soniclaw-editor v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-editor)
+    Checking soniclaw-clap v0.4.0 (/workspace/scratch/cd89c8ef929d/soniclaw-rename/soniclaw/crates/soniclaw-clap)
+    Checking v040-clap v0.1.0 (/tmp/soniclaw-v040 template checks/v040-clap)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 11.43s
+Created v040-sampler (sampler)
+     Locking 252 packages to highest compatible versions
+    Checking v040-sampler v0.1.0 (/tmp/soniclaw-v040 template checks/v040-sampler)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.00s

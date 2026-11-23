@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "product": "org.soniclaw.typed-effect",
+  "declaration_revision": 1,
+  "values": {
+    "effect.bypass": 0.0,
+    "filter.cutoff": 0.33333334,
+    "filter.mode": 0.0,
+    "filter.stages": 0.33333334,
+    "master.gain": 0.25
+  }
+}

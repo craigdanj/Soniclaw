@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/soniclaw-workbench",
+    "--screenshot",
+    "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/docs/validation/v021/musical-transport.png",
+    "--preset",
+    "6",
+    "--tab",
+    "12"
+  ],
+  "exit_code": 0,
+  "display": "native Xvfb/software OpenGL; no physical device opened"
+}

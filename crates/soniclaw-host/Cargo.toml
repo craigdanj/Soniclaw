@@ -1,0 +1,40 @@
+[package]
+name = "soniclaw-host"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+[features]
+default=[]
+studio=["dep:soniclaw-studio"]
+isolation=["vst3","soniclaw-vst3/isolation"]
+vst3=["dep:soniclaw-vst3"]
+[dependencies]
+soniclaw-studio={path="../soniclaw-studio",version="0.146.0",optional=true}
+soniclaw-clips={path="../soniclaw-clips",version="0.146.0"}
+soniclaw-graph={path="../soniclaw-graph",version="0.146.0"}
+soniclaw-vst3={path="../soniclaw-vst3",version="0.146.0",optional=true}
+libc = "0.2"
+soniclaw-transport = {path="../soniclaw-transport",version="0.146.0"}
+soniclaw-bus = {path="../soniclaw-bus",version="0.146.0"}
+serde_json = "1"
+sha2 = "=0.10.9"
+rtrb = "=0.3.5"
+soniclaw-core.workspace = true
+clap-sys = "=0.5.0"
+libloading = "=0.8.9"
+serde = {version="1",features=["derive"]}
+[lints.rust]
+unsafe_op_in_unsafe_fn = "deny"
+[dev-dependencies]
+allocation-counter = "=0.8.1"
+
+[target.'cfg(target_os="linux")'.dependencies]
+x11-dl = "=2.21.0"
+
+[target.'cfg(target_os="windows")'.dependencies]
+winapi={version="0.3",features=["winuser","windef","libloaderapi"]}
+[target.'cfg(target_os="macos")'.dependencies]
+objc2="0.6"
+objc2-app-kit={version="0.3.2",features=["NSApplication","NSWindow","NSView","NSResponder","NSGraphics","NSEvent"]}
+objc2-foundation={version="0.3",features=["NSString","NSGeometry"]}

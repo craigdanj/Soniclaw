@@ -1,0 +1,78 @@
+{
+  "feature": "stereo-panner",
+  "results": {
+    "cases": [
+      {
+        "audio": "linear.wav",
+        "callback_allocations": 0,
+        "center_db": -6.020600318908691,
+        "center_gain": [
+          0.5,
+          0.5
+        ],
+        "law": "linear"
+      },
+      {
+        "audio": "balanced.wav",
+        "callback_allocations": 0,
+        "center_db": 0.0,
+        "center_gain": [
+          1.0,
+          1.0
+        ],
+        "law": "balanced"
+      },
+      {
+        "audio": "sine-3.wav",
+        "callback_allocations": 0,
+        "center_db": -3.0103001594543457,
+        "center_gain": [
+          0.7071067690849304,
+          0.7071067690849304
+        ],
+        "law": "sine-3"
+      },
+      {
+        "audio": "sine-4p5.wav",
+        "callback_allocations": 0,
+        "center_db": -4.515450477600098,
+        "center_gain": [
+          0.5946035385131836,
+          0.5946035385131836
+        ],
+        "law": "sine-4p5"
+      },
+      {
+        "audio": "sine-6.wav",
+        "callback_allocations": 0,
+        "center_db": -6.020600318908691,
+        "center_gain": [
+          0.4999999701976776,
+          0.4999999701976776
+        ],
+        "law": "sine-6"
+      },
+      {
+        "audio": "square-root-3.wav",
+        "callback_allocations": 0,
+        "center_db": -3.0103001594543457,
+        "center_gain": [
+          0.7071067690849304,
+          0.7071067690849304
+        ],
+        "law": "square-root-3"
+      },
+      {
+        "audio": "square-root-4p5.wav",
+        "callback_allocations": 0,
+        "center_db": -4.515450477600098,
+        "center_gain": [
+          0.5946035385131836,
+          0.5946035385131836
+        ],
+        "law": "square-root-4p5"
+      }
+    ]
+  },
+  "version": "0.144.0"
+}

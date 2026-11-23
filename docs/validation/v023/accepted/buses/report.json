@@ -1,0 +1,31 @@
+{
+  "aux_routing": true,
+  "callback_allocations": 0,
+  "ducked": 0.08891450613737106,
+  "invalid_buffers_silent": true,
+  "ports": {
+    "inputs": [
+      {
+        "channels": 2,
+        "id": 0,
+        "main": true,
+        "name": "Stereo Input"
+      },
+      {
+        "channels": 2,
+        "id": 2,
+        "main": false,
+        "name": "Sidechain"
+      }
+    ],
+    "outputs": [
+      {
+        "channels": 2,
+        "id": 1,
+        "main": true,
+        "name": "Stereo Output"
+      }
+    ]
+  },
+  "released": 0.5
+}

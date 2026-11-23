@@ -1,0 +1,29 @@
+{
+  "library": "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/libsoniclaw_host_fixture.so",
+  "products": [
+    {
+      "main_channels": [
+        2,
+        2
+      ],
+      "parameters": [
+        {
+          "default": 0.5,
+          "flags": 32,
+          "id": 9,
+          "max": 1.0,
+          "min": 0.0,
+          "name": "Gain",
+          "value": 0.5
+        }
+      ],
+      "product": {
+        "id": "org.soniclaw.host-fixture",
+        "name": "Soniclaw MIDI-only Host Fixture",
+        "vendor": "Soniclaw",
+        "version": "0.15.0"
+      },
+      "scope": "instantiate/metadata/destroy only; no audio or editor"
+    }
+  ]
+}

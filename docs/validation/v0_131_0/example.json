@@ -1,0 +1,14 @@
+{
+  "feature": "multimic-sampler",
+  "results": {
+    "callback_allocations": 0,
+    "microphones": 3,
+    "onsets": [
+      123,
+      160,
+      253
+    ],
+    "round_robin_takes": 3
+  },
+  "version": "0.131.0"
+}

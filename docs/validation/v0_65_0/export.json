@@ -1,0 +1,145 @@
+{
+  "cancelled_without_committed_manifest": true,
+  "exports": [
+    {
+      "files": [
+        {
+          "ceiling_limited": false,
+          "estimated_output_lufs": -10.275303325690684,
+          "file": "mix.wav",
+          "frames": 50400,
+          "gain": 5.73981639718444,
+          "output_sample_peak": 0.6000000238418579,
+          "role": "mix",
+          "source_lufs": -25.453263337535333,
+          "source_peak": 0.10453296452760696
+        },
+        {
+          "ceiling_limited": false,
+          "estimated_output_lufs": -6.075567501863624,
+          "file": "stem-0-bass.wav",
+          "frames": 50400,
+          "gain": 5.714285714285714,
+          "output_sample_peak": 0.6000000238418579,
+          "role": "stem-0-bass",
+          "source_lufs": -21.214806528137736,
+          "source_peak": 0.10500000417232513
+        }
+      ],
+      "project_id": "project.40e069e5beec085d87c00ec22cf647e93bb78ce271a93b3d",
+      "sample_rate": 48000,
+      "schema": 1,
+      "settings": {
+        "depth": "Float32",
+        "dither": false,
+        "format": "Wav",
+        "length_frames": 48000,
+        "mix": true,
+        "normalize": {
+          "Peak": 0.6000000238418579
+        },
+        "peak_ceiling": 0.9900000095367432,
+        "schema": 1,
+        "start_frame": 0,
+        "stems": [
+          "bass"
+        ],
+        "tail_frames": 2400
+      }
+    },
+    {
+      "files": [
+        {
+          "ceiling_limited": false,
+          "estimated_output_lufs": -10.275303325690684,
+          "file": "mix.aiff",
+          "frames": 50400,
+          "gain": 5.73981639718444,
+          "output_sample_peak": 0.5999935269355774,
+          "role": "mix",
+          "source_lufs": -25.453263337535333,
+          "source_peak": 0.10453296452760696
+        },
+        {
+          "ceiling_limited": false,
+          "estimated_output_lufs": -6.075567501863624,
+          "file": "stem-0-bass.aiff",
+          "frames": 50400,
+          "gain": 5.714285714285714,
+          "output_sample_peak": 0.6000260710716248,
+          "role": "stem-0-bass",
+          "source_lufs": -21.214806528137736,
+          "source_peak": 0.10500000417232513
+        }
+      ],
+      "project_id": "project.40e069e5beec085d87c00ec22cf647e93bb78ce271a93b3d",
+      "sample_rate": 48000,
+      "schema": 1,
+      "settings": {
+        "depth": "Pcm16",
+        "dither": true,
+        "format": "Aiff",
+        "length_frames": 48000,
+        "mix": true,
+        "normalize": {
+          "Peak": 0.6000000238418579
+        },
+        "peak_ceiling": 0.9900000095367432,
+        "schema": 1,
+        "start_frame": 0,
+        "stems": [
+          "bass"
+        ],
+        "tail_frames": 2400
+      }
+    },
+    {
+      "files": [
+        {
+          "ceiling_limited": false,
+          "estimated_output_lufs": -10.275303325690684,
+          "file": "mix.flac",
+          "frames": 50400,
+          "gain": 5.73981639718444,
+          "output_sample_peak": 0.6000000238418579,
+          "role": "mix",
+          "source_lufs": -25.453263337535333,
+          "source_peak": 0.10453296452760696
+        },
+        {
+          "ceiling_limited": false,
+          "estimated_output_lufs": -6.075567501863624,
+          "file": "stem-0-bass.flac",
+          "frames": 50400,
+          "gain": 5.714285714285714,
+          "output_sample_peak": 0.6000001430511475,
+          "role": "stem-0-bass",
+          "source_lufs": -21.214806528137736,
+          "source_peak": 0.10500000417232513
+        }
+      ],
+      "project_id": "project.40e069e5beec085d87c00ec22cf647e93bb78ce271a93b3d",
+      "sample_rate": 48000,
+      "schema": 1,
+      "settings": {
+        "depth": "Pcm24",
+        "dither": true,
+        "format": "Flac",
+        "length_frames": 48000,
+        "mix": true,
+        "normalize": {
+          "Peak": 0.6000000238418579
+        },
+        "peak_ceiling": 0.9900000095367432,
+        "schema": 1,
+        "start_frame": 0,
+        "stems": [
+          "bass"
+        ],
+        "tail_frames": 2400
+      }
+    }
+  ],
+  "physical_device_tested": false,
+  "three_codecs_decoded_and_frame_count_verified": true
+}

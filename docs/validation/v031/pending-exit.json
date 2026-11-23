@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python3",
+    "tools/release-gate.py",
+    "build/release31-stage/SoniclawReference-0.31.0-linux-x86_64",
+    "--platform",
+    "linux",
+    "--architecture",
+    "x86_64",
+    "--require-acceptance",
+    "--report",
+    "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/docs/validation/v031/pending-acceptance.json"
+  ],
+  "exit_code": 2,
+  "expected_exit_code": 2
+}

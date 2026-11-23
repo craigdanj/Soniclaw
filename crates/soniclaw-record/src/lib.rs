@@ -372,3 +372,8 @@ mod concurrent_tests {
         std::fs::remove_file(p).unwrap();
     }
 }
+
+pub mod comp;
+pub mod multitrack;
+
+pub mod salvage;

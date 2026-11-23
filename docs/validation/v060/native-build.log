@@ -1,0 +1,19 @@
+   Compiling x11-dl v2.21.0
+   Compiling alsa-sys v0.3.1
+   Compiling alsa v0.9.1
+   Compiling cpal v0.15.3
+   Compiling soniclaw-device v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-device)
+   Compiling soniclaw-session v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-session)
+   Compiling soniclaw v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw)
+   Compiling glutin_glx_sys v0.6.1
+   Compiling winit v0.30.13
+   Compiling baseview v0.3.4
+   Compiling glutin v0.32.3
+   Compiling egui-baseview v0.7.2
+   Compiling soniclaw-editor v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-editor)
+   Compiling soniclaw-clap v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/crates/soniclaw-clap)
+   Compiling egui-winit v0.36.1
+   Compiling glutin-winit v0.5.0
+   Compiling eframe v0.36.1
+   Compiling soniclaw-workbench v0.6.0 (/workspace/scratch/cd89c8ef929d/v050-work/soniclaw/examples/workbench)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 8.15s

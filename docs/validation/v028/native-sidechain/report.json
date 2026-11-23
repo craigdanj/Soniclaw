@@ -1,0 +1,41 @@
+{
+  "baseline_dry_plus_wet": 2.0,
+  "callback_allocations": 0,
+  "delay_compensated_dry_path": true,
+  "key_active_dry_plus_wet": 1.1778316497802734,
+  "key_released_dry_plus_wet": 2.0,
+  "latency": 1024,
+  "layout": {
+    "inputs": [
+      {
+        "channels": 2,
+        "id": "input-0",
+        "name": "input 1",
+        "role": "Main"
+      },
+      {
+        "channels": 2,
+        "id": "input-1",
+        "name": "input 2",
+        "role": "Sidechain"
+      }
+    ],
+    "outputs": [
+      {
+        "channels": 2,
+        "id": "output-0",
+        "name": "output 1",
+        "role": "Main"
+      }
+    ]
+  },
+  "stats": {
+    "blocks": 160,
+    "bridge_latency_frames": 1024,
+    "input_drops": 0,
+    "output_drops": 0,
+    "process_errors": 0,
+    "restart_requests": 0,
+    "underruns": 0
+  }
+}

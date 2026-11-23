@@ -1,0 +1,91 @@
+{
+  "clap_115": {
+    "test": "independent CLAP host",
+    "sample_rate": 48000,
+    "reported_latency_frames": 240,
+    "left_impulse_frame": 240,
+    "right_impulse_frame": 240
+  },
+  "oversampling_117": {
+    "description": "FFT of the final 4096 samples of the 48 kHz 9 kHz drive example from v0.117.0. Three coherent alias bins measured using one-sided peak amplitude.",
+    "alias_frequency_hz": [
+      3000,
+      15000,
+      21000
+    ],
+    "results": [
+      {
+        "render": "fir-16x-drive",
+        "alias_amplitude_dbfs": [
+          -118.63,
+          -115.27,
+          -84.12
+        ]
+      },
+      {
+        "render": "fir-1x-drive",
+        "alias_amplitude_dbfs": [
+          -16.6,
+          -27.51,
+          -9.02
+        ]
+      },
+      {
+        "render": "fir-2x-drive",
+        "alias_amplitude_dbfs": [
+          -32.27,
+          -26.58,
+          -38.68
+        ]
+      },
+      {
+        "render": "fir-4x-drive",
+        "alias_amplitude_dbfs": [
+          -58.76,
+          -64.15,
+          -53.64
+        ]
+      },
+      {
+        "render": "fir-8x-drive",
+        "alias_amplitude_dbfs": [
+          -121.17,
+          -117.9,
+          -84.01
+        ]
+      },
+      {
+        "render": "iir-16x-drive",
+        "alias_amplitude_dbfs": [
+          -110.76,
+          -109.63,
+          -113.11
+        ]
+      },
+      {
+        "render": "iir-2x-drive",
+        "alias_amplitude_dbfs": [
+          -31.49,
+          -26.35,
+          -36.01
+        ]
+      },
+      {
+        "render": "iir-4x-drive",
+        "alias_amplitude_dbfs": [
+          -58.75,
+          -64.12,
+          -53.38
+        ]
+      },
+      {
+        "render": "iir-8x-drive",
+        "alias_amplitude_dbfs": [
+          -113.83,
+          -115.48,
+          -113.93
+        ]
+      }
+    ]
+  }
+}

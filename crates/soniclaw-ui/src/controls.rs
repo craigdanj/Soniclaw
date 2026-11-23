@@ -1,7 +1,7 @@
 use egui::{self, Color32, Pos2, Sense, Stroke, Vec2};
 use soniclaw_core::{MidiMessage, Parameter};
 use soniclaw_dsp::AdsrSettings;
-const ACCENT: Color32 = Color32::from_rgb(67, 216, 172);
+
 fn position(parameter: &Parameter, logarithmic: bool) -> f32 {
     let i = parameter.info();
     if logarithmic && i.min > 0.0 {
@@ -66,10 +66,14 @@ pub fn parameter_knob(
                 response.mark_changed();
             }
         }
+        crate::accessibility::parameter_semantics(ui, &mut response, parameter);
         let center = rect.center();
         let radius = 24.0;
-        ui.painter()
-            .circle_filled(center, radius, Color32::from_rgb(43, 53, 68));
+        ui.painter().circle_filled(
+            center,
+            radius,
+            crate::toolkit::theme_color(crate::toolkit::current_theme(ui.ctx()).control),
+        );
         let points: Vec<_> = (0..=48)
             .map(|n| {
                 let angle = std::f32::consts::PI
@@ -77,18 +81,27 @@ pub fn parameter_knob(
                 center + Vec2::angled(angle) * radius
             })
             .collect();
-        ui.painter()
-            .add(egui::Shape::line(points, Stroke::new(3.0_f32, ACCENT)));
+        ui.painter().add(egui::Shape::line(
+            points,
+            Stroke::new(3.0_f32, crate::toolkit::accent(ui)),
+        ));
         let angle = std::f32::consts::PI * (0.75 + 1.5 * position(parameter, logarithmic));
         ui.painter().line_segment(
             [
                 center + Vec2::angled(angle) * 12.0,
                 center + Vec2::angled(angle) * 20.0,
             ],
-            Stroke::new(3.0_f32, Color32::WHITE),
+            Stroke::new(
+                3.0_f32,
+                crate::toolkit::theme_color(crate::toolkit::current_theme(ui.ctx()).text),
+            ),
         );
         ui.label(info.name);
-        ui.small(format!("{:.2}{}", parameter.get(), info.unit));
+        if parameter.has_codec() {
+            ui.small(parameter.format_value(parameter.get()));
+        } else {
+            ui.small(format!("{:.2}{}", parameter.get(), info.unit));
+        }
         response.on_hover_text("Drag vertically · double-click to reset · arrow keys to adjust")
     })
     .inner
@@ -104,7 +117,7 @@ pub fn xy_pad(ui: &mut egui::Ui, x: &Parameter, y: &Parameter) -> egui::Response
         }
     }
     ui.painter()
-        .rect_filled(rect, 6.0, Color32::from_rgb(27, 35, 47));
+        .rect_filled(rect, 6.0, crate::toolkit::surface(ui));
     for n in 1..4 {
         let t = n as f32 / 4.0;
         ui.painter().line_segment(
@@ -119,7 +132,13 @@ pub fn xy_pad(ui: &mut egui::Ui, x: &Parameter, y: &Parameter) -> egui::Response
         rect.left() + x.normalized() * rect.width(),
         rect.bottom() - y.normalized() * rect.height(),
     );
-    ui.painter().circle_filled(p, 6.0, ACCENT);
+    ui.painter()
+        .circle_filled(p, 6.0, crate::toolkit::accent(ui));
+    // Separate semantic controls make both axes independently focusable and adjustable.
+    ui.horizontal(|ui| {
+        crate::parameter_slider(ui, x, false);
+        crate::parameter_slider(ui, y, false);
+    });
     response.on_hover_text(format!("X: {} · Y: {}", x.info().name, y.info().name))
 }
 #[derive(Default)]
@@ -178,7 +197,7 @@ impl WaveformView {
             Sense::click_and_drag(),
         );
         ui.painter()
-            .rect_filled(rect, 5.0, Color32::from_rgb(22, 29, 40));
+            .rect_filled(rect, 5.0, crate::toolkit::surface(ui));
         if channels == 0 || samples.is_empty() {
             return response;
         }
@@ -212,7 +231,7 @@ impl WaveformView {
                     Pos2::new(x, y - max.clamp(-1.0, 1.0) * 52.0),
                     Pos2::new(x, y - min.clamp(-1.0, 1.0) * 52.0),
                 ],
-                Stroke::new(1.0_f32, ACCENT),
+                Stroke::new(1.0_f32, crate::toolkit::accent(ui)),
             );
         }
         response.on_hover_text("Drag horizontally to pan")
@@ -254,8 +273,10 @@ pub fn envelope_editor(ui: &mut egui::Ui, settings: &mut AdsrSettings) -> bool {
         point(settings.attack + settings.decay + 0.5, settings.sustain),
         point(total, 0.0),
     ];
-    ui.painter()
-        .add(egui::Shape::line(points, Stroke::new(2.0_f32, ACCENT)));
+    ui.painter().add(egui::Shape::line(
+        points,
+        Stroke::new(2.0_f32, crate::toolkit::accent(ui)),
+    ));
     changed
 }
 /// Magnitude response for the RBJ low-pass topology used by soniclaw-dsp.
@@ -301,7 +322,7 @@ pub fn eq_editor(
         Sense::click_and_drag(),
     );
     ui.painter()
-        .rect_filled(rect, 5.0, Color32::from_rgb(22, 29, 40));
+        .rect_filled(rect, 5.0, crate::toolkit::surface(ui));
     let upper = (sample_rate * 0.49).clamp(21.0, 20000.0);
     let hz = |x: f32| 20.0 * (upper / 20.0).powf(x);
     if response.is_pointer_button_down_on() {
@@ -321,8 +342,10 @@ pub fn eq_editor(
             })
         })
         .collect();
-    ui.painter()
-        .add(egui::Shape::line(points, Stroke::new(2.0_f32, ACCENT)));
+    ui.painter().add(egui::Shape::line(
+        points,
+        Stroke::new(2.0_f32, crate::toolkit::accent(ui)),
+    ));
     response.on_hover_text("Click or drag to set cutoff")
 }
 /// Mouse/touch piano with black keys, drag transitions and release on focus loss.
@@ -357,7 +380,7 @@ pub fn piano_keyboard(
                 key,
                 2.0,
                 if held[note] {
-                    ACCENT
+                    crate::toolkit::accent(ui)
                 } else {
                     Color32::from_gray(220)
                 },
@@ -385,7 +408,7 @@ pub fn piano_keyboard(
                 key,
                 2.0,
                 if held[note] {
-                    ACCENT
+                    crate::toolkit::accent(ui)
                 } else {
                     Color32::from_rgb(28, 34, 43)
                 },
@@ -420,6 +443,97 @@ pub fn piano_keyboard(
     }
     messages
 }
+/// Background-generated peaks; no source file/codec access occurs while drawing.
+pub struct ThumbnailView {
+    pub zoom: f64,
+    pub offset: u64,
+    peaks: Vec<soniclaw_waveform::Peak>,
+    source: Option<[u8; 32]>,
+}
+impl Default for ThumbnailView {
+    fn default() -> Self {
+        Self {
+            zoom: 1.,
+            offset: 0,
+            peaks: Vec::new(),
+            source: None,
+        }
+    }
+}
+pub struct ThumbnailResponse {
+    pub response: egui::Response,
+    pub visible_frames: [u64; 2],
+    pub detail_recommended: bool,
+}
+impl ThumbnailView {
+    pub fn show(
+        &mut self,
+        ui: &mut egui::Ui,
+        thumbnail: &soniclaw_waveform::Thumbnail,
+        channel: usize,
+    ) -> Result<ThumbnailResponse, soniclaw_waveform::Error> {
+        if channel >= thumbnail.channels() {
+            return Err(soniclaw_waveform::Error::Invalid(
+                "invalid waveform display channel",
+            ));
+        }
+        let hash = thumbnail.source_digest();
+        if self.source.is_some_and(|previous| previous != hash) {
+            self.zoom = 1.;
+            self.offset = 0;
+        }
+        self.source = Some(hash);
+        self.zoom = if self.zoom.is_finite() {
+            self.zoom.clamp(1., 1024.)
+        } else {
+            1.
+        };
+        let mut result = None;
+        ui.push_id((hash, channel), |ui| {
+            ui.add(
+                egui::Slider::new(&mut self.zoom, 1.0..=1024.0)
+                    .logarithmic(true)
+                    .text("Waveform zoom"),
+            );
+            let total = thumbnail.frames();
+            let visible = ((total as f64 / self.zoom) as u64).max(1).min(total);
+            self.offset = self.offset.min(total - visible);
+            let width = ui.available_width().clamp(1., 8192.);
+            let (rect, response) =
+                ui.allocate_exact_size(Vec2::new(width, 110.), Sense::click_and_drag());
+            if response.dragged() {
+                let delta =
+                    ui.input(|i| i.pointer.delta().x) as f64 / rect.width() as f64 * visible as f64;
+                self.offset =
+                    (self.offset as f64 - delta).clamp(0., (total - visible) as f64) as u64;
+            }
+            let count = rect.width().ceil() as usize;
+            self.peaks.resize(count, Default::default());
+            let end = self.offset + visible;
+            let query = thumbnail.query(channel, self.offset, end, &mut self.peaks);
+            ui.painter()
+                .rect_filled(rect, 5., crate::toolkit::surface(ui));
+            for (i, p) in self.peaks.iter().enumerate() {
+                let x = rect.left() + (i as f32 + 0.5) * rect.width() / count as f32;
+                ui.painter().line_segment(
+                    [
+                        Pos2::new(x, rect.center().y - p.max.clamp(-1., 1.) * 50.),
+                        Pos2::new(x, rect.center().y - p.min.clamp(-1., 1.) * 50.),
+                    ],
+                    Stroke::new(1., crate::toolkit::accent(ui)),
+                );
+            }
+            result = Some(query.map(|_| ThumbnailResponse {
+                response,
+                visible_frames: [self.offset, end],
+                detail_recommended: visible > 0
+                    && visible / (count as u64) < thumbnail.base_bucket(),
+            }));
+        });
+        result.expect("UI closure executes once")
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;

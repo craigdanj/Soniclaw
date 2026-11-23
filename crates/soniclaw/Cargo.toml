@@ -6,27 +6,56 @@ edition.workspace = true
 license.workspace = true
 rust-version.workspace = true
 [features]
+pipewire=["dep:soniclaw-pipewire"]
 default = []
+formats = ["dep:soniclaw-formats","soniclaw-waveform/formats"]
+plugin-isolation=["vst3-hosting","soniclaw-host/isolation"]
+studio-hosting=["vst3-hosting","soniclaw-host/studio"]
+vst3-hosting = ["hosting","dep:soniclaw-vst3","soniclaw-host/vst3"]
+hosting = ["dep:soniclaw-host"]
 native = ["dep:soniclaw-device", "soniclaw-session/native"]
-ui = ["dep:soniclaw-ui"]
+ui-svg=["ui","soniclaw-ui/svg"]
+ui = ["soniclaw-automation/ui","dep:soniclaw-ui", "soniclaw-registry/ui"]
+device-ui = ["soniclaw-automation/ui","native", "ui", "soniclaw-device/ui"]
 midi-input = ["soniclaw-midi/native"]
 [dependencies]
-soniclaw-stream = { path = "../soniclaw-stream", version = "0.3.0" }
-soniclaw-sampler = { path = "../soniclaw-sampler", version = "0.3.0" }
+soniclaw-pipewire={path="../soniclaw-pipewire",version="0.146.0",optional=true}
+soniclaw-studio={path="../soniclaw-studio",version="0.146.0"}
+soniclaw-quality={path="../soniclaw-quality",version="0.146.0"}
+soniclaw-kernels={path="../soniclaw-kernels",version="0.146.0"}
+soniclaw-tuning={path="../soniclaw-tuning",version="0.146.0"}
+soniclaw-mixer={path="../soniclaw-mixer",version="0.146.0"}
+soniclaw-commands={path="../soniclaw-commands",version="0.146.0"}
+soniclaw-clips={path="../soniclaw-clips",version="0.146.0"}
+soniclaw-waveform={path="../soniclaw-waveform",version="0.146.0"}
+soniclaw-params={path="../soniclaw-params",version="0.146.0"}
+soniclaw-vst3={path="../soniclaw-vst3",version="0.146.0",optional=true}
+soniclaw-transport = {path="../soniclaw-transport",version="0.146.0"}
+soniclaw-formats = {path="../soniclaw-formats",version="0.146.0",optional=true}
+soniclaw-automation = { path = "../soniclaw-automation", version = "0.146.0" }
+soniclaw-registry = {path="../soniclaw-registry",version="0.146.0"}
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "=0.10.9"
+soniclaw-host = {path="../soniclaw-host",version="0.146.0",optional=true}
+soniclaw-diagnostics = {path="../soniclaw-diagnostics",version="0.146.0"}
+soniclaw-stream = { path = "../soniclaw-stream", version = "0.146.0" }
+soniclaw-sampler = { path = "../soniclaw-sampler", version = "0.146.0" }
 soniclaw-core.workspace = true
 soniclaw-dsp.workspace = true
 soniclaw-midi.workspace = true
 soniclaw-engine.workspace = true
-soniclaw-graph = { path = "../soniclaw-graph", version = "0.3.0" }
+soniclaw-graph = { path = "../soniclaw-graph", version = "0.146.0" }
 soniclaw-device = { workspace = true, optional = true }
 soniclaw-ui = { workspace = true, optional = true }
-soniclaw-io = { path = "../soniclaw-io", version = "0.3.0" }
-soniclaw-state = { path = "../soniclaw-state", version = "0.3.0" }
-soniclaw-plugin = { path = "../soniclaw-plugin", version = "0.3.0" }
-soniclaw-bus = { path = "../soniclaw-bus", version = "0.3.0" }
-soniclaw-record = { path = "../soniclaw-record", version = "0.3.0" }
-soniclaw-session = { path = "../soniclaw-session", version = "0.3.0" }
+soniclaw-io = { path = "../soniclaw-io", version = "0.146.0" }
+soniclaw-state = { path = "../soniclaw-state", version = "0.146.0" }
+soniclaw-plugin = { path = "../soniclaw-plugin", version = "0.146.0" }
+soniclaw-bus = { path = "../soniclaw-bus", version = "0.146.0" }
+soniclaw-record = { path = "../soniclaw-record", version = "0.146.0" }
+soniclaw-session = { path = "../soniclaw-session", version = "0.146.0" }
 [dev-dependencies]
+soniclaw-example-processors = {path="../../examples/processor-pack",default-features=false}
 allocation-counter = "=0.8.1"
 [lints]
 workspace = true

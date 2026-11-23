@@ -1,0 +1,145 @@
+{
+  "cases": [
+    {
+      "audio": "HardClip-701-base.wav",
+      "callback_allocations": 0,
+      "fundamental_bin": 701,
+      "improvement_db": 17.488919563751324,
+      "latency_frames": 1,
+      "matched_filter_naive_residual_db": -14.7055355959077,
+      "oversampled_4x": false,
+      "processed_residual_db": -32.19445515965902,
+      "shape": "hard_clip"
+    },
+    {
+      "audio": "HardClip-701-4x.wav",
+      "callback_allocations": 0,
+      "fundamental_bin": 701,
+      "improvement_db": 11.366959929802158,
+      "latency_frames": 97,
+      "matched_filter_naive_residual_db": -14.7055355959077,
+      "oversampled_4x": true,
+      "processed_residual_db": -26.072495525709858,
+      "shape": "hard_clip"
+    },
+    {
+      "audio": "Tanh-701-base.wav",
+      "callback_allocations": 0,
+      "fundamental_bin": 701,
+      "improvement_db": 18.275067321947706,
+      "latency_frames": 1,
+      "matched_filter_naive_residual_db": -17.428347082948473,
+      "oversampled_4x": false,
+      "processed_residual_db": -35.70341440489618,
+      "shape": "tanh"
+    },
+    {
+      "audio": "Tanh-701-4x.wav",
+      "callback_allocations": 0,
+      "fundamental_bin": 701,
+      "improvement_db": 9.679647472710325,
+      "latency_frames": 97,
+      "matched_filter_naive_residual_db": -17.428347082948473,
+      "oversampled_4x": true,
+      "processed_residual_db": -27.1079945556588,
+      "shape": "tanh"
+    },
+    {
+      "audio": "Cubic-701-base.wav",
+      "callback_allocations": 0,
+      "fundamental_bin": 701,
+      "improvement_db": 16.95692535069989,
+      "latency_frames": 1,
+      "matched_filter_naive_residual_db": -13.350972192174062,
+      "oversampled_4x": false,
+      "processed_residual_db": -30.307897542873953,
+      "shape": "cubic"
+    },
+    {
+      "audio": "Cubic-701-4x.wav",
+      "callback_allocations": 0,
+      "fundamental_bin": 701,
+      "improvement_db": 12.41123544722911,
+      "latency_frames": 97,
+      "matched_filter_naive_residual_db": -13.350972192174062,
+      "oversampled_4x": true,
+      "processed_residual_db": -25.762207639403172,
+      "shape": "cubic"
+    },
+    {
+      "audio": "HardClip-851-base.wav",
+      "callback_allocations": 0,
+      "fundamental_bin": 851,
+      "improvement_db": 11.254490114065526,
+      "latency_frames": 1,
+      "matched_filter_naive_residual_db": -11.871673491177042,
+      "oversampled_4x": false,
+      "processed_residual_db": -23.126163605242567,
+      "shape": "hard_clip"
+    },
+    {
+      "audio": "HardClip-851-4x.wav",
+      "callback_allocations": 0,
+      "fundamental_bin": 851,
+      "improvement_db": 43.82790856258935,
+      "latency_frames": 97,
+      "matched_filter_naive_residual_db": -11.871673491177042,
+      "oversampled_4x": true,
+      "processed_residual_db": -55.69958205376639,
+      "shape": "hard_clip"
+    },
+    {
+      "audio": "Tanh-851-base.wav",
+      "callback_allocations": 0,
+      "fundamental_bin": 851,
+      "improvement_db": 10.413376521816764,
+      "latency_frames": 1,
+      "matched_filter_naive_residual_db": -14.34163167197413,
+      "oversampled_4x": false,
+      "processed_residual_db": -24.755008193790893,
+      "shape": "tanh"
+    },
+    {
+      "audio": "Tanh-851-4x.wav",
+      "callback_allocations": 0,
+      "fundamental_bin": 851,
+      "improvement_db": 64.5662414598964,
+      "latency_frames": 97,
+      "matched_filter_naive_residual_db": -14.34163167197413,
+      "oversampled_4x": true,
+      "processed_residual_db": -78.90787313187053,
+      "shape": "tanh"
+    },
+    {
+      "audio": "Cubic-851-base.wav",
+      "callback_allocations": 0,
+      "fundamental_bin": 851,
+      "improvement_db": 11.900065265930529,
+      "latency_frames": 1,
+      "matched_filter_naive_residual_db": -10.712984507391411,
+      "oversampled_4x": false,
+      "processed_residual_db": -22.61304977332194,
+      "shape": "cubic"
+    },
+    {
+      "audio": "Cubic-851-4x.wav",
+      "callback_allocations": 0,
+      "fundamental_bin": 851,
+      "improvement_db": 59.4324479095865,
+      "latency_frames": 97,
+      "matched_filter_naive_residual_db": -10.712984507391411,
+      "oversampled_4x": true,
+      "processed_residual_db": -70.14543241697791,
+      "shape": "cubic"
+    }
+  ],
+  "drive": 4,
+  "fft_size": 4096,
+  "fundamental_bins": [
+    701,
+    851
+  ],
+  "sample_rate": 48000,
+  "version": "0.90.0",
+  "warmup_frames": 8192
+}

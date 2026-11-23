@@ -1,0 +1,25 @@
+{
+  "bounded_streaming_conversion": true,
+  "exports": [
+    {
+      "duration_seconds": 1.0,
+      "frames": 44100,
+      "positive_zero_crossings": 109,
+      "rate": 44100
+    },
+    {
+      "duration_seconds": 1.0,
+      "frames": 96000,
+      "positive_zero_crossings": 110,
+      "rate": 96000
+    },
+    {
+      "duration_seconds": 1.0,
+      "frames": 8000,
+      "positive_zero_crossings": 110,
+      "rate": 8000
+    }
+  ],
+  "no_pitch_shift": true,
+  "project_rate_unchanged": true
+}

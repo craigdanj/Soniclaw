@@ -1,0 +1,32 @@
+[
+  {
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/soniclaw-sdk-tools",
+      "--host-contract",
+      "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/libsoniclaw_host_fixture.so",
+      "/workspace/scratch/cd89c8ef929d/verification-final/v022/regressions/host-contract"
+    ],
+    "exit_code": 0,
+    "seconds": 0.02
+  },
+  {
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/soniclaw-sdk-tools",
+      "--direct-demo",
+      "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/libsoniclaw_host_fixture.so",
+      "/workspace/scratch/cd89c8ef929d/verification-final/v022/regressions/direct-demo"
+    ],
+    "exit_code": 0,
+    "seconds": 0.07
+  },
+  {
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/soniclaw-sdk-tools",
+      "--session-demo",
+      "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/libsoniclaw_host_fixture.so",
+      "/workspace/scratch/cd89c8ef929d/verification-final/v022/regressions/session-demo"
+    ],
+    "exit_code": 0,
+    "seconds": 0.07
+  }
+]

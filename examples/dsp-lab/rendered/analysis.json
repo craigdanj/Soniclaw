@@ -1,0 +1,14 @@
+{
+  "hardware_audio_tested": false,
+  "integrated_lufs": -16.187141671026914,
+  "lookahead_latency_frames": 252,
+  "momentary_lufs": -16.695263661630502,
+  "pitch_confidence": 0.9999862943437985,
+  "pitch_hz": 440.01753298509215,
+  "sample_rate": 48000,
+  "seconds": 3,
+  "stereo_correlation": 1.0,
+  "stft_latency_frames": 1024,
+  "true_peak_dbtp": -1.2999988794326782,
+  "version": "0.5.0"
+}

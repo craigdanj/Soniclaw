@@ -1,0 +1,20 @@
+{
+  "coherent_no_window": true,
+  "fft_size": 8192,
+  "sample_rate": 48000,
+  "values": {
+    "cubic_imd_db": -38.13625901806626,
+    "drive_alias_reduction_db": 81.31307902448222,
+    "filtered_sweep_rms": 0.3093197589828832,
+    "impulse_peak": 0.23354962468147278,
+    "impulse_tail_rms": 0.0,
+    "known_snr_db": 55.729827700728805,
+    "known_thd_db": -39.99999958376407,
+    "lowpass_100_db": -3.7348568534787592e-6,
+    "lowpass_cutoff_db": -3.010299064995714,
+    "lowpass_stop_db": -22.90023008292375,
+    "noise_dbfs": -64.76085699899913,
+    "pure_thdn_db": -140.84461054542868
+  },
+  "version": "0.42.0"
+}

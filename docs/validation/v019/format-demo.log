@@ -1,0 +1,3 @@
+    Finished `dev` profile [unoptimized] target(s) in 0.18s
+     Running `target/debug/soniclaw-sdk-tools --format-demo /workspace/scratch/cd89c8ef929d/verification-series/v019/format-demo`
+PASS WAV/AIFF/FLAC PCM24, metadata, seek, streaming writes and bounded project decode

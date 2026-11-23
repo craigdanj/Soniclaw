@@ -1,0 +1,4 @@
+	AUDIO in: 1, out: 1
+	AUDIO in: 1, out: 1
+	AUDIO in: 0, out: 1
+PASS continuous native VST3 offline stream, tail, partition invariance and aligned stems

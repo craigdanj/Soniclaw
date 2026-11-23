@@ -1,0 +1,11 @@
+{
+  "cooperative_cancelled": true,
+  "over_budget_rejected": true,
+  "progress": [
+    100,
+    100
+  ],
+  "remaining_reserved": 0,
+  "stale_epoch_rejected": true,
+  "typed_result": 1234
+}

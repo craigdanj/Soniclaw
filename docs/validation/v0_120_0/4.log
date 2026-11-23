@@ -1,0 +1,5 @@
+ Documenting soniclaw-dsp v0.120.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-dsp)
+ Documenting soniclaw-dsp-suite v0.120.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/dsp-suite)
+ Documenting soniclaw-kernels v0.120.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-kernels)
+    Finished `dev` profile [unoptimized] target(s) in 2.12s
+   Generated /workspace/scratch/cd89c8ef929d/daw-series/soniclaw/target/doc/soniclaw_dsp/index.html and 2 other files

@@ -1,0 +1,19 @@
+[package]
+name = "soniclaw-automation"
+description = "Editable beat lanes, gesture recording and prepared sample-accurate playback"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+[features]
+ui = ["dep:egui"]
+[dependencies]
+soniclaw-transport = {path="../soniclaw-transport",version="0.146.0"}
+soniclaw-core.workspace = true
+serde = { version = "1", features = ["derive"] }
+egui = { version = "=0.36.1", optional = true }
+[lints]
+workspace = true
+[dev-dependencies]
+allocation-counter = "=0.8.1"
+serde_json = "1"

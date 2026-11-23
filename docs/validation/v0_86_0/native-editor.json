@@ -1,0 +1,17 @@
+{
+  "callback_allocations": 0,
+  "host_value": 0.8,
+  "native_callback_order": [
+    "Begin",
+    "Value",
+    "End"
+  ],
+  "native_snapshot_value": 0.8,
+  "native_window_opened": false,
+  "output_peak": 0.20000000298023224,
+  "overflow_reported": true,
+  "readonly_rejected": true,
+  "touch_lane_saved": true,
+  "undo_redo": true,
+  "version": "0.86.0"
+}

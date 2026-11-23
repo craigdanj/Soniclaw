@@ -1,0 +1,14 @@
+{
+  "boundary_source_trim": 37,
+  "compensated_note_off": 136,
+  "compensated_note_on": 36,
+  "measurement": {
+    "noise_rms": 0.0,
+    "offset_frames": 137,
+    "peak": -0.5,
+    "peak_to_noise": 499999999.99999994
+  },
+  "portable_calibration": true,
+  "raw_midi_note_on": 100,
+  "synthetic_only": true
+}

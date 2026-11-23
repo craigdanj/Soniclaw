@@ -1,10 +1,32 @@
 //! Small composable DSP units and processors, independent of devices and UI.
 use soniclaw_core::*;
 use std::{f32::consts::TAU, sync::Arc};
+pub mod advanced;
+mod automated;
+pub mod block_view;
+pub mod composition;
 mod convolution;
+pub mod convolution_update_queue;
+pub mod creative_filters;
 mod effects;
-mod oversampling;
+pub mod first_order_tpt;
+pub mod granular;
+pub mod half_band_design;
+pub mod logarithmic_ramp;
+pub mod lookup_transform;
+pub mod modulation;
+pub mod nonlinear;
+pub mod rack;
+pub mod spectral_fx;
+pub mod stereo_convolution;
+pub mod stereo_panner;
+pub mod voice_mod;
+pub use automated::{AutomatedEffect, EffectKind};
+mod expressive;
+pub mod oversampling;
 mod sampler;
+pub use expressive::ExpressiveSynth;
+pub mod resample;
 pub use convolution::Convolution;
 pub use effects::*;
 pub use oversampling::OversampledDrive;
@@ -71,7 +93,7 @@ impl Oscillator {
     }
 }
 
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, PartialEq, serde::Serialize, serde::Deserialize)]
 pub struct AdsrSettings {
     pub attack: f32,
     pub decay: f32,
@@ -170,33 +192,32 @@ impl Adsr {
 }
 
 pub struct Gain {
+    kernel: soniclaw_kernels::Kernel,
     pub gain: Arc<Parameter>,
     smooth: SmoothedValue,
 }
 impl Gain {
     pub fn new(gain: Arc<Parameter>) -> Self {
-        let value = gain.get();
+        let value = gain.modulated();
         Self {
             gain,
             smooth: SmoothedValue::new(value, 0),
+            kernel: soniclaw_kernels::Kernel::default(),
         }
     }
 }
 impl AudioProcessor for Gain {
     fn prepare(&mut self, spec: ProcessSpec) -> Result<(), Error> {
         spec.validate()?;
-        self.smooth = SmoothedValue::new(self.gain.get(), (spec.sample_rate * 0.01) as usize);
+        self.smooth = SmoothedValue::new(self.gain.modulated(), (spec.sample_rate * 0.01) as usize);
+        self.kernel = soniclaw_kernels::Kernel::best();
         Ok(())
     }
     fn process(&mut self, b: &mut AudioBuffer<'_>, _: &ProcessContext<'_>) {
-        self.smooth.set_target(self.gain.get());
+        self.smooth.set_target(self.gain.modulated());
         if let Some(gain) = self.smooth.settled_value() {
-            if gain == 0.0 {
+            if gain == 0.0 || (gain != 1.0 && self.kernel.gain(b.samples_mut(), gain).is_err()) {
                 b.clear();
-            } else if gain != 1.0 {
-                for sample in b.samples_mut() {
-                    *sample *= gain;
-                }
             }
             return;
         }
@@ -209,7 +230,7 @@ impl AudioProcessor for Gain {
         }
     }
     fn reset(&mut self) {
-        self.smooth.reset(self.gain.get());
+        self.smooth.reset(self.gain.modulated());
     }
 }
 
@@ -246,7 +267,7 @@ impl AudioProcessor for LowPass {
         Ok(())
     }
     fn process(&mut self, b: &mut AudioBuffer<'_>, _: &ProcessContext<'_>) {
-        let cutoff = self.cutoff.get().clamp(0.01, self.sr * 0.49);
+        let cutoff = self.cutoff.modulated().clamp(0.01, self.sr * 0.49);
         // Public q may change while stopped. Reject invalid values without poisoning state.
         if !self.q.is_finite() || self.q <= 0.0 {
             b.clear();
@@ -367,6 +388,24 @@ impl<const N: usize> Default for PolySynth<N> {
 impl<const N: usize> PolySynth<N> {
     fn event(&mut self, message: MidiMessage) {
         match message {
+            MidiMessage::NoteOnId {
+                channel,
+                note,
+                velocity,
+                ..
+            } => self.event(MidiMessage::NoteOn {
+                channel,
+                note,
+                velocity: (velocity.clamp(0.0, 1.0) * 127.0).round() as u8,
+            }),
+            MidiMessage::NoteOffId { target } if target.channel >= 0 && target.key >= 0 => self
+                .event(MidiMessage::NoteOff {
+                    channel: target.channel as u8,
+                    note: target.key as u8,
+                    velocity: 0,
+                }),
+            MidiMessage::NoteChoke { .. } => self.reset(),
+
             MidiMessage::NoteOn {
                 channel,
                 note,
@@ -557,3 +596,68 @@ mod tests {
         assert_eq!(data[0], 0.0);
     }
 }
+
+pub mod streaming;
+
+pub mod amp_models;
+pub mod block_dsp;
+pub mod coupled_instrument;
+pub mod dither;
+pub mod dynamics;
+pub mod filter_design;
+pub mod fractional_delay;
+pub mod hybrid_voice;
+pub mod iir_oversampling;
+pub mod linear_phase;
+pub mod nam_lstm;
+pub mod oscillators;
+pub mod physical;
+pub mod pitch_quality;
+pub mod prepared_resample;
+pub mod restoration;
+#[cfg(test)]
+mod rt_controls;
+pub mod sample_playback;
+pub mod spatial;
+pub mod spectral_resynthesis;
+pub mod stream_resample;
+pub mod wavetable_author;
+
+pub mod ballistics;
+pub mod denormals {
+    pub use soniclaw_kernels::{with_denormals_flushed, DenormalGuard};
+}
+
+pub mod precision;
+
+pub mod ir_capture;
+
+pub mod fm_operators;
+
+pub mod wave_digital;
+
+pub mod spectral_morph;
+
+pub mod polyphonic_analysis;
+
+pub mod binaural;
+
+pub mod reed_waveguide;
+
+pub mod mastering;
+
+pub mod nam_wavenet;
+
+pub mod multimic_sampler;
+
+pub mod pitch_correction;
+
+pub mod cabinet_blend;
+
+pub mod hpss;
+
+pub mod granular_fx;
+
+pub mod ambisonics;
+
+pub mod feedback_patch;

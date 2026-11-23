@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "product_id": "org.soniclaw.workbench",
+  "name": "Spectral Space",
+  "parameters": {},
+  "assets": [
+    {
+      "id": "grain-source",
+      "path": "assets/grain-source.wav",
+      "root_note": 57
+    },
+    {
+      "id": "stereo-ir",
+      "path": "assets/stereo-ir.wav",
+      "root_note": 60
+    }
+  ],
+  "zones": [],
+  "nodes": [
+    {
+      "id": "osc",
+      "kind": "wavetable",
+      "settings": {},
+      "input_gain": 0.0
+    },
+    {
+      "id": "freeze",
+      "kind": "spectral_freeze",
+      "settings": {},
+      "input_gain": 0.0
+    },
+    {
+      "id": "ir",
+      "kind": "convolution",
+      "settings": {},
+      "input_gain": 0.0,
+      "asset": "stereo-ir"
+    },
+    {
+      "id": "limit",
+      "kind": "lookahead_limiter",
+      "settings": {},
+      "input_gain": 0.0
+    }
+  ],
+  "connections": [
+    {
+      "from": "osc",
+      "to": "freeze",
+      "gain": 1.0
+    },
+    {
+      "from": "freeze",
+      "to": "ir",
+      "gain": 1.0
+    },
+    {
+      "from": "ir",
+      "to": "limit",
+      "gain": 1.0
+    }
+  ],
+  "outputs": {
+    "limit": 1.0
+  }
+}

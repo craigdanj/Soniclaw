@@ -1,0 +1,25 @@
+{
+  "feature": "convolution-update-queue",
+  "results": {
+    "cases": [
+      {
+        "audio": "convolver-a.wav",
+        "callback_allocations": 0,
+        "latency_frames": 0,
+        "name": "convolver-a",
+        "peak": 0.5512937903404236,
+        "retired_kernels": 1
+      },
+      {
+        "audio": "convolver-b.wav",
+        "callback_allocations": 0,
+        "latency_frames": 0,
+        "name": "convolver-b",
+        "peak": 0.5499467849731445,
+        "retired_kernels": 1
+      }
+    ],
+    "shared_workers": 1
+  },
+  "version": "0.139.0"
+}

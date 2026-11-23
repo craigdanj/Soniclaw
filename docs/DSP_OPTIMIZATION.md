@@ -1,0 +1,25 @@
+# Prepared resampling kernels and profiling — 0.100.0
+
+## Workflow and API
+
+`soniclaw_dsp::prepared_resample::PreparedSinc` replaces per-tap trigonometric coefficient evaluation with immutable normalized polyphase tables, fractional phase interpolation and existing checked SIMD dot kernels. Construct once off-thread and share an `Arc<PreparedSinc>` across voices. `interpolate(position, increment, read)` accepts an application sample reader for resident PCM, zero padding or loop wrapping. It owns no PCM and does not fetch disk pages. CPU backend selection happens at construction, not during rendering. No new unsafe code is introduced; checked architecture kernels remain in soniclaw-kernels.
+
+Config schema 1 selects power-of-two phases 64–2048 and base_radius 8–32 (default 512/16). Each rate band precomputes phases+1 rows, normalized for DC gain. Per sample, two neighbouring phase rows blend into a fixed stack coefficient buffer and the source samples are gathered into another buffer; Kernel::dot evaluates the result. The configured backend is visible through backend(); storage_bytes() reports table payload. Config validation bounds total table payload to 8 MiB. Runtime stack scratch is ~4 KiB; account for it in audio thread stacks.
+
+`sample_playback::Interpolation::Prepared` enables this path in RegionPlayer. `new_with_tables(sample, config, Arc<PreparedSinc>)` shares tables; ordinary new creates default tables during prepare when needed. Topology/CPU dispatch/table construction stays off-thread. Existing Linear/SincFast/SincBest and all older sampler APIs retain their algorithms; prepared mode is opt-in. Release/reset/start retain tables and PCM; destroy their last owners off-thread.
+
+## Rate/quality tradeoffs and timing
+
+This implementation has four conservative cutoff bands for source increments 1, 2, 4, 8. The smallest band covering the current positive increment is selected. Exact band rates match existing SincFast's 0.94/increment cutoff when base_radius=16. Non-band rates use the next narrower cutoff and larger radius: for example 1.1 selects band 2. This trades treble bandwidth for bounded alias suppression and low coefficient-generation cost. Changing across a band boundary can change timbre abruptly. It is best suited to fixed or deliberately quantized rate choices; use the exact existing sinc path for smooth continuous pitch sweeps, or build a product-specific richer bank. This is not a universal drop-in sound-equivalent optimization.
+
+Prepared interpolation supports positive increments ≤8; invalid/nonfinite position/increment returns zero. The old exact sinc path still supports increments ≤32. Position must fit the bounded isize indexing range. RegionPlayer validates effective source/output increment against the chosen interpolation mode before prepare/speed updates. A failed speed update retains its prior value. Sinc reads look ahead in already resident data and declare zero output buffering latency; the application reader controls boundaries.
+
+## Persistence, lifecycle and recovery
+
+Persist Config and sample_playback's optional interpolation choice/asset reference, not coefficient rows, CPU backend, PCM or runtime cursor. Unknown fields/schema mismatch reject. This adds a serde enum variant for new presets; older binaries reject that variant rather than silently changing interpolation. Preserve older presets by keeping their prior interpolation choice. PreparedSinc is immutable and shareable; one audio owner still mutates each RegionPlayer. Config/prepare failure must retain the prior valid engine. Processing performs no allocations, locks, CPU feature detection or sin/cos evaluation in this interpolator; reader callbacks must satisfy their own real-time contract.
+
+## Reproducible example, timing and validation
+
+Run `cargo run --release -p soniclaw-dsp-suite --offline -- optimization NEW_DIRECTORY`. It compares identical phase-varying harmonic sample readers at exact increments 1/2/4/8 against SincFast, records maximum absolute output error and elapsed time for both, and writes old/prepared audio plus JSON. Timed loops use black_box, a 512-frame warmup and the median of three alternating-order runs, and keep table construction outside timing; prepare time/table memory/backend are recorded separately. Timing is a local Linux x86_64 measurement, sensitive to compiler, CPU, scheduling and reader cost; it is not a universal speedup or a comparison with JUCE. Debug timing is not release performance evidence.
+
+Unit tests check DC normalization, fractional phase agreement with exact SincFast at the band rates, rejected bounds, no allocation, and a high-frequency attenuation fixture at 4× downsampling. Region playback tests exercise the prepared option and table sharing. Final workspace tests, all-target/all-feature Clippy, formatting and documentation are recorded in docs/validation/v0_100_0/ with the release timing report. Human listening review, hardware stress/underruns, other CPU backends and Windows/macOS runtime remain separate acceptance work.

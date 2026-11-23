@@ -1,0 +1,13 @@
+{
+  "feature": "ambisonics",
+  "results": {
+    "callback_allocations": 0,
+    "left_right_rms_ratios": [
+      1.4342428167346624,
+      0.7335571786038222
+    ],
+    "order": "W,Y,Z,X",
+    "sofa_measurements": 710
+  },
+  "version": "0.136.0"
+}

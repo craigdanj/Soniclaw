@@ -1,0 +1,193 @@
+[
+  {
+    "check": "fmt",
+    "command": [
+      "cargo",
+      "fmt",
+      "--all",
+      "--check"
+    ],
+    "exit_code": 0,
+    "final_log_refreshed": true
+  },
+  {
+    "check": "clippy",
+    "command": [
+      "cargo",
+      "clippy",
+      "--workspace",
+      "--all-targets",
+      "--all-features",
+      "--locked",
+      "--offline",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "exit_code": 0,
+    "final_log_refreshed": true
+  },
+  {
+    "check": "tests",
+    "command": [
+      "cargo",
+      "test",
+      "--workspace",
+      "--all-features",
+      "--locked",
+      "--offline"
+    ],
+    "exit_code": 0,
+    "final_log_refreshed": true
+  },
+  {
+    "check": "docs",
+    "command": [
+      "cargo",
+      "doc",
+      "--workspace",
+      "--all-features",
+      "--no-deps",
+      "--locked",
+      "--offline"
+    ],
+    "exit_code": 0,
+    "final_log_refreshed": true
+  },
+  {
+    "check": "build",
+    "command": [
+      "cargo",
+      "build",
+      "-p",
+      "soniclaw-clap-demo",
+      "-p",
+      "soniclaw-project-plugin",
+      "-p",
+      "soniclaw-dsp-lab",
+      "-p",
+      "soniclaw-workbench",
+      "-p",
+      "cargo-soniclaw",
+      "-p",
+      "soniclaw-clap-smoke",
+      "--locked",
+      "--offline"
+    ],
+    "exit_code": 0,
+    "seconds": 2.338
+  },
+  {
+    "check": "smoke",
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-clap-smoke",
+      "--locked",
+      "--offline"
+    ],
+    "exit_code": 0,
+    "seconds": 0.055
+  },
+  {
+    "check": "project-smoke",
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-clap-smoke",
+      "--locked",
+      "--offline",
+      "--",
+      "target/debug/libsoniclaw_project_plugin.so",
+      "--project"
+    ],
+    "exit_code": 0,
+    "seconds": 0.077
+  },
+  {
+    "check": "dsp-smoke",
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-clap-smoke",
+      "--locked",
+      "--offline",
+      "--",
+      "target/debug/libsoniclaw_dsp_lab.so",
+      "--dsp"
+    ],
+    "exit_code": 0,
+    "seconds": 0.132
+  },
+  {
+    "check": "demo",
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-dsp-lab",
+      "--locked",
+      "--offline",
+      "--",
+      "/tmp/soniclaw-v060-final-dsp-lab"
+    ],
+    "exit_code": 0,
+    "seconds": 1.207
+  },
+  {
+    "check": "ecosystem",
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-ecosystem",
+      "--locked",
+      "--offline",
+      "--",
+      "/tmp/soniclaw-v060-final-ecosystem"
+    ],
+    "exit_code": 0,
+    "seconds": 1.338
+  },
+  {
+    "check": "workbench-smoke",
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-clap-smoke",
+      "--locked",
+      "--offline",
+      "--",
+      "target/debug/libsoniclaw_workbench.so",
+      "--workbench"
+    ],
+    "exit_code": 0,
+    "final_log_refreshed": true
+  },
+  {
+    "check": "workbench-demo",
+    "command": [
+      "cargo",
+      "run",
+      "-p",
+      "soniclaw-workbench",
+      "--no-default-features",
+      "--locked",
+      "--offline",
+      "--",
+      "--render",
+      "/tmp/soniclaw-v060-final-workbench"
+    ],
+    "exit_code": 0,
+    "seconds": 5.516
+  },
+  {
+    "check": "templates",
+    "exit_code": 0,
+    "configuration": "app,CLAP,sampler default features; parent path contains spaces"
+  }
+]

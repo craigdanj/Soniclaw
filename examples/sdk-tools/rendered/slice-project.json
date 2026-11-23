@@ -1,0 +1,122 @@
+{
+  "schema_version": 2,
+  "product_id": "org.soniclaw.workbench",
+  "name": "Sampler Studio",
+  "parameters": {},
+  "assets": [
+    {
+      "id": "grain-source",
+      "path": "assets/grain-source.wav",
+      "root_note": 57
+    },
+    {
+      "id": "stereo-ir",
+      "path": "assets/stereo-ir.wav",
+      "root_note": 60
+    }
+  ],
+  "zones": [
+    {
+      "asset": "grain-source",
+      "keys": [
+        36,
+        36
+      ],
+      "velocities": [
+        1,
+        127
+      ],
+      "group": 0,
+      "gain": 1.0,
+      "one_shot": true,
+      "loop_frames": null,
+      "end_frame": 24000
+    },
+    {
+      "asset": "grain-source",
+      "keys": [
+        37,
+        37
+      ],
+      "velocities": [
+        1,
+        127
+      ],
+      "group": 0,
+      "gain": 1.0,
+      "one_shot": true,
+      "loop_frames": null,
+      "start_frame": 24000,
+      "end_frame": 48000
+    },
+    {
+      "asset": "grain-source",
+      "keys": [
+        38,
+        38
+      ],
+      "velocities": [
+        1,
+        127
+      ],
+      "group": 0,
+      "gain": 1.0,
+      "one_shot": true,
+      "loop_frames": null,
+      "start_frame": 48000,
+      "end_frame": 72000
+    },
+    {
+      "asset": "grain-source",
+      "keys": [
+        39,
+        39
+      ],
+      "velocities": [
+        1,
+        127
+      ],
+      "group": 0,
+      "gain": 1.0,
+      "one_shot": true,
+      "loop_frames": null,
+      "start_frame": 72000,
+      "end_frame": 96000
+    }
+  ],
+  "nodes": [
+    {
+      "id": "sampler",
+      "kind": "sampler",
+      "settings": {},
+      "input_gain": 0.0
+    },
+    {
+      "id": "tone",
+      "kind": "state_variable",
+      "settings": {},
+      "input_gain": 0.0
+    },
+    {
+      "id": "limit",
+      "kind": "lookahead_limiter",
+      "settings": {},
+      "input_gain": 0.0
+    }
+  ],
+  "connections": [
+    {
+      "from": "sampler",
+      "to": "tone",
+      "gain": 1.0
+    },
+    {
+      "from": "tone",
+      "to": "limit",
+      "gain": 1.0
+    }
+  ],
+  "outputs": {
+    "limit": 1.0
+  }
+}

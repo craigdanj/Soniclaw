@@ -1,0 +1,150 @@
+   Compiling soniclaw v0.38.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw)
+    Finished `test` profile [unoptimized] target(s) in 3.77s
+     Running unittests src/lib.rs (target/debug/build/soniclaw/fb56b57c7482f1de/out/soniclaw-fb56b57c7482f1de)
+
+running 9 tests
+test hosted::tests::cycles_duplicates_and_bad_gains_are_rejected_before_loading ... ok
+test rendering::export_tests::declared_latency_is_trimmed_without_losing_the_end ... ok
+test hosted::persistence_tests::numeric_host_parameter_ids_survive_mixed_json ... ok
+test rendering::tests::continuous_state_tail_and_partition_invariance ... ok
+test rendering::export_tests::failed_stem_export_does_not_commit_partial_files ... ok
+test rendering::tests::cancellation_and_invalid_input_are_explicit ... ok
+test hosted::tests::native_graph_capture_and_owner_revocation ... ok
+test authoring::tests::export_roundtrip_rr_and_no_overwrite ... ok
+test authoring::tests::pitch_crossing_tokens ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+     Running tests/realtime.rs (target/debug/build/soniclaw/19e7eb407c1189ad/out/realtime-19e7eb407c1189ad)
+
+running 5 tests
+test offline_automation_is_partition_independent ... ok
+test automation_and_record_enqueue_do_not_allocate ... ok
+test prepared_sampler_and_parallel_graph_do_not_allocate ... ok
+test offline_audio_is_independent_of_block_partition ... ok
+test prepared_chain_does_not_allocate_while_processing ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/v010.rs (target/debug/build/soniclaw/03a95061555883ea/out/v010-03a95061555883ea)
+
+running 5 tests
+test preview_resamples_and_stops_without_callback_allocations ... ok
+test invalid_metadata_and_corrupt_document_do_not_change_catalog ... ok
+test searchable_catalog_persists_tags_banks_favourites_and_projects ... ok
+test relocation_is_scoped_and_transactional ... ok
+test corrupt_latest_index_recovers_previous_and_never_overwrites_corruption ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/v011.rs (target/debug/build/soniclaw/b86a46b8f9bdd04f/out/v011-b86a46b8f9bdd04f)
+
+running 6 tests
+test release_uses_note_on_velocity_and_waits_for_sustain_up ... ok
+test identified_release_is_not_duplicated_and_choke_does_not_trigger_release ... ok
+test energy_transients_generate_scoped_slice_ranges ... ok
+test velocity_crossfades_layer_and_follow_endpoints ... ok
+test sfz_rejects_unsupported_and_escaping_data ... ok
+test sfz_subset_imports_inheritance_notes_paths_endpoints_and_release ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/v013.rs (target/debug/build/soniclaw/e3d4bc90518284f6/out/v013-e3d4bc90518284f6)
+
+running 1 test
+test project_automation_survives_state_and_builds ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/v030.rs (target/debug/build/soniclaw/9dba345d0d52492c/out/v030-9dba345d0d52492c)
+
+running 2 tests
+test optimized_gain_ramp_is_block_partition_independent ... ok
+test new_effects_and_multisampler_do_not_allocate_in_callbacks ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.15s
+
+     Running tests/v040.rs (target/debug/build/soniclaw/0e445fd337b46350/out/v040-0e445fd337b46350)
+
+running 6 tests
+test undo_redo_rebuild_and_failed_edit_are_transactional ... ok
+test complete_state_rebuilds_graph_and_rejects_failure_without_mutation ... ok
+test mpe_pitch_changes_only_the_addressed_channel_at_event_time ... ok
+test sample_map_and_loop_roundtrip_render_without_external_pcm_state ... ok
+test automated_effects_and_expressive_sampler_do_not_allocate ... ok
+test disk_callback_and_seek_do_not_allocate ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.31s
+
+     Running tests/v050.rs (target/debug/build/soniclaw/33262057a97279a4/out/v050-33262057a97279a4)
+
+running 6 tests
+test spectral_gate_suppresses_low_noise_and_width_preserves_mono_sum ... ok
+test new_project_nodes_roundtrip_and_preserve_parameter_identities ... ok
+test all_new_effect_paths_are_prepared_allocation_free_and_finite ... ok
+test wavetable_synthesis_and_analysis_do_not_allocate ... ok
+test timed_automation_and_latency_are_partition_independent ... ok
+test advanced_effects_accept_supported_rates_and_reject_invalid_preparation ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.24s
+
+     Running tests/v060.rs (target/debug/build/soniclaw/f7bf9251a72cc5b1/out/v060-f7bf9251a72cc5b1)
+
+running 5 tests
+test project_saves_base_macro_identity_and_clears_removed_routes_transactionally ... ok
+test synced_lfo_and_midi_sources_are_deterministic_and_bounded ... ok
+test realtime_pitch_shift_transposes_a_tone_and_declares_delay ... ok
+test granular_sustain_then_release_reaches_silence ... ok
+test prepared_effects_granular_modulation_and_ir_swaps_do_not_allocate_or_free ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.21s
+
+     Running tests/v070.rs (target/debug/build/soniclaw/d36456954052a839/out/v070-d36456954052a839)
+
+running 4 tests
+test graph_swap_warms_and_defers_retirement_with_queue_backpressure ... ok
+test short_humanized_notes_release_and_capacity_overflow_panics_safely ... ok
+test sampler_regions_bound_reads_and_loop_fades_reduce_the_wrap_jump ... ok
+test voice_mpe_render_is_partition_independent_and_allocation_free ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/v080.rs (target/debug/build/soniclaw/c2c675247b896686/out/v080-c2c675247b896686)
+
+running 9 tests
+test recovery_digest_mutation_is_rejected_and_user_project_is_unchanged ... ok
+test bundle_rejects_traversal_even_with_valid_manifest_digest_and_oversized_headers ... ok
+test recovery_skips_corruption_and_wrong_products_and_rotates_after_commit ... ok
+test failed_load_can_be_followed_by_valid_load_and_background_autosave_recovery ... ok
+test bundle_failure_preserves_existing_destinations_and_removes_partial_import ... ok
+test cancellation_and_full_queue_have_explicit_behavior ... ok
+test bundle_import_request_loads_resources_from_new_root ... ok
+test latest_load_wins_and_factory_runs_on_a_separate_thread ... ok
+test portable_bundle_roundtrip_assets_and_prepared_audio ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/v090.rs (target/debug/build/soniclaw/c3b01b2dbd87badf/out/v090-c3b01b2dbd87badf)
+
+running 11 tests
+test registration_default_state_and_invalid_ranges_are_checked ... ok
+test graph_modulation_routes_to_registered_parameters ... ok
+test compiled_pack_discovery_and_registered_audio_has_no_callback_heap_work ... ok
+test repeated_construction_frees_owned_parameter_metadata ... ok
+test old_custom_state_migrates_and_host_restore_reuses_exact_parameter_handles ... ok
+test failed_restore_and_missing_registration_leave_state_and_values_intact ... ok
+test registry_is_used_by_background_load_and_bundle_roundtrip ... ok
+test sample_accurate_automation_is_partition_independent_for_registered_nodes ... ok
+test standalone_session_keeps_registry_across_edits_undo_redo_and_failure ... ok
+test duplicate_registration_bad_metadata_and_settings_are_rejected ... ok
+test optional_registered_editor_renders_and_reports_fallback ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+   Doc-tests soniclaw
+
+running 1 test
+test crates/soniclaw/src/lib.rs - (line 3) ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.40s
+

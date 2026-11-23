@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "product_id": "org.soniclaw.workbench",
+  "name": "Tape Colour Rack",
+  "parameters": {},
+  "assets": [],
+  "zones": [],
+  "nodes": [
+    {
+      "custom": {
+        "processor_id": "org.soniclaw.example.tape",
+        "version": 2,
+        "data": null
+      },
+      "id": "tape",
+      "kind": "custom",
+      "settings": {},
+      "input_gain": 1.0
+    }
+  ],
+  "connections": [],
+  "outputs": {
+    "tape": 1.0
+  }
+}

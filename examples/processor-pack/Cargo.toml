@@ -1,0 +1,19 @@
+[package]
+name = "soniclaw-example-processors"
+description = "Example independently registered tape-style saturation processor"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+publish = false
+[features]
+default = []
+ui = ["soniclaw-registry/ui", "dep:egui"]
+[dependencies]
+soniclaw-core.workspace = true
+soniclaw-state = {path="../../crates/soniclaw-state",version="0.146.0"}
+soniclaw-registry = {path="../../crates/soniclaw-registry",version="0.146.0"}
+serde_json = "1"
+egui = {version="=0.36.1",optional=true}
+[lints]
+workspace = true

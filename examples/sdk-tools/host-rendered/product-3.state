@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "product_id": "org.soniclaw.workbench.sampler",
+  "name": "Sampler Studio",
+  "parameters": {
+    "limit.ceiling_db": -1.0,
+    "limit.release_ms": 100.0,
+    "tone.drive": 0.0,
+    "tone.frequency": 1000.0,
+    "tone.mode": 0.0,
+    "tone.q": 0.707
+  },
+  "assets": [
+    {
+      "id": "grain-source",
+      "path": "assets/grain-source.wav",
+      "root_note": 57
+    },
+    {
+      "id": "stereo-ir",
+      "path": "assets/stereo-ir.wav",
+      "root_note": 60
+    }
+  ],
+  "zones": [
+    {
+      "asset": "grain-source",
+      "keys": [
+        36,
+        84
+      ],
+      "velocities": [
+        1,
+        127
+      ],
+      "group": 0,
+      "gain": 1.0,
+      "one_shot": false,
+      "loop_frames": [
+        4800,
+        48000
+      ],
+      "loop_crossfade": 512
+    }
+  ],
+  "nodes": [
+    {
+      "id": "sampler",
+      "kind": "sampler",
+      "settings": {},
+      "input_gain": 0.0
+    },
+    {
+      "id": "tone",
+      "kind": "state_variable",
+      "settings": {},
+      "input_gain": 0.0
+    },
+    {
+      "id": "limit",
+      "kind": "lookahead_limiter",
+      "settings": {},
+      "input_gain": 0.0
+    }
+  ],
+  "connections": [
+    {
+      "from": "sampler",
+      "to": "tone",
+      "gain": 1.0
+    },
+    {
+      "from": "tone",
+      "to": "limit",
+      "gain": 1.0
+    }
+  ],
+  "outputs": {
+    "limit": 1.0
+  }
+}

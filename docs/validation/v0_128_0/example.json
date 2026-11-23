@@ -1,0 +1,27 @@
+{
+  "feature": "reed-waveguide",
+  "results": {
+    "cases": [
+      {
+        "audio": "soft-reed.wav",
+        "callback_allocations": 0,
+        "latency_frames": 0,
+        "name": "soft-reed",
+        "peak": 0.30303916335105896
+      },
+      {
+        "audio": "bright-reed.wav",
+        "callback_allocations": 0,
+        "latency_frames": 0,
+        "name": "bright-reed",
+        "peak": 0.307879239320755
+      }
+    ],
+    "note_hz": [
+      220,
+      330
+    ],
+    "sample_rate": 48000
+  },
+  "version": "0.128.0"
+}

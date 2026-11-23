@@ -1,0 +1,46 @@
+[
+  {
+    "channels": 2,
+    "debug_processing_ms": 633.9603179999999,
+    "fresh_instance_restore": true,
+    "id": "org.soniclaw.workbench.fx",
+    "latency_frames": 252,
+    "output_events": 0,
+    "parameter_count": 29,
+    "peak": 0.12001266330480576,
+    "state_bytes": 1821
+  },
+  {
+    "channels": 2,
+    "debug_processing_ms": 2333.478114,
+    "fresh_instance_restore": true,
+    "id": "org.soniclaw.workbench.granular",
+    "latency_frames": 252,
+    "output_events": 0,
+    "parameter_count": 21,
+    "peak": 0.04379326105117798,
+    "state_bytes": 2150
+  },
+  {
+    "channels": 2,
+    "debug_processing_ms": 733.00276,
+    "fresh_instance_restore": true,
+    "id": "org.soniclaw.workbench.polymod",
+    "latency_frames": 252,
+    "output_events": 0,
+    "parameter_count": 12,
+    "peak": 0.04304300248622894,
+    "state_bytes": 2301
+  },
+  {
+    "channels": 2,
+    "debug_processing_ms": 1974.160114,
+    "fresh_instance_restore": true,
+    "id": "org.soniclaw.workbench.sampler",
+    "latency_frames": 252,
+    "output_events": 0,
+    "parameter_count": 6,
+    "peak": 0.19376929104328156,
+    "state_bytes": 1375
+  }
+]

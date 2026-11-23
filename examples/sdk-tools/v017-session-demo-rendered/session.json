@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "name": "Saved native sounds",
+  "slots": [
+    {
+      "id": "slot-0",
+      "entry": {
+        "path": "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/libsoniclaw_host_fixture.so",
+        "plugin_id": "org.soniclaw.host-fixture"
+      },
+      "plugin_version": "0.17.0",
+      "bypass": true,
+      "editor": {
+        "open": false,
+        "size": null,
+        "scale": 1.0
+      },
+      "parameters": {
+        "9": 0.8
+      },
+      "state_hex": "534c48469a9999999999e93f00000000",
+      "state_sha256": "41466cdbce413b3a3fb94860e390aac2a0e4c0e4881d20a82403bbb934d4ed98"
+    },
+    {
+      "id": "missing-slot",
+      "entry": {
+        "path": "/workspace/scratch/cd89c8ef929d/verification-series/v017/session-demo/not-installed.clap",
+        "plugin_id": "org.soniclaw.host-fixture"
+      },
+      "plugin_version": "0.17.0",
+      "bypass": true,
+      "editor": {
+        "open": false,
+        "size": null,
+        "scale": 1.0
+      },
+      "parameters": {
+        "9": 0.8
+      },
+      "state_hex": "534c48469a9999999999e93f00000000",
+      "state_sha256": "41466cdbce413b3a3fb94860e390aac2a0e4c0e4881d20a82403bbb934d4ed98"
+    },
+    {
+      "id": "slot-1",
+      "entry": {
+        "path": "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/libsoniclaw_host_fixture.so",
+        "plugin_id": "org.soniclaw.host-fixture"
+      },
+      "plugin_version": "0.17.0",
+      "bypass": false,
+      "editor": {
+        "open": false,
+        "size": null,
+        "scale": 1.0
+      },
+      "parameters": {
+        "9": 0.7
+      },
+      "state_hex": null,
+      "state_sha256": null
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "feature": "dither",
+  "results": {
+    "frames": 48000,
+    "quantization_error_dbfs": [
+      [
+        "tpdf16",
+        -96.3336213137599
+      ],
+      [
+        "shaped16",
+        -94.01009749475669
+      ],
+      [
+        "tpdf24",
+        -144.50026210627644
+      ]
+    ]
+  },
+  "version": "0.107.0"
+}

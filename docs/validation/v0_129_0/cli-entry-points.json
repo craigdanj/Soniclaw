@@ -1,0 +1,47 @@
+{
+  "sweep-only": {
+    "sample_rate": 48000,
+    "sweep_frames": 96000
+  },
+  "recover-wav": {
+    "ir_frames": 1024,
+    "rate": 48000,
+    "start_frame": 425,
+    "strongest_frame": 441
+  },
+  "analyze-wav": {
+    "fixture": false,
+    "notes": 6,
+    "sample_rate": 48000
+  },
+  "open-sofa": {
+    "algorithmic_latency_frames": 0,
+    "callback_allocations": 0,
+    "left_over_right_rms": [
+      6.014419122924812,
+      0.16558356618735612
+    ],
+    "measurements": 710
+  },
+  "master-wav": {
+    "channels": 2,
+    "frames": 144000,
+    "measurements": {
+      "final_peak_trim_db": 0.0,
+      "input": {
+        "integrated_lufs": -14.183133639262563,
+        "true_peak_dbtp": -1.3000000715255737
+      },
+      "level_gain_db": -3.8168663607374373,
+      "limiter_latency_frames": 252,
+      "met_target": true,
+      "output": {
+        "integrated_lufs": -17.999999663158285,
+        "true_peak_dbtp": -5.116866111755371
+      },
+      "requested_ceiling_dbtp": -2.0,
+      "requested_lufs": -18.0
+    },
+    "sample_rate": 48000
+  }
+}

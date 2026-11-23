@@ -1,0 +1,12 @@
+[package]
+name="soniclaw-kernel-bench"
+version.workspace=true
+edition.workspace=true
+license.workspace=true
+rust-version.workspace=true
+publish=false
+[dependencies]
+soniclaw-kernels={path="../../crates/soniclaw-kernels",version="0.146.0"}
+serde_json="1"
+[lints]
+workspace=true

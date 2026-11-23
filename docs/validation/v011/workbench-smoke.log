@@ -1,0 +1,7 @@
+   Compiling soniclaw-clap-smoke v0.11.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/tools/clap-smoke)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.34s
+     Running `target/debug/soniclaw-clap-smoke target/debug/libsoniclaw_workbench.so --workbench`
+PASS Soniclaw Multiband Workbench: independent dynamic CLAP load, parameters, note/audio, declared latency, complete-state save, partial-stream scalar restore and stopped rebuild
+PASS Soniclaw Granular Workbench: independent dynamic CLAP load, parameters, note/audio, declared latency, complete-state save, partial-stream scalar restore and stopped rebuild
+PASS Soniclaw Poly Motion: independent dynamic CLAP load, parameters, note/audio, declared latency, complete-state save, partial-stream scalar restore and stopped rebuild
+PASS Soniclaw Sampler Studio: independent dynamic CLAP load, parameters, note/audio, declared latency, complete-state save, partial-stream scalar restore and stopped rebuild

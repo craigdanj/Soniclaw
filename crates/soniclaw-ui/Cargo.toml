@@ -5,7 +5,21 @@ version.workspace = true
 edition.workspace = true
 license.workspace = true
 rust-version.workspace = true
+[features]
+default=[]
+svg=["dep:resvg"]
 [dependencies]
+soniclaw-studio={path="../soniclaw-studio",version="0.146.0"}
+soniclaw-record={path="../soniclaw-record",version="0.146.0"}
+soniclaw-mixer={path="../soniclaw-mixer",version="0.146.0"}
+soniclaw-commands={path="../soniclaw-commands",version="0.146.0"}
+soniclaw-transport={path="../soniclaw-transport",version="0.146.0"}
+soniclaw-clips={path="../soniclaw-clips",version="0.146.0"}
+soniclaw-waveform={path="../soniclaw-waveform",version="0.146.0"}
+resvg={version="=0.48.1",default-features=false,optional=true}
+serde={version="1",features=["derive"]}
+serde_json="1"
+soniclaw-state = {path="../soniclaw-state",version="0.146.0"}
 soniclaw-core.workspace = true
 soniclaw-dsp.workspace = true
 egui = "=0.36.1"

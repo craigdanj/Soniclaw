@@ -1,0 +1,17 @@
+{
+  "feature": "nam-wavenet",
+  "results": {
+    "audio": {
+      "audio": "nam-wavenet.wav",
+      "callback_allocations": 0,
+      "latency_frames": 0,
+      "name": "nam-wavenet",
+      "peak": 0.058739691972732544
+    },
+    "benchmark_frames": 96000,
+    "elapsed_seconds": 0.67934591,
+    "optimized": false,
+    "receptive_field": 23
+  },
+  "version": "0.130.0"
+}

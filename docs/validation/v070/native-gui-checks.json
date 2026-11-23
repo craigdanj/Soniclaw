@@ -1,0 +1,92 @@
+[
+  {
+    "check": "graph.png",
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/target/debug/soniclaw-workbench",
+      "--screenshot",
+      "/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/docs/validation/v070/graph.png",
+      "--preset",
+      "0",
+      "--tab",
+      "3"
+    ],
+    "exit_code": 0,
+    "seconds": 4.121,
+    "display": "native Xvfb, software OpenGL; no physical audio device opened"
+  },
+  {
+    "check": "sample-map.png",
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/target/debug/soniclaw-workbench",
+      "--screenshot",
+      "/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/docs/validation/v070/sample-map.png",
+      "--preset",
+      "5",
+      "--tab",
+      "4"
+    ],
+    "exit_code": 0,
+    "seconds": 5.92,
+    "display": "native Xvfb, software OpenGL; no physical audio device opened"
+  },
+  {
+    "check": "voice-modulation.png",
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/target/debug/soniclaw-workbench",
+      "--screenshot",
+      "/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/docs/validation/v070/voice-modulation.png",
+      "--preset",
+      "4",
+      "--tab",
+      "6"
+    ],
+    "exit_code": 0,
+    "seconds": 2.947,
+    "display": "native Xvfb, software OpenGL; no physical audio device opened"
+  },
+  {
+    "check": "midi.png",
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/target/debug/soniclaw-workbench",
+      "--screenshot",
+      "/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/docs/validation/v070/midi.png",
+      "--preset",
+      "4",
+      "--tab",
+      "5"
+    ],
+    "exit_code": 0,
+    "seconds": 2.346,
+    "display": "native Xvfb, software OpenGL; no physical audio device opened"
+  },
+  {
+    "check": "diagnostics.png",
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/target/debug/soniclaw-workbench",
+      "--screenshot",
+      "/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/docs/validation/v070/diagnostics.png",
+      "--preset",
+      "1",
+      "--tab",
+      "7"
+    ],
+    "exit_code": 0,
+    "seconds": 2.237,
+    "display": "native Xvfb, software OpenGL; no physical audio device opened"
+  },
+  {
+    "check": "host.png",
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/target/debug/soniclaw-workbench",
+      "--screenshot",
+      "/workspace/scratch/cd89c8ef929d/recovered-work/soniclaw/docs/validation/v070/host.png",
+      "--preset",
+      "1",
+      "--tab",
+      "8"
+    ],
+    "exit_code": 0,
+    "seconds": 2.583,
+    "display": "native Xvfb, software OpenGL; no physical audio device opened"
+  }
+]

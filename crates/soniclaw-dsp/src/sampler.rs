@@ -79,6 +79,24 @@ impl<const N: usize> Sampler<N> {
     }
     fn message(&mut self, message: MidiMessage) {
         match message {
+            MidiMessage::NoteOnId {
+                channel,
+                note,
+                velocity,
+                ..
+            } => self.message(MidiMessage::NoteOn {
+                channel,
+                note,
+                velocity: (velocity.clamp(0.0, 1.0) * 127.0).round() as u8,
+            }),
+            MidiMessage::NoteOffId { target } if target.channel >= 0 && target.key >= 0 => self
+                .message(MidiMessage::NoteOff {
+                    channel: target.channel as u8,
+                    note: target.key as u8,
+                    velocity: 0,
+                }),
+            MidiMessage::NoteChoke { .. } => self.reset(),
+
             MidiMessage::NoteOn {
                 channel,
                 note,

@@ -1,0 +1,10 @@
+{
+  "simulator": "ngspice-44.2 : Circuit level simulation program",
+  "samples": 4076,
+  "rms_error_volts": 0.0014261555319683339,
+  "peak_error_volts": 0.006946609188011599,
+  "frequency_hz": 997,
+  "sample_rate": 48000,
+  "input_peak_volts": 1.5,
+  "spice_max_step_seconds": 1e-06
+}

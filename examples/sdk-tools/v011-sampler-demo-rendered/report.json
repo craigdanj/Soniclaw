@@ -1,0 +1,12 @@
+{
+  "frames": 72000,
+  "release_region": true,
+  "sfz_regions": 3,
+  "slice_markers": [
+    0,
+    11952,
+    23952,
+    35952
+  ],
+  "velocity_crossfades": true
+}

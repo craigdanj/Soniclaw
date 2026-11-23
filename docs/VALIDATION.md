@@ -1,3 +1,133 @@
+# Soniclaw 0.23.0 validation
+
+Fresh results: [0.23.0 report](validation/v023/REPORT.md).
+
+---
+
+# Soniclaw 0.22.0 validation
+
+Fresh results: [0.22.0 report](validation/v022/REPORT.md).
+
+---
+
+# Soniclaw 0.21.0 validation
+
+Fresh results: [0.21.0 report](validation/v021/REPORT.md).
+
+---
+
+# Soniclaw 0.20.0 validation
+
+Fresh results: [0.20.0 report](validation/v020/REPORT.md).
+
+---
+
+# Soniclaw 0.19.0 validation
+
+Fresh results: [0.19.0 report](validation/v019/REPORT.md).
+
+---
+
+# Soniclaw 0.18.0 validation
+
+Fresh results: [0.18.0 report](validation/v018/REPORT.md).
+
+---
+
+# Soniclaw 0.17.0 validation
+
+Fresh results: [0.17.0 report](validation/v017/REPORT.md).
+
+---
+
+# Soniclaw 0.16.0 validation
+
+Fresh results: [0.16.0 report](validation/v016/REPORT.md).
+
+---
+
+# Soniclaw 0.15.0 validation
+
+Fresh results: [0.15.0 report](validation/v015/REPORT.md).
+
+---
+
+# Soniclaw 0.14.0 validation
+
+Fresh results: [0.14.0 report](validation/v014/REPORT.md).
+
+---
+
+# Soniclaw 0.13.0 validation
+
+Fresh results: [0.13.0 report](validation/v013/REPORT.md).
+
+---
+
+# Soniclaw 0.12.0 validation
+
+Fresh results: [0.12.0 report](validation/v012/REPORT.md).
+
+---
+
+# Soniclaw 0.11.0 validation
+
+Fresh results: [0.11.0 report](validation/v011/REPORT.md).
+
+---
+
+# Soniclaw 0.10.0 validation
+
+Fresh results: [0.10.0 report](validation/v010/REPORT.md).
+
+---
+
+# Soniclaw v0.9.0 validation
+
+Fresh registry, managed-output policy, source/ABI, DSP and native panel checks are recorded in the [v0.9.0 report](validation/v090/REPORT.md). Physical-device and real DAW acceptance remain pending. Older evidence below retains its original scope.
+
+---
+
+# Soniclaw v0.8.0 validation
+
+Fresh project workflow, source/ABI, prepared DSP and native virtual-display results are recorded in the [v0.8.0 report](validation/v080/REPORT.md). Older evidence retains its original scope.
+
+---
+
+# Soniclaw v0.7.0 validation
+
+Fresh results and limits are recorded in the [v0.7.0 report](validation/v070/REPORT.md). Earlier records below retain their original scope.
+
+---
+
+# Soniclaw v0.6.0 validation
+
+Current source/ABI, prepared DSP, native virtual-display and CPU fixture checks
+are recorded in the [v0.6.0 report](validation/v060/REPORT.md). Earlier records
+below retain their original scope. Physical audio devices, real DAW GUI sessions
+and macOS/Windows runtime acceptance remain pending.
+
+---
+
+# Soniclaw v0.5.0 validation
+
+Current Linux DSP/source/ABI verification is recorded in the
+[v0.5.0 report](validation/v050/REPORT.md). Earlier reports below remain
+historical evidence and are not fresh v0.5 native format or performance results.
+
+---
+
+# Soniclaw v0.4.0 validation
+
+Current Linux source, state/ABI, DSP/spectral, disk-streaming and allocation checks
+are recorded in the [v0.4.0 report](validation/v040/REPORT.md). The report separates
+completed checks from native-wrapper, GUI, DAW and physical-device work still pending.
+
+The earlier rename and v0.3 validation reports below are preserved historical
+records. Their native format and performance measurements are not new v0.4 results.
+
+---
+
 # Soniclaw rename verification — 2026-11-16
 
 The renamed workspace passed 55 Rust tests, Clippy, rustdoc, CLI template checks and exported CLAP demo smoke checks. See the [rename verification report](validation/rename-20261116/REPORT.md) for commands and limits.

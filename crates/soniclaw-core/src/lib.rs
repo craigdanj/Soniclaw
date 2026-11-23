@@ -1,4 +1,8 @@
 //! Shared contracts. No third-party dependencies; processing uses borrowed storage.
+mod channel_bus;
+mod expression;
+pub use channel_bus::ChannelBus;
+pub use expression::*;
 use std::sync::atomic::{AtomicU32, Ordering};
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -90,6 +94,32 @@ pub enum MidiMessage {
         channel: u8,
         value: u16,
     },
+    ChannelPressure {
+        channel: u8,
+        value: u8,
+    },
+    PolyPressure {
+        channel: u8,
+        note: u8,
+        value: u8,
+    },
+    NoteOnId {
+        channel: u8,
+        note: u8,
+        velocity: f32,
+        note_id: i32,
+    },
+    NoteOffId {
+        target: NoteTarget,
+    },
+    NoteChoke {
+        target: NoteTarget,
+    },
+    NoteExpression {
+        target: NoteTarget,
+        expression: NoteExpression,
+        value: f64,
+    },
     AllNotesOff,
 }
 #[derive(Debug, Clone, Copy, PartialEq)]
@@ -108,7 +138,50 @@ pub struct AutomationEvent {
 pub fn validate_events(events: &[Event], frames: usize) -> Result<(), Error> {
     let mut last = 0;
     for e in events {
-        if e.frame >= frames || e.frame < last {
+        let valid = match e.message {
+            MidiMessage::NoteOn {
+                channel,
+                note,
+                velocity,
+            }
+            | MidiMessage::NoteOff {
+                channel,
+                note,
+                velocity,
+            } => channel < 16 && note < 128 && velocity < 128,
+            MidiMessage::ControlChange {
+                channel,
+                controller,
+                value,
+            } => channel < 16 && controller < 128 && value < 128,
+            MidiMessage::PitchBend { channel, value } => channel < 16 && value < 16384,
+            MidiMessage::ChannelPressure { channel, value } => channel < 16 && value < 128,
+            MidiMessage::PolyPressure {
+                channel,
+                note,
+                value,
+            } => channel < 16 && note < 128 && value < 128,
+            MidiMessage::NoteOnId {
+                channel,
+                note,
+                velocity,
+                note_id,
+            } => {
+                channel < 16
+                    && note < 128
+                    && velocity.is_finite()
+                    && (0.0..=1.0).contains(&velocity)
+                    && note_id >= -1
+            }
+            MidiMessage::NoteOffId { target } | MidiMessage::NoteChoke { target } => target.valid(),
+            MidiMessage::NoteExpression {
+                target,
+                expression,
+                value,
+            } => target.valid() && VoiceExpression::default().set(expression, value),
+            MidiMessage::AllNotesOff => true,
+        };
+        if !valid || e.frame >= frames || e.frame < last {
             return Err(Error::InvalidEvents);
         }
         last = e.frame;
@@ -148,22 +221,51 @@ pub trait AudioProcessor: Send {
 }
 
 #[derive(Debug, Clone, Copy)]
-pub struct ParameterInfo {
+pub struct ParameterInfo<'a> {
     /// Stable identifier: persist this, never the display name or slider position.
-    pub id: &'static str,
-    pub name: &'static str,
+    pub id: &'a str,
+    pub name: &'a str,
     pub min: f32,
     pub max: f32,
     pub default: f32,
-    pub unit: &'static str,
+    pub unit: &'a str,
+}
+/// Immutable parameter presentation. Numeric methods used by `set` must not allocate or block.
+/// Formatting/parsing are control-thread operations.
+pub trait ParameterCodec: Send + Sync {
+    fn quantize(&self, value: f32) -> f32 {
+        value
+    }
+    fn format(&self, value: f32) -> String;
+    fn parse(&self, text: &str) -> Option<f32>;
+    fn step_count(&self) -> u32 {
+        0
+    }
+    fn is_enum(&self) -> bool {
+        false
+    }
+    fn group(&self) -> &str {
+        ""
+    }
+}
+/// Stable FNV-1a numeric host ID for a product's persistent string parameter ID.
+pub fn stable_parameter_id(id: &str) -> u32 {
+    id.bytes().fold(2166136261u32, |hash, byte| {
+        (hash ^ byte as u32).wrapping_mul(16777619)
+    })
 }
 /// A single atomic scalar. Independent parameters are not a coherent snapshot.
 pub struct Parameter {
-    info: ParameterInfo,
+    id: Box<str>,
+    name: Box<str>,
+    unit: Box<str>,
+    range: [f32; 3],
     value: AtomicU32,
+    modulation: AtomicU32,
+    codec: Option<std::sync::Arc<dyn ParameterCodec>>,
 }
 impl Parameter {
-    pub fn new(info: ParameterInfo) -> Result<Self, Error> {
+    pub fn new(info: ParameterInfo<'_>) -> Result<Self, Error> {
         if info.id.is_empty()
             || !info.min.is_finite()
             || !info.max.is_finite()
@@ -174,12 +276,68 @@ impl Parameter {
             return Err(Error::InvalidParameter);
         }
         Ok(Self {
-            info,
+            id: info.id.into(),
+            name: info.name.into(),
+            unit: info.unit.into(),
+            range: [info.min, info.max, info.default],
             value: AtomicU32::new(info.default.to_bits()),
+            modulation: AtomicU32::new(0.0_f32.to_bits()),
+            codec: None,
         })
     }
-    pub fn info(&self) -> ParameterInfo {
-        self.info
+    pub fn with_codec(
+        info: ParameterInfo<'_>,
+        codec: std::sync::Arc<dyn ParameterCodec>,
+    ) -> Result<Self, Error> {
+        let mut p = Self::new(info)?;
+        p.codec = Some(codec);
+        p.set(info.default)?;
+        Ok(p)
+    }
+    /// Detached control-thread edit copy, retaining immutable presentation metadata.
+    pub fn detached(&self) -> Result<Self, Error> {
+        let p = if let Some(codec) = &self.codec {
+            Self::with_codec(self.info(), codec.clone())?
+        } else {
+            Self::new(self.info())?
+        };
+        p.set(self.get())?;
+        Ok(p)
+    }
+    pub fn has_codec(&self) -> bool {
+        self.codec.is_some()
+    }
+    pub fn step_count(&self) -> u32 {
+        self.codec.as_ref().map_or(0, |c| c.step_count())
+    }
+    pub fn is_enum(&self) -> bool {
+        self.codec.as_ref().is_some_and(|c| c.is_enum())
+    }
+    pub fn group(&self) -> &str {
+        self.codec.as_ref().map_or("", |c| c.group())
+    }
+    pub fn format_value(&self, value: f32) -> String {
+        self.codec
+            .as_ref()
+            .map_or_else(|| format!("{value:.4}"), |c| c.format(value))
+    }
+    pub fn parse_value(&self, text: &str) -> Option<f32> {
+        let value = if let Some(c) = &self.codec {
+            c.parse(text)?
+        } else {
+            text.trim().parse().ok()?
+        };
+        (value.is_finite() && (self.range[0]..=self.range[1]).contains(&value)).then_some(value)
+    }
+    pub fn info(&self) -> ParameterInfo<'_> {
+        ParameterInfo {
+            id: &self.id,
+            name: &self.name,
+            unit: &self.unit,
+            min: self.range[0],
+            max: self.range[1],
+            default: self.range[2],
+        }
     }
     pub fn get(&self) -> f32 {
         f32::from_bits(self.value.load(Ordering::Relaxed))
@@ -188,20 +346,36 @@ impl Parameter {
         if !value.is_finite() {
             return Err(Error::InvalidParameter);
         }
-        self.value.store(
-            value.clamp(self.info.min, self.info.max).to_bits(),
-            Ordering::Relaxed,
-        );
+        let value = value.clamp(self.range[0], self.range[1]);
+        let value = self.codec.as_ref().map_or(value, |c| c.quantize(value));
+        if !value.is_finite() || !(self.range[0]..=self.range[1]).contains(&value) {
+            return Err(Error::InvalidParameter);
+        }
+        self.value.store(value.to_bits(), Ordering::Relaxed);
         Ok(())
     }
+    /// Audio-owner normalized offset. Base state/automation remains separate.
+    pub fn set_modulation(&self, offset: f32) -> Result<(), Error> {
+        if !offset.is_finite() || !(-1.0..=1.0).contains(&offset) {
+            return Err(Error::InvalidParameter);
+        }
+        self.modulation.store(offset.to_bits(), Ordering::Relaxed);
+        Ok(())
+    }
+    pub fn modulated(&self) -> f32 {
+        (self.get()
+            + f32::from_bits(self.modulation.load(Ordering::Relaxed))
+                * (self.range[1] - self.range[0]))
+            .clamp(self.range[0], self.range[1])
+    }
     pub fn normalized(&self) -> f32 {
-        (self.get() - self.info.min) / (self.info.max - self.info.min)
+        (self.get() - self.range[0]) / (self.range[1] - self.range[0])
     }
     pub fn set_normalized(&self, n: f32) -> Result<(), Error> {
         if !n.is_finite() {
             return Err(Error::InvalidParameter);
         }
-        self.set(self.info.min + n.clamp(0.0, 1.0) * (self.info.max - self.info.min))
+        self.set(self.range[0] + n.clamp(0.0, 1.0) * (self.range[1] - self.range[0]))
     }
 }
 
@@ -307,3 +481,6 @@ mod tests {
         assert!(validate_events(&[e(0), e(0), e(3)], 4).is_ok());
     }
 }
+
+mod precision;
+pub use precision::{AudioBuffer64, AudioProcessor64};

@@ -1,0 +1,99 @@
+{
+  "callback_allocations": 0,
+  "first": {
+    "acquisition_start": 1024,
+    "complete": true,
+    "file_start": 512,
+    "frames": 8704,
+    "id": "a",
+    "label": "Full ensemble",
+    "missing_frames": 0,
+    "pre_roll_frames": 512,
+    "punch": null,
+    "queue_drops": 0,
+    "sample_rate": 48000,
+    "schema": 1,
+    "tracks": [
+      {
+        "channels": 2,
+        "error": null,
+        "file": "bass.wav",
+        "frames": 8704,
+        "id": "bass",
+        "latency_frames": 0,
+        "peak": 0.10500000417232513
+      },
+      {
+        "channels": 2,
+        "error": null,
+        "file": "lead.wav",
+        "frames": 8704,
+        "id": "lead",
+        "latency_frames": 0,
+        "peak": 0.08234475553035736
+      },
+      {
+        "channels": 2,
+        "error": null,
+        "file": "master.wav",
+        "frames": 8704,
+        "id": "master",
+        "latency_frames": 0,
+        "peak": 0.10453296452760696
+      }
+    ]
+  },
+  "physical_device_tested": false,
+  "second": {
+    "acquisition_start": 9216,
+    "complete": true,
+    "file_start": 8960,
+    "frames": 1536,
+    "id": "b",
+    "label": "Punched bass and master",
+    "missing_frames": 0,
+    "pre_roll_frames": 512,
+    "punch": [
+      9472,
+      10496
+    ],
+    "queue_drops": 0,
+    "sample_rate": 48000,
+    "schema": 1,
+    "tracks": [
+      {
+        "channels": 2,
+        "error": null,
+        "file": "bass.wav",
+        "frames": 1536,
+        "id": "bass",
+        "latency_frames": 0,
+        "peak": 0.10499992221593857
+      },
+      {
+        "channels": 2,
+        "error": null,
+        "file": "lead.wav",
+        "frames": 1536,
+        "id": "lead",
+        "latency_frames": 0,
+        "peak": 0.05414094775915146
+      },
+      {
+        "channels": 2,
+        "error": null,
+        "file": "master.wav",
+        "frames": 1536,
+        "id": "master",
+        "latency_frames": 0,
+        "peak": 0.0881391167640686
+      }
+    ]
+  },
+  "stats": {
+    "dropped_frames": 0,
+    "invalid_blocks": 0,
+    "io_errors": 0,
+    "latest_sample": 11264
+  }
+}

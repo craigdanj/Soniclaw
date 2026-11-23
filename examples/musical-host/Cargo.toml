@@ -1,0 +1,15 @@
+[package]
+name="soniclaw-musical-host"
+version.workspace=true
+edition.workspace=true
+license.workspace=true
+rust-version.workspace=true
+[dependencies]
+soniclaw-vst3={path="../../crates/soniclaw-vst3",version="0.146.0"}
+soniclaw-core.workspace=true
+soniclaw-transport={path="../../crates/soniclaw-transport",version="0.146.0"}
+serde_json="1"
+allocation-counter="=0.8.1"
+# Explicit native-code selection is confined to this executable, as in SDK tools.
+[lints.rust]
+unsafe_op_in_unsafe_fn="deny"

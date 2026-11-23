@@ -1,0 +1,37 @@
+{
+  "callback_allocations": 0,
+  "hardware_tested": false,
+  "learned_gain": 6.0,
+  "output": {
+    "dropped": 0,
+    "errors": 0,
+    "late": 1,
+    "sent": 4
+  },
+  "packets": [
+    [
+      192,
+      9
+    ],
+    [
+      248
+    ],
+    [
+      240,
+      1,
+      2,
+      247
+    ],
+    [
+      176,
+      7,
+      127
+    ]
+  ],
+  "sample_offsets": [
+    0,
+    48,
+    96,
+    144
+  ]
+}

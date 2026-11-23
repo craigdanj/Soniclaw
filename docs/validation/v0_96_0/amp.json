@@ -1,0 +1,31 @@
+{
+  "feature": "amp",
+  "results": {
+    "cabinet": "synthetic decaying impulse",
+    "cases": [
+      {
+        "audio": "amp-clean.wav",
+        "callback_allocations": 0,
+        "latency_frames": 96,
+        "name": "amp-clean",
+        "peak": 0.17489497363567352
+      },
+      {
+        "audio": "pedal-asymmetric.wav",
+        "callback_allocations": 0,
+        "latency_frames": 96,
+        "name": "pedal-asymmetric",
+        "peak": 0.6023836135864258
+      },
+      {
+        "audio": "amp-sag-cabinet.wav",
+        "callback_allocations": 0,
+        "latency_frames": 160,
+        "name": "amp-sag-cabinet",
+        "peak": 0.24641549587249756
+      }
+    ],
+    "input": "owned synthetic plucked harmonics"
+  },
+  "version": "0.96.0"
+}

@@ -1,0 +1,6 @@
+    Checking soniclaw-clap v0.115.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-clap)
+ Documenting soniclaw-dsp v0.115.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-dsp)
+ Documenting soniclaw-dsp-suite v0.115.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/dsp-suite)
+ Documenting soniclaw-parallel-compressor v0.115.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/parallel-compressor)
+    Finished `dev` profile [unoptimized] target(s) in 1.98s
+   Generated /workspace/scratch/cd89c8ef929d/daw-series/soniclaw/target/doc/soniclaw_dsp/index.html and 2 other files

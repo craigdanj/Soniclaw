@@ -1,0 +1,31 @@
+[
+  {
+    "command": [
+      "target/debug/soniclaw-clap-smoke",
+      "target/debug/libsoniclaw_workbench.so",
+      "--workbench"
+    ],
+    "exit_code": 0,
+    "seconds": 0.265
+  },
+  {
+    "command": [
+      "target/debug/soniclaw-sdk-tools",
+      "--host-contract",
+      "target/debug/libsoniclaw_host_fixture.so",
+      "docs/validation/v043/native-clap/host-contract.json"
+    ],
+    "exit_code": 0,
+    "seconds": 0.008
+  },
+  {
+    "command": [
+      "target/debug/soniclaw-sdk-tools",
+      "--live-rack-demo",
+      "target/debug/libsoniclaw_host_fixture.so",
+      "docs/validation/v043/native-clap/live-rack"
+    ],
+    "exit_code": 0,
+    "seconds": 0.032
+  }
+]

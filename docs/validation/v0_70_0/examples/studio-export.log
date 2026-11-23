@@ -1,0 +1,3 @@
+   Compiling soniclaw-studio-export v0.70.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/examples/studio-export)
+    Finished `dev` profile [unoptimized] target(s) in 0.61s
+     Running `target/debug/soniclaw-studio-export /workspace/scratch/cd89c8ef929d/workflow-work/final-examples70/studio-export`

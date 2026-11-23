@@ -1,0 +1,36 @@
+{
+  "feature": "dynamics",
+  "results": {
+    "cases": [
+      {
+        "audio": "compress.wav",
+        "callback_allocations": 0,
+        "latency_frames": 96,
+        "name": "compress",
+        "peak": 0.42641812562942505
+      },
+      {
+        "audio": "expand.wav",
+        "callback_allocations": 0,
+        "latency_frames": 96,
+        "name": "expand",
+        "peak": 0.49829041957855225
+      },
+      {
+        "audio": "upward.wav",
+        "callback_allocations": 0,
+        "latency_frames": 96,
+        "name": "upward",
+        "peak": 1.1616812944412231
+      },
+      {
+        "audio": "keyed-duck.wav",
+        "callback_allocations": 0,
+        "latency_frames": 96,
+        "name": "keyed-duck",
+        "peak": 0.3125862181186676
+      }
+    ]
+  },
+  "version": "0.98.0"
+}

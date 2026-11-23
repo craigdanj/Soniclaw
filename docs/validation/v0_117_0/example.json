@@ -1,0 +1,89 @@
+{
+  "feature": "unified-oversampling",
+  "results": {
+    "cases": [
+      {
+        "audio": "fir-1x-drive.wav",
+        "callback_allocations": 0,
+        "dc_latency_frames": 0.0,
+        "latency_frames": 0,
+        "linear_phase": true,
+        "name": "fir-1x-drive",
+        "peak": 0.9999092221260071
+      },
+      {
+        "audio": "fir-2x-drive.wav",
+        "callback_allocations": 0,
+        "dc_latency_frames": 64.0,
+        "latency_frames": 64,
+        "linear_phase": true,
+        "name": "fir-2x-drive",
+        "peak": 1.2983338832855225
+      },
+      {
+        "audio": "fir-4x-drive.wav",
+        "callback_allocations": 0,
+        "dc_latency_frames": 96.0,
+        "latency_frames": 96,
+        "linear_phase": true,
+        "name": "fir-4x-drive",
+        "peak": 1.2625401020050049
+      },
+      {
+        "audio": "fir-8x-drive.wav",
+        "callback_allocations": 0,
+        "dc_latency_frames": 112.0,
+        "latency_frames": 112,
+        "linear_phase": true,
+        "name": "fir-8x-drive",
+        "peak": 1.2636666297912598
+      },
+      {
+        "audio": "fir-16x-drive.wav",
+        "callback_allocations": 0,
+        "dc_latency_frames": 120.0,
+        "latency_frames": 120,
+        "linear_phase": true,
+        "name": "fir-16x-drive",
+        "peak": 1.2636648416519165
+      },
+      {
+        "audio": "iir-2x-drive.wav",
+        "callback_allocations": 0,
+        "dc_latency_frames": 4.0,
+        "latency_frames": 4,
+        "linear_phase": false,
+        "name": "iir-2x-drive",
+        "peak": 1.2762012481689453
+      },
+      {
+        "audio": "iir-4x-drive.wav",
+        "callback_allocations": 0,
+        "dc_latency_frames": 6.0,
+        "latency_frames": 6,
+        "linear_phase": false,
+        "name": "iir-4x-drive",
+        "peak": 1.2540141344070435
+      },
+      {
+        "audio": "iir-8x-drive.wav",
+        "callback_allocations": 0,
+        "dc_latency_frames": 7.0,
+        "latency_frames": 7,
+        "linear_phase": false,
+        "name": "iir-8x-drive",
+        "peak": 1.2520345449447632
+      },
+      {
+        "audio": "iir-16x-drive.wav",
+        "callback_allocations": 0,
+        "dc_latency_frames": 8.0,
+        "latency_frames": 8,
+        "linear_phase": false,
+        "name": "iir-16x-drive",
+        "peak": 1.257153034210205
+      }
+    ]
+  },
+  "version": "0.117.0"
+}

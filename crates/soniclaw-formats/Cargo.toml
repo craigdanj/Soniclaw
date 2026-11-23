@@ -1,0 +1,13 @@
+[package]
+name = "soniclaw-formats"
+description = "Control-thread audio codec registry with seekable WAV/AIFF/FLAC and metadata"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+[dependencies]
+soniclaw-io = {path="../soniclaw-io",version="0.146.0"}
+libloading = "=0.8.9"
+serde = {version="1",features=["derive"]}
+[lints.rust]
+unsafe_op_in_unsafe_fn = "deny"

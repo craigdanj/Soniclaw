@@ -1,0 +1,11 @@
+VST3 Host Helper Process Started
+	AUDIO in: 1, out: 1
+VST3 Host Helper Process Started
+	AUDIO in: 1, out: 1
+VST3 Host Helper Process Started
+VST3 Host Helper Process Started
+Shutting down helper process
+VST3 Host Helper Process Started
+	AUDIO in: 1, out: 1
+{"callback_allocations":0,"checkpoint_gain_restored":true,"injected_faults":[{"callback_allocations":0,"elapsed_seconds":0.550331777,"fault":"abort","status":{"audio":{"blocks":9,"bridge_latency_frames":1024,"input_drops":0,"output_drops":0,"process_errors":1,"restart_requests":0,"underruns":0},"helper_pid":21,"last_error":"Plugin crashed","phase":"Faulted","recovery_attempts":0}},{"callback_allocations":0,"elapsed_seconds":0.528475953,"fault":"hang","status":{"audio":{"blocks":9,"bridge_latency_frames":1024,"input_drops":16,"output_drops":0,"process_errors":1,"restart_requests":0,"underruns":21},"helper_pid":26,"last_error":"Plugin crashed","phase":"Faulted","recovery_attempts":0}}],"killed_helper_status":{"audio":{"blocks":16,"bridge_latency_frames":1024,"input_drops":0,"output_drops":0,"process_errors":0,"restart_requests":0,"underruns":0},"helper_pid":8,"last_error":"Plugin crashed","phase":"Faulted","recovery_attempts":0},"old_callback_silent":true,"original_helper_pid":8,"recovered_helper_pid":15,"recovery_budget_quarantines":true}
+Shutting down helper process

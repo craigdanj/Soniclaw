@@ -1,0 +1,23 @@
+VST3 Host Helper Process Started
+healthy status Status { phase: Running, recovery_attempts: 0, helper_pid: Some(392), last_error: None, audio: Snapshot { blocks: 32, input_drops: 0, output_drops: 0, underruns: 0, process_errors: 0, restart_requests: 0, bridge_latency_frames: 1024 } }, failures 0
+Soniclaw native worker failed: Plugin crashed
+VST3 Host Helper Process Started
+Shutting down helper process
+VST3 Host Helper Process Started
+healthy status Status { phase: Running, recovery_attempts: 0, helper_pid: Some(399), last_error: None, audio: Snapshot { blocks: 32, input_drops: 0, output_drops: 0, underruns: 0, process_errors: 0, restart_requests: 0, bridge_latency_frames: 1024 } }, failures 0
+Soniclaw native worker failed: Plugin operation timed out
+VST3 Host Helper Process Started
+Shutting down helper process
+VST3 Host Helper Process Started
+healthy status Status { phase: Running, recovery_attempts: 0, helper_pid: Some(406), last_error: None, audio: Snapshot { blocks: 32, input_drops: 0, output_drops: 0, underruns: 0, process_errors: 0, restart_requests: 0, bridge_latency_frames: 1024 } }, failures 0
+Soniclaw native worker failed: Plugin crashed
+VST3 Host Helper Process Started
+Shutting down helper process
+VST3 Host Helper Process Started
+healthy status Status { phase: Running, recovery_attempts: 0, helper_pid: Some(413), last_error: None, audio: Snapshot { blocks: 31, input_drops: 0, output_drops: 0, underruns: 0, process_errors: 0, restart_requests: 0, bridge_latency_frames: 1024 } }, failures 0
+Soniclaw native worker failed: Plugin crashed
+VST3 Host Helper Process Started
+Shutting down helper process
+VST3 Host Helper Process Started
+Shutting down helper process
+VST3 Host Helper Process Started

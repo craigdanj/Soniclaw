@@ -1,0 +1,120 @@
+   Compiling soniclaw-desktop-studio v0.75.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/desktop-studio)
+    Finished `test` profile [unoptimized] target(s) in 5.49s
+     Running unittests src/main.rs (target/debug/build/soniclaw-desktop-studio/f7e74c2639f2f0a1/out/soniclaw_desktop_studio-f7e74c2639f2f0a1)
+
+running 1 test
+test gui::tests::reference_ui_and_project_actions_work_without_opening_a_device ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.58s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-device/9827e96eb6416932/out/soniclaw_device-9827e96eb6416932)
+
+running 6 tests
+test tests::shared_output_duplex_event_drain_is_bounded_and_panic_clears_backlog ... ok
+test tests::queue_overflow_requests_panic_without_overwriting ... ok
+test timestamp_tests::exact_offsets_and_future_retention_are_block_partition_invariant ... ok
+test duplex::tests::bridge_prefill_and_underrun_recover_without_panicking ... ok
+test timestamp_tests::late_out_of_order_and_panic_never_restart_future_notes ... ok
+test duplex::drift_tests::adaptive_bridge_tracks_a_slightly_faster_input_clock ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.22s
+
+     Running tests/manager.rs (target/debug/build/soniclaw-device/2be329aa7ed67511/out/manager-2be329aa7ed67511)
+
+running 12 tests
+test fallback_is_explicit_and_returns_to_preferred_device ... ok
+test duplicate_names_use_occurrence_and_unknown_buffer_range_is_a_request ... ok
+test disconnect_waits_then_reconnects_only_after_interval ... ok
+test disabled_reconnect_requires_manual_retry ... ok
+test input_loss_closes_take_and_retries_both_streams ... ok
+test selects_rates_channels_buffers_and_formats_without_opening ... ok
+test preferences_apply_transactionally_and_default_device_changes_restart ... ok
+test stream_error_rebuilds_and_manual_stop_cancels_retries ... ok
+test unified_layout_selection_accounts_for_requested_buffer ... ok
+test unified_negotiates_shared_rate_and_hardware_maps ... ok
+test unified_output_recording_can_disable_input_and_old_preferences_load ... ok
+test preferences_roundtrip_and_reject_corrupt_unknown_and_oversized_files ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-midi/48d1a9a9ad3220d5/out/soniclaw_midi-48d1a9a9ad3220d5)
+
+running 16 tests
+test controllers::tests::pickup_external_change_and_bank_rearm ... ok
+test file::tests::ppqn_tempo_roundtrip_and_truncation_rejection ... ok
+test controllers::tests::feedback_coalesces_retries_and_suppresses_only_sent_echoes ... ok
+test controllers::tests::relative_modes_toggle_and_no_alloc ... ok
+test learning::tests::learn_replaces_target_and_resolves_before_playback ... ok
+test performance::tests::chord_release_keeps_note_identity_after_scale_mapping ... ok
+test schedule::allocation_tests::prepared_scheduler_performs_no_heap_operations ... ok
+test schedule::tests::boundaries_stability_lateness_and_panic ... ok
+test tests::pitch_bend_and_one_byte_messages ... ok
+test schedule::tests::driver_anchor_is_explicit_and_bounded ... ok
+test tests::running_status_and_clock ... ok
+test output::tests::worker_sends_and_rejects_out_of_order_timestamps ... ok
+test tests::sysex_and_common_cancel_running_status ... ok
+test wire::tests::running_program_sysex_and_interleaved_clock ... ok
+test wire::tests::sysex_overflow_recovers_without_allocating ... ok
+test performance::tests::arp_partition_independence_and_transport_stop ... ok
+
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-studio/43654f4c78f1df59/out/soniclaw_studio-43654f4c78f1df59)
+
+running 35 tests
+test export::tests::settings_reject_live_loop_duplicate_codec_and_future_schema ... ok
+test jobs::tests::capacity_progress_stale_cancellation_and_shutdown ... ok
+test jobs::tests::priority_fifo_and_replacement ... ok
+test automation_write::tests::touch_latch_snap_and_stale_publication ... ok
+test history::tests::grouped_project_edits_undo_redo_and_failed_prepare_are_atomic ... ok
+test history::tests::branch_noop_limits_and_invalid_editor_commit ... ok
+test jobs::tests::consumed_tickets_do_not_retain_unbounded_replacement_keys ... ok
+test media::tests::reachability_keeps_disabled_and_opaque_resources ... ok
+test midi_recording::tests::nonzero_start_and_step_tempo_boundaries_keep_absolute_clock ... ok
+test freeze::tests::cache_reuse_bypass_restore_and_invalidation ... ok
+test midi_recording::tests::filtering_quantization_and_stale_timeline ... ok
+test pending::tests::retention_and_torn_write_fallback ... ok
+test project::tests::portable_roundtrip_and_corruption_leave_original_intact ... ok
+test project::tests::legacy_migration_and_exact_missing_resource_repair ... ok
+test midi_recording::tests::queue_overflow_unsupported_and_input_loss_never_publish_as_complete ... ok
+test recording::tests::controls_reject_invalid_arming_loop_punch_and_roundtrip ... ok
+test midi_recording::tests::sample_offsets_partition_invariance_raw_controllers_and_hanging_notes ... ok
+test loop_capture_tests::actual_clock_wraps_become_sample_exact_take_passes ... ok
+test midi_recording::tests::ramps_capture_in_beats_but_do_not_silently_approximate_smf ... ok
+test recovery::tests::lock_and_background_tick_bound_concurrency ... ok
+test routing::tests::removal_remaps_lanes_values_and_failed_prepare_is_atomic ... ok
+test multitrack_integration::captures_complete_tracks_and_blocks_replacement_until_control_retirement ... ok
+test sessions::tests::repeated_save_stale_identity_failed_resource_and_verified_open ... ok
+test recovery::tests::retained_snapshots_skip_incomplete_corrupt_latest_and_preserve_working_copy ... ok
+test tests::document_roundtrip_factory_failure_and_record_tap ... ok
+test timing::tests::impulse_polarity_noise_and_zero_boundary ... ok
+test tests::replacement_is_atomic_and_old_processors_retire_off_callback ... ok
+test tests::midi_while_stopped_and_invalid_input ... ok
+test recording::seek_recording_tests::streamed_recording_is_primed_at_selected_start_before_first_callback ... ok
+test workspace::tests::structural_commands_reindex_and_preserve_history_and_resources ... ok
+test midi_recording::tests::duration_limit_and_seek_discontinuities_are_visible ... ok
+test tests::live_clips_inserts_mixer_clock_loop_and_partition ... ok
+test recording::tests::count_in_preroll_punch_and_click_exclusion_are_partition_invariant ... ok
+test freeze::tests::streamed_offline_job_waveform_cancel_and_stale_result ... ok
+test tempo_cache::tests::mixed_rate_warp_exact_clock_pitch_portability_stale_and_cancel ... ok
+
+test result: ok. 35 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.57s
+
+   Doc-tests soniclaw_device
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_midi
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_studio
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

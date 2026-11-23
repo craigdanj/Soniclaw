@@ -1,0 +1,37 @@
+{
+  "Granular Cloud": {
+    "cpu_percent_of_realtime": 217.9258270263672,
+    "frames": 96000,
+    "latency_frames": 252
+  },
+  "IR crossfade": {
+    "fade_frames": 2048,
+    "latency_frames": 0,
+    "retired_on_control": 1
+  },
+  "Motion Rack": {
+    "cpu_percent_of_realtime": 115.48188781738281,
+    "frames": 96000,
+    "latency_frames": 252
+  },
+  "Multiband Glue": {
+    "cpu_percent_of_realtime": 22.49308204650879,
+    "frames": 96000,
+    "latency_frames": 252
+  },
+  "Poly Motion": {
+    "cpu_percent_of_realtime": 32.432769775390625,
+    "frames": 96000,
+    "latency_frames": 252
+  },
+  "Sampler Studio": {
+    "cpu_percent_of_realtime": 195.66355895996094,
+    "frames": 96000,
+    "latency_frames": 252
+  },
+  "Spectral Space": {
+    "cpu_percent_of_realtime": 149.5999298095703,
+    "frames": 96000,
+    "latency_frames": 1276
+  }
+}

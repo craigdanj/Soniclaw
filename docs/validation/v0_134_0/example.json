@@ -1,0 +1,9 @@
+{
+  "feature": "hpss",
+  "results": {
+    "channels": 2,
+    "frames": 48000,
+    "max_recombination_error": 1.4901161193847656e-8
+  },
+  "version": "0.134.0"
+}

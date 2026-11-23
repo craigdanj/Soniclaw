@@ -1,0 +1,17 @@
+    Checking soniclaw-editor v0.22.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-editor)
+ Documenting soniclaw-editor v0.22.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-editor)
+    Checking soniclaw-clap v0.22.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-clap)
+ Documenting soniclaw-clap v0.22.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/crates/soniclaw-clap)
+    Checking soniclaw-project-plugin v0.22.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/project-plugin)
+    Checking soniclaw-workbench v0.22.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/workbench)
+    Checking soniclaw-reference v0.22.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/reference)
+ Documenting soniclaw-reference-studio v0.22.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/reference-studio)
+ Documenting soniclaw-sdk-tools v0.22.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/sdk-tools)
+ Documenting soniclaw-ecosystem v0.22.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/ecosystem)
+ Documenting soniclaw-workbench v0.22.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/workbench)
+ Documenting soniclaw-project-plugin v0.22.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/project-plugin)
+ Documenting soniclaw-reference v0.22.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/reference)
+ Documenting soniclaw-clap-demo v0.22.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/clap-demo)
+ Documenting soniclaw-dsp-lab v0.22.0 (/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/examples/dsp-lab)
+    Finished `dev` profile [unoptimized] target(s) in 4.74s
+   Generated /workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/doc/cargo_soniclaw/index.html and 39 other files

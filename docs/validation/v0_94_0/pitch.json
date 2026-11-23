@@ -1,0 +1,36 @@
+{
+  "feature": "pitch",
+  "results": {
+    "fixture": "synthetic harmonics; listening quality not certified",
+    "pitch_cases": [
+      {
+        "audio": "pitch-up-plain.wav",
+        "callback_allocations": 0,
+        "latency_frames": 2048,
+        "name": "pitch-up-plain",
+        "peak": 0.21888406574726105
+      },
+      {
+        "audio": "pitch-up-envelope.wav",
+        "callback_allocations": 0,
+        "latency_frames": 2048,
+        "name": "pitch-up-envelope",
+        "peak": 0.126820906996727
+      },
+      {
+        "audio": "pitch-up-shifted-envelope.wav",
+        "callback_allocations": 0,
+        "latency_frames": 2048,
+        "name": "pitch-up-shifted-envelope",
+        "peak": 0.08600609004497528
+      }
+    ],
+    "stretch": {
+      "callback_allocations": 0,
+      "input_frames": 48000,
+      "output_frames": 72000,
+      "ratio": 1.5
+    }
+  },
+  "version": "0.94.0"
+}

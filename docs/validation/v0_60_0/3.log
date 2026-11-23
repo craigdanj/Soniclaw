@@ -1,0 +1,57 @@
+   Compiling soniclaw-desktop-studio v0.60.0 (/workspace/scratch/cd89c8ef929d/workflow-series/soniclaw/examples/desktop-studio)
+    Finished `test` profile [unoptimized] target(s) in 1.58s
+     Running unittests src/main.rs (target/debug/build/soniclaw-desktop-studio/da000440133a2812/out/soniclaw_desktop_studio-da000440133a2812)
+
+running 1 test
+test gui::tests::reference_ui_and_project_actions_work_without_opening_a_device ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.28s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-studio/d788e7aa9eea94de/out/soniclaw_studio-d788e7aa9eea94de)
+
+running 12 tests
+test history::tests::branch_noop_limits_and_invalid_editor_commit ... ok
+test project::tests::portable_roundtrip_and_corruption_leave_original_intact ... ok
+test history::tests::grouped_project_edits_undo_redo_and_failed_prepare_are_atomic ... ok
+test tests::document_roundtrip_factory_failure_and_record_tap ... ok
+test tests::midi_while_stopped_and_invalid_input ... ok
+test loop_capture_tests::actual_clock_wraps_become_sample_exact_take_passes ... ok
+test tests::replacement_is_atomic_and_old_processors_retire_off_callback ... ok
+test freeze::tests::cache_reuse_bypass_restore_and_invalidation ... ok
+test multitrack_integration::captures_complete_tracks_and_blocks_replacement_until_control_retirement ... ok
+test tests::live_clips_inserts_mixer_clock_loop_and_partition ... ok
+test freeze::tests::streamed_offline_job_waveform_cancel_and_stale_result ... ok
+test tempo_cache::tests::mixed_rate_warp_exact_clock_pitch_portability_stale_and_cancel ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.35s
+
+     Running unittests src/lib.rs (target/debug/build/soniclaw-ui/6c466b784c4ac3f1/out/soniclaw_ui-6c466b784c4ac3f1)
+
+running 12 tests
+test controls::tests::meter_hold_and_release_are_time_based ... ok
+test toolkit::tests::filmstrip_endpoint_uvs_are_exact ... ok
+test timeline::tests::multi_selection_history_full_range_and_atomic_failure ... ok
+test controls::tests::response_matches_butterworth_cutoff ... ok
+test toolkit::tests::theme_roundtrip_and_invalid_metrics ... ok
+test toolkit::tests::svg_raster_is_real_and_bounded ... ok
+test accessibility::tests::semantic_tree_and_real_assistive_actions ... ok
+test toolkit::tests::keyboard_and_accumulated_discrete_drags_work ... ok
+test clips::accessibility_tests::focused_note_keyboard_edit_changes_valid_document ... ok
+test controls::tests::controls_render_without_a_native_window ... ok
+test timeline::keyboard_test::focused_region_nudge_is_an_actual_ui_edit ... ok
+test timeline::tests::viewport_culls_offscreen_and_reaches_high_track_and_midi_endpoints ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+   Doc-tests soniclaw_studio
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soniclaw_ui
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

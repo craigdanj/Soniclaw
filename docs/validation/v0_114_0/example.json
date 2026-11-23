@@ -1,0 +1,22 @@
+{
+  "feature": "coupled-instrument",
+  "results": {
+    "renders": [
+      {
+        "callback_allocations": 0,
+        "idle_string_energy": 0.0,
+        "late_tail_energy": 0.03752879277182089,
+        "middle_energy": 0.794245622347713,
+        "render": "uncoupled"
+      },
+      {
+        "callback_allocations": 0,
+        "idle_string_energy": 62.721167025534385,
+        "late_tail_energy": 0.2562450332463711,
+        "middle_energy": 3.486844235721418,
+        "render": "sympathetic"
+      }
+    ]
+  },
+  "version": "0.114.0"
+}

@@ -1,0 +1,211 @@
+[
+  {
+    "check": "source-contract",
+    "command": [
+      "Python API",
+      "source-contract"
+    ],
+    "exit_code": 0,
+    "seconds": 0
+  },
+  {
+    "check": "rust-toolchain",
+    "command": [
+      "rustc",
+      "-Vv"
+    ],
+    "exit_code": 0,
+    "seconds": 0.032
+  },
+  {
+    "check": "python-tool-tests",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tools/tests",
+      "-v"
+    ],
+    "exit_code": 0,
+    "seconds": 0.469
+  },
+  {
+    "check": "fmt",
+    "command": [
+      "cargo",
+      "fmt",
+      "--all",
+      "--check"
+    ],
+    "exit_code": 0,
+    "seconds": 1.175
+  },
+  {
+    "check": "clippy",
+    "command": [
+      "cargo",
+      "clippy",
+      "--workspace",
+      "--all-targets",
+      "--all-features",
+      "--locked",
+      "--offline",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "exit_code": 0,
+    "seconds": 3.615
+  },
+  {
+    "check": "tests",
+    "command": [
+      "cargo",
+      "test",
+      "--workspace",
+      "--all-features",
+      "--locked",
+      "--offline"
+    ],
+    "exit_code": 0,
+    "seconds": 21.548
+  },
+  {
+    "check": "docs",
+    "command": [
+      "cargo",
+      "doc",
+      "--workspace",
+      "--all-features",
+      "--no-deps",
+      "--locked",
+      "--offline"
+    ],
+    "exit_code": 0,
+    "seconds": 9.426
+  },
+  {
+    "check": "build",
+    "command": [
+      "cargo",
+      "build",
+      "-p",
+      "soniclaw-sdk-tools",
+      "-p",
+      "soniclaw-host-fixture",
+      "-p",
+      "soniclaw-workbench",
+      "-p",
+      "soniclaw-clap-smoke",
+      "--locked",
+      "--offline"
+    ],
+    "exit_code": 0,
+    "seconds": 8.166
+  },
+  {
+    "check": "export-reopen-0",
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/soniclaw-clap-smoke",
+      "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/libsoniclaw_workbench.so",
+      "--workbench"
+    ],
+    "exit_code": 0,
+    "seconds": 0.745
+  },
+  {
+    "check": "export-reopen-1",
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/soniclaw-clap-smoke",
+      "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/libsoniclaw_workbench.so",
+      "--workbench"
+    ],
+    "exit_code": 0,
+    "seconds": 0.529
+  },
+  {
+    "check": "export-reopen-2",
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/soniclaw-clap-smoke",
+      "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/libsoniclaw_workbench.so",
+      "--workbench"
+    ],
+    "exit_code": 0,
+    "seconds": 0.467
+  },
+  {
+    "check": "catalog-workflow",
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/soniclaw-sdk-tools",
+      "--catalog-demo",
+      "/workspace/scratch/cd89c8ef929d/compat015-final/catalog-demo"
+    ],
+    "exit_code": 0,
+    "seconds": 0.124
+  },
+  {
+    "check": "sampler-workflow",
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/soniclaw-sdk-tools",
+      "--sampler-demo",
+      "/workspace/scratch/cd89c8ef929d/compat015-final/sampler-demo"
+    ],
+    "exit_code": 0,
+    "seconds": 1.558
+  },
+  {
+    "check": "automation-workflow",
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/soniclaw-sdk-tools",
+      "--automation-demo",
+      "/workspace/scratch/cd89c8ef929d/compat015-final/automation-demo"
+    ],
+    "exit_code": 0,
+    "seconds": 0.322
+  },
+  {
+    "check": "host-contract",
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/soniclaw-sdk-tools",
+      "--host-contract",
+      "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/libsoniclaw_host_fixture.so",
+      "/workspace/scratch/cd89c8ef929d/compat015-final/host-contract.json"
+    ],
+    "exit_code": 0,
+    "seconds": 0.017
+  },
+  {
+    "check": "live-rack-contract",
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/soniclaw-sdk-tools",
+      "--live-rack-demo",
+      "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/libsoniclaw_host_fixture.so",
+      "/workspace/scratch/cd89c8ef929d/compat015-final/live-rack-demo"
+    ],
+    "exit_code": 0,
+    "seconds": 0.065
+  },
+  {
+    "check": "processor-audit",
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/soniclaw-sdk-tools",
+      "--audit",
+      "/workspace/scratch/cd89c8ef929d/compat015-final/processor-audit.json"
+    ],
+    "exit_code": 0,
+    "seconds": 2.117
+  },
+  {
+    "check": "isolated-native-probe",
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/soniclaw-sdk-tools",
+      "--probe-trusted",
+      "/workspace/scratch/cd89c8ef929d/ecosystem-work/soniclaw/target/debug/libsoniclaw_host_fixture.so",
+      "/workspace/scratch/cd89c8ef929d/compat015-final/probe.json"
+    ],
+    "exit_code": 0,
+    "seconds": 0.036
+  }
+]

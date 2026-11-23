@@ -1,0 +1,62 @@
+[
+  {
+    "check": "audio-settings.png",
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/target/debug/soniclaw-workbench",
+      "--screenshot",
+      "/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/docs/validation/v090/audio-settings.png",
+      "--preset",
+      "6",
+      "--tab",
+      "9"
+    ],
+    "exit_code": 0,
+    "seconds": 1.22,
+    "display": "native Xvfb/software OpenGL; no audio device opened"
+  },
+  {
+    "check": "registered-tape.png",
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/target/debug/soniclaw-workbench",
+      "--screenshot",
+      "/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/docs/validation/v090/registered-tape.png",
+      "--preset",
+      "6",
+      "--tab",
+      "0"
+    ],
+    "exit_code": 0,
+    "seconds": 0.969,
+    "display": "native Xvfb/software OpenGL; no audio device opened"
+  },
+  {
+    "check": "graph.png",
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/target/debug/soniclaw-workbench",
+      "--screenshot",
+      "/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/docs/validation/v090/graph.png",
+      "--preset",
+      "0",
+      "--tab",
+      "3"
+    ],
+    "exit_code": 0,
+    "seconds": 1.927,
+    "display": "native Xvfb/software OpenGL; no audio device opened"
+  },
+  {
+    "check": "sample-map.png",
+    "command": [
+      "/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/target/debug/soniclaw-workbench",
+      "--screenshot",
+      "/workspace/scratch/cd89c8ef929d/v090-work/soniclaw/docs/validation/v090/sample-map.png",
+      "--preset",
+      "5",
+      "--tab",
+      "4"
+    ],
+    "exit_code": 0,
+    "seconds": 3.401,
+    "display": "native Xvfb/software OpenGL; no audio device opened"
+  }
+]

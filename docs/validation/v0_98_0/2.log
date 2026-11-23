@@ -1,0 +1,262 @@
+    Checking soniclaw-quality v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-quality)
+   Compiling soniclaw-pipewire v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-pipewire)
+    Checking soniclaw-device v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-device)
+    Checking soniclaw-plugin v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-plugin)
+    Checking soniclaw-registry v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-registry)
+    Checking soniclaw-diagnostics v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-diagnostics)
+    Checking soniclaw-params v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-params)
+   Compiling rustix v1.1.6
+    Checking soniclaw-session v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-session)
+   Compiling syn v2.0.119
+    Checking linux-raw-sys v0.12.1
+    Checking soniclaw v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw)
+    Checking pin-project-lite v0.2.17
+    Checking slab v0.4.12
+    Checking dlib v0.5.3
+    Checking tracing-core v0.1.36
+    Checking xcursor v0.3.11
+    Checking as-raw-xcb-connection v1.0.1
+    Checking xkeysym v0.2.1
+    Checking x11rb-protocol v0.13.2
+   Compiling tracing-attributes v0.1.31
+    Checking polling v3.11.0
+    Checking gethostname v1.1.0
+    Checking percent-encoding v2.3.2
+    Checking raw-window-handle v0.6.2
+    Checking xkbcommon-dl v0.4.2
+    Checking dpi v0.1.2
+    Checking tracing v0.1.44
+   Compiling winnow v1.0.5
+    Checking calloop v0.14.4
+   Compiling serde v1.0.229
+   Compiling hashbrown v0.17.1
+    Checking glow v0.17.0
+   Compiling equivalent v1.0.3
+   Compiling indexmap v2.14.2
+    Checking egui_glow v0.36.1
+   Compiling toml_parser v1.1.5+spec-1.1.0
+   Compiling wayland-sys v0.31.11
+   Compiling toml_datetime v1.1.3+spec-1.1.0
+   Compiling enumflags2_derive v0.7.12
+   Compiling toml_edit v0.25.19+spec-1.1.0
+   Compiling zvariant_utils v4.2.0
+   Compiling proc-macro-crate v3.5.0
+   Compiling wayland-backend v0.3.17
+    Checking parking v2.2.1
+    Checking downcast-rs v1.2.1
+    Checking futures-core v0.3.34
+    Checking scoped-tls v1.0.1
+   Compiling zvariant_derive v5.15.1
+    Checking soniclaw-studio-demo v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/studio-demo)
+   Compiling wayland-client v0.31.15
+   Compiling wayland-scanner v0.31.11
+    Checking unicode-ident v1.0.27
+    Checking proc-macro2 v1.0.107
+    Checking futures-io v0.3.34
+    Checking fastrand v2.5.0
+    Checking quote v1.0.47
+    Checking event-listener v5.4.2
+   Compiling enumflags2 v0.7.12
+   Compiling zcheapstr v1.2.0
+    Checking concurrent-queue v2.5.0
+   Compiling endi v1.1.1
+   Compiling zvariant v5.15.1
+    Checking x11rb v0.13.2
+    Checking event-listener-strategy v0.5.4
+    Checking syn v3.0.10
+    Checking futures-lite v2.6.1
+   Compiling zbus_names v4.3.5
+   Compiling async-io v2.6.0
+    Checking wayland-protocols v0.32.13
+    Checking errno v0.3.15
+   Compiling khronos_api v3.1.0
+   Compiling cfg_aliases v0.2.2
+    Checking async-task v4.7.1
+    Checking signal-hook-registry v1.4.8
+    Checking async-channel v2.5.0
+    Checking is-docker v0.2.0
+    Checking atomic-waker v1.1.2
+    Checking piper v0.2.5
+    Checking is-wsl v0.4.0
+    Checking async-signal v0.2.14
+   Compiling zbus_xml v5.2.1
+    Checking x11-clipboard v0.9.3
+    Checking async-lock v3.5.0
+    Checking keyboard-types v0.8.3
+   Compiling xml-rs v0.8.29
+   Compiling log v0.4.35
+   Compiling rustix v0.38.44
+   Compiling thiserror v1.0.69
+   Compiling gl_generator v0.14.0
+    Checking baseview v0.3.4
+    Checking async-process v2.5.0
+    Checking copypasta v0.10.2
+   Compiling zbus-lockstep v0.5.2
+    Checking open v5.4.5
+    Checking blocking v1.7.0
+    Checking async-executor v1.14.1
+   Compiling zbus_macros v5.19.0
+    Checking async-broadcast v0.7.2
+    Checking ordered-stream v0.2.0
+   Compiling thiserror-impl v1.0.69
+   Compiling serde_repr v0.1.21
+   Compiling async-recursion v1.2.0
+   Compiling async-trait v0.1.92
+    Checking cursor-icon v1.2.0
+   Compiling siphasher v1.0.4
+    Checking linux-raw-sys v0.4.15
+    Checking hex v0.4.3
+   Compiling phf_shared v0.13.1
+    Checking wayland-csd-frame v0.3.0
+    Checking wayland-protocols-wlr v0.3.12
+    Checking zbus v5.19.0
+    Checking egui-baseview v0.7.2
+   Compiling zbus-lockstep-macros v0.5.2
+    Checking wayland-cursor v0.31.14
+    Checking memmap2 v0.9.12
+    Checking static_assertions v1.1.0
+   Compiling phf_generator v0.13.1
+   Compiling smithay-client-toolkit v0.19.2
+   Compiling phf_macros v0.13.1
+    Checking soniclaw-editor v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-editor)
+   Compiling winit v0.30.13
+    Checking calloop v0.13.0
+    Checking hashbrown v0.16.1
+    Checking calloop-wayland-source v0.3.0
+    Checking accesskit_consumer v0.36.0
+    Checking phf v0.13.1
+    Checking wayland-protocols-plasma v0.3.12
+   Compiling glutin_glx_sys v0.6.1
+   Compiling glutin_egl_sys v0.7.1
+   Compiling futures-macro v0.3.34
+    Checking atspi-common v0.13.0
+    Checking smol_str v0.2.2
+    Checking futures-task v0.3.34
+    Checking pxfm v0.1.30
+   Compiling smithay-client-toolkit v0.20.0
+    Checking moxcms v0.8.1
+    Checking futures-util v0.3.34
+    Checking atspi-proxies v0.13.0
+    Checking atspi v0.29.0
+    Checking accesskit_atspi_common v0.18.1
+    Checking soniclaw-clap v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-clap)
+    Checking wayland-protocols-experimental v20250721.0.1
+    Checking wayland-protocols-misc v0.3.12
+   Compiling glutin v0.32.3
+    Checking calloop-wayland-source v0.4.1
+    Checking byteorder-lite v0.1.0
+    Checking image v0.25.10
+    Checking accesskit_unix v0.21.1
+   Compiling glutin-winit v0.5.0
+    Checking arboard v3.7.0
+    Checking smithay-clipboard v0.7.3
+    Checking web-time v1.1.0
+   Compiling litrs v1.0.1
+    Checking soniclaw-example-processors v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/processor-pack)
+    Checking soniclaw-reference v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/reference)
+    Checking soniclaw-typed-effect v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/typed-effect)
+    Checking soniclaw-project-plugin v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/project-plugin)
+   Compiling document-features v0.2.12
+    Checking soniclaw-dsp-lab v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/dsp-lab)
+    Checking accesskit_winit v0.32.2
+    Checking egui-winit v0.36.1
+    Checking soniclaw-ecosystem v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/ecosystem)
+    Checking eframe v0.36.1
+    Checking soniclaw-workbench v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/workbench)
+    Checking soniclaw-desktop-studio v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/desktop-studio)
+    Checking soniclaw-live-fx v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/live-fx)
+    Checking soniclaw-sdk-tools v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/sdk-tools)
+    Checking soniclaw-mixer-studio v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/mixer-studio)
+    Checking soniclaw-ui-gallery v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/ui-gallery)
+    Checking soniclaw-desktop v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/desktop)
+    Checking soniclaw-clip-studio v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/clip-studio)
+    Checking soniclaw-reference-studio v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/reference-studio)
+    Checking soniclaw-clap-demo v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/clap-demo)
+    Checking soniclaw-freeze-session v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/freeze-session)
+    Checking soniclaw-loop-comp v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/loop-comp)
+    Checking soniclaw-studio-export v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/studio-export)
+    Checking soniclaw-studio-media-audit v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/studio-media-audit)
+    Checking soniclaw-studio-routing v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/studio-routing)
+    Checking soniclaw-streamed-session v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/streamed-session)
+    Checking soniclaw-tempo-stream v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/tempo-stream)
+    Checking soniclaw-studio-history v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/studio-history)
+    Checking soniclaw-studio-recovery v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/studio-recovery)
+    Checking soniclaw-multitrack-session v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/multitrack-session)
+    Checking soniclaw-studio-automation-write v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/studio-automation-write)
+    Checking soniclaw-studio-recording v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/studio-recording)
+    Checking soniclaw-audio-editing v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/audio-editing)
+    Checking soniclaw-studio-midi-recording v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/studio-midi-recording)
+    Checking soniclaw-waveform-warp-editor v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/waveform-warp-editor)
+    Checking soniclaw-export-conversion v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/export-conversion)
+    Checking soniclaw-stream-freeze v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/stream-freeze)
+    Checking soniclaw-daw-elastic v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/daw-elastic)
+    Checking soniclaw-render v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/render)
+    Checking soniclaw-daw-workspace v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/daw-workspace)
+    Checking soniclaw-daw-arrangement v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/daw-arrangement)
+    Checking soniclaw-microtuning v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/microtuning)
+    Checking soniclaw-daw-delivery v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/daw-delivery)
+    Checking soniclaw-native-editor v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/native-editor)
+    Checking soniclaw-daw-automation v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/daw-automation)
+    Checking soniclaw-quality-suite v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/quality-suite)
+    Checking soniclaw-studio-jobs v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/studio-jobs)
+    Checking soniclaw-daw-takes v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/daw-takes)
+    Checking soniclaw-studio-isolation v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/studio-isolation)
+    Checking soniclaw-daw-sessions v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/daw-sessions)
+    Checking soniclaw-daw-multichannel v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/daw-multichannel)
+    Checking soniclaw-daw-cues v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/daw-cues)
+    Checking soniclaw-daw-midi v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/daw-midi)
+    Checking soniclaw-sample-author v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/sample-author)
+    Checking soniclaw-studio-native-buses v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/studio-native-buses)
+    Checking soniclaw-daw-tools v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/daw-tools)
+    Checking soniclaw-daw-mixing v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/daw-mixing)
+    Checking soniclaw-controller-demo v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/controller-demo)
+    Checking soniclaw-pitch-time v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/pitch-time)
+    Checking soniclaw-daw-timing v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/daw-timing)
+    Checking soniclaw-daw-plugins v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/daw-plugins)
+    Checking soniclaw-pipewire-probe v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/pipewire-probe)
+    Checking soniclaw-dsp-nonlinear v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/dsp-nonlinear)
+    Checking soniclaw-dsp-suite v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/dsp-suite)
+    Checking soniclaw-scalable-editors v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/scalable-editors)
+    Checking soniclaw-accessibility-audit v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/accessibility-audit)
+    Checking soniclaw-ui v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-ui)
+    Checking soniclaw-clap-isolation-helper v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/clap-isolation-helper)
+    Checking soniclaw-studio-plugin-windows v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/studio-plugin-windows)
+    Checking soniclaw-isolated-clap-host v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/isolated-clap-host)
+    Checking soniclaw-reconfigure-host v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/reconfigure-host)
+    Checking soniclaw-isolated-control v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/isolated-control)
+    Checking soniclaw-waveform-cache-demo v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/waveform-cache)
+    Checking soniclaw-host v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-host)
+    Checking soniclaw-host-fixture v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/host-fixture)
+    Checking soniclaw-clap-smoke v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/tools/clap-smoke)
+    Checking soniclaw-multibus-host v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/multibus-host)
+    Checking soniclaw-crash-host v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/crash-host)
+    Checking soniclaw-musical-host v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/musical-host)
+    Checking soniclaw-isolation-helper v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/isolation-helper)
+    Checking soniclaw-studio v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-studio)
+    Checking soniclaw-vst3 v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-vst3)
+    Checking soniclaw-stream v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-stream)
+    Checking soniclaw-waveform v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-waveform)
+    Checking soniclaw-formats v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-formats)
+    Checking soniclaw-state v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-state)
+    Checking soniclaw-automation v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-automation)
+    Checking soniclaw-midi v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-midi)
+    Checking soniclaw-dsp-oversampling v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/dsp-oversampling)
+    Checking soniclaw-dsp-filters v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/dsp-filters)
+    Checking soniclaw-clips v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-clips)
+    Checking soniclaw-bus v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-bus)
+    Checking soniclaw-kernels v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-kernels)
+    Checking soniclaw-graph v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-graph)
+    Checking soniclaw-transport v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-transport)
+    Checking soniclaw-record v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-record)
+    Checking soniclaw-dsp-modulation v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/dsp-modulation)
+    Checking soniclaw-dsp v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-dsp)
+    Checking soniclaw-mixer v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-mixer)
+    Checking soniclaw-io v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-io)
+    Checking soniclaw-sampler v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-sampler)
+    Checking soniclaw-kernel-bench v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/kernel-bench)
+    Checking soniclaw-commands v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-commands)
+    Checking soniclaw-tuning v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-tuning)
+    Checking soniclaw-engine v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-engine)
+    Checking cargo-soniclaw v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/tools/cargo-soniclaw)
+    Checking soniclaw-core v0.98.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-core)
+    Finished `dev` profile [unoptimized] target(s) in 1m 00s

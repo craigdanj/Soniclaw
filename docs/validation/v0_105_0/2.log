@@ -1,0 +1,7 @@
+    Checking soniclaw-core v0.105.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-core)
+    Checking soniclaw-kernels v0.105.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-kernels)
+    Checking soniclaw-tuning v0.105.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-tuning)
+    Checking soniclaw-dsp v0.105.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-dsp)
+    Checking soniclaw-quality v0.105.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/crates/soniclaw-quality)
+    Checking soniclaw-dsp-suite v0.105.0 (/workspace/scratch/cd89c8ef929d/daw-series/soniclaw/examples/dsp-suite)
+    Finished `dev` profile [unoptimized] target(s) in 3.61s
