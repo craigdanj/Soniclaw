@@ -1,0 +1,15 @@
+[package]
+name="soniclaw-studio-demo"
+version.workspace=true
+edition.workspace=true
+license.workspace=true
+rust-version.workspace=true
+publish=false
+[features]
+native=["soniclaw/native"]
+[dependencies]
+soniclaw.workspace=true
+serde_json="1"
+allocation-counter="=0.8.1"
+[lints]
+workspace=true

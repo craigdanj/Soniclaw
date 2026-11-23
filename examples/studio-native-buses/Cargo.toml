@@ -1,0 +1,14 @@
+[package]
+name="soniclaw-studio-native-buses"
+version.workspace=true
+edition.workspace=true
+license.workspace=true
+rust-version.workspace=true
+publish=false
+[dependencies]
+soniclaw={workspace=true,features=["studio-hosting"]}
+soniclaw-host={path="../../crates/soniclaw-host",version="0.146.0",features=["studio","vst3"]}
+serde_json="1"
+allocation-counter="=0.8.1"
+[lints.rust]
+unsafe_op_in_unsafe_fn="deny"

@@ -1,0 +1,95 @@
+{
+  "schema_version": 2,
+  "product_id": "org.soniclaw.workbench",
+  "name": "Granular Cloud",
+  "parameters": {},
+  "assets": [
+    {
+      "id": "grain-source",
+      "path": "assets/grain-source.wav",
+      "root_note": 57
+    },
+    {
+      "id": "stereo-ir",
+      "path": "assets/stereo-ir.wav",
+      "root_note": 60
+    }
+  ],
+  "zones": [],
+  "nodes": [
+    {
+      "id": "grain",
+      "kind": "granular",
+      "settings": {},
+      "input_gain": 0.0,
+      "asset": "grain-source"
+    },
+    {
+      "id": "tone",
+      "kind": "state_variable",
+      "settings": {},
+      "input_gain": 0.0
+    },
+    {
+      "id": "space",
+      "kind": "fdn_reverb",
+      "settings": {},
+      "input_gain": 0.0
+    },
+    {
+      "id": "limit",
+      "kind": "lookahead_limiter",
+      "settings": {},
+      "input_gain": 0.0
+    }
+  ],
+  "connections": [
+    {
+      "from": "grain",
+      "to": "tone",
+      "gain": 1.0
+    },
+    {
+      "from": "tone",
+      "to": "space",
+      "gain": 1.0
+    },
+    {
+      "from": "space",
+      "to": "limit",
+      "gain": 1.0
+    }
+  ],
+  "outputs": {
+    "limit": 1.0
+  },
+  "modulation": {
+    "sources": [
+      {
+        "type": "lfo",
+        "shape": "sine",
+        "rate_hz": 0.5,
+        "beats": 4.0
+      },
+      {
+        "type": "macro",
+        "index": 0
+      }
+    ],
+    "routes": [
+      {
+        "source": 0,
+        "destination": "tone.frequency",
+        "amount": 0.08
+      },
+      {
+        "source": 1,
+        "destination": "space.mix",
+        "amount": 0.2
+      }
+    ],
+    "macros": [
+      0.5
+    ]
+  }
+}
