@@ -13,10 +13,10 @@ Use `soniclaw_reference.dll` on Windows or `libsoniclaw_reference.dylib` on macO
 
 | ID | Product |
 |---|---|
-| `org.sonora.reference` | Gain + Filter: Mode 0 pass-through, 1 gain, 2 low-pass + gain |
-| `org.sonora.ducker` | Main stereo input + separate stereo sidechain key, with gain |
-| `org.sonora.drums` | Multisample kick/snare/hat instrument (MIDI notes 36/38/42) |
-| `org.sonora.fx-rack` | High-pass/peaking EQ, compressor, chorus, reverb, gain and peak limiter |
+| `org.soniclaw.reference` | Gain + Filter: Mode 0 pass-through, 1 gain, 2 low-pass + gain |
+| `org.soniclaw.ducker` | Main stereo input + separate stereo sidechain key, with gain |
+| `org.soniclaw.drums` | Multisample kick/snare/hat instrument (MIDI notes 36/38/42) |
+| `org.soniclaw.fx-rack` | High-pass/peaking EQ, compressor, chorus, reverb, gain and peak limiter |
 | `org.soniclaw.precision-gain` | Precision Gain with native f64 and f32 compatibility |
 
 Reference defaults include an embedded editor. `--no-default-features` builds headless. The original `soniclaw-clap-demo` keeps the existing gain/synth IDs and defaults to a host-generated parameter UI; enable its adapter editor feature via Cargo's dependency-feature syntax if needed.
@@ -35,7 +35,7 @@ python3 tools/build-formats.py --fetch --au
 
 Upstreams are pinned in `formats/dependencies.json`, with recursive VST3 SDK submodule revisions defined by the pinned SDK. Fetching is opt-in. The CMake integration links the Rust static archive and references its CLAP entry directly; it does not require a separately installed CLAP file. No plug-in is automatically installed. Default VST3 output is `build/formats/Release/SoniclawReference.vst3` on Linux; macOS/Windows output layouts depend on the generator.
 
-The VST3 exposes the five reference products. Only Precision Gain advertises native f64 sample ports. See the [precision guide](DSP_ENGINE_PRECISION.md) for negotiation and the output bit-preservation test. The AUv2 recipe intentionally registers the first product, Gain + Filter, with type `aufx`, manufacturer `Snra` and subtype `SnGF`; these provisional identities must be changed for an unrelated distributed product. AUv3/AAX are not integrated.
+The VST3 exposes the five reference products. Only Precision Gain advertises native f64 sample ports. See the [precision guide](DSP_ENGINE_PRECISION.md) for negotiation and the output bit-preservation test. The AUv2 recipe intentionally registers the first product, Gain + Filter, with type `aufx`, manufacturer `Sncl` and subtype `SnGF`; these provisional identities must be changed for an unrelated distributed product. AUv3/AAX are not integrated.
 
 ## Embedded editor contract
 

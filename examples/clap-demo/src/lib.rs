@@ -24,9 +24,9 @@ fn create(instrument: bool) -> PluginInstance {
     PluginInstance::new(
         PluginDescriptor {
             id: if instrument {
-                "org.sonora.synth"
+                "org.soniclaw.synth"
             } else {
-                "org.sonora.gain"
+                "org.soniclaw.gain"
             },
             name: if instrument {
                 "Soniclaw Synth"
@@ -44,14 +44,14 @@ fn create(instrument: bool) -> PluginInstance {
     .unwrap()
 }
 static GAIN: soniclaw_clap::ClapDescriptor = descriptor(
-    c"org.sonora.gain",
+    c"org.soniclaw.gain",
     c"Soniclaw Gain",
     c"Soniclaw",
     c"0.146.0",
     false,
 );
 static SYNTH: soniclaw_clap::ClapDescriptor = descriptor(
-    c"org.sonora.synth",
+    c"org.soniclaw.synth",
     c"Soniclaw Synth",
     c"Soniclaw",
     c"0.146.0",

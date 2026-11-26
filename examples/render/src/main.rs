@@ -59,7 +59,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     events.sort_by_key(|e| e.frame);
     let audio = soniclaw::engine::render(&mut engine, 6 * 48000, &events)?;
     soniclaw::io::write_wav(&output, 48000, 2, &audio)?;
-    let preset = soniclaw::state::Preset::capture("org.sonora.demo", "Warm Room", &[gain, cutoff])?;
+    let preset = soniclaw::state::Preset::capture("org.soniclaw.demo", "Warm Room", &[gain, cutoff])?;
     let preset_path = std::path::Path::new(&output).with_extension("preset.json");
     std::fs::write(&preset_path, preset.to_json()?)?;
     let peak = audio.iter().fold(0.0_f32, |a, b| a.max(b.abs()));

@@ -20,7 +20,7 @@ Before packaging a versioned release:
    for any release announcement. Creating notes does not publish a release.
 
 Keep released notes intact. Add dated corrections or follow-up sections for
-later information, as with the Soniclaw rename recorded in 0.3.0. Patch releases
+later information. Patch releases
 need a changelog entry; create a separate note when compatibility or migration
 needs explanation. Documentation-only maintenance does not require a version bump.
 

@@ -44,15 +44,8 @@ fn parameter(
         .expect("valid built-in parameter"),
     )
 }
-// Prefer the current name; import the previous default on first launch.
 fn settings_path_for_load() -> PathBuf {
-    let current = PathBuf::from("soniclaw-session.json");
-    let previous = PathBuf::from("sonora-session.json");
-    if !current.exists() && previous.exists() {
-        previous
-    } else {
-        current
-    }
+    PathBuf::from("soniclaw-session.json")
 }
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {

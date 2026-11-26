@@ -780,10 +780,6 @@ See the [release notes](docs/releases/v0.4.0.md) for migration and limitations.
   allocation tests, module guides and release notes. Maintained earlier release
   notes and original validation/benchmark evidence.
 
-## 2026-11-16 — Framework renamed to Soniclaw
-
-Renamed current crates, Rust imports, Cargo CLI, environment flags, example titles, build/package tooling and documentation. Release version remains 0.3.0. Existing demo plug-in product IDs, parameter IDs, preset schemas, bundle registration IDs and AU component codes are retained for compatibility. New generated plug-ins use org.soniclaw IDs. Legacy session settings are loaded when no new-name settings file exists. Frozen benchmark sources and recorded validation output remain unchanged.
-
 ## 0.3.0 — 2026-11-15
 
 Added a scoped CLAP denormal guard, processing optimizations and reproducible v0.2/v0.3 benchmarks; host-parented egui editors with bounded begin/value/end host gestures and explicit backpressure; real CLAP sidechain ports; an independent exported-ABI compatibility/heap/GUI interaction host; parametric EQ, compressor, peak limiter, gate, chorus, reverb, partitioned FFT convolution and oversampled drive; multisample banks, velocity layers, round robin, sustain/pitch bend and crossfaded stealing; bounded background forward WAV streaming; a four-product reference plug-in bundle and a standalone drum app sharing its factory; pinned static VST3/AUv2 wrapper integration; app/effect/sampler templates, CLI checks, package/installer recipes, license collection and expanded documentation.

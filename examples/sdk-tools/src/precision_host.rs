@@ -40,7 +40,7 @@ fn native(kind: &str, path: &Path) -> Result<serde_json::Value> {
                 })
                 .map_err(text)?;
             output = actual;
-            let mut legacy = lib.instantiate("org.sonora.reference").map_err(text)?;
+            let mut legacy = lib.instantiate("org.soniclaw.reference").map_err(text)?;
             assert!(!legacy.supports_f64());
             legacy.activate(s).map_err(text)?;
             legacy

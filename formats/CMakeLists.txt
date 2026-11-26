@@ -35,7 +35,7 @@ else()
   target_link_libraries(soniclaw_native INTERFACE dl pthread m rt util X11 X11-xcb xcb GL)
 endif()
 add_library(soniclaw_vst3 MODULE entry.cpp)
-target_add_vst3_wrapper(TARGET soniclaw_vst3 OUTPUT_NAME "SoniclawReference" BUNDLE_IDENTIFIER "org.sonora.reference.vst3" BUNDLE_VERSION "0.146.0")
+target_add_vst3_wrapper(TARGET soniclaw_vst3 OUTPUT_NAME "SoniclawReference" BUNDLE_IDENTIFIER "org.soniclaw.reference.vst3" BUNDLE_VERSION "0.146.0")
 target_link_libraries(soniclaw_vst3 PRIVATE soniclaw_impl soniclaw_native)
 if(APPLE AND SONICLAW_BUILD_AU)
   enable_language(OBJC)
@@ -43,7 +43,7 @@ if(APPLE AND SONICLAW_BUILD_AU)
   # An AU component has one product identity. This wrapper chooses the first
   # CLAP descriptor (Gain + Filter); CLAP/VST3 expose the whole factory.
   add_library(soniclaw_auv2 MODULE entry.cpp)
-  target_add_auv2_wrapper(TARGET soniclaw_auv2 OUTPUT_NAME "SoniclawReference" BUNDLE_IDENTIFIER "org.sonora.reference.au" BUNDLE_VERSION "0.146.0" MANUFACTURER_NAME "Soniclaw" MANUFACTURER_CODE "Snra" SUBTYPE_CODE "SnGF" INSTRUMENT_TYPE "aufx" PREFER_CMAKE_AUV2_CONFIGURATION TRUE)
+  target_add_auv2_wrapper(TARGET soniclaw_auv2 OUTPUT_NAME "SoniclawReference" BUNDLE_IDENTIFIER "org.soniclaw.reference.au" BUNDLE_VERSION "0.146.0" MANUFACTURER_NAME "Soniclaw" MANUFACTURER_CODE "Sncl" SUBTYPE_CODE "SnGF" INSTRUMENT_TYPE "aufx" PREFER_CMAKE_AUV2_CONFIGURATION TRUE)
   target_link_libraries(soniclaw_auv2 PRIVATE soniclaw_impl soniclaw_native)
 endif()
 

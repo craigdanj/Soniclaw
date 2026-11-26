@@ -72,7 +72,7 @@ pub fn create_reference() -> PluginInstance {
         filter: LowPass::new(cutoff.clone()),
     });
     PluginInstance::new(
-        description("org.sonora.reference", "Soniclaw Gain + Filter", false),
+        description("org.soniclaw.reference", "Soniclaw Gain + Filter", false),
         engine,
         vec![mode, gain, cutoff],
     )
@@ -83,7 +83,7 @@ pub fn create_ducker() -> PluginInstance {
     let mut engine = Engine::default();
     engine.push(Gain::new(gain.clone()));
     PluginInstance::new(
-        description("org.sonora.ducker", "Soniclaw Sidechain Ducker", false),
+        description("org.soniclaw.ducker", "Soniclaw Sidechain Ducker", false),
         engine,
         vec![gain],
     )
@@ -143,7 +143,7 @@ pub fn create_drums() -> PluginInstance {
     e.push(MultiSampler::<64>::new(create_drum_bank()));
     e.push(Gain::new(gain.clone()));
     PluginInstance::new(
-        description("org.sonora.drums", "Soniclaw Multisample Drums", true),
+        description("org.soniclaw.drums", "Soniclaw Multisample Drums", true),
         e,
         vec![gain],
     )
@@ -175,35 +175,35 @@ pub fn create_effect_rack() -> PluginInstance {
     e.push(Gain::new(gain.clone()));
     e.push(soniclaw::dsp::PeakLimiter::new(-1.0, 80.0).unwrap());
     PluginInstance::new(
-        description("org.sonora.fx-rack", "Soniclaw Effects Rack", false),
+        description("org.soniclaw.fx-rack", "Soniclaw Effects Rack", false),
         e,
         vec![gain],
     )
     .unwrap()
 }
 static REFERENCE: soniclaw_clap::ClapDescriptor = descriptor(
-    c"org.sonora.reference",
+    c"org.soniclaw.reference",
     c"Soniclaw Gain + Filter",
     c"Soniclaw",
     c"0.146.0",
     false,
 );
 static DUCKER: soniclaw_clap::ClapDescriptor = descriptor(
-    c"org.sonora.ducker",
+    c"org.soniclaw.ducker",
     c"Soniclaw Sidechain Ducker",
     c"Soniclaw",
     c"0.146.0",
     false,
 );
 static DRUMS: soniclaw_clap::ClapDescriptor = descriptor(
-    c"org.sonora.drums",
+    c"org.soniclaw.drums",
     c"Soniclaw Multisample Drums",
     c"Soniclaw",
     c"0.146.0",
     true,
 );
 static RACK: soniclaw_clap::ClapDescriptor = descriptor(
-    c"org.sonora.fx-rack",
+    c"org.soniclaw.fx-rack",
     c"Soniclaw Effects Rack",
     c"Soniclaw",
     c"0.146.0",

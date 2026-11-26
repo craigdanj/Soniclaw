@@ -1178,7 +1178,7 @@ fn bus_demo(library: &Path, path: &Path) -> Result<()> {
     // SAFETY: explicit CLI selects the framework's trusted reference exports.
     let lib = unsafe { soniclaw::host::ClapLibrary::load(library) }.map_err(|e| e.to_string())?;
     let mut instance = lib
-        .instantiate("org.sonora.ducker")
+        .instantiate("org.soniclaw.ducker")
         .map_err(|e| e.to_string())?;
     let (inputs, outputs) = instance.audio_ports();
     if inputs.len() != 2 || outputs.len() != 1 {

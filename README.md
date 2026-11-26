@@ -1,7 +1,5 @@
 # Soniclaw
 
-Formerly Sonora. Crates/imports use `soniclaw`, and the CLI is `cargo soniclaw`. See the [rename guide](docs/RENAMING.md) for compatibility history.
-
 **A modular Rust framework for native audio applications, instruments and effects.**
 
 See the [release notes](docs/releases/README.md) for each major and minor release,

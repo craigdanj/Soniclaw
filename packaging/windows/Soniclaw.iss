@@ -4,7 +4,7 @@
   #error Define PluginSource as the built VST3 bundle directory
 #endif
 [Setup]
-AppId=org.sonora.reference
+AppId=org.soniclaw.reference
 AppName=Soniclaw Reference
 AppVersion=0.146.0
 DefaultDirName={commoncf64}\VST3

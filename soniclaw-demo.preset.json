@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "product_id": "org.sonora.demo",
+  "product_id": "org.soniclaw.demo",
   "name": "Warm Room",
   "parameters": {
     "filter.cutoff": 2600.0,

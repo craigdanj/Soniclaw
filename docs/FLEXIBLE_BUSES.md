@@ -13,7 +13,7 @@ cargo run -p soniclaw-sdk-tools -- --bus-demo \
 cargo test -p soniclaw-bus
 ```
 
-The demo loads the actual exported Sidechain Ducker (`org.sonora.ducker`, a retained product ID), supplies separate main/key inputs, checks gain reduction and release, and verifies invalid buffers are silenced. It measures callback allocation count for the tested path. It also routes mono input to stereo and a separate auxiliary output with the reusable patch bay. Layout JSON/report output is written to a new directory. This is synthetic hosted processing, not physical multichannel hardware acceptance. Platform library filenames differ.
+The demo loads the actual exported Sidechain Ducker (`org.soniclaw.ducker`), supplies separate main/key inputs, checks gain reduction and release, and verifies invalid buffers are silenced. It measures callback allocation count for the tested path. It also routes mono input to stereo and a separate auxiliary output with the reusable patch bay. Layout JSON/report output is written to a new directory. This is synthetic hosted processing, not physical multichannel hardware acceptance. Platform library filenames differ.
 
 ## Named layouts and explicit routes
 

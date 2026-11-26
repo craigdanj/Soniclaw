@@ -123,20 +123,12 @@ Current Linux source, state/ABI, DSP/spectral, disk-streaming and allocation che
 are recorded in the [v0.4.0 report](validation/v040/REPORT.md). The report separates
 completed checks from native-wrapper, GUI, DAW and physical-device work still pending.
 
-The earlier rename and v0.3 validation reports below are preserved historical
-records. Their native format and performance measurements are not new v0.4 results.
+The earlier v0.3 validation report below is a preserved historical
+record. Its native format and performance measurements are not new v0.4 results.
 
 ---
 
-# Soniclaw rename verification — 2026-11-16
-
-The renamed workspace passed 55 Rust tests, Clippy, rustdoc, CLI template checks and exported CLAP demo smoke checks. See the [rename verification report](validation/rename-20261116/REPORT.md) for commands and limits.
-
-The original validation report below is preserved unchanged as historical evidence for the pre-rename Sonora v0.3.0 release. Its native format, editor and benchmark results were not rerun as part of the rename.
-
----
-
-# Sonora v0.3.0 validation — Linux
+# Soniclaw v0.3.0 validation — Linux
 
 Executed on 2026-11-15 in a shared Debian 13 x86-64 environment reporting AMD EPYC 7763 and nine available CPUs. Rust 1.100.0/LLVM 23.1.5 and GCC 14.2.0. No physical audio device or DAW session was used.
 
